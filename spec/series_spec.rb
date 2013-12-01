@@ -29,13 +29,17 @@ describe Rubicure::Series do
     context "when exists" do
       let(:series_name){ :smile }
 
-      it{ should be_an_instance_of Hash }
+      describe "fetched properties" do
+        let(:series){ Rubicure::Series.fetch(series_name) }
+
+        it{ expect(series.title).to eq "スマイルプリキュア！" }
+      end
     end
 
     context "when not exists" do
       let(:series_name){ :ashita_no_nadja  }
 
-      it{ should be_nil }
+      it{ expect{subject}.to raise_error }
     end
   end
 end

@@ -1,7 +1,10 @@
 module Rubicure
   require 'yaml'
+  require 'hashie'
 
-  class Series
+  class Series < Hash
+    include Hashie::Extensions::MethodAccess
+
     # @return [Array<Symbol>]
     def self.names
       Series.config.keys
@@ -15,8 +18,12 @@ module Rubicure
 
     # @param series_name [Symbol]
     # @return [Hash]
+    # @raise series_name is not precure
     def self.fetch(series_name)
-      Series.config[series_name]
+      series_config = Series.config[series_name]
+
+      raise "unknown series" unless series_config
+      Series[series_config]
     end
   end
 end
