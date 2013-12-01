@@ -25,5 +25,7 @@ module Rubicure
       raise "unknown series" unless series_config
       Series[series_config]
     end
+
+    alias :[] :fetch
   end
 end

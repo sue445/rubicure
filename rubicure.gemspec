@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rubicure::VERSION
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
-  spec.description   = %q{All about Japanese battle heroine "Pretty Cure".}
-  spec.summary       = %q{All about Japanese battle heroine "Pretty Cure".}
+  spec.description   = %q{All about Japanese battle heroine "Pretty Cure (Precure)".}
+  spec.summary       = %q{All about Japanese battle heroine "Pretty Cure (Precure)".}
   spec.homepage      = ""
   spec.license       = "MIT"
 
