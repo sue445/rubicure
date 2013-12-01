@@ -24,16 +24,13 @@ describe Rubicure::Series do
   end
 
   describe "#fetch" do
-    subject{ Rubicure::Series.fetch(series_name) }
+    subject(:series){ Rubicure::Series.fetch(series_name) }
 
     context "when exists" do
       let(:series_name){ :smile }
 
-      describe "fetched properties" do
-        let(:series){ Rubicure::Series.fetch(series_name) }
-
-        it{ expect(series.title).to eq "スマイルプリキュア！" }
-      end
+      it{ expect(series.title).to eq "スマイルプリキュア！" }
+      it{ expect(series.girls.count).to eq 5 }
     end
 
     context "when not exists" do

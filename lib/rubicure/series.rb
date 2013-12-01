@@ -17,8 +17,8 @@ module Rubicure
     end
 
     # @param series_name [Symbol]
-    # @return [Hash]
-    # @raise series_name is not precure
+    # @return [Series]
+    # @raise arg is not precure
     def self.fetch(series_name)
       series_config = Series.config[series_name]
 
