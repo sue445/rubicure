@@ -10,6 +10,10 @@ module Rubicure
       Series.config.keys
     end
 
+    def self.valid?(series_name)
+      names.include?(series_name)
+    end
+
     # @return [Hash]
     def self.config
       config_file = "#{File.dirname(__FILE__)}/../../config/series.yml"
@@ -20,10 +24,10 @@ module Rubicure
     # @return [Series]
     # @raise arg is not precure
     def self.fetch(series_name)
-      series_config = Series.config[series_name]
+      series_config = Series.config
 
-      raise "unknown series" unless series_config
-      Series[series_config]
+      raise "unknown series: #{series_name}" unless series_config.key?(series_name)
+      Series[series_config[series_name] || {}]
     end
 
     alias :[] :fetch
