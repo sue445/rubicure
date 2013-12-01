@@ -15,6 +15,10 @@ smile:
     precure_name: キュアサニー
   - human_name:   黄瀬やよい
     precure_name: キュアピース
+    transform_serif: ピカピカピカリンジャンケンポン！ キュアピース！
+    extra_names:
+    - プリンセスピース
+      ウルトラピース
   - human_name:   緑川なお
     precure_name: キュアマーチ
   - human_name:   青木れいか
