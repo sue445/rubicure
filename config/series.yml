@@ -1,14 +1,14 @@
 unmarked_base: &unmarked_base
 unmarked:
-  << *unmarked_base
+  <<: *unmarked_base
 max_heart:
-  << *unmarked_base
+  <<: *unmarked_base
 splash_star:
 yes_base: &yes_base
 "yes":
-  << *yes_base
+  <<: *yes_base
 yes_gogo:
-  << *yes_base
+  <<: *yes_base
 flesh:
 heart_catch:
 suite:
