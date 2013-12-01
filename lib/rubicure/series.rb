@@ -10,5 +10,9 @@ module Rubicure
       config_file = "#{File.dirname(__FILE__)}/../../config/series.yml"
       YAML.load_file(config_file).deep_symbolize_keys
     end
+
+    def self.fetch(series_name)
+      Series.config[series_name]
+    end
   end
 end

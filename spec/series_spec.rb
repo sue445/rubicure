@@ -22,4 +22,20 @@ describe Rubicure::Series do
       it{ should include series_name }
     end
   end
+
+  describe "#fetch" do
+    subject{ Rubicure::Series.fetch(series_name) }
+
+    context "when exists" do
+      let(:series_name){ :smile }
+
+      it{ should be_an_instance_of Hash }
+    end
+
+    context "when not exists" do
+      let(:series_name){ :ashita_no_nadja  }
+
+      it{ should be_nil }
+    end
+  end
 end
