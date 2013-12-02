@@ -18,8 +18,8 @@ heart_catch:
 suite:
 smile:
   title: スマイルプリキュア！
-  start_date: 2012-02-05
-  end_date:   2013-01-27
+  started_date: 2012-02-05
+  ended_date:   2013-01-27
   girls:
   - human_name:   星空みゆき
     precure_name: キュアハッピー

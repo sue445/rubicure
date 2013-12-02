@@ -13,7 +13,7 @@ module Rubicure
     end
 
     # @return [Array<Symbol>]
-    def names
+    def series_names
       config.keys
     end
 
@@ -28,7 +28,7 @@ module Rubicure
 
     def valid?(series_name)
       series_name = series_alias(series_name)
-      names.include?(series_name)
+      series_names.include?(series_name)
     end
 
     # @param [Symbol] alias_series_name
@@ -55,5 +55,16 @@ module Rubicure
     end
 
     alias :[] :fetch
+
+    # @return [Series] current precure
+    # @raise not onair!
+    def now
+      current_time = Time.now
+      series_names.each do |name|
+        series = fetch(name)
+        return series if series.on_air?(current_time)
+      end
+      raise "Not on air precure!"
+    end
   end
 end

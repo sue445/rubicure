@@ -1,6 +1,8 @@
 describe Rubicure::Core do
+  let(:instance){ Rubicure::Core.instance }
+
   describe "#names" do
-    subject{ Rubicure::Core.instance.names }
+    subject{ instance.series_names }
 
     where(:series_name) do
       [
@@ -24,7 +26,7 @@ describe Rubicure::Core do
   end
 
   describe "#fetch" do
-    subject(:series){ Rubicure::Core.instance.fetch(series_name) }
+    subject(:series){ instance.fetch(series_name) }
 
     context "when exists" do
       let(:series_name){ :smile }
@@ -37,6 +39,26 @@ describe Rubicure::Core do
       let(:series_name){ :ashita_no_nadja  }
 
       it{ expect{subject}.to raise_error }
+    end
+  end
+
+  describe "#now" do
+    subject{ instance.now }
+
+    context "when on air" do
+      before do
+        time_travel_to "2013-01-01"
+      end
+
+      its(:title){ should == "スマイルプリキュア！" }
+    end
+
+    context "when not on air" do
+      before do
+        time_travel_to "2013-02-01"
+      end
+
+      it{ expect{ subject }.to raise_error }
     end
   end
 end
