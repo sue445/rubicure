@@ -1,19 +1,25 @@
-unmarked_base: &unmarked_base
 unmarked:
-  <<: *unmarked_base
+  - &cure_black
+    human_name:   美墨なぎさ
+    precure_name: キュアブラック
+  - &cure_white
+    human_name:   雪城ほのか
+    precure_name: キュアホワイト
 max_heart:
-  <<: *unmarked_base
+  - <<: *cure_black
+  - <<: *cure_white
+  - human_name:   九条ひかり
+    precure_name: シャイニールミナス
 splash_star:
-yes_base: &yes_base
 "yes":
-  <<: *yes_base
 yes_gogo:
-  <<: *yes_base
 flesh:
 heart_catch:
 suite:
 smile:
   title: スマイルプリキュア！
+  start_date: 2012-02-05
+  end_date:   2013-01-27
   girls:
   - human_name:   星空みゆき
     precure_name: キュアハッピー
@@ -21,7 +27,10 @@ smile:
     precure_name: キュアサニー
   - human_name:   黄瀬やよい
     precure_name: キュアピース
-    transform_serif: ピカピカピカリンジャンケンポン！ キュアピース！
+    transform_serif: |-
+      プリキュアスマイルチャージ！
+      GO! GO! Let's GO ピース！
+      ピカピカピカリンジャンケンポン！ キュアピース！
     extra_names:
     - プリンセスピース
       ウルトラピース

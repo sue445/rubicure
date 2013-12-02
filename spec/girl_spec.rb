@@ -12,7 +12,13 @@ describe Rubicure::Girl do
     let(:human_name)     { "黄瀬やよい" }
     let(:precure_name)   { "キュアピース" }
     let(:extra_names)    { %w(プリンセスピース ウルトラピース) }
-    let(:transform_serif){ "ピカピカピカリンジャンケンポン！ キュアピース！" }
+    let(:transform_serif){
+      <<EOS
+プリキュアスマイルチャージ！
+GO! GO! Let's GO ピース！
+ピカピカピカリンジャンケンポン！ キュアピース！
+EOS
+    }
 
     context "when before transform" do
       it{ expect(girl.name).to eq human_name }
