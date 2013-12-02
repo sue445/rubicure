@@ -18,11 +18,14 @@ module Rubicure
 
     # @return [Array<Rubicure::Girl>]
     def girls
-      response = []
-      fetch(:girls).each do |info|
-        response << Rubicure::Girl.new(info.deep_symbolize_keys)
+      unless @girls
+        @girls = []
+        fetch(:girls).each do |info|
+          @girls << Rubicure::Girl.new(info.deep_symbolize_keys)
+        end
       end
-      response
+
+      @girls
     end
   end
 end
