@@ -20,8 +20,10 @@ module Rubicure
     def girls
       unless @girls
         @girls = []
-        fetch(:girls).each do |info|
-          @girls << Rubicure::Girl.new(info.symbolize_keys)
+        if has_key?(:girls)
+          fetch(:girls).each do |info|
+            @girls << Rubicure::Girl.new(info.symbolize_keys)
+          end
         end
       end
 

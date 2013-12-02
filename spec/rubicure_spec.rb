@@ -49,4 +49,10 @@ describe Rubicure do
       it{ expect{ Pretty.cure.send(title) }.not_to raise_error }
     end
   end
+
+  describe "#all_stars" do
+    subject{ Pretty.cure.all_stars }
+
+    its(:count){ should > 5 }
+  end
 end

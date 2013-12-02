@@ -66,5 +66,19 @@ module Rubicure
       end
       raise "Not on air precure!"
     end
+
+    # @return [Array<Rubicure::Girl>]
+    def all_stars
+      unless @all_stars
+        @all_stars = []
+        series_names.each do |name|
+          series = fetch(name)
+          @all_stars += series.girls
+        end
+
+      end
+
+      @all_stars
+    end
   end
 end

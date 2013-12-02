@@ -2,16 +2,16 @@ module Rubicure
   class Girl
     attr_reader :current_state, :state_names, :transform_serif
 
-    # @option config [String]        :human_name
-    # @option config [String]        :precure_name
-    # @option config [String]        :transform_serif
-    # @option config [Array<String>] :extra_names
-    def initialize(config={})
+    # @param [String]        human_name
+    # @param [String]        precure_name
+    # @param [String]        transform_serif
+    # @param [Array<String>] extra_names
+    def initialize(human_name: nil, precure_name: nil, transform_serif: nil, extra_names: [])
       @current_state = 0
-      @transform_serif = config[:transform_serif]
+      @transform_serif = transform_serif
 
-      @state_names = [config[:human_name], config[:precure_name]]
-      @state_names += config[:extra_names] if config.has_key?(:extra_names)
+      @state_names = [human_name, precure_name]
+      @state_names += extra_names unless extra_names.empty?
     end
 
     # @return [String] name of current form
