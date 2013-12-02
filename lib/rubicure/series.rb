@@ -21,7 +21,7 @@ module Rubicure
       unless @girls
         @girls = []
         fetch(:girls).each do |info|
-          @girls << Rubicure::Girl.new(info.deep_symbolize_keys)
+          @girls << Rubicure::Girl.new(info.symbolize_keys)
         end
       end
 
