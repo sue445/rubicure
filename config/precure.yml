@@ -67,4 +67,62 @@ smile:
     - プリンセスビューティ
     - ウルトラビューティ
 dokidoki:
+  title: ドキドキ！プリキュア
+  started_date: 2013-02-03
+  ended_date:   2014-01-26
+  girls:
+  - human_name:   相田マナ
+    precure_name: キュアハート
+    transform_serif: |-
+      プリキュアラブリンク！
+      L! O! V! E!
+      みなぎる愛！ キュアハート！
+      愛を無くした悲しいジコチューさん、
+      このキュアハートがあなたのドキドキ取り戻してみせる！
+    extra_names:
+  - human_name:   菱川六花
+    precure_name: キュアダイヤモンド
+    transform_serif: |-
+      プリキュアラブリンク！
+      L! O! V! E!
+      英知の光！ キュアダイヤモンド！
+      人の思いを踏みにじるなんて許せない、
+      このキュアダイヤモンドがあなたの頭を冷やしてあげる！
+    extra_names:
+  - human_name:   四葉ありす
+    precure_name: キュアロゼッタ
+    transform_serif: |-
+      プリキュアラブリンク！
+      L! O! V! E!
+      ひだまりポカポカ キュアロゼッタ！
+      世界を制するのは愛だけです、
+      さぁ、あなたも私と愛を育んでくださいな
+    extra_names:
+  - human_name:   剣崎真琴
+    precure_name: キュアソード
+    transform_serif: |-
+      プリキュアラブリンク！
+      L! O! V! E!
+      勇気の刃！ キュアソード！
+      このキュアソードが愛の剣で
+      あなたの野望を断ち切ってみせる！
+    extra_names:
+  - human_name:   円亜久里
+    precure_name: キュアエース
+    transform_serif: |-
+      プリキュアラブリンク！
+      L! O! V! E!
+      愛の切り札！ キュアエース！
+      美しさは正義の証し、ウインク一つで、
+      あなたのハートを射抜いて差し上げますわ
+    extra_names:
 happiness_charge:
+  title: ハピネスチャージプリキュア！
+#  started_date: 2014-02-
+#  ended_date:   2015-01-
+#  girls:
+#  - human_name:
+#    precure_name: キュア
+#    transform_serif: |-
+#
+#    extra_names:
