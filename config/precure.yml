@@ -23,8 +23,22 @@ smile:
   girls:
   - human_name:   星空みゆき
     precure_name: キュアハッピー
+    transform_serif: |-
+      プリキュアスマイルチャージ！
+      GO! GO! Let's GO ハッピー！
+      キラキラ輝く未来の光！ キュアハッピー！
+    extra_names:
+    - プリンセスハッピー
+      ウルトラハッピー
   - human_name:   日野あかね
     precure_name: キュアサニー
+    transform_serif: |-
+      プリキュアスマイルチャージ！
+      GO! GO! Let's GO サニー！
+      太陽サンサン熱血パワー！ キュアサニー！
+    extra_names:
+    - プリンセスサニー
+      ウルトラサニー
   - human_name:   黄瀬やよい
     precure_name: キュアピース
     transform_serif: |-
@@ -36,7 +50,21 @@ smile:
       ウルトラピース
   - human_name:   緑川なお
     precure_name: キュアマーチ
+    transform_serif: |-
+      プリキュアスマイルチャージ！
+      GO! GO! Let's GO マーチ！
+      勇気リンリン直球勝負！ キュアマーチ！
+    extra_names:
+    - プリンセスマーチ
+      ウルトラマーチ
   - human_name:   青木れいか
     precure_name: キュアビューティ
+    transform_serif: |-
+      プリキュアスマイルチャージ！
+      GO! GO! Let's GO ビューティ！
+      しんしんと降り積もる清き心！ キュアビューティ！
+    extra_names:
+    - プリンセスビューティ
+      ウルトラビューティ
 dokidoki:
 happiness_charge:
