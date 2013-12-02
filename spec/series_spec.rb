@@ -27,4 +27,26 @@ describe Rubicure::Series do
       it{ should be_true }
     end
   end
+
+  describe "#girls" do
+    subject{ series.girls }
+
+    let(:series) {
+      Rubicure::Series[
+        girls: [
+            {
+                human_name:   "黄瀬やよい",
+                precure_name: "キュアピース",
+            },
+            {
+                human_name:   "四葉ありす",
+                precure_name: "キュアロゼッタ",
+            },
+        ]
+      ]
+    }
+
+    it{ should have_exactly(2).girls }
+    its([0]){ should be_an_instance_of Rubicure::Girl }
+  end
 end

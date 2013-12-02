@@ -15,5 +15,14 @@ module Rubicure
 
       false
     end
+
+    # @return [Array<Rubicure::Girl>]
+    def girls
+      response = []
+      fetch(:girls).each do |info|
+        response << Rubicure::Girl.new(info.deep_symbolize_keys)
+      end
+      response
+    end
   end
 end
