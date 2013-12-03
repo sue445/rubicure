@@ -11,7 +11,7 @@ module Rubicure
       @transform_message = transform_message
 
       @state_names = [human_name, precure_name]
-      @state_names += extra_names unless extra_names.empty?
+      @state_names += extra_names if extra_names && !extra_names.empty?
     end
 
     # @return [String] name of current form

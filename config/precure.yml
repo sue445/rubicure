@@ -1,35 +1,236 @@
 unmarked:
+  title: ふたりはプリキュア
+  started_date: 2004-02-01
+  ended_date:   2005-01-30
+  before_transform_message: |
+    デュアル・オーロラ・ウェイブ！！
+  after_transform_message: |
+    ふたりはプリキュア！
+    闇の力のしもべ達よ！
+    とっととお家に帰りなさい！
   girls:
   - &cure_black
     human_name:   美墨なぎさ
     precure_name: キュアブラック
+    transform_message: |
+      光の使者、キュアブラック！
   - &cure_white
     human_name:   雪城ほのか
     precure_name: キュアホワイト
+    transform_message: |
+      光の使者、キュアホワイト！
 max_heart:
+  title: ふたりはプリキュア Max Heart
+  started_date: 2005-02-06
+  ended_date:   2006-01-29
+  before_transform_message: |
+    デュアル・オーロラ・ウェイブ！！
+  after_transform_message: |
+    ふたりはプリキュア！
+    闇の力のしもべ達よ！
+    とっととお家に帰りなさい！
   girls:
   - <<: *cure_black
   - <<: *cure_white
   - human_name:   九条ひかり
     precure_name: シャイニールミナス
+    transform_message: |
+      ルミナス・シャイニングストリーム！
+      輝く命、シャイニールミナス！
+      光の心と光の意志、すべてを一つにするために！
 splash_star:
+  title: ふたりはプリキュア Splash Star
+  started_date: 2006-02-05
+  ended_date:   2007-01-28
+  before_transform_message: |
+    デュアル・スピリチュアル・パワー！
+  after_transform_message: |
+    ふたりはプリキュア！
+    聖なる泉を汚す者よ！
+    阿漕な真似はお止めなさい！
+  girls:
+  - human_name:   日向咲
+    precure_name: キュアブルーム
+    transform_message: |
+      花開け大地に！
+      輝く金の花！ キュアブルーム！
+#    extra_names:
+  - human_name:   美翔舞
+    precure_name: キュアイーグレット
+    transform_message: |
+      羽ばたけ空に！
+      煌めく銀の翼！ キュアイーグレット！
+#    extra_names:
 "yes":
+  title: Yes！ プリキュア5
+  started_date: 2007-02-04
+  ended_date:   2008-01-27
+  before_transform_message: |
+    プリキュア！メタモルフォーゼ！
+  after_transform_message: |
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
+  girls:
+  - &cure_dream
+    human_name:   夢原のぞみ
+    precure_name: キュアドリーム
+    transform_message: |
+      大いなる希望の力、キュアドリーム！
+#    extra_names:
+  - &cure_rouge
+    human_name:   夏木りん
+    precure_name: キュアルージュ
+    transform_message: |
+      情熱の赤い炎、キュアルージュ！
+#    extra_names:
+  - &cure_lemonade
+    human_name:   春日野うらら
+    precure_name: キュアレモネード
+    transform_message: |
+      はじけるレモンの香り、キュアレモネード！
+#    extra_names:
+  - &cure_mint
+    human_name:   秋元こまち
+    precure_name: キュアミント
+    transform_message: |
+      安らぎの緑の大地、キュアミント！
+#    extra_names:
+  - &cure_aqua
+    human_name:   水無月かれん
+    precure_name: キュアアクア
+    transform_message: |
+      知性の青き泉、キュアアクア！
+#    extra_names:
 yes_gogo:
+  title: Yes！ プリキュア5 Go Go！
+  started_date: 2008-02-03
+  ended_date:   2009-01-25
+  before_transform_message: |
+    プリキュア！メタモルフォーゼ！
+  after_transform_message: |
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
+  girls:
+  - <<: *cure_dream
+  - <<: *cure_rouge
+  - <<: *cure_lemonade
+  - <<: *cure_mint
+  - <<: *cure_aqua
+  - human_name:   美々野くるみ
+    precure_name: ミルキィローズ
+    transform_message: |
+      スカイローズ・トランスレイト！
+      青いバラは秘密のしるし！ ミルキィローズ！
+    extra_names:
 flesh:
+  title: フレッシュプリキュア！
+  started_date: 2009-02-01
+  ended_date:   2010-01-31
+  before_transform_message: |
+    チェインジ！プリキュア・ビートアップ！
+  after_transform_message: |
+    レッツプリキュア！
+  girls:
+  - human_name:   桃園ラブ
+    precure_name: キュアピーチ
+    transform_message: |
+      ピンクのハートは愛あるしるし！
+      もぎたてフレッシュ、キュアピーチ！
+    extra_names:
+  - human_name:   蒼乃美希
+    precure_name: キュアベリー
+    transform_message: |
+      ブルーのハートは希望のしるし！
+      つみたてフレッシュ、キュアベリー！
+    extra_names:
+  - human_name:   山吹祈里
+    precure_name: キュアパイン
+    transform_message: |
+      イエローハートは祈りのしるし！
+      とれたてフレッシュ、キュアパイン！
+    extra_names:
+  - human_name:   東せつな
+    precure_name: キュアパッション
+    transform_message: |
+      真っ赤なハートは幸せの証！
+      熟れたてフレッシュ、キュアパッション！
+    extra_names:
 heart_catch:
+  title: ハートキャッチプリキュア！
+  started_date: 2010-02-07
+  ended_date:   2011-01-30
+  before_transform_message: |
+    (プリキュアの種、いくですぅ！)
+    プリキュア！オープンマイハート！
+  after_transform_message: |
+    ハートキャッチ、プリキュア！
+  girls:
+  - human_name:   花咲つぼみ
+    precure_name: キュアブロッサム
+    transform_message: |
+      大地に咲く一輪の花！ キュアブロッサム！
+#    extra_names:
+  - human_name:   来海えりか
+    precure_name: キュアマリン
+    transform_message: |
+      海風に揺れる一輪の花！ キュアマリン！
+#    extra_names:
+  - human_name:   明堂院いつき
+    precure_name: キュアサンシャイン
+    transform_message: |
+      陽の光浴びる一輪の花！ キュアサンシャイン！
+#    extra_names:
+  - human_name:   月影ゆり
+    precure_name: キュアムーンライト
+    transform_message: |
+      月光に冴える一輪の花 キュアムーンライト！
+#    extra_names:
 suite:
+  title: スイートプリキュア♪
+  started_date: 2011-02-06
+  ended_date:   2012-01-29
+  before_transform_message: |
+    レッツプレイ！プリキュアモジュレーション！！
+  after_transform_message: |
+    響け4人の組曲！スイートプリキュア！
+  girls:
+  - human_name:   北条響
+    precure_name: キュアメロディ
+    transform_message: |
+      爪弾くは荒ぶる調べ！ キュアメロディ！
+#    extra_names:
+  - human_name:   南野奏
+    precure_name: キュアリズム
+    transform_message: |
+      爪弾くはたおやかな調べ！ キュアリズム！
+#    extra_names:
+  - human_name:   黒川エレン
+    precure_name: キュアビート
+    transform_message: |
+      爪弾くは魂の調べ！ キュアビート！
+#    extra_names:
+  - human_name:   調辺アコ
+    precure_name: キュアミューズ
+    transform_message: |
+      爪弾くは女神の調べ！ キュアミューズ！
+#    extra_names:
 smile:
   title: スマイルプリキュア！
   started_date: 2012-02-05
   ended_date:   2013-01-27
-  common_transform_message: |
-    プリキュアスマイルチャージ！
+  before_transform_message: |
+    (レディ？)
+    プリキュア・スマイルチャージ！
+  after_transform_message: |
+    5つの光が導く未来！
+    輝け！スマイルプリキュア！
   girls:
   - human_name:   星空みゆき
     precure_name: キュアハッピー
-    transform_message:
-    - |
-      GO! GO! Let's GO ハッピー！
+    transform_message: |
+      (ゴー！ゴー！レッツ・ゴー！ハッピー！！)
       キラキラ輝く未来の光！ キュアハッピー！
     extra_names:
     - プリンセスハッピー
@@ -37,7 +238,7 @@ smile:
   - human_name:   日野あかね
     precure_name: キュアサニー
     transform_message: |
-      GO! GO! Let's GO サニー！
+      (ゴー！ゴー！レッツ・ゴー！サニー！！)
       太陽サンサン熱血パワー！ キュアサニー！
     extra_names:
     - プリンセスサニー
@@ -45,7 +246,7 @@ smile:
   - human_name:   黄瀬やよい
     precure_name: キュアピース
     transform_message: |
-      GO! GO! Let's GO ピース！
+      (ゴー！ゴー！レッツ・ゴー！ピース！！)
       ピカピカピカリンジャンケンポン！ キュアピース！
     extra_names:
     - プリンセスピース
@@ -53,7 +254,7 @@ smile:
   - human_name:   緑川なお
     precure_name: キュアマーチ
     transform_message: |
-      GO! GO! Let's GO マーチ！
+      (ゴー！ゴー！レッツ・ゴー！マーチ！！)
       勇気リンリン直球勝負！ キュアマーチ！
     extra_names:
     - プリンセスマーチ
@@ -61,7 +262,7 @@ smile:
   - human_name:   青木れいか
     precure_name: キュアビューティ
     transform_message: |
-      GO! GO! Let's GO ビューティ！
+      (ゴー！ゴー！レッツ・ゴー！ビューティ！！)
       しんしんと降り積もる清き心！ キュアビューティ！
     extra_names:
     - プリンセスビューティ
@@ -70,9 +271,11 @@ dokidoki:
   title: ドキドキ！プリキュア
   started_date: 2013-02-03
   ended_date:   2014-01-26
-  common_transform_message: |
+  before_transform_message: |
     プリキュアラブリンク！
     L! O! V! E!
+  after_transform_message: |
+    響け愛の鼓動！ドキドキプリキュア！
   girls:
   - human_name:   相田マナ
     precure_name: キュアハート
@@ -113,9 +316,11 @@ happiness_charge:
   title: ハピネスチャージプリキュア！
 #  started_date: 2014-02-
 #  ended_date:   2015-01-
+#  common_transform_message: |
+#
 #  girls:
 #  - human_name:
 #    precure_name: キュア
-#    transform_message: |-
+#    transform_message: |
 #
 #    extra_names:
