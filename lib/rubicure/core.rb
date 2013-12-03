@@ -78,6 +78,7 @@ module Rubicure
           @all_stars += series.girls
         end
 
+        @all_stars.uniq!{|girl| girl.precure_name }
       end
 
       @all_stars

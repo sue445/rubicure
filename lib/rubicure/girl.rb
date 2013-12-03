@@ -1,12 +1,14 @@
 module Rubicure
   class Girl
-    attr_reader :current_state, :state_names, :transform_message
+    attr_reader :human_name, :precure_name, :current_state, :state_names, :transform_message
 
     # @param [String]        human_name
     # @param [String]        precure_name
     # @param [String]        transform_message
     # @param [Array<String>] extra_names
     def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [])
+      @human_name = human_name
+      @precure_name = precure_name
       @current_state = 0
       @transform_message = transform_message
 
