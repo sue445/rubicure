@@ -5,7 +5,7 @@ describe Rubicure do
     Rubicure::VERSION.should_not be_nil
   end
 
-  context "when include Rubicure" do
+  describe "#method_missing" do
     where(:title) do
       [
           [:unmarked],

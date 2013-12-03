@@ -26,7 +26,7 @@ EOF
 
     context "when after 1st transform" do
       before do
-        girl.transform
+        girl.transform!
       end
 
       it{ expect(girl.name).to eq precure_name }
@@ -34,8 +34,8 @@ EOF
 
     context "when after 2nd transform" do
       before do
-        girl.transform
-        girl.transform
+        girl.transform!
+        girl.transform!
       end
 
       it{ expect(girl.name).to eq extra_names[0] }
@@ -43,9 +43,9 @@ EOF
 
     context "when after 3nd transform" do
       before do
-        girl.transform
-        girl.transform
-        girl.transform
+        girl.transform!
+        girl.transform!
+        girl.transform!
       end
 
       it{ expect(girl.name).to eq extra_names[1] }
@@ -53,10 +53,10 @@ EOF
 
     context "when after final transform" do
       before do
-        girl.transform
-        girl.transform
-        girl.transform
-        girl.transform
+        girl.transform!
+        girl.transform!
+        girl.transform!
+        girl.transform!
       end
 
       # return to human

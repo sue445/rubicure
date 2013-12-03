@@ -1,6 +1,6 @@
 module Rubicure
   class Girl
-    attr_reader :human_name, :precure_name, :current_state, :state_names, :transform_message
+    attr_reader :human_name, :precure_name, :extra_names, :current_state, :state_names, :transform_message
 
     # @param [String]        human_name
     # @param [String]        precure_name
@@ -9,6 +9,7 @@ module Rubicure
     def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [])
       @human_name = human_name
       @precure_name = precure_name
+      @extra_names = extra_names
       @current_state = 0
       @transform_message = transform_message
 
@@ -22,7 +23,8 @@ module Rubicure
     end
 
     # human -> precure ( -> extra forms ) -> human ...
-    def transform
+    # @return self
+    def transform!
       @current_state += 1
       @current_state = 0 unless @current_state < @state_names.length
 
