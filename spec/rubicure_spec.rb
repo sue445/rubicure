@@ -63,6 +63,16 @@ describe Rubicure do
   describe "#all_stars" do
     subject{ Pretty.cure.all_stars }
 
-    its(:count){ should > 5 }
+    before do
+      @precure_count = 0
+      config_file = "#{File.dirname(__FILE__)}/../config/precure.yml"
+      Pathname(config_file).each_line do |line|
+        if !line.start_with?("#") && line.include?("precure_name:")
+          @precure_count += 1
+        end
+      end
+    end
+
+    its(:count){ should == @precure_count }
   end
 end
