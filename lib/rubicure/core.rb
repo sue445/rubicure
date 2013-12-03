@@ -4,6 +4,10 @@ module Rubicure
   class Core
     include Singleton
 
+    def initialize
+      @series_cache = {}
+    end
+
     def method_missing(name, *args)
       if valid?(name)
         fetch(name)
@@ -17,13 +21,20 @@ module Rubicure
       config.keys
     end
 
-    # @return [Hash]
+    # @return [Hash] content of config/precure.yml
     def config
       unless @config
         config_file = "#{File.dirname(__FILE__)}/../../config/precure.yml"
         @config = YAML.load_file(config_file).deep_symbolize_keys
       end
       @config
+    end
+
+    # @return [Hash] content of config/precure.yml
+    def reload_config!
+      @series_cache = {}
+      @config = nil
+      config
     end
 
     def valid?(series_name)
@@ -48,10 +59,14 @@ module Rubicure
 
       raise "unknown series: #{series_name}" unless valid?(series_name)
 
-      series_config = config[series_name] || {}
-      series_config.reject! { |k, v| v.nil? }
+      unless @series_cache[series_name]
+        series_config = config[series_name] || {}
+        series_config.reject! { |k, v| v.nil? }
 
-      Series[series_config]
+        @series_cache[series_name] = Series[series_config]
+      end
+
+      @series_cache[series_name]
     end
 
     alias :[] :fetch
