@@ -54,13 +54,15 @@ splash_star:
     transform_message: |
       花開け大地に！
       輝く金の花！ キュアブルーム！
-#    extra_names:
+    extra_names:
+    - キュアブライト
   - human_name:   美翔舞
     precure_name: キュアイーグレット
     transform_message: |
       羽ばたけ空に！
       煌めく銀の翼！ キュアイーグレット！
-#    extra_names:
+    extra_names:
+    - キュアウィンディ
 "yes":
   title: Yes！ プリキュア5
   started_date: 2007-02-04
@@ -139,24 +141,28 @@ flesh:
       ピンクのハートは愛あるしるし！
       もぎたてフレッシュ、キュアピーチ！
     extra_names:
+    - キュアエンジェルピーチ
   - human_name:   蒼乃美希
     precure_name: キュアベリー
     transform_message: |
       ブルーのハートは希望のしるし！
       つみたてフレッシュ、キュアベリー！
     extra_names:
+    - キュアエンジェルベリー
   - human_name:   山吹祈里
     precure_name: キュアパイン
     transform_message: |
       イエローハートは祈りのしるし！
       とれたてフレッシュ、キュアパイン！
     extra_names:
+    - キュアエンジェルパイン
   - human_name:   東せつな
     precure_name: キュアパッション
     transform_message: |
       真っ赤なハートは幸せの証！
       熟れたてフレッシュ、キュアパッション！
     extra_names:
+    - キュアエンジェルパッション
 heart_catch:
   title: ハートキャッチプリキュア！
   started_date: 2010-02-07
@@ -171,22 +177,26 @@ heart_catch:
     precure_name: キュアブロッサム
     transform_message: |
       大地に咲く一輪の花！ キュアブロッサム！
-#    extra_names:
+    extra_names:
+    - スーパーキュアブロッサム
   - human_name:   来海えりか
     precure_name: キュアマリン
     transform_message: |
       海風に揺れる一輪の花！ キュアマリン！
-#    extra_names:
+    extra_names:
+    - スーパーキュアマリン
   - human_name:   明堂院いつき
     precure_name: キュアサンシャイン
     transform_message: |
       陽の光浴びる一輪の花！ キュアサンシャイン！
-#    extra_names:
+    extra_names:
+    - スーパーキュアサンシャイン
   - human_name:   月影ゆり
     precure_name: キュアムーンライト
     transform_message: |
       月光に冴える一輪の花 キュアムーンライト！
-#    extra_names:
+    extra_names:
+    - スーパーキュアムーンライト
 suite:
   title: スイートプリキュア♪
   started_date: 2011-02-06
@@ -200,22 +210,26 @@ suite:
     precure_name: キュアメロディ
     transform_message: |
       爪弾くは荒ぶる調べ！ キュアメロディ！
-#    extra_names:
+    extra_names:
+    - クレッシェンドメロディ
   - human_name:   南野奏
     precure_name: キュアリズム
     transform_message: |
       爪弾くはたおやかな調べ！ キュアリズム！
-#    extra_names:
+    extra_names:
+    - クレッシェンドリズム
   - human_name:   黒川エレン
     precure_name: キュアビート
     transform_message: |
       爪弾くは魂の調べ！ キュアビート！
-#    extra_names:
+    extra_names:
+    - クレッシェンドビート
   - human_name:   調辺アコ
     precure_name: キュアミューズ
     transform_message: |
       爪弾くは女神の調べ！ キュアミューズ！
-#    extra_names:
+    extra_names:
+    - クレッシェンドミューズ
 smile:
   title: スマイルプリキュア！
   started_date: 2012-02-05
