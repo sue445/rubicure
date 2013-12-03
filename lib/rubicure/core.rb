@@ -67,6 +67,8 @@ module Rubicure
       raise "Not on air precure!"
     end
 
+    alias :current :now
+
     # @return [Array<Rubicure::Girl>]
     def all_stars
       unless @all_stars
