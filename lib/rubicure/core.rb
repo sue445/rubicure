@@ -9,8 +9,12 @@ module Rubicure
     end
 
     def method_missing(name, *args)
+      unmarked_precure = fetch(:unmarked)
+
       if valid?(name)
         fetch(name)
+      elsif unmarked_precure.respond_to?(name)
+        unmarked_precure.send(name, *args)
       else
         super
       end
