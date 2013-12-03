@@ -1,14 +1,14 @@
 module Rubicure
   class Girl
-    attr_reader :current_state, :state_names, :transform_serif
+    attr_reader :current_state, :state_names, :transform_message
 
     # @param [String]        human_name
     # @param [String]        precure_name
-    # @param [String]        transform_serif
+    # @param [String]        transform_message
     # @param [Array<String>] extra_names
-    def initialize(human_name: nil, precure_name: nil, transform_serif: nil, extra_names: [])
+    def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [])
       @current_state = 0
-      @transform_serif = transform_serif
+      @transform_message = transform_message
 
       @state_names = [human_name, precure_name]
       @state_names += extra_names unless extra_names.empty?
@@ -23,7 +23,10 @@ module Rubicure
     def transform
       @current_state += 1
       @current_state = 0 unless @current_state < @state_names.length
-      puts @transform_serif if @current_state == 1
+
+      puts @transform_message  if @current_state == 1
+
+      self
     end
 
     def humanize

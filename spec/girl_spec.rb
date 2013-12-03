@@ -5,19 +5,19 @@ describe Rubicure::Girl do
           human_name:      human_name,
           precure_name:    precure_name,
           extra_names:     extra_names,
-          transform_serif: transform_serif
+          transform_message: transform_message
       )
     }
 
     let(:human_name)     { "黄瀬やよい" }
     let(:precure_name)   { "キュアピース" }
     let(:extra_names)    { %w(プリンセスピース ウルトラピース) }
-    let(:transform_serif){
-      <<EOS
+    let(:transform_message){
+      <<EOF
 プリキュアスマイルチャージ！
 GO! GO! Let's GO ピース！
 ピカピカピカリンジャンケンポン！ キュアピース！
-EOS
+EOF
     }
 
     context "when before transform" do

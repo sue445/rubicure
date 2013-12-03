@@ -47,6 +47,7 @@ describe Rubicure do
 
     with_them do
       it{ expect{ Pretty.cure.send(title) }.not_to raise_error }
+      it{ expect{ Pretty.cure.send(title).girls }.not_to raise_error }
     end
   end
 

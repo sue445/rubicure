@@ -22,7 +22,9 @@ module Rubicure
         @girls = []
         if has_key?(:girls)
           fetch(:girls).each do |info|
-            @girls << Rubicure::Girl.new(info.symbolize_keys)
+            girl_hash = info.symbolize_keys
+            girl_hash[:transform_message] = "#{fetch(:common_transform_message,"")}#{girl_hash[:transform_message]}"
+            @girls << Rubicure::Girl.new(girl_hash)
           end
         end
       end

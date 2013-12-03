@@ -33,14 +33,15 @@ describe Rubicure::Series do
 
     let(:series) {
       Rubicure::Series[
+        common_transform_message: "プリキュアスマイルチャージ！",
         girls: [
             {
                 human_name:   "黄瀬やよい",
                 precure_name: "キュアピース",
             },
             {
-                human_name:   "四葉ありす",
-                precure_name: "キュアロゼッタ",
+                human_name:   "星空みゆき",
+                precure_name: "キュアハッピー",
             },
         ]
       ]

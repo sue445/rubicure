@@ -1,4 +1,5 @@
 unmarked:
+  girls:
   - &cure_black
     human_name:   美墨なぎさ
     precure_name: キュアブラック
@@ -6,6 +7,7 @@ unmarked:
     human_name:   雪城ほのか
     precure_name: キュアホワイト
 max_heart:
+  girls:
   - <<: *cure_black
   - <<: *cure_white
   - human_name:   九条ひかり
@@ -20,11 +22,13 @@ smile:
   title: スマイルプリキュア！
   started_date: 2012-02-05
   ended_date:   2013-01-27
+  common_transform_message: |
+    プリキュアスマイルチャージ！
   girls:
   - human_name:   星空みゆき
     precure_name: キュアハッピー
-    transform_serif: |-
-      プリキュアスマイルチャージ！
+    transform_message:
+    - |
       GO! GO! Let's GO ハッピー！
       キラキラ輝く未来の光！ キュアハッピー！
     extra_names:
@@ -32,8 +36,7 @@ smile:
     - ウルトラハッピー
   - human_name:   日野あかね
     precure_name: キュアサニー
-    transform_serif: |-
-      プリキュアスマイルチャージ！
+    transform_message: |
       GO! GO! Let's GO サニー！
       太陽サンサン熱血パワー！ キュアサニー！
     extra_names:
@@ -41,8 +44,7 @@ smile:
     - ウルトラサニー
   - human_name:   黄瀬やよい
     precure_name: キュアピース
-    transform_serif: |-
-      プリキュアスマイルチャージ！
+    transform_message: |
       GO! GO! Let's GO ピース！
       ピカピカピカリンジャンケンポン！ キュアピース！
     extra_names:
@@ -50,8 +52,7 @@ smile:
     - ウルトラピース
   - human_name:   緑川なお
     precure_name: キュアマーチ
-    transform_serif: |-
-      プリキュアスマイルチャージ！
+    transform_message: |
       GO! GO! Let's GO マーチ！
       勇気リンリン直球勝負！ キュアマーチ！
     extra_names:
@@ -59,8 +60,7 @@ smile:
     - ウルトラマーチ
   - human_name:   青木れいか
     precure_name: キュアビューティ
-    transform_serif: |-
-      プリキュアスマイルチャージ！
+    transform_message: |
       GO! GO! Let's GO ビューティ！
       しんしんと降り積もる清き心！ キュアビューティ！
     extra_names:
@@ -70,48 +70,41 @@ dokidoki:
   title: ドキドキ！プリキュア
   started_date: 2013-02-03
   ended_date:   2014-01-26
+  common_transform_message: |
+    プリキュアラブリンク！
+    L! O! V! E!
   girls:
   - human_name:   相田マナ
     precure_name: キュアハート
-    transform_serif: |-
-      プリキュアラブリンク！
-      L! O! V! E!
+    transform_message: |
       みなぎる愛！ キュアハート！
       愛を無くした悲しいジコチューさん、
       このキュアハートがあなたのドキドキ取り戻してみせる！
 #    extra_names:
   - human_name:   菱川六花
     precure_name: キュアダイヤモンド
-    transform_serif: |-
-      プリキュアラブリンク！
-      L! O! V! E!
+    transform_message: |-
       英知の光！ キュアダイヤモンド！
       人の思いを踏みにじるなんて許せない、
       このキュアダイヤモンドがあなたの頭を冷やしてあげる！
 #    extra_names:
   - human_name:   四葉ありす
     precure_name: キュアロゼッタ
-    transform_serif: |-
-      プリキュアラブリンク！
-      L! O! V! E!
+    transform_message: |
       ひだまりポカポカ キュアロゼッタ！
       世界を制するのは愛だけです、
       さぁ、あなたも私と愛を育んでくださいな
 #    extra_names:
   - human_name:   剣崎真琴
     precure_name: キュアソード
-    transform_serif: |-
-      プリキュアラブリンク！
-      L! O! V! E!
+    transform_message: |
       勇気の刃！ キュアソード！
       このキュアソードが愛の剣で
       あなたの野望を断ち切ってみせる！
 #    extra_names:
   - human_name:   円亜久里
     precure_name: キュアエース
-    transform_serif: |-
-      プリキュアラブリンク！
-      L! O! V! E!
+    transform_message: |
       愛の切り札！ キュアエース！
       美しさは正義の証し、ウインク一つで、
       あなたのハートを射抜いて差し上げますわ
@@ -123,6 +116,6 @@ happiness_charge:
 #  girls:
 #  - human_name:
 #    precure_name: キュア
-#    transform_serif: |-
+#    transform_message: |-
 #
 #    extra_names:
