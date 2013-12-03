@@ -1,6 +1,12 @@
 # Rubicure
 
-TODO: Write a gem description
+All about Japanese battle heroine "Pretty Cure (Precure)".
+
+Inspired by [Acme::PrettyCure](http://perl-users.jp/articles/advent-calendar/2010/acme/6) and [pycure](https://github.com/drillbits/pycure).
+
+## Requirements
+
+* ruby >= 2.0.0
 
 ## Installation
 
