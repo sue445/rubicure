@@ -16,7 +16,7 @@ describe Rubicure::Core do
           [:suite],
           [:smile],
           [:dokidoki],
-          [:happiness_charge],
+          #[:happiness_charge],
       ]
     end
 
