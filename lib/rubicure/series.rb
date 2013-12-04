@@ -2,6 +2,7 @@ module Rubicure
   class Series < Hash
     include Hashie::Extensions::MethodAccess
 
+    # @param [Date]
     def on_air?(date)
       if respond_to?(:started_date)
         if respond_to?(:ended_date)
