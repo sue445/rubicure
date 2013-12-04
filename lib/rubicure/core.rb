@@ -56,7 +56,7 @@ module Rubicure
     end
 
     # @param series_name [Symbol]
-    # @return [Series]
+    # @return [Rubicure::Series]
     # @raise arg is not precure
     def fetch(series_name)
       series_name = series_alias(series_name)
