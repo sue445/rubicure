@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sue445@sue445.net"]
   spec.description   = %q{All about Japanese battle heroine "Pretty Cure (Precure)".}
   spec.summary       = %q{All about Japanese battle heroine "Pretty Cure (Precure)".}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/sue445/rubicure"
   spec.license       = "MIT"
 
   spec.required_ruby_version = '>= 2.0.0'
