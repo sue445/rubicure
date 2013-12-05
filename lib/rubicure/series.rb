@@ -2,8 +2,9 @@ module Rubicure
   class Series < Hash
     include Hashie::Extensions::MethodAccess
 
-    # @param [Date]
-    def on_air?(date)
+    # @param [Time,Date,String] arg Time, Date or date like String (ex. "2013-12-16")
+    def on_air?(arg)
+      date = to_date(arg)
       if respond_to?(:started_date)
         if respond_to?(:ended_date)
           # ended title
@@ -39,5 +40,21 @@ module Rubicure
 
       @girls
     end
+
+    private
+      # @param arg
+      # @return [Date] arg is String or Date
+      # @return [Time] arg is Time
+      # @return [nil] arg is other
+      def to_date(arg)
+        case arg
+          when Date, Time
+            arg
+          when String
+            Date.parse(arg)
+          else
+            nil
+        end
+      end
   end
 end

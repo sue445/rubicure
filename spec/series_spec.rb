@@ -10,9 +10,17 @@ describe Rubicure::Series do
         ]
       }
 
-      let(:date){ Date.parse("2013-01-01") }
+      context "when Date arg" do
+        let(:date){ Date.parse("2013-01-01") }
 
-      it{ should be_true }
+        it{ should be_true }
+      end
+
+      context "when date like String arg" do
+        let(:date){ "2013-01-01" }
+
+        it{ should be_true }
+      end
     end
 
     context "when live title" do

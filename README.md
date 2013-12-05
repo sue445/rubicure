@@ -101,10 +101,10 @@ Pre.cure.now
 ### Rubicure::Series#on_air?
 
 ```ruby
-Pre.cure.dokidoki.on_air?(Date.parse("2013-12-16"))
+Pre.cure.dokidoki.on_air?("2013-12-16")
 #=> true
 
-Pre.cure.smile.on_air?(Date.parse("2013-12-16"))
+Pre.cure.smile.on_air?("2013-12-16")
 #=> false
 ```
 
