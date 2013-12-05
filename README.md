@@ -154,19 +154,14 @@ yayoi.name
 #=> "ウルトラピース"
 
 # back to human
-yayoi.transform!
+yayoi.transform!.transform!
 yayoi.name
-#=> "黄瀬やよい"
+#=> "プリンセスピース"
 
-yayoi.transform!
-yayoi.name
-#=> "キュアピース"
-
-# back to human
 yayoi.humanize
+#=> 0
 yayoi.name
 #=> "黄瀬やよい"
-
 ```
 
 ### Precure allstars
