@@ -33,9 +33,8 @@ module Rubicure
     def all_stars
       unless @all_stars
         @all_stars = []
-        Rubicure::Series::names.each do |name|
-          series = Rubicure::Series::find(name)
-          @all_stars += series.girls
+        Rubicure::Girl.names.each do |girl_name|
+          @all_stars << Rubicure::Girl.find(girl_name)
         end
 
         @all_stars.uniq!{|girl| girl.precure_name }

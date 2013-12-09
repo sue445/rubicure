@@ -65,11 +65,9 @@ describe Rubicure do
 
     before do
       @precure_count = 0
-      config_file = "#{File.dirname(__FILE__)}/../config/series.yml"
+      config_file = "#{File.dirname(__FILE__)}/../config/girls.yml"
       Pathname(config_file).each_line do |line|
-        if !line.start_with?("#") && line.include?("precure_name:")
-          @precure_count += 1
-        end
+        @precure_count += 1 if line =~ /[a-z_]+:\s*&[a-z_]+/
       end
     end
 
