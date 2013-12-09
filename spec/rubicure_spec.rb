@@ -65,7 +65,7 @@ describe Rubicure do
 
     before do
       @precure_count = 0
-      config_file = "#{File.dirname(__FILE__)}/../config/precure.yml"
+      config_file = "#{File.dirname(__FILE__)}/../config/series.yml"
       Pathname(config_file).each_line do |line|
         if !line.start_with?("#") && line.include?("precure_name:")
           @precure_count += 1

@@ -3,6 +3,7 @@ module Rubicure
     include Hashie::Extensions::MethodAccess
 
     @@series_cache = {}
+    @@config = nil
 
     # @param [Time,Date,String] arg Time, Date or date like String (ex. "2013-12-16")
     def on_air?(arg)
@@ -50,17 +51,17 @@ module Rubicure
 
     # @return [Hash] content of config/precure.yml
     def self.config
-      unless @config
-        config_file = "#{File.dirname(__FILE__)}/../../config/precure.yml"
-        @config = YAML.load_file(config_file).deep_symbolize_keys
+      unless @@config
+        config_file = "#{File.dirname(__FILE__)}/../../config/series.yml"
+        @@config = YAML.load_file(config_file).deep_symbolize_keys
       end
-      @config
+      @@config
     end
 
     # @return [Hash] content of config/precure.yml
     def self.reload_config!
       @@series_cache = {}
-      @config = nil
+      @@config = nil
       config
     end
 
