@@ -43,12 +43,16 @@ describe Rubicure::Series do
       Rubicure::Series[
         girls: [
             {
-                human_name:   "黄瀬やよい",
-                precure_name: "キュアピース",
+                human_name:        "黄瀬やよい",
+                precure_name:      "キュアピース",
+                transform_message: "",
+                extra_names:       []
             },
             {
-                human_name:   "星空みゆき",
-                precure_name: "キュアハッピー",
+                human_name:        "星空みゆき",
+                precure_name:      "キュアハッピー",
+                transform_message: "",
+                extra_names:       []
             },
         ]
       ]
@@ -59,7 +63,7 @@ describe Rubicure::Series do
   end
 
   describe "#names" do
-    subject{ Rubicure::Series.series_names }
+    subject{ Rubicure::Series.names }
 
     where(:series_name) do
       [

@@ -2,7 +2,7 @@ module Rubicure
   class Series < Hash
     include Hashie::Extensions::MethodAccess
 
-    @@series_cache = {}
+    @@cache = {}
     @@config = nil
 
     # @param [Time,Date,String] arg Time, Date or date like String (ex. "2013-12-16")
@@ -45,11 +45,11 @@ module Rubicure
     end
 
     # @return [Array<Symbol>]
-    def self.series_names
+    def self.names
       config.keys
     end
 
-    # @return [Hash] content of config/precure.yml
+    # @return [Hash] content of config/series.yml
     def self.config
       unless @@config
         config_file = "#{File.dirname(__FILE__)}/../../config/series.yml"
@@ -60,14 +60,15 @@ module Rubicure
 
     # @return [Hash] content of config/precure.yml
     def self.reload_config!
-      @@series_cache = {}
+      @@cache = {}
       @@config = nil
       config
     end
 
+    # @param [Symbol] series_name
     def self.valid?(series_name)
       series_name = series_alias(series_name)
-      series_names.include?(series_name)
+      names.include?(series_name)
     end
 
     # @param [Symbol] alias_series_name
@@ -87,14 +88,14 @@ module Rubicure
 
       raise "unknown series: #{series_name}" unless valid?(series_name)
 
-      unless @@series_cache[series_name]
+      unless @@cache[series_name]
         series_config = config[series_name] || {}
         series_config.reject! { |k, v| v.nil? }
 
-        @@series_cache[series_name] = Series[series_config]
+        @@cache[series_name] = Rubicure::Series[series_config]
       end
 
-      @@series_cache[series_name]
+      @@cache[series_name]
     end
 
     private

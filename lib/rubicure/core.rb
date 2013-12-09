@@ -20,7 +20,7 @@ module Rubicure
     # @raise not onair!
     def now
       current_time = Time.now
-      Rubicure::Series.series_names.each do |name|
+      Rubicure::Series.names.each do |name|
         series = Rubicure::Series.find(name)
         return series if series.on_air?(current_time)
       end
@@ -33,7 +33,7 @@ module Rubicure
     def all_stars
       unless @all_stars
         @all_stars = []
-        Rubicure::Series::series_names.each do |name|
+        Rubicure::Series::names.each do |name|
           series = Rubicure::Series::find(name)
           @all_stars += series.girls
         end

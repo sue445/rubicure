@@ -1,0 +1,11 @@
+cure_peace: &cure_peace
+  human_name:   黄瀬やよい
+  precure_name: キュアピース
+  transform_message: |
+    (ゴー！ゴー！レッツ・ゴー！ピース！！)
+    ピカピカピカリンジャンケンポン！ キュアピース！
+  extra_names:
+  - プリンセスピース
+  - ウルトラピース
+peace:
+  <<: *cure_peace

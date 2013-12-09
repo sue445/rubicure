@@ -14,11 +14,13 @@ unmarked:
     precure_name: キュアブラック
     transform_message: |
       光の使者、キュアブラック！
+    extra_names:
   - &cure_white
     human_name:   雪城ほのか
     precure_name: キュアホワイト
     transform_message: |
       光の使者、キュアホワイト！
+    extra_names:
 max_heart:
   title: ふたりはプリキュア Max Heart
   started_date: 2005-02-06
@@ -38,6 +40,7 @@ max_heart:
       ルミナス・シャイニングストリーム！
       輝く命、シャイニールミナス！
       光の心と光の意志、すべてを一つにするために！
+    extra_names:
 splash_star:
   title: ふたりはプリキュア Splash Star
   started_date: 2006-02-05
@@ -79,31 +82,31 @@ splash_star:
     precure_name: キュアドリーム
     transform_message: |
       大いなる希望の力、キュアドリーム！
-#    extra_names:
+    extra_names:
   - &cure_rouge
     human_name:   夏木りん
     precure_name: キュアルージュ
     transform_message: |
       情熱の赤い炎、キュアルージュ！
-#    extra_names:
+    extra_names:
   - &cure_lemonade
     human_name:   春日野うらら
     precure_name: キュアレモネード
     transform_message: |
       はじけるレモンの香り、キュアレモネード！
-#    extra_names:
+    extra_names:
   - &cure_mint
     human_name:   秋元こまち
     precure_name: キュアミント
     transform_message: |
       安らぎの緑の大地、キュアミント！
-#    extra_names:
+    extra_names:
   - &cure_aqua
     human_name:   水無月かれん
     precure_name: キュアアクア
     transform_message: |
       知性の青き泉、キュアアクア！
-#    extra_names:
+    extra_names:
 yes_gogo:
   title: Yes！ プリキュア5 Go Go！
   started_date: 2008-02-03
@@ -297,35 +300,35 @@ dokidoki:
       みなぎる愛！ キュアハート！
       愛を無くした悲しいジコチューさん、
       このキュアハートがあなたのドキドキ取り戻してみせる！
-#    extra_names:
+    extra_names:
   - human_name:   菱川六花
     precure_name: キュアダイヤモンド
     transform_message: |-
       英知の光！ キュアダイヤモンド！
       人の思いを踏みにじるなんて許せない、
       このキュアダイヤモンドがあなたの頭を冷やしてあげる！
-#    extra_names:
+    extra_names:
   - human_name:   四葉ありす
     precure_name: キュアロゼッタ
     transform_message: |
       ひだまりポカポカ キュアロゼッタ！
       世界を制するのは愛だけです、
       さぁ、あなたも私と愛を育んでくださいな
-#    extra_names:
+    extra_names:
   - human_name:   剣崎真琴
     precure_name: キュアソード
     transform_message: |
       勇気の刃！ キュアソード！
       このキュアソードが愛の剣で
       あなたの野望を断ち切ってみせる！
-#    extra_names:
+    extra_names:
   - human_name:   円亜久里
     precure_name: キュアエース
     transform_message: |
       愛の切り札！ キュアエース！
       美しさは正義の証し、ウインク一つで、
       あなたのハートを射抜いて差し上げますわ
-#    extra_names:
+    extra_names:
 #happiness_charge:
 #  title: ハピネスチャージプリキュア！
 #  started_date: 2014-02-

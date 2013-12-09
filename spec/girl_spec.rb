@@ -2,9 +2,9 @@ describe Rubicure::Girl do
   describe "#name" do
     let(:girl){
       Rubicure::Girl.new(
-          human_name:      human_name,
-          precure_name:    precure_name,
-          extra_names:     extra_names,
+          human_name:        human_name,
+          precure_name:      precure_name,
+          extra_names:       extra_names,
           transform_message: transform_message
       )
     }
@@ -62,5 +62,14 @@ EOF
       # return to human
       it{ expect(girl.name).to eq human_name }
     end
+  end
+
+  describe "#find" do
+    subject{ Rubicure::Girl.find(girl_name) }
+
+    let(:girl_name){ :peace }
+
+    it{ should be_an_instance_of Rubicure::Girl }
+    its(:precure_name){ should == "キュアピース" }
   end
 end
