@@ -2,6 +2,8 @@ module Rubicure
   class Series < Hash
     include Hashie::Extensions::MethodAccess
 
+    @@series_cache = {}
+
     # @param [Time,Date,String] arg Time, Date or date like String (ex. "2013-12-16")
     def on_air?(arg)
       date = to_date(arg)
@@ -39,6 +41,59 @@ module Rubicure
       end
 
       @girls
+    end
+
+    # @return [Array<Symbol>]
+    def self.series_names
+      config.keys
+    end
+
+    # @return [Hash] content of config/precure.yml
+    def self.config
+      unless @config
+        config_file = "#{File.dirname(__FILE__)}/../../config/precure.yml"
+        @config = YAML.load_file(config_file).deep_symbolize_keys
+      end
+      @config
+    end
+
+    # @return [Hash] content of config/precure.yml
+    def self.reload_config!
+      @@series_cache = {}
+      @config = nil
+      config
+    end
+
+    def self.valid?(series_name)
+      series_name = series_alias(series_name)
+      series_names.include?(series_name)
+    end
+
+    # @param [Symbol] alias_series_name
+    # @return [Symbol]
+    def self.series_alias(alias_series_name)
+      config_file = "#{File.dirname(__FILE__)}/../../config/title_alias.yml"
+      titles = YAML.load_file(config_file).symbolize_keys
+
+      titles.key?(alias_series_name) ? titles[alias_series_name].to_sym : alias_series_name
+    end
+
+    # @param series_name [Symbol]
+    # @return [Rubicure::Series]
+    # @raise arg is not precure
+    def self.fetch(series_name)
+      series_name = series_alias(series_name)
+
+      raise "unknown series: #{series_name}" unless valid?(series_name)
+
+      unless @@series_cache[series_name]
+        series_config = config[series_name] || {}
+        series_config.reject! { |k, v| v.nil? }
+
+        @@series_cache[series_name] = Series[series_config]
+      end
+
+      @@series_cache[series_name]
     end
 
     private

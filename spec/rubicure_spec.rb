@@ -53,7 +53,7 @@ describe Rubicure do
     end
 
     context "When Pretty.cure#<unmarked_precure_method>" do
-      let(:futari_wa_pretty_cure){ Rubicure.core.fetch(:unmarked) }
+      let(:futari_wa_pretty_cure){ Rubicure::Series.fetch(:unmarked) }
 
       it{ expect(Pre.cure.title).to       eq futari_wa_pretty_cure.title }
       it{ expect(Pre.cure.girls.count).to eq futari_wa_pretty_cure.girls.count }
