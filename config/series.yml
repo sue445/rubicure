@@ -1,4 +1,4 @@
-unmarked:
+unmarked: &unmarked
   title: ふたりはプリキュア
   started_date: 2004-02-01
   ended_date:   2005-01-30
@@ -11,8 +11,10 @@ unmarked:
   girls:
   - cure_black
   - cure_white
+futari_wa_pretty_cure:
+  <<: *unmarked
 
-max_heart:
+max_heart: &max_heart
   title: ふたりはプリキュア Max Heart
   started_date: 2005-02-06
   ended_date:   2006-01-29
@@ -26,8 +28,10 @@ max_heart:
   - cure_black
   - cure_white
   - shiny_luminous
+futari_wa_pretty_cure_max_heart:
+  <<: *max_heart
 
-splash_star:
+splash_star: &splash_star
   title: ふたりはプリキュア Splash Star
   started_date: 2006-02-05
   ended_date:   2007-01-28
@@ -40,8 +44,10 @@ splash_star:
   girls:
   - cure_bloom
   - cure_egret
+futari_wa_pretty_cure_splash_star:
+  <<: *splash_star
 
-"yes":
+"yes": &yes
   title: Yes！ プリキュア5
   started_date: 2007-02-04
   ended_date:   2008-01-27
@@ -57,8 +63,12 @@ splash_star:
   - cure_lemonade
   - cure_mint
   - cure_aqua
+yes_precure_five:
+  <<: *yes
+yes_precure5:
+  <<: *yes
 
-yes_gogo:
+yes_gogo: &yes_gogo
   title: Yes！ プリキュア5 Go Go！
   started_date: 2008-02-03
   ended_date:   2009-01-25
@@ -75,7 +85,12 @@ yes_gogo:
   - cure_mint
   - cure_aqua
   - milky_rose
-flesh:
+yes_precure_five_gogo:
+  <<: *yes_gogo
+yes_precure5_gogo:
+  <<: *yes_gogo
+
+flesh: &flesh
   title: フレッシュプリキュア！
   started_date: 2009-02-01
   ended_date:   2010-01-31
@@ -88,8 +103,10 @@ flesh:
   - cure_berry
   - cure_pine
   - cure_passion
+flesh_precure:
+  <<: *flesh
 
-heart_catch:
+heart_catch: &heart_catch
   title: ハートキャッチプリキュア！
   started_date: 2010-02-07
   ended_date:   2011-01-30
@@ -103,8 +120,10 @@ heart_catch:
   - cure_marine
   - cure_sunshine
   - cure_moonlight
+heart_catch_precure:
+  <<: *heart_catch
 
-suite:
+suite: &suite
   title: スイートプリキュア♪
   started_date: 2011-02-06
   ended_date:   2012-01-29
@@ -117,8 +136,10 @@ suite:
   - cure_rhythm
   - cure_beat
   - cure_muse
+suite_precure:
+  <<: *suite
 
-smile:
+smile: &smile
   title: スマイルプリキュア！
   started_date: 2012-02-05
   ended_date:   2013-01-27
@@ -134,8 +155,10 @@ smile:
   - cure_peace
   - cure_march
   - cure_beauty
+smile_precure:
+  <<: *smile
 
-dokidoki:
+dokidoki: &dokidoki
   title: ドキドキ！プリキュア
   started_date: 2013-02-03
   ended_date:   2014-01-26
@@ -150,8 +173,10 @@ dokidoki:
   - cure_rosetta
   - cure_sword
   - cure_ace
+dokidoki_precure:
+  <<: *dokidoki
 
-#happiness_charge:
+#happiness_charge: &happiness_charge
 #  title: ハピネスチャージプリキュア！
 #  started_date: 2014-02-
 #  ended_date:   2015-01-
@@ -160,3 +185,5 @@ dokidoki:
 #  girls:
 #  - cure_lovely
 #  - cure_princess
+#happiness_charge_precure:
+#  <<: *happiness_charge

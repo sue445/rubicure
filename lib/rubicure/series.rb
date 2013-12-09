@@ -65,25 +65,13 @@ module Rubicure
 
     # @param [Symbol] series_name
     def self.valid?(series_name)
-      series_name = series_alias(series_name)
       names.include?(series_name)
-    end
-
-    # @param [Symbol] alias_series_name
-    # @return [Symbol]
-    def self.series_alias(alias_series_name)
-      config_file = "#{File.dirname(__FILE__)}/../../config/title_alias.yml"
-      titles = YAML.load_file(config_file).symbolize_keys
-
-      titles.key?(alias_series_name) ? titles[alias_series_name].to_sym : alias_series_name
     end
 
     # @param series_name [Symbol]
     # @return [Rubicure::Series]
     # @raise arg is not precure
     def self.find(series_name)
-      series_name = series_alias(series_name)
-
       raise "unknown series: #{series_name}" unless valid?(series_name)
 
       unless @@cache[series_name]
