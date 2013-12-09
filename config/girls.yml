@@ -1,3 +1,245 @@
+# unmarked
+cure_black: &cure_black
+  human_name:   美墨なぎさ
+  precure_name: キュアブラック
+  transform_message: |
+    光の使者、キュアブラック！
+  extra_names:
+cure_white: &cure_white
+  human_name:   雪城ほのか
+  precure_name: キュアホワイト
+  transform_message: |
+    光の使者、キュアホワイト！
+  extra_names:
+black:
+  <<: *cure_black
+white:
+  <<: *cure_white
+
+# max_heart
+shiny_luminous: &shiny_luminous
+  human_name:   九条ひかり
+  precure_name: シャイニールミナス
+  transform_message: |
+    ルミナス・シャイニングストリーム！
+    輝く命、シャイニールミナス！
+    光の心と光の意志、すべてを一つにするために！
+  extra_names:
+luminous:
+  <<: *shiny_luminous
+
+# splash_star
+cure_bloom: &cure_bloom
+  human_name:   日向咲
+  precure_name: キュアブルーム
+  transform_message: |
+    花開け大地に！
+    輝く金の花！ キュアブルーム！
+  extra_names:
+  - キュアブライト
+cure_egret: &cure_egret
+  human_name:   美翔舞
+  precure_name: キュアイーグレット
+  transform_message: |
+    羽ばたけ空に！
+    煌めく銀の翼！ キュアイーグレット！
+  extra_names:
+  - キュアウィンディ
+bloom:
+  <<: *cure_bloom
+egret:
+  <<: *cure_egret
+
+# yes
+cure_dream:  &cure_dream
+  human_name:   夢原のぞみ
+  precure_name: キュアドリーム
+  transform_message: |
+    大いなる希望の力、キュアドリーム！
+  extra_names:
+cure_rouge:  &cure_rouge
+  human_name:   夏木りん
+  precure_name: キュアルージュ
+  transform_message: |
+    情熱の赤い炎、キュアルージュ！
+  extra_names:
+cure_lemonade:  &cure_lemonade
+  human_name:   春日野うらら
+  precure_name: キュアレモネード
+  transform_message: |
+    はじけるレモンの香り、キュアレモネード！
+  extra_names:
+cure_mint:  &cure_mint
+  human_name:   秋元こまち
+  precure_name: キュアミント
+  transform_message: |
+    安らぎの緑の大地、キュアミント！
+  extra_names:
+cure_aqua:  &cure_aqua
+  human_name:   水無月かれん
+  precure_name: キュアアクア
+  transform_message: |
+    知性の青き泉、キュアアクア！
+  extra_names:
+dream:
+  <<: *cure_dream
+rouge:
+  <<: *cure_rouge
+lemonade:
+  <<: *cure_lemonade
+mint:
+  <<: *cure_mint
+aqua:
+  <<: *cure_aqua
+
+# yes_gogo
+milky_rose: &milky_rose
+  human_name:   美々野くるみ
+  precure_name: ミルキィローズ
+  transform_message: |
+    スカイローズ・トランスレイト！
+    青いバラは秘密のしるし！ ミルキィローズ！
+  extra_names:
+rose:
+  <<: *milky_rose
+
+# flesh
+cure_peach: &cure_peach
+  human_name:   桃園ラブ
+  precure_name: キュアピーチ
+  transform_message: |
+    ピンクのハートは愛あるしるし！
+    もぎたてフレッシュ、キュアピーチ！
+  extra_names:
+  - キュアエンジェルピーチ
+cure_berry: &cure_berry
+  human_name:   蒼乃美希
+  precure_name: キュアベリー
+  transform_message: |
+    ブルーのハートは希望のしるし！
+    つみたてフレッシュ、キュアベリー！
+  extra_names:
+  - キュアエンジェルベリー
+cure_pine: &cure_pine
+  human_name:   山吹祈里
+  precure_name: キュアパイン
+  transform_message: |
+    イエローハートは祈りのしるし！
+    とれたてフレッシュ、キュアパイン！
+  extra_names:
+  - キュアエンジェルパイン
+cure_passion: &cure_passion
+  human_name:   東せつな
+  precure_name: キュアパッション
+  transform_message: |
+    真っ赤なハートは幸せの証！
+    熟れたてフレッシュ、キュアパッション！
+  extra_names:
+  - キュアエンジェルパッション
+peach:
+  <<: *cure_peach
+berry:
+  <<: *cure_berry
+pine:
+  <<: *cure_pine
+passion:
+  <<: *cure_passion
+
+# heart_catch
+cure_blossom: &cure_blossom
+  human_name:   花咲つぼみ
+  precure_name: キュアブロッサム
+  transform_message: |
+    大地に咲く一輪の花！ キュアブロッサム！
+  extra_names:
+  - スーパーキュアブロッサム
+cure_marine: &cure_marine
+  human_name:   来海えりか
+  precure_name: キュアマリン
+  transform_message: |
+    海風に揺れる一輪の花！ キュアマリン！
+  extra_names:
+  - スーパーキュアマリン
+cure_sunshine: &cure_sunshine
+  human_name:   明堂院いつき
+  precure_name: キュアサンシャイン
+  transform_message: |
+    陽の光浴びる一輪の花！ キュアサンシャイン！
+  extra_names:
+  - スーパーキュアサンシャイン
+cure_moonlight: &cure_moonlight
+  human_name:   月影ゆり
+  precure_name: キュアムーンライト
+  transform_message: |
+    月光に冴える一輪の花 キュアムーンライト！
+  extra_names:
+  - スーパーキュアムーンライト
+blossom:
+  <<: *cure_blossom
+marine:
+  <<: *cure_marine
+sunshine:
+  <<: *cure_sunshine
+moonlight:
+  <<: *cure_moonlight
+
+# suite
+cure_melody: &cure_melody
+  human_name:   北条響
+  precure_name: キュアメロディ
+  transform_message: |
+    爪弾くは荒ぶる調べ！ キュアメロディ！
+  extra_names:
+  - クレッシェンドメロディ
+cure_rhythm: &cure_rhythm
+  human_name:   南野奏
+  precure_name: キュアリズム
+  transform_message: |
+    爪弾くはたおやかな調べ！ キュアリズム！
+  extra_names:
+  - クレッシェンドリズム
+cure_beat: &cure_beat
+  human_name:   黒川エレン
+  precure_name: キュアビート
+  transform_message: |
+    爪弾くは魂の調べ！ キュアビート！
+  extra_names:
+  - クレッシェンドビート
+cure_muse: &cure_muse
+  human_name:   調辺アコ
+  precure_name: キュアミューズ
+  transform_message: |
+    爪弾くは女神の調べ！ キュアミューズ！
+  extra_names:
+  - クレッシェンドミューズ
+cure_melody:
+  <<: *cure_melody
+cure_rhythm:
+  <<: *cure_rhythm
+cure_beat:
+  <<: *cure_beat
+cure_muse:
+  <<: *cure_muse
+
+# smile
+cure_happy: &cure_happy
+  human_name:   星空みゆき
+  precure_name: キュアハッピー
+  transform_message: |
+    (ゴー！ゴー！レッツ・ゴー！ハッピー！！)
+    キラキラ輝く未来の光！ キュアハッピー！
+  extra_names:
+  - プリンセスハッピー
+  - ウルトラハッピー
+cure_sunny: &cure_sunny
+  human_name:   日野あかね
+  precure_name: キュアサニー
+  transform_message: |
+    (ゴー！ゴー！レッツ・ゴー！サニー！！)
+    太陽サンサン熱血パワー！ キュアサニー！
+  extra_names:
+  - プリンセスサニー
+  - ウルトラサニー
 cure_peace: &cure_peace
   human_name:   黄瀬やよい
   precure_name: キュアピース
@@ -7,5 +249,83 @@ cure_peace: &cure_peace
   extra_names:
   - プリンセスピース
   - ウルトラピース
+cure_march: &cure_march
+  human_name:   緑川なお
+  precure_name: キュアマーチ
+  transform_message: |
+    (ゴー！ゴー！レッツ・ゴー！マーチ！！)
+    勇気リンリン直球勝負！ キュアマーチ！
+  extra_names:
+  - プリンセスマーチ
+  - ウルトラマーチ
+cure_beauty: &cure_beauty
+  human_name:   青木れいか
+  precure_name: キュアビューティ
+  transform_message: |
+    (ゴー！ゴー！レッツ・ゴー！ビューティ！！)
+    しんしんと降り積もる清き心！ キュアビューティ！
+  extra_names:
+  - プリンセスビューティ
+  - ウルトラビューティ
+happy:
+  <<: *cure_happy
+sunny:
+  <<: *cure_sunny
 peace:
   <<: *cure_peace
+march:
+  <<: *cure_march
+beauty:
+  <<: *cure_beauty
+
+# dokidoki
+cure_heart: &cure_heart
+  human_name:   相田マナ
+  precure_name: キュアハート
+  transform_message: |
+    みなぎる愛！ キュアハート！
+    愛を無くした悲しいジコチューさん、
+    このキュアハートがあなたのドキドキ取り戻してみせる！
+  extra_names:
+cure_diamond: &cure_diamond
+  human_name:   菱川六花
+  precure_name: キュアダイヤモンド
+  transform_message: |-
+    英知の光！ キュアダイヤモンド！
+    人の思いを踏みにじるなんて許せない、
+    このキュアダイヤモンドがあなたの頭を冷やしてあげる！
+  extra_names:
+cure_rosetta: &cure_rosetta
+  human_name:   四葉ありす
+  precure_name: キュアロゼッタ
+  transform_message: |
+    ひだまりポカポカ キュアロゼッタ！
+    世界を制するのは愛だけです、
+    さぁ、あなたも私と愛を育んでくださいな
+  extra_names:
+cure_sword: &cure_sword
+  human_name:   剣崎真琴
+  precure_name: キュアソード
+  transform_message: |
+    勇気の刃！ キュアソード！
+    このキュアソードが愛の剣で
+    あなたの野望を断ち切ってみせる！
+  extra_names:
+cure_ace: &cure_ace
+  human_name:   円亜久里
+  precure_name: キュアエース
+  transform_message: |
+    愛の切り札！ キュアエース！
+    美しさは正義の証し、ウインク一つで、
+    あなたのハートを射抜いて差し上げますわ
+  extra_names:
+heart:
+  <<: *cure_heart
+diamond:
+  <<: *cure_diamond
+rosetta:
+  <<: *cure_rosetta
+sword:
+  <<: *cure_sword
+ace:
+  <<: *cure_ace

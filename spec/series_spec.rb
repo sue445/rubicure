@@ -41,24 +41,11 @@ describe Rubicure::Series do
 
     let(:series) {
       Rubicure::Series[
-        girls: [
-            {
-                human_name:        "黄瀬やよい",
-                precure_name:      "キュアピース",
-                transform_message: "",
-                extra_names:       []
-            },
-            {
-                human_name:        "星空みゆき",
-                precure_name:      "キュアハッピー",
-                transform_message: "",
-                extra_names:       []
-            },
-        ]
+        girls: %w(cure_happy cure_sunny cure_peace cure_march cure_beauty)
       ]
     }
 
-    it{ should have_exactly(2).girls }
+    it{ should have_exactly(5).girls }
     its([0]){ should be_an_instance_of Rubicure::Girl }
   end
 
@@ -77,7 +64,7 @@ describe Rubicure::Series do
           [:suite],
           [:smile],
           [:dokidoki],
-      #[:happiness_charge],
+          #[:happiness_charge],
       ]
     end
 
