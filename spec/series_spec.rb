@@ -82,8 +82,8 @@ describe Rubicure::Series do
     end
   end
 
-  describe "#fetch" do
-    subject(:series){ Rubicure::Series.fetch(series_name) }
+  describe "#find" do
+    subject(:series){ Rubicure::Series.find(series_name) }
 
     context "when exists" do
       let(:series_name){ :smile }

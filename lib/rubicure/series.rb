@@ -81,7 +81,7 @@ module Rubicure
     # @param series_name [Symbol]
     # @return [Rubicure::Series]
     # @raise arg is not precure
-    def self.fetch(series_name)
+    def self.find(series_name)
       series_name = series_alias(series_name)
 
       raise "unknown series: #{series_name}" unless valid?(series_name)

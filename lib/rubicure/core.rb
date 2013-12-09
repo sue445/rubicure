@@ -5,10 +5,10 @@ module Rubicure
     include Singleton
 
     def method_missing(name, *args)
-      unmarked_precure = Rubicure::Series::fetch(:unmarked)
+      unmarked_precure = Rubicure::Series::find(:unmarked)
 
       if Rubicure::Series::valid?(name)
-        Rubicure::Series::fetch(name)
+        Rubicure::Series::find(name)
       elsif unmarked_precure.respond_to?(name)
         unmarked_precure.send(name, *args)
       else
@@ -21,7 +21,7 @@ module Rubicure
     def now
       current_time = Time.now
       Rubicure::Series.series_names.each do |name|
-        series = Rubicure::Series.fetch(name)
+        series = Rubicure::Series.find(name)
         return series if series.on_air?(current_time)
       end
       raise "Not on air precure!"
@@ -34,7 +34,7 @@ module Rubicure
       unless @all_stars
         @all_stars = []
         Rubicure::Series::series_names.each do |name|
-          series = Rubicure::Series::fetch(name)
+          series = Rubicure::Series::find(name)
           @all_stars += series.girls
         end
 

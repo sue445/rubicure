@@ -24,7 +24,7 @@ describe Rubicure::Core do
   it "output all precure methods" do
     Rubicure::Series.series_names.each do |series_name|
       puts "[#{series_name}] ===================="
-      series = Rubicure::Series.fetch(series_name)
+      series = Rubicure::Series.find(series_name)
       puts <<EOS
 title:     #{series.title}
 broadcast: #{series.started_date} - #{series.ended_date}
