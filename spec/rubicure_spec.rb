@@ -103,6 +103,11 @@ describe Rubicure do
       it{ expect( Cure.send(name) ).to be_an_instance_of Rubicure::Girl }
       it{ expect( Cure.send(name).precure_name ).to be_start_with "キュア" }
     end
+
+    context "When precure who not starting 'cure'" do
+      it{ expect( Shiny.luminous.precure_name ).to eq "シャイニールミナス"}
+      it{ expect( Milky.rose.precure_name ).to eq "ミルキィローズ"}
+    end
   end
 
   describe "#all_stars" do

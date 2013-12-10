@@ -31,3 +31,15 @@ class Cure
     end
   end
 end
+
+class Shiny
+  def self.luminous
+    Rubicure::Girl.find(:luminous)
+  end
+end
+
+class Milky
+  def self.rose
+    Rubicure::Girl.find(:rose)
+  end
+end
