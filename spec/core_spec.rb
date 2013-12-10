@@ -22,7 +22,6 @@ describe Rubicure::Core do
   end
 
   it "output all precure methods" do
-    pending "do after"
     Rubicure::Series.names.each do |series_name|
       puts "[#{series_name}] ===================="
       series = Rubicure::Series.find(series_name)

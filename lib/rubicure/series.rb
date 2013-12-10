@@ -27,14 +27,7 @@ module Rubicure
         @girls = []
         if has_key?(:girls)
           fetch(:girls).each do |girl_name|
-            girl = Rubicure::Girl.find(girl_name.to_sym)
-
-            # FIXME
-            unless ["シャイニールミナス", "ミルキィローズ"].include?(girl.precure_name)
-              girl.transform_message = "#{fetch(:before_transform_message,"")}#{girl.transform_message}#{fetch(:after_transform_message,"")}"
-            end
-
-            @girls << girl
+            @girls << Rubicure::Girl.find(girl_name.to_sym)
           end
         end
       end

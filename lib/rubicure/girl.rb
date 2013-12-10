@@ -1,6 +1,6 @@
 module Rubicure
   class Girl < Hash
-    attr_reader :current_state, :state_names
+    attr_reader :current_state, :state_names, :extra_names
 
     include Hashie::Extensions::MethodAccess
 
@@ -10,6 +10,7 @@ module Rubicure
     def initialize(args={})
       self.merge!(args)
       @current_state = 0
+      @extra_names = args[:extra_names] || []
       @state_names = [self.human_name, self.precure_name]
       @state_names += self.extra_names if self.extra_names && !self.extra_names.empty?
     end

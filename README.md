@@ -82,13 +82,13 @@ and [more aliases!](config/title_alias.yml)
 
 ```ruby
 Pretty.cure.now
-#=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :before_transform_message=>"プリキュアラブリンク！\nL! O! V! E!\n", :after_transform_message=>"響け愛の鼓動！ドキドキプリキュア！\n", :girls=>[{"human_name"=>"相田マナ", "precure_name"=>"キュアハート", "transform_message"=>"みなぎる愛！ キュアハート！\n愛を無くした悲しいジコチューさん、\nこのキュアハートがあなたのドキドキ取り戻してみせる！\n"}, {"human_name"=>"菱川六花", "precure_name"=>"キュアダイヤモンド", "transform_message"=>"英知の光！ キュアダイヤモンド！\n人の思いを踏みにじるなんて許せない、\nこのキュアダイヤモンドがあなたの頭を冷やしてあげる！"}, {"human_name"=>"四葉ありす", "precure_name"=>"キュアロゼッタ", "transform_message"=>"ひだまりポカポカ キュアロゼッタ！\n世界を制するのは愛だけです、\nさぁ、あなたも私と愛を育んでくださいな\n"}, {"human_name"=>"剣崎真琴", "precure_name"=>"キュアソード", "transform_message"=>"勇気の刃！ キュアソード！\nこのキュアソードが愛の剣で\nあなたの野望を断ち切ってみせる！\n"}, {"human_name"=>"円亜久里", "precure_name"=>"キュアエース", "transform_message"=>"愛の切り札！ キュアエース！\n美しさは正義の証し、ウインク一つで、\nあなたのハートを射抜いて差し上げますわ\n"}]}
+#=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :girls=>["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
 
 Pre.cure.now
-#=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :before_transform_message=>"プリキュアラブリンク！\nL! O! V! E!\n", :after_transform_message=>"響け愛の鼓動！ドキドキプリキュア！\n", :girls=>[{"human_name"=>"相田マナ", "precure_name"=>"キュアハート", "transform_message"=>"みなぎる愛！ キュアハート！\n愛を無くした悲しいジコチューさん、\nこのキュアハートがあなたのドキドキ取り戻してみせる！\n"}, {"human_name"=>"菱川六花", "precure_name"=>"キュアダイヤモンド", "transform_message"=>"英知の光！ キュアダイヤモンド！\n人の思いを踏みにじるなんて許せない、\nこのキュアダイヤモンドがあなたの頭を冷やしてあげる！"}, {"human_name"=>"四葉ありす", "precure_name"=>"キュアロゼッタ", "transform_message"=>"ひだまりポカポカ キュアロゼッタ！\n世界を制するのは愛だけです、\nさぁ、あなたも私と愛を育んでくださいな\n"}, {"human_name"=>"剣崎真琴", "precure_name"=>"キュアソード", "transform_message"=>"勇気の刃！ キュアソード！\nこのキュアソードが愛の剣で\nあなたの野望を断ち切ってみせる！\n"}, {"human_name"=>"円亜久里", "precure_name"=>"キュアエース", "transform_message"=>"愛の切り札！ キュアエース！\n美しさは正義の証し、ウインク一つで、\nあなたのハートを射抜いて差し上げますわ\n"}]}
+#=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :girls=>["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
 
 Pre.cure.current
-#=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :before_transform_message=>"プリキュアラブリンク！\nL! O! V! E!\n", :after_transform_message=>"響け愛の鼓動！ドキドキプリキュア！\n", :girls=>[{"human_name"=>"相田マナ", "precure_name"=>"キュアハート", "transform_message"=>"みなぎる愛！ キュアハート！\n愛を無くした悲しいジコチューさん、\nこのキュアハートがあなたのドキドキ取り戻してみせる！\n"}, {"human_name"=>"菱川六花", "precure_name"=>"キュアダイヤモンド", "transform_message"=>"英知の光！ キュアダイヤモンド！\n人の思いを踏みにじるなんて許せない、\nこのキュアダイヤモンドがあなたの頭を冷やしてあげる！"}, {"human_name"=>"四葉ありす", "precure_name"=>"キュアロゼッタ", "transform_message"=>"ひだまりポカポカ キュアロゼッタ！\n世界を制するのは愛だけです、\nさぁ、あなたも私と愛を育んでくださいな\n"}, {"human_name"=>"剣崎真琴", "precure_name"=>"キュアソード", "transform_message"=>"勇気の刃！ キュアソード！\nこのキュアソードが愛の剣で\nあなたの野望を断ち切ってみせる！\n"}, {"human_name"=>"円亜久里", "precure_name"=>"キュアエース", "transform_message"=>"愛の切り札！ キュアエース！\n美しさは正義の証し、ウインク一つで、\nあなたのハートを射抜いて差し上げますわ\n"}]}
+#=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :girls=>["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
 
 # -2013/1/27  : smile precure
 #  2013/2/5 - : dokidoki precure

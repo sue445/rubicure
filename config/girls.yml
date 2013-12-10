@@ -3,13 +3,21 @@ cure_black: &cure_black
   human_name:   美墨なぎさ
   precure_name: キュアブラック
   transform_message: |
+    デュアル・オーロラ・ウェイブ！！
     光の使者、キュアブラック！
+    ふたりはプリキュア！
+    闇の力のしもべ達よ！
+    とっととお家に帰りなさい！
   extra_names:
 cure_white: &cure_white
   human_name:   雪城ほのか
   precure_name: キュアホワイト
   transform_message: |
+    デュアル・オーロラ・ウェイブ！！
     光の使者、キュアホワイト！
+    ふたりはプリキュア！
+    闇の力のしもべ達よ！
+    とっととお家に帰りなさい！
   extra_names:
 black:
   <<: *cure_black
@@ -33,16 +41,24 @@ cure_bloom: &cure_bloom
   human_name:   日向咲
   precure_name: キュアブルーム
   transform_message: |
+    デュアル・スピリチュアル・パワー！
     花開け大地に！
     輝く金の花！ キュアブルーム！
+    ふたりはプリキュア！
+    聖なる泉を汚す者よ！
+    阿漕な真似はお止めなさい！
   extra_names:
   - キュアブライト
 cure_egret: &cure_egret
   human_name:   美翔舞
   precure_name: キュアイーグレット
   transform_message: |
+    デュアル・スピリチュアル・パワー！
     羽ばたけ空に！
     煌めく銀の翼！ キュアイーグレット！
+    ふたりはプリキュア！
+    聖なる泉を汚す者よ！
+    阿漕な真似はお止めなさい！
   extra_names:
   - キュアウィンディ
 bloom:
@@ -55,31 +71,51 @@ cure_dream:  &cure_dream
   human_name:   夢原のぞみ
   precure_name: キュアドリーム
   transform_message: |
+    プリキュア！メタモルフォーゼ！
     大いなる希望の力、キュアドリーム！
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
   extra_names:
 cure_rouge:  &cure_rouge
   human_name:   夏木りん
   precure_name: キュアルージュ
   transform_message: |
+    プリキュア！メタモルフォーゼ！
     情熱の赤い炎、キュアルージュ！
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
   extra_names:
 cure_lemonade:  &cure_lemonade
   human_name:   春日野うらら
   precure_name: キュアレモネード
   transform_message: |
+    プリキュア！メタモルフォーゼ！
     はじけるレモンの香り、キュアレモネード！
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
   extra_names:
 cure_mint:  &cure_mint
   human_name:   秋元こまち
   precure_name: キュアミント
   transform_message: |
+    プリキュア！メタモルフォーゼ！
     安らぎの緑の大地、キュアミント！
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
   extra_names:
 cure_aqua:  &cure_aqua
   human_name:   水無月かれん
   precure_name: キュアアクア
   transform_message: |
+    プリキュア！メタモルフォーゼ！
     知性の青き泉、キュアアクア！
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
   extra_names:
 dream:
   <<: *cure_dream
@@ -108,32 +144,40 @@ cure_peach: &cure_peach
   human_name:   桃園ラブ
   precure_name: キュアピーチ
   transform_message: |
+    チェインジ！プリキュア・ビートアップ！
     ピンクのハートは愛あるしるし！
     もぎたてフレッシュ、キュアピーチ！
+    レッツプリキュア！
   extra_names:
   - キュアエンジェルピーチ
 cure_berry: &cure_berry
   human_name:   蒼乃美希
   precure_name: キュアベリー
   transform_message: |
+    チェインジ！プリキュア・ビートアップ！
     ブルーのハートは希望のしるし！
     つみたてフレッシュ、キュアベリー！
+    レッツプリキュア！
   extra_names:
   - キュアエンジェルベリー
 cure_pine: &cure_pine
   human_name:   山吹祈里
   precure_name: キュアパイン
   transform_message: |
+    チェインジ！プリキュア・ビートアップ！
     イエローハートは祈りのしるし！
     とれたてフレッシュ、キュアパイン！
+    レッツプリキュア！
   extra_names:
   - キュアエンジェルパイン
 cure_passion: &cure_passion
   human_name:   東せつな
   precure_name: キュアパッション
   transform_message: |
+    チェインジ！プリキュア・ビートアップ！
     真っ赤なハートは幸せの証！
     熟れたてフレッシュ、キュアパッション！
+    レッツプリキュア！
   extra_names:
   - キュアエンジェルパッション
 peach:
@@ -150,28 +194,40 @@ cure_blossom: &cure_blossom
   human_name:   花咲つぼみ
   precure_name: キュアブロッサム
   transform_message: |
+    (プリキュアの種、いくですぅ！)
+    プリキュア！オープンマイハート！
     大地に咲く一輪の花！ キュアブロッサム！
+    ハートキャッチ、プリキュア！
   extra_names:
   - スーパーキュアブロッサム
 cure_marine: &cure_marine
   human_name:   来海えりか
   precure_name: キュアマリン
   transform_message: |
+    (プリキュアの種、いくですぅ！)
+    プリキュア！オープンマイハート！
     海風に揺れる一輪の花！ キュアマリン！
+    ハートキャッチ、プリキュア！
   extra_names:
   - スーパーキュアマリン
 cure_sunshine: &cure_sunshine
   human_name:   明堂院いつき
   precure_name: キュアサンシャイン
   transform_message: |
+    (プリキュアの種、いくですぅ！)
+    プリキュア！オープンマイハート！
     陽の光浴びる一輪の花！ キュアサンシャイン！
+    ハートキャッチ、プリキュア！
   extra_names:
   - スーパーキュアサンシャイン
 cure_moonlight: &cure_moonlight
   human_name:   月影ゆり
   precure_name: キュアムーンライト
   transform_message: |
+    (プリキュアの種、いくですぅ！)
+    プリキュア！オープンマイハート！
     月光に冴える一輪の花 キュアムーンライト！
+    ハートキャッチ、プリキュア！
   extra_names:
   - スーパーキュアムーンライト
 blossom:
@@ -188,28 +244,36 @@ cure_melody: &cure_melody
   human_name:   北条響
   precure_name: キュアメロディ
   transform_message: |
+    レッツプレイ！プリキュアモジュレーション！！
     爪弾くは荒ぶる調べ！ キュアメロディ！
+    響け4人の組曲！スイートプリキュア！
   extra_names:
   - クレッシェンドメロディ
 cure_rhythm: &cure_rhythm
   human_name:   南野奏
   precure_name: キュアリズム
   transform_message: |
+    レッツプレイ！プリキュアモジュレーション！！
     爪弾くはたおやかな調べ！ キュアリズム！
+    響け4人の組曲！スイートプリキュア！
   extra_names:
   - クレッシェンドリズム
 cure_beat: &cure_beat
   human_name:   黒川エレン
   precure_name: キュアビート
   transform_message: |
+    レッツプレイ！プリキュアモジュレーション！！
     爪弾くは魂の調べ！ キュアビート！
+    響け4人の組曲！スイートプリキュア！
   extra_names:
   - クレッシェンドビート
 cure_muse: &cure_muse
   human_name:   調辺アコ
   precure_name: キュアミューズ
   transform_message: |
+    レッツプレイ！プリキュアモジュレーション！！
     爪弾くは女神の調べ！ キュアミューズ！
+    響け4人の組曲！スイートプリキュア！
   extra_names:
   - クレッシェンドミューズ
 melody:
@@ -226,8 +290,12 @@ cure_happy: &cure_happy
   human_name:   星空みゆき
   precure_name: キュアハッピー
   transform_message: |
+    (レディ？)
+    プリキュア・スマイルチャージ！
     (ゴー！ゴー！レッツ・ゴー！ハッピー！！)
     キラキラ輝く未来の光！ キュアハッピー！
+    5つの光が導く未来！
+    輝け！スマイルプリキュア！
   extra_names:
   - プリンセスハッピー
   - ウルトラハッピー
@@ -235,8 +303,12 @@ cure_sunny: &cure_sunny
   human_name:   日野あかね
   precure_name: キュアサニー
   transform_message: |
+    (レディ？)
+    プリキュア・スマイルチャージ！
     (ゴー！ゴー！レッツ・ゴー！サニー！！)
     太陽サンサン熱血パワー！ キュアサニー！
+    5つの光が導く未来！
+    輝け！スマイルプリキュア！
   extra_names:
   - プリンセスサニー
   - ウルトラサニー
@@ -244,8 +316,12 @@ cure_peace: &cure_peace
   human_name:   黄瀬やよい
   precure_name: キュアピース
   transform_message: |
+    (レディ？)
+    プリキュア・スマイルチャージ！
     (ゴー！ゴー！レッツ・ゴー！ピース！！)
     ピカピカピカリンジャンケンポン！ キュアピース！
+    5つの光が導く未来！
+    輝け！スマイルプリキュア！
   extra_names:
   - プリンセスピース
   - ウルトラピース
@@ -253,8 +329,12 @@ cure_march: &cure_march
   human_name:   緑川なお
   precure_name: キュアマーチ
   transform_message: |
+    (レディ？)
+    プリキュア・スマイルチャージ！
     (ゴー！ゴー！レッツ・ゴー！マーチ！！)
     勇気リンリン直球勝負！ キュアマーチ！
+    5つの光が導く未来！
+    輝け！スマイルプリキュア！
   extra_names:
   - プリンセスマーチ
   - ウルトラマーチ
@@ -262,8 +342,12 @@ cure_beauty: &cure_beauty
   human_name:   青木れいか
   precure_name: キュアビューティ
   transform_message: |
+    (レディ？)
+    プリキュア・スマイルチャージ！
     (ゴー！ゴー！レッツ・ゴー！ビューティ！！)
     しんしんと降り積もる清き心！ キュアビューティ！
+    5つの光が導く未来！
+    輝け！スマイルプリキュア！
   extra_names:
   - プリンセスビューティ
   - ウルトラビューティ
@@ -283,7 +367,10 @@ cure_heart: &cure_heart
   human_name:   相田マナ
   precure_name: キュアハート
   transform_message: |
+    プリキュアラブリンク！
+    L! O! V! E!
     みなぎる愛！ キュアハート！
+    響け愛の鼓動！ドキドキプリキュア！
     愛を無くした悲しいジコチューさん、
     このキュアハートがあなたのドキドキ取り戻してみせる！
   extra_names:
@@ -291,7 +378,10 @@ cure_diamond: &cure_diamond
   human_name:   菱川六花
   precure_name: キュアダイヤモンド
   transform_message: |-
+    プリキュアラブリンク！
+    L! O! V! E!
     英知の光！ キュアダイヤモンド！
+    響け愛の鼓動！ドキドキプリキュア！
     人の思いを踏みにじるなんて許せない、
     このキュアダイヤモンドがあなたの頭を冷やしてあげる！
   extra_names:
@@ -299,7 +389,10 @@ cure_rosetta: &cure_rosetta
   human_name:   四葉ありす
   precure_name: キュアロゼッタ
   transform_message: |
+    プリキュアラブリンク！
+    L! O! V! E!
     ひだまりポカポカ キュアロゼッタ！
+    響け愛の鼓動！ドキドキプリキュア！
     世界を制するのは愛だけです、
     さぁ、あなたも私と愛を育んでくださいな
   extra_names:
@@ -307,7 +400,10 @@ cure_sword: &cure_sword
   human_name:   剣崎真琴
   precure_name: キュアソード
   transform_message: |
+    プリキュアラブリンク！
+    L! O! V! E!
     勇気の刃！ キュアソード！
+    響け愛の鼓動！ドキドキプリキュア！
     このキュアソードが愛の剣で
     あなたの野望を断ち切ってみせる！
   extra_names:
@@ -315,7 +411,10 @@ cure_ace: &cure_ace
   human_name:   円亜久里
   precure_name: キュアエース
   transform_message: |
+    プリキュアラブリンク！
+    L! O! V! E!
     愛の切り札！ キュアエース！
+    響け愛の鼓動！ドキドキプリキュア！
     美しさは正義の証し、ウインク一つで、
     あなたのハートを射抜いて差し上げますわ
   extra_names:
