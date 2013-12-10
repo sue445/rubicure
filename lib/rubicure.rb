@@ -21,3 +21,13 @@ end
     end
   RUBY
 end
+
+class Cure
+  def self.method_missing(name, *args)
+    if Rubicure::Girl.valid?(name)
+      Rubicure::Girl.find(name)
+    else
+      super
+    end
+  end
+end

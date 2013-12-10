@@ -212,13 +212,13 @@ cure_muse: &cure_muse
     爪弾くは女神の調べ！ キュアミューズ！
   extra_names:
   - クレッシェンドミューズ
-cure_melody:
+melody:
   <<: *cure_melody
-cure_rhythm:
+rhythm:
   <<: *cure_rhythm
-cure_beat:
+beat:
   <<: *cure_beat
-cure_muse:
+muse:
   <<: *cure_muse
 
 # smile

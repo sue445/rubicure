@@ -5,7 +5,7 @@ describe Rubicure do
     Rubicure::VERSION.should_not be_nil
   end
 
-  describe "#method_missing" do
+  describe "Pretty.cure." do
     context "When Pretty.cure#<title>" do
       where(:title) do
         [
@@ -41,8 +41,8 @@ describe Rubicure do
             [:dokidoki],
             [:dokidoki_precure],
 
-            #[:happiness_charge],
-            #[:happiness_charge_precure],
+        #[:happiness_charge],
+        #[:happiness_charge_precure],
         ]
       end
 
@@ -57,6 +57,51 @@ describe Rubicure do
 
       it{ expect(Pre.cure.title).to       eq futari_wa_pretty_cure.title }
       it{ expect(Pre.cure.girls.count).to eq futari_wa_pretty_cure.girls.count }
+    end
+  end
+
+  describe "Cure." do
+    where(:name) do
+      [
+          [:black],
+          [:white],
+
+          [:bloom],
+          [:egret],
+
+          [:dream],
+          [:rouge],
+          [:lemonade],
+          [:mint],
+          [:aqua],
+
+          [:peach],
+          [:berry],
+          [:pine],
+          [:passion],
+
+          [:melody],
+          [:rhythm],
+          [:beat],
+          [:muse],
+
+          [:happy],
+          [:sunny],
+          [:peace],
+          [:march],
+          [:beauty],
+
+          [:heart],
+          [:diamond],
+          [:rosetta],
+          [:sword],
+          [:ace],
+      ]
+    end
+
+    with_them do
+      it{ expect( Cure.send(name) ).to be_an_instance_of Rubicure::Girl }
+      it{ expect( Cure.send(name).precure_name ).to be_start_with "キュア" }
     end
   end
 
