@@ -1,18 +1,18 @@
 module Rubicure
-  class Girl < Hash
-    attr_reader :current_state, :state_names, :extra_names
-
-    include Hashie::Extensions::MethodAccess
+  class Girl
+    attr_reader :human_name, :precure_name, :transform_message, :extra_names, :current_state, :state_names
 
     @@cache = {}
     @@config = nil
 
-    def initialize(args={})
-      self.merge!(args)
-      @current_state = 0
-      @extra_names = args[:extra_names] || []
-      @state_names = [self.human_name, self.precure_name]
-      @state_names += self.extra_names if self.extra_names && !self.extra_names.empty?
+    def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [])
+      @human_name        = human_name
+      @precure_name      = precure_name
+      @transform_message = transform_message
+      @extra_names       = extra_names || []
+      @current_state     = 0
+      @state_names = [@human_name, @precure_name]
+      @state_names += @extra_names unless @extra_names.empty?
     end
 
     # @return [String] name of current form
@@ -42,9 +42,7 @@ module Rubicure
 
       unless @@cache[girl_name]
         girl_config = config[girl_name] || {}
-        girl_config.reject! { |k, v| v.nil? }
-
-        @@cache[girl_name] = Rubicure::Girl[girl_config]
+        @@cache[girl_name] = Rubicure::Girl.new(girl_config)
       end
 
       @@cache[girl_name]
