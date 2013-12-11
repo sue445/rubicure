@@ -21,7 +21,7 @@ module Rubicure
     end
 
     # human -> precure ( -> extra forms ) -> human ...
-    # @return self
+    # @return [Rubicure::Girl] self
     def transform!
       @current_state += 1
       @current_state = 0 unless @current_state < @state_names.length
