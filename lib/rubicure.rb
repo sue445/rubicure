@@ -22,7 +22,7 @@ end
   RUBY
 end
 
-class Cure
+module Cure
   def self.method_missing(name, *args)
     if Rubicure::Girl.valid?(name)
       Rubicure::Girl.find(name)
@@ -32,13 +32,13 @@ class Cure
   end
 end
 
-class Shiny
+module Shiny
   def self.luminous
     Rubicure::Girl.find(:luminous)
   end
 end
 
-class Milky
+module Milky
   def self.rose
     Rubicure::Girl.find(:rose)
   end
