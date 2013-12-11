@@ -72,4 +72,10 @@ EOF
     it{ should be_an_instance_of Rubicure::Girl }
     its(:precure_name){ should == "キュアピース" }
   end
+
+  describe "#uniq_names" do
+    subject{ Rubicure::Girl.uniq_names }
+
+    its(:count){ should == Rubicure.core.all_stars.count }
+  end
 end
