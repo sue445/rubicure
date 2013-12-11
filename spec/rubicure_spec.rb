@@ -5,7 +5,7 @@ describe Rubicure do
     Rubicure::VERSION.should_not be_nil
   end
 
-  describe "Pretty.cure." do
+  describe "Precure." do
     context "When Precure.#<title>" do
       where(:title) do
         [
@@ -111,7 +111,7 @@ describe Rubicure do
   end
 
   describe "#all_stars" do
-    subject{ Pretty.cure.all_stars }
+    subject{ Precure.cure.all_stars }
 
     before do
       @precure_count = 0
