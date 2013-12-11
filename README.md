@@ -30,94 +30,92 @@ Or install it yourself as:
 require "rubicure"
 ```
 
-`Pretty.cure` and `Pre.cure` are the same.
-
 ### Select own precure series
 
 ```ruby
-Pre.cure.unmarked.title
+Precure.unmarked.title
 #=> "ふたりはプリキュア"
 
-Pre.cure.title
+Precure.title
 #=> "ふたりはプリキュア"
 
-Pre.cure.max_heart.title
+Precure.max_heart.title
 #=> "ふたりはプリキュア Max Heart"
 
-Pre.cure.splash_star.title
+Precure.splash_star.title
 #=> "ふたりはプリキュア Splash Star"
 
-Pre.cure.yes.title
+Precure.yes.title
 #=> "Yes！ プリキュア5"
 
-Pre.cure.yes_gogo.title
+Precure.yes_gogo.title
 #=> "Yes！ プリキュア5 Go Go！"
 
-Pre.cure.flesh.title
+Precure.flesh.title
 #=> "フレッシュプリキュア！"
 
-Pre.cure.heart_catch.title
+Precure.heart_catch.title
 #=> "ハートキャッチプリキュア！"
 
-Pre.cure.smile.title
+Precure.smile.title
 #=> "スマイルプリキュア！"
 
-Pre.cure.dokidoki.title
+Precure.dokidoki.title
 #=> "ドキドキ！プリキュア"
 ```
 
 other pattern
 
 ```ruby
-Pre.cure.find(:smile).title
+Precure.find(:smile).title
 #=> "スマイルプリキュア！"
 ```
 
 and [more aliases!](config/series.yml)
 
 ### Get current precure series
-`Pre.cure#now` (alias to `#current` ) return current precure series
+`Precure#now` (alias to `#current` ) return current precure series
 
 ```ruby
 Pretty.cure.now
 #=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :girls=>["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
 
-Pre.cure.now
+Precure.now
 #=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :girls=>["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
 
-Pre.cure.current
+Precure.current
 #=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :girls=>["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
 
 # -2013/1/27  : smile precure
 #  2013/2/5 - : dokidoki precure
 require "delorean"
 Delorean.time_travel_to "2013-02-01"
-Pre.cure.now
+Precure.now
 #=> RuntimeError: Not on air precure!
 ```
 
 ### Rubicure::Series#on_air?
 
 ```ruby
-Pre.cure.dokidoki.on_air?("2013-12-16")
+Precure.dokidoki.on_air?("2013-12-16")
 #=> true
 
-Pre.cure.smile.on_air?("2013-12-16")
+Precure.smile.on_air?("2013-12-16")
 #=> false
 ```
 
 ### Rubicure::Series#girls
 ```ruby
-Pre.cure.smile.girls
+Precure.smile.girls
 #=> [#<Rubicure::Girl:0x007fbd60a5d6e0 @human_name="星空みゆき", @precure_name="キュアハッピー", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ハッピー！！)\nキラキラ輝く未来の光！ キュアハッピー！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスハッピー", "ウルトラハッピー"], @current_state=0, @state_names=["星空みゆき", "キュアハッピー", "プリンセスハッピー", "ウルトラハッピー"]>, #<Rubicure::Girl:0x007fbd60a5d5c8 @human_name="日野あかね", @precure_name="キュアサニー", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！サニー！！)\n太陽サンサン熱血パワー！ キュアサニー！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスサニー", "ウルトラサニー"], @current_state=0, @state_names=["日野あかね", "キュアサニー", "プリンセスサニー", "ウルトラサニー"]>, #<Rubicure::Girl:0x007fbd60a5d500 @human_name="黄瀬やよい", @precure_name="キュアピース", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ピース！！)\nピカピカピカリンジャンケンポン！ キュアピース！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスピース", "ウルトラピース"], @current_state=0, @state_names=["黄瀬やよい", "キュアピース", "プリンセスピース", "ウルトラピース"]>, #<Rubicure::Girl:0x007fbd60a5d410 @human_name="緑川なお", @precure_name="キュアマーチ", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！マーチ！！)\n勇気リンリン直球勝負！ キュアマーチ！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスマーチ", "ウルトラマーチ"], @current_state=0, @state_names=["緑川なお", "キュアマーチ", "プリンセスマーチ", "ウルトラマーチ"]>, #<Rubicure::Girl:0x007fbd60a5d320 @human_name="青木れいか", @precure_name="キュアビューティ", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ビューティ！！)\nしんしんと降り積もる清き心！ キュアビューティ！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスビューティ", "ウルトラビューティ"], @current_state=0, @state_names=["青木れいか", "キュアビューティ", "プリンセスビューティ", "ウルトラビューティ"]>]
 
-Pre.cure.smile.girls.map(&:human_name)
+Precure.smile.girls.map(&:human_name)
 #=> ["星空みゆき", "日野あかね", "黄瀬やよい", "緑川なお", "青木れいか"]
 
-Pre.cure.smile.girls.map(&:precure_name)
+Precure.smile.girls.map(&:precure_name)
 #=> ["キュアハッピー", "キュアサニー", "キュアピース", "キュアマーチ", "キュアビューティ"]
 
-Pre.cure.smile.girls.count
+Precure.smile.girls.count
 #=> 5
 ```
 
@@ -151,7 +149,7 @@ and [more aliases!](config/girls.yml)
 ```ruby
 # these are same
 yayoi = Cure.peace
-yayoi = Pre.cure.smile.girls[2]
+yayoi = Precure.smile.girls[2]
 
 yayoi.name
 #=> "黄瀬やよい"
@@ -192,10 +190,10 @@ yayoi.name
 
 ### Precure allstars
 ```ruby
-Pre.cure.all_stars.count
+Precure.all_stars.count
 #=> 33
 
-Pre.cure.all_stars.map(&:precure_name)
+Precure.all_stars.map(&:precure_name)
 #=> ["キュアブラック", "キュアホワイト", "シャイニールミナス", "キュアブルーム", "キュアイーグレット", "キュアドリーム", "キュアルージュ", "キュアレモネード", "キュアミント", "キュアアクア", "ミルキィローズ", "キュアピーチ", "キュアベリー", "キュアパイン", "キュアパッション", "キュアブロッサム", "キュアマリン", "キュアサンシャイン", "キュアムーンライト", "キュアメロディ", "キュアリズム", "キュアビート", "キュアミューズ", "キュアハッピー", "キュアサニー", "キュアピース", "キュアマーチ", "キュアビューティ", "キュアハート", "キュアダイヤモンド", "キュアロゼッタ", "キュアソード", "キュアエース"]
 ```
 

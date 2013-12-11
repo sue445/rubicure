@@ -6,7 +6,7 @@ describe Rubicure do
   end
 
   describe "Pretty.cure." do
-    context "When Pretty.cure#<title>" do
+    context "When Precure.#<title>" do
       where(:title) do
         [
             [:unmarked],
@@ -47,16 +47,16 @@ describe Rubicure do
       end
 
       with_them do
-        it{ expect{ Pretty.cure.send(title) }.not_to raise_error }
-        it{ expect{ Pretty.cure.send(title).girls }.not_to raise_error }
+        it{ expect{ Precure.send(title) }.not_to raise_error }
+        it{ expect{ Precure.send(title).girls }.not_to raise_error }
       end
     end
 
-    context "When Pretty.cure#<unmarked_precure_method>" do
+    context "When Precure#<unmarked_precure_method>" do
       let(:futari_wa_pretty_cure){ Rubicure::Series.find(:unmarked) }
 
-      it{ expect(Pre.cure.title).to       eq futari_wa_pretty_cure.title }
-      it{ expect(Pre.cure.girls.count).to eq futari_wa_pretty_cure.girls.count }
+      it{ expect(Precure.title).to       eq futari_wa_pretty_cure.title }
+      it{ expect(Precure.girls.count).to eq futari_wa_pretty_cure.girls.count }
     end
   end
 

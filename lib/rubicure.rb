@@ -12,14 +12,10 @@ module Rubicure
   end
 end
 
-["Pretty", "Pre"].each do |module_name|
-  eval <<-RUBY
-    module #{module_name}
-      def self.cure
-        Rubicure.core
-      end
-    end
-  RUBY
+module Precure
+  def self.method_missing(name, *args)
+    Rubicure.core.send(name, *args)
+  end
 end
 
 module Cure
