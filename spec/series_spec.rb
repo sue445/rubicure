@@ -49,28 +49,33 @@ describe Rubicure::Series do
     its([0]){ should be_an_instance_of Rubicure::Girl }
   end
 
+  let(:series_names) {
+    [
+        :unmarked,
+        :max_heart,
+        :splash_star,
+        :yes,
+        :yes_gogo,
+        :flesh,
+        :heart_catch,
+        :suite,
+        :smile,
+        :dokidoki,
+        #:happiness_charge,
+    ]
+  }
+
   describe "#names" do
     subject{ Rubicure::Series.names }
 
-    where(:series_name) do
-      [
-          [:unmarked],
-          [:max_heart],
-          [:splash_star],
-          [:yes],
-          [:yes_gogo],
-          [:flesh],
-          [:heart_catch],
-          [:suite],
-          [:smile],
-          [:dokidoki],
-          #[:happiness_charge],
-      ]
-    end
+    it{ should include *series_names }
+  end
 
-    with_them do
-      it{ should include series_name }
-    end
+  describe "#uniq_names" do
+    subject{ Rubicure::Series.uniq_names }
+
+    it{ should include *series_names }
+    its(:count){ should == series_names.count }
   end
 
   describe "#find" do

@@ -40,6 +40,15 @@ module Rubicure
       config.keys
     end
 
+    # @return [Array<Symbol>]
+    def self.uniq_names
+      uniq_names = []
+      config.each do |name, series|
+        uniq_names << name unless uniq_names.any?{|uniq_name| config[uniq_name][:title] == series[:title] }
+      end
+      uniq_names
+    end
+
     # @return [Hash] content of config/series.yml
     def self.config
       unless @@config
