@@ -1,4 +1,4 @@
-# Rubicure (Ruby + Precure) [![Build Status](https://travis-ci.org/sue445/rubicure.png?branch=master)](https://travis-ci.org/sue445/rubicure)
+# Rubicure (Ruby + Precure) [![Build Status](https://travis-ci.org/sue445/rubicure.png?branch=master)](https://travis-ci.org/sue445/rubicure) [![Stories in Ready](https://badge.waffle.io/sue445/rubicure.png?label=ready)](http://waffle.io/sue445/rubicure)
 
 All about Japanese battle heroine "Pretty Cure (Precure)".
 
