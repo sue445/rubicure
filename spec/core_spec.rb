@@ -21,7 +21,7 @@ describe Rubicure::Core do
     end
   end
 
-  it "output all precure methods" do
+  it "output all precure methods", category: :verbose do
     Rubicure::Series.names.each do |series_name|
       puts "[#{series_name}] ===================="
       series = Rubicure::Series.find(series_name)
