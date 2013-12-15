@@ -60,7 +60,7 @@ yes_precure_five_gogo:
 yes_precure5_gogo:
   <<: *yes_gogo
 
-flesh: &flesh
+fresh: &fresh
   title: フレッシュプリキュア！
   started_date: 2009-02-01
   ended_date:   2010-01-31
@@ -69,8 +69,8 @@ flesh: &flesh
   - cure_berry
   - cure_pine
   - cure_passion
-flesh_precure:
-  <<: *flesh
+fresh_precure:
+  <<: *fresh
 
 heart_catch: &heart_catch
   title: ハートキャッチプリキュア！

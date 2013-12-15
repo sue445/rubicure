@@ -26,8 +26,8 @@ describe Rubicure do
             [:yes_precure_five_gogo],
             [:yes_precure5_gogo],
 
-            [:flesh],
-            [:flesh_precure],
+            [:fresh],
+            [:fresh_precure],
 
             [:heart_catch],
             [:heart_catch_precure],
