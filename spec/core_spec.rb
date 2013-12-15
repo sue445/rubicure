@@ -9,7 +9,7 @@ describe Rubicure::Core do
         time_travel_to "2013-01-01"
       end
 
-      its(:title){ should == "スマイルプリキュア！" }
+      it{ expect(subject.title).to eq "スマイルプリキュア！" }
     end
 
     context "when not on air" do
@@ -17,7 +17,7 @@ describe Rubicure::Core do
         time_travel_to "2013-02-01"
       end
 
-      it{ expect{ subject }.to raise_error }
+      it{ expect{ subject.title }.to raise_error }
     end
   end
 

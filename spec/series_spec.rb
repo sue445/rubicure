@@ -13,13 +13,13 @@ describe Rubicure::Series do
       context "when Date arg" do
         let(:date){ Date.parse("2013-01-01") }
 
-        it{ should be_true }
+        it{ should be true }
       end
 
       context "when date like String arg" do
         let(:date){ "2013-01-01" }
 
-        it{ should be_true }
+        it{ should be true }
       end
     end
 
@@ -32,7 +32,7 @@ describe Rubicure::Series do
 
       let(:date){ Date.parse("2013-12-01") }
 
-      it{ should be_true }
+      it{ should be true }
     end
   end
 
@@ -45,8 +45,11 @@ describe Rubicure::Series do
       ]
     }
 
-    it{ should have_exactly(5).girls }
-    its([0]){ should be_an_instance_of Rubicure::Girl }
+    it'has 5 girls' do
+      expect(subject.size).to eq(5)
+    end
+
+    it{ should array_instance_of Rubicure::Girl }
   end
 
   let(:series_names) {
@@ -75,7 +78,11 @@ describe Rubicure::Series do
     subject{ Rubicure::Series.uniq_names }
 
     it{ should include *series_names }
-    its(:count){ should == series_names.count }
+
+    describe '#count' do
+      subject { super().count }
+      it{ should == series_names.count }
+    end
   end
 
   describe "#find" do
