@@ -1,4 +1,4 @@
-# Rubicure (Ruby + Precure) [![Build Status](https://travis-ci.org/sue445/rubicure.png?branch=master)](https://travis-ci.org/sue445/rubicure) [![Code Climate](https://codeclimate.com/repos/52ad36f013d637283f0346bb/badges/07709ba3025e690dee75/gpa.png)](https://codeclimate.com/repos/52ad36f013d637283f0346bb/feed) [![Stories in Ready](https://badge.waffle.io/sue445/rubicure.png?label=ready)](http://waffle.io/sue445/rubicure)
+# Rubicure (Ruby + Precure) [![Build Status](https://travis-ci.org/sue445/rubicure.png?branch=master)](https://travis-ci.org/sue445/rubicure) [![Code Climate](https://codeclimate.com/repos/52ad36f013d637283f0346bb/badges/07709ba3025e690dee75/gpa.png)](https://codeclimate.com/repos/52ad36f013d637283f0346bb/feed) [![Coverage Status](https://coveralls.io/repos/sue445/rubicure/badge.png)](https://coveralls.io/r/sue445/rubicure) [![Stories in Ready](https://badge.waffle.io/sue445/rubicure.png?label=ready)](http://waffle.io/sue445/rubicure)
 
 All about Japanese battle heroine "Pretty Cure (Precure)".
 

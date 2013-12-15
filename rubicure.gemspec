@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "delorean"
   spec.add_development_dependency "yard"
   spec.add_development_dependency "codeclimate-test-reporter"
+  spec.add_development_dependency "coveralls"
 end
