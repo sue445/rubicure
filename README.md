@@ -53,7 +53,7 @@ Precure.yes.title
 Precure.yes_gogo.title
 #=> "Yes！ プリキュア5 Go Go！"
 
-Precure.flesh.title
+Precure.fresh.title
 #=> "フレッシュプリキュア！"
 
 Precure.heart_catch.title

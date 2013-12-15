@@ -139,7 +139,7 @@ milky_rose: &milky_rose
 rose:
   <<: *milky_rose
 
-# flesh
+# fresh
 cure_peach: &cure_peach
   human_name:   桃園ラブ
   precure_name: キュアピーチ

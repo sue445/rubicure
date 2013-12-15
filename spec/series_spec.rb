@@ -59,7 +59,7 @@ describe Rubicure::Series do
         :splash_star,
         :yes,
         :yes_gogo,
-        :flesh,
+        :fresh,
         :heart_catch,
         :suite,
         :smile,
