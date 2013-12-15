@@ -9,7 +9,10 @@ describe Rubicure::Core do
         time_travel_to "2013-01-01"
       end
 
-      its(:title){ should == "スマイルプリキュア！" }
+      describe '#title' do
+        subject { super().title }
+        it{ should == "スマイルプリキュア！" }
+      end
     end
 
     context "when not on air" do

@@ -70,12 +70,19 @@ EOF
     let(:girl_name){ :peace }
 
     it{ should be_an_instance_of Rubicure::Girl }
-    its(:precure_name){ should == "キュアピース" }
+
+    describe '#precure_name' do
+      subject { super().precure_name }
+      it{ should == "キュアピース" }
+    end
   end
 
   describe "#uniq_names" do
     subject{ Rubicure::Girl.uniq_names }
 
-    its(:count){ should == Rubicure.core.all_stars.count }
+    describe '#count' do
+      subject { super().count }
+      it{ should == Rubicure.core.all_stars.count }
+    end
   end
 end

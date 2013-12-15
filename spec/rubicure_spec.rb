@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Rubicure do
   it 'should have a version number' do
-    Rubicure::VERSION.should_not be_nil
+    expect(Rubicure::VERSION).not_to be_nil
   end
 
   describe "Precure." do
@@ -121,6 +121,9 @@ describe Rubicure do
       end
     end
 
-    its(:count){ should == @precure_count }
+    describe '#count' do
+      subject { super().count }
+      it{ should == @precure_count }
+    end
   end
 end
