@@ -78,11 +78,7 @@ describe Rubicure::Series do
     subject{ Rubicure::Series.uniq_names }
 
     it{ should include *series_names }
-
-    describe '#count' do
-      subject { super().count }
-      it{ should == series_names.count }
-    end
+    it{ expect(subject.count).to eq series_names.count }
   end
 
   describe "#find" do
