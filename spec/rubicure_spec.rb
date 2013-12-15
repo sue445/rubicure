@@ -111,7 +111,7 @@ describe Rubicure do
   end
 
   describe "#all_stars" do
-    subject{ Precure.cure.all_stars }
+    subject{ Precure.all_stars }
 
     before do
       @precure_count = 0
