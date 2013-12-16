@@ -15,6 +15,10 @@ module Rubicure
       @state_names += @extra_names unless @extra_names.empty?
     end
 
+    def == (other)
+      other.is_a?(self.class) && self.human_name == other.human_name
+    end
+
     # @return [String] name of current form
     def name
       @state_names[@current_state]

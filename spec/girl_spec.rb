@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 describe Rubicure::Girl do
   describe "#name" do
     let(:girl){
@@ -61,6 +62,49 @@ EOF
 
       # return to human
       it{ expect(girl.name).to eq human_name }
+    end
+  end
+
+  describe "#==" do
+    let(:girl){
+      Rubicure::Girl.new(
+          human_name:        human_name,
+          precure_name:      precure_name,
+          extra_names:       extra_names,
+          transform_message: transform_message
+      )
+    }
+
+    let(:human_name)     { "黄瀬やよい" }
+    let(:precure_name)   { "キュアピース" }
+    let(:extra_names)    { %w(プリンセスピース ウルトラピース) }
+    let(:transform_message){
+      <<EOF
+プリキュアスマイルチャージ！
+GO! GO! Let's GO ピース！
+ピカピカピカリンジャンケンポン！ キュアピース！
+EOF
+    }
+
+    context "same object" do
+      subject{ girl }
+      it{ expect(subject == girl).to be true }
+    end
+
+    context "copied object" do
+      subject{ girl.dup }
+      it{ expect(subject == girl).to be true }
+    end
+
+    context "precure and human" do
+      subject{ girl.dup.transform! }
+      it{ expect(subject.name).not_to eq girl.name }
+      it{ expect(subject == girl).to be true }
+    end
+
+    context "other precure" do
+      subject{ Rubicure::Girl.find(:passion)}
+      it{ expect(subject == girl).to be false }
     end
   end
 
