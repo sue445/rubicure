@@ -129,6 +129,9 @@ Cure.lemonade
 Cure.pine
 #=> #<Rubicure::Girl:0x007fbd60aee640 @human_name="山吹祈里", @precure_name="キュアパイン", @transform_message="チェインジ！プリキュア・ビートアップ！\nイエローハートは祈りのしるし！\nとれたてフレッシュ、キュアパイン！\nレッツプリキュア！\n", @extra_names=["キュアエンジェルパイン"], @current_state=0, @state_names=["山吹祈里", "キュアパイン", "キュアエンジェルパイン"]>
 
+Cure.sunshine
+#=> #<Rubicure::Girl:0x007f83413a6e18 @human_name="明堂院いつき", @precure_name="キュアサンシャイン", @transform_message="(プリキュアの種、いくですぅ！)\nプリキュア！オープンマイハート！\n陽の光浴びる一輪の花！ キュアサンシャイン！\nハートキャッチ、プリキュア！\n", @extra_names=["スーパーキュアサンシャイン"], @current_state=0, @state_names=["明堂院いつき", "キュアサンシャイン", "スーパーキュアサンシャイン"]>
+
 Cure.muse
 #=> #<Rubicure::Girl:0x007fbd60af7510 @human_name="調辺アコ", @precure_name="キュアミューズ", @transform_message="レッツプレイ！プリキュアモジュレーション！！\n爪弾くは女神の調べ！ キュアミューズ！\n響け4人の組曲！スイートプリキュア！\n", @extra_names=["クレッシェンドミューズ"], @current_state=0, @state_names=["調辺アコ", "キュアミューズ", "クレッシェンドミューズ"]>
 
