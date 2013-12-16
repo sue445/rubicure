@@ -5,6 +5,17 @@ module Rubicure
     @@cache = {}
     @@config = nil
 
+    def === (other)
+      case other
+      when self.class
+        self == other
+      when Rubicure::Girl
+        self.girls.include? other
+      else
+        false
+      end
+    end
+
     # @param [Time,Date,String] arg Time, Date or date like String (ex. "2013-12-16")
     def on_air?(arg)
       date = to_date(arg)

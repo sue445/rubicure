@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 describe Rubicure::Series do
   describe "#on_air?" do
     subject{ series.on_air?(date) }
@@ -67,6 +68,25 @@ describe Rubicure::Series do
         #:happiness_charge,
     ]
   }
+
+  describe "#===" do
+    subject(:series){ Rubicure::Series.find(series_name) }
+    let(:series_name){ :smile }
+    subject(:girl){ Rubicure::Girl.find(girl_name) }
+    let(:girl_name){ :peace }
+
+    context "same series" do
+      it { expect(series === series).to be true }
+      it { expect(series === girl).to be true }
+    end
+
+    context "other series" do
+      subject(:other_series){ Rubicure::Series.find(:dokidoki) }
+      subject(:other_girl){ Rubicure::Girl.find(:passion) }
+      it { expect(series === other_series).to be false }
+      it { expect(series === other_girl).to be false }
+    end
+  end
 
   describe "#names" do
     subject{ Rubicure::Series.names }
