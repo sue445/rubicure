@@ -59,6 +59,9 @@ Precure.fresh.title
 Precure.heart_catch.title
 #=> "ハートキャッチプリキュア！"
 
+Precure.suite.title
+#=> "スイートプリキュア♪"
+
 Precure.smile.title
 #=> "スマイルプリキュア！"
 
