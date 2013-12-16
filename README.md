@@ -35,10 +35,10 @@ require "rubicure"
 ### Select own precure series
 
 ```ruby
-Precure.unmarked.title
+Precure.title
 #=> "ふたりはプリキュア"
 
-Precure.title
+Precure.unmarked.title
 #=> "ふたりはプリキュア"
 
 Precure.max_heart.title
@@ -67,6 +67,9 @@ Precure.smile.title
 
 Precure.dokidoki.title
 #=> "ドキドキ！プリキュア"
+
+Precure.dokidoki
+#=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :girls=>["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
 ```
 
 other pattern
