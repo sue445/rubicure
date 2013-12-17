@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 describe Rubicure::Girl do
   describe "#name" do
     let(:girl){

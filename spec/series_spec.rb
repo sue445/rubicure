@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 describe Rubicure::Series do
   describe "#on_air?" do
     subject{ series.on_air?(date) }
