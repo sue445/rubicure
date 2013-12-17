@@ -64,6 +64,52 @@ EOF
     end
   end
 
+  describe "#==" do
+    let(:girl){
+      Rubicure::Girl.new(
+          human_name:        human_name,
+          precure_name:      precure_name,
+          extra_names:       extra_names,
+          transform_message: transform_message
+      )
+    }
+
+    let(:human_name)     { "黄瀬やよい" }
+    let(:precure_name)   { "キュアピース" }
+    let(:extra_names)    { %w(プリンセスピース ウルトラピース) }
+    let(:transform_message){
+      <<EOF
+プリキュアスマイルチャージ！
+GO! GO! Let's GO ピース！
+ピカピカピカリンジャンケンポン！ キュアピース！
+EOF
+    }
+
+    context "same object" do
+      subject{ girl == girl }
+      it{ should be true }
+    end
+
+    context "copied object" do
+      subject{ girl == copied_girl }
+      let(:copied_girl){ girl.dup }
+      it{ should be true }
+    end
+
+    context "precure and human" do
+      subject{ girl == transformed_girl }
+      let(:transformed_girl){ girl.dup.transform! }
+      it{ expect(girl.name).not_to eq transformed_girl.name }
+      it{ should be true }
+    end
+
+    context "other precure" do
+      subject{ girl == other_girl }
+      let(:other_girl){ Rubicure::Girl.find(:passion) }
+      it{ should be false }
+    end
+  end
+
   describe "#find" do
     subject{ Rubicure::Girl.find(girl_name) }
 

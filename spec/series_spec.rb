@@ -68,6 +68,33 @@ describe Rubicure::Series do
     ]
   }
 
+  describe "#===" do
+    let(:series){ Rubicure::Series.find(series_name) }
+    let(:series_name){ :smile }
+    let(:girl){ Rubicure::Girl.find(girl_name) }
+    let(:girl_name){ :peace }
+
+    context "same series" do
+      it { expect(series === series).to be true }
+      it { expect(series === girl).to be true }
+    end
+
+    context "other series" do
+      let(:other_series){ Rubicure::Series.find(:dokidoki) }
+      let(:other_girl){ Rubicure::Girl.find(:passion) }
+      it { expect(series === other_series).to be false }
+      it { expect(series === other_girl).to be false }
+    end
+
+    context "other ruby object" do
+      it { expect(series === Module).to be false }
+      it { expect(series === Object.new).to be false }
+      it { expect(series === :smile).to be false }
+      it { expect(series === true).to be false }
+      it { expect(series === nil).to be false }
+    end
+  end
+
   describe "#names" do
     subject{ Rubicure::Series.names }
 
