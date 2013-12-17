@@ -87,24 +87,27 @@ EOF
     }
 
     context "same object" do
-      subject{ girl }
-      it{ expect(subject == girl).to be true }
+      subject{ girl == girl }
+      it{ should be true }
     end
 
     context "copied object" do
-      subject{ girl.dup }
-      it{ expect(subject == girl).to be true }
+      subject{ girl == copied_girl }
+      let(:copied_girl){ girl.dup }
+      it{ should be true }
     end
 
     context "precure and human" do
-      subject{ girl.dup.transform! }
-      it{ expect(subject.name).not_to eq girl.name }
-      it{ expect(subject == girl).to be true }
+      subject{ girl == transformed_girl }
+      let(:transformed_girl){ girl.dup.transform! }
+      it{ expect(girl.name).not_to eq transformed_girl.name }
+      it{ should be true }
     end
 
     context "other precure" do
-      subject{ Rubicure::Girl.find(:passion)}
-      it{ expect(subject == girl).to be false }
+      subject{ girl == other_girl }
+      let(:other_girl){ Rubicure::Girl.find(:passion) }
+      it{ should be false }
     end
   end
 

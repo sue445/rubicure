@@ -70,9 +70,9 @@ describe Rubicure::Series do
   }
 
   describe "#===" do
-    subject(:series){ Rubicure::Series.find(series_name) }
+    let(:series){ Rubicure::Series.find(series_name) }
     let(:series_name){ :smile }
-    subject(:girl){ Rubicure::Girl.find(girl_name) }
+    let(:girl){ Rubicure::Girl.find(girl_name) }
     let(:girl_name){ :peace }
 
     context "same series" do
@@ -81,8 +81,8 @@ describe Rubicure::Series do
     end
 
     context "other series" do
-      subject(:other_series){ Rubicure::Series.find(:dokidoki) }
-      subject(:other_girl){ Rubicure::Girl.find(:passion) }
+      let(:other_series){ Rubicure::Series.find(:dokidoki) }
+      let(:other_girl){ Rubicure::Girl.find(:passion) }
       it { expect(series === other_series).to be false }
       it { expect(series === other_girl).to be false }
     end
