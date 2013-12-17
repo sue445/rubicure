@@ -85,6 +85,14 @@ describe Rubicure::Series do
       it { expect(series === other_series).to be false }
       it { expect(series === other_girl).to be false }
     end
+
+    context "other ruby object" do
+      it { expect(series === Module).to be false }
+      it { expect(series === Object.new).to be false }
+      it { expect(series === :smile).to be false }
+      it { expect(series === true).to be false }
+      it { expect(series === nil).to be false }
+    end
   end
 
   describe "#names" do
