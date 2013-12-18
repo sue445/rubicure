@@ -205,6 +205,28 @@ Precure.all_stars.map(&:precure_name)
 #=> ["キュアブラック", "キュアホワイト", "シャイニールミナス", "キュアブルーム", "キュアイーグレット", "キュアドリーム", "キュアルージュ", "キュアレモネード", "キュアミント", "キュアアクア", "ミルキィローズ", "キュアピーチ", "キュアベリー", "キュアパイン", "キュアパッション", "キュアブロッサム", "キュアマリン", "キュアサンシャイン", "キュアムーンライト", "キュアメロディ", "キュアリズム", "キュアビート", "キュアミューズ", "キュアハッピー", "キュアサニー", "キュアピース", "キュアマーチ", "キュアビューティ", "キュアハート", "キュアダイヤモンド", "キュアロゼッタ", "キュアソード", "キュアエース"]
 ```
 
+### Equivalence
+```ruby
+yayoi = Cure.peace.dup
+cure_peace = Cure.peace.dup.transform!
+
+yayoi == cure_peace
+#=> true
+```
+
+```ruby
+precure = Rubicure::Girl.find(:passion)
+
+case precure
+when Precure.dokidoki
+  puts "The girl is a member of Dokidoki! Precure"
+when Precure.fresh
+  puts "The girl is a member of Fresh Precure!"
+else
+  puts "The girl is not which member of Dokidoki! Precure and Fresh Precure!"
+end
+```
+
 ## More reference
 http://rubydoc.info/github/sue445/rubicure/
 
