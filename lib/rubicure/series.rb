@@ -5,6 +5,8 @@ module Rubicure
     @@cache = {}
     @@config = nil
 
+    # @param [Rubicure::Series,Rubicure::Girl] other
+    # @return [Boolean] other is same Rubicure::Series or Rubicure::Series include Rubicure::Girl
     def === (other)
       case other
       when self.class
