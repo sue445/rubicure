@@ -1,11 +1,21 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.0.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.3...master)
+
+## v0.0.3
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.2...v0.0.3)
+
+# Enhancements
+* define operators(`Girl#==`, `Series#===`) (thx @zonuexe)
+  * https://github.com/sue445/rubicure/pull/7
+* Remove last linebreaks of transform_messages (thx @zonuexe)
+  * https://github.com/sue445/rubicure/pull/8
 
 ## v0.0.2
 [full changelog](http://github.com/sue445/rubicure/compare/v0.0.1...v0.0.2)
 
 ### bugfixes
-* typo (thx @kaosf)
+* Bugfix: fresh pretty cure (thx @kaosf)
+  * https://github.com/sue445/rubicure/pull/6
 
 ## v0.0.1
 * first release
