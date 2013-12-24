@@ -374,6 +374,7 @@ cure_heart: &cure_heart
     愛を無くした悲しいジコチューさん、
     このキュアハートがあなたのドキドキ取り戻してみせる！
   extra_names:
+  - キュアハート・エンゲージモード
 cure_diamond: &cure_diamond
   human_name:   菱川六花
   precure_name: キュアダイヤモンド
