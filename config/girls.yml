@@ -484,3 +484,38 @@ sword:
   <<: *cure_sword
 ace:
   <<: *cure_ace
+
+# happiness_charge
+cure_lovely: &cure_lovely
+  human_name:   愛乃めぐみ
+  precure_name: キュアラブリー
+  transform_message: |-
+
+  extra_names:
+cure_princess: &cure_princess
+  human_name:   白雪ひめ
+  precure_name: キュアプリンセス
+  transform_message: |-
+
+  extra_names:
+cure_honey: &cure_honey
+  human_name:
+  precure_name: キュアハニー
+  transform_message: |-
+
+  extra_names:
+cure_fortune: &cure_fortune
+  human_name:
+  precure_name: キュアフォーチュン
+  transform_message: |-
+
+  extra_names:
+
+lovely:
+  <<: *cure_lovely
+princess:
+  <<: *cure_princess
+honey:
+  <<: *cure_honey
+fortune:
+  <<: *cure_fortune
