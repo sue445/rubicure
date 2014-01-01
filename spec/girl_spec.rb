@@ -97,14 +97,14 @@ EOF
     let(:girl_name){ :peace }
 
     it{ should be_an_instance_of Rubicure::Girl }
-    it{ expect(subject.precure_name).to eq "キュアピース" }
+    its(:precure_name){ should == "キュアピース" }
   end
 
   describe "#uniq_names" do
     subject{ Rubicure::Girl.uniq_names }
 
-    let(:all_stars_count){ Rubicure.core.all_stars.count }
+    let(:containing_name_alias_count){ Rubicure::Girl.names.count }
 
-    it{ expect(subject.count).to eq all_stars_count }
+    its(:count){ should < containing_name_alias_count }
   end
 end
