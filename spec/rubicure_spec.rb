@@ -121,6 +121,6 @@ describe Rubicure do
       end
     end
 
-    it{ expect(subject.count).to eq @precure_count }
+    its(:count){ should == @precure_count }
   end
 end

@@ -8,6 +8,8 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'rubicure'
 require 'rspec'
 require 'rspec-parameterized'
+require 'rspec/its'
+require 'rspec/collection_matchers'
 require 'delorean'
 
 # Requires supporting ruby files with custom matchers and macros, etc,

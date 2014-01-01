@@ -45,10 +45,7 @@ describe Rubicure::Series do
       ]
     }
 
-    it'has 5 girls' do
-      expect(subject.size).to eq(5)
-    end
-
+    it{ should have_exactly(5).girls }
     it{ should array_instance_of Rubicure::Girl }
   end
 
@@ -105,7 +102,7 @@ describe Rubicure::Series do
     subject{ Rubicure::Series.uniq_names }
 
     it{ should include *series_names }
-    it{ expect(subject.count).to eq series_names.count }
+    its(:count){ should == series_names.count }
   end
 
   describe "#find" do
