@@ -103,8 +103,8 @@ EOF
   describe "#uniq_names" do
     subject{ Rubicure::Girl.uniq_names }
 
-    let(:all_stars_count){ Rubicure.core.all_stars.count }
+    let(:containing_name_alias_count){ Rubicure::Girl.names.count }
 
-    its(:count){ should == all_stars_count }
+    its(:count){ should < containing_name_alias_count }
   end
 end
