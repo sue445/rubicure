@@ -13,8 +13,8 @@ module Rubicure
 end
 
 module Precure
-  def self.method_missing(name, *args)
-    Rubicure.core.send(name, *args)
+  def self.method_missing(name, *args, &block)
+    Rubicure.core.send(name, *args, &block)
   end
 end
 
