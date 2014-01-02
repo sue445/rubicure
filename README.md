@@ -81,6 +81,25 @@ Precure.find(:smile).title
 
 and [more aliases!](config/series.yml)
 
+### each with precure series
+```ruby
+Precure.each{|series| puts series.title  }
+ふたりはプリキュア
+ふたりはプリキュア Max Heart
+ふたりはプリキュア Splash Star
+Yes！ プリキュア5
+Yes！ プリキュア5 Go Go！
+フレッシュプリキュア！
+ハートキャッチプリキュア！
+スイートプリキュア♪
+スマイルプリキュア！
+ドキドキ！プリキュア
+#=> [:unmarked, :max_heart, :splash_star, :yes, :yes_gogo, :fresh, :heart_catch, :suite, :smile, :dokidoki]
+
+Precure.inject([]){|girl_count_of_series, series| girl_count_of_series << series.girls.count; girl_count_of_series  }
+#=> [2, 3, 2, 5, 6, 4, 4, 4, 5, 5]
+```
+
 ### Get current precure series
 `Precure#now` (alias to `#current` ) return current precure series
 

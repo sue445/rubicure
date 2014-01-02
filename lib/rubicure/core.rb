@@ -47,6 +47,8 @@ module Rubicure
     #
     # @yield series
     # @yieldparam series [Rubicure::Series]
+    #
+    # @return [Array<Symbol>] ex. :unmarked, :max_heart, ...
     def each_with_series
       Rubicure::Series.uniq_names.each do |series_name|
         series = Rubicure::Series.find(series_name)
