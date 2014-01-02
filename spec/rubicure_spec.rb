@@ -109,18 +109,4 @@ describe Rubicure do
       it{ expect( Milky.rose.precure_name ).to eq "ミルキィローズ"}
     end
   end
-
-  describe "#all_stars" do
-    subject{ Precure.all_stars }
-
-    before do
-      @precure_count = 0
-      config_file = "#{File.dirname(__FILE__)}/../config/girls.yml"
-      Pathname(config_file).each_line do |line|
-        @precure_count += 1 if line =~ /[a-z_]+:\s*&[a-z_]+/
-      end
-    end
-
-    its(:count){ should == @precure_count }
-  end
 end

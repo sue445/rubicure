@@ -54,4 +54,18 @@ EOS
 
     it{ expect{|b| instance.each_with_series(&b) }.to yield_successive_args *@expected_series }
   end
+
+  describe "#all_stars" do
+    subject{ instance.all_stars }
+
+    before do
+      @precure_count = 0
+      config_file = "#{File.dirname(__FILE__)}/../config/girls.yml"
+      Pathname(config_file).each_line do |line|
+        @precure_count += 1 if line =~ /[a-z_]+:\s*&[a-z_]+/
+      end
+    end
+
+    its(:count){ should == @precure_count }
+  end
 end
