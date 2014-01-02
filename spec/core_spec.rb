@@ -22,10 +22,9 @@ describe Rubicure::Core do
   end
 
   it "output all precure methods", category: :verbose do
-    Rubicure::Series.uniq_names.each do |series_name|
-      puts "[#{series_name}] ===================="
-      series = Rubicure::Series.find(series_name)
+    Precure.each_with_series do |series|
       puts <<EOS
+====================
 title:     #{series.title}
 broadcast: #{series.started_date} - #{series.ended_date}
 girls:     #{series.girls.count}
@@ -43,5 +42,16 @@ EOS
 EOS
       end
     end
+  end
+
+  describe "#each_with_series" do
+    before do
+      @expected_series = []
+      Rubicure::Series.uniq_names.each do |series_name|
+        @expected_series << Rubicure::Series.find(series_name)
+      end
+    end
+
+    it{ expect{|b| instance.each_with_series(&b) }.to yield_successive_args *@expected_series }
   end
 end
