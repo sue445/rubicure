@@ -47,8 +47,6 @@ cure_bloom: &cure_bloom
     ふたりはプリキュア！
     聖なる泉を汚す者よ！
     阿漕な真似はお止めなさい！
-  extra_names:
-  - キュアブライト
 cure_egret: &cure_egret
   human_name:   美翔舞
   precure_name: キュアイーグレット
@@ -59,12 +57,34 @@ cure_egret: &cure_egret
     ふたりはプリキュア！
     聖なる泉を汚す者よ！
     阿漕な真似はお止めなさい！
-  extra_names:
-  - キュアウィンディ
+cure_bright: &cure_bright
+  human_name:   日向咲
+  precure_name: キュアブライト
+  transform_message: |-
+    デュアル・スピリチュアル・パワー！
+    未来を照らし！
+    天空に満ちる月！ キュアブライト！
+    ふたりはプリキュア！
+    聖なる泉を汚す者よ！
+    阿漕な真似はお止めなさい！
+cure_windy: &cure_windy
+  human_name:   美翔舞
+  precure_name: キュアウィンディ
+  transform_message: |-
+    デュアル・スピリチュアル・パワー！
+    勇気を運べ！
+    大地に薫る月！ キュアウィンディ！
+    ふたりはプリキュア！
+    聖なる泉を汚す者よ！
+    阿漕な真似はお止めなさい！
 bloom:
   <<: *cure_bloom
 egret:
   <<: *cure_egret
+bright:
+  <<: *cure_bright
+windy:
+  <<: *cure_windy
 
 # yes
 cure_dream:  &cure_dream
