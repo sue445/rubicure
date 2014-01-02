@@ -22,10 +22,9 @@ describe Rubicure::Core do
   end
 
   it "output all precure methods", category: :verbose do
-    Rubicure::Series.uniq_names.each do |series_name|
-      puts "[#{series_name}] ===================="
-      series = Rubicure::Series.find(series_name)
+    Precure.each_with_series do |series|
       puts <<EOS
+====================
 title:     #{series.title}
 broadcast: #{series.started_date} - #{series.ended_date}
 girls:     #{series.girls.count}
