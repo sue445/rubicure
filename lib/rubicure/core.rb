@@ -37,7 +37,7 @@ module Rubicure
           @all_stars << Rubicure::Girl.find(girl_name)
         end
 
-        @all_stars.uniq!{|girl| girl.precure_name }
+        @all_stars.uniq!{|girl| girl.human_name }
       end
 
       @all_stars
