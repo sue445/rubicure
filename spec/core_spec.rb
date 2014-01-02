@@ -59,11 +59,12 @@ EOS
     subject{ instance.all_stars }
 
     before do
-      @precure_count = 0
+      human_names = []
       config_file = "#{File.dirname(__FILE__)}/../config/girls.yml"
       Pathname(config_file).each_line do |line|
-        @precure_count += 1 if line =~ /[a-z_]+:\s*&[a-z_]+/
+        human_names << $1 if line =~ /human_name:\s*(.+)\s*/
       end
+      @precure_count = human_names.uniq.count
     end
 
     its(:count){ should == @precure_count }
