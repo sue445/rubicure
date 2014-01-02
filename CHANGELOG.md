@@ -3,6 +3,8 @@
 
 ### Enhancements
 * Add cure heart engage mode :sparkling_heart:
+* Add cure bright and cure windy (thx @kaosf)
+  * https://github.com/sue445/rubicure/pull/15
 * Impl `Precure#each_with_series` (alias to `Precure#each`)
   * https://github.com/sue445/rubicure/pull/13
 
