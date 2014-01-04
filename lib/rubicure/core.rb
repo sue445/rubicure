@@ -30,7 +30,7 @@ module Rubicure
 
     alias :current :now
 
-    # @param [Time,Date,String] arg Time, Date or date like String (ex. "2013-12-16")
+    # @param [Time,Date,String,Symbol] arg Time, Date or date like String (ex. "2013-12-16")
     # @return [Array<Rubicure::Girl>]
     def all_stars(arg=Time.current)
       unless @all_stars
@@ -42,7 +42,15 @@ module Rubicure
         @all_stars.uniq!{|girl| girl.human_name }
       end
 
-      @all_stars.select{|girl| girl.created_date < to_date(arg) }
+      begin
+        movie = Rubicure::Movie.find(arg.to_sym)
+        date = movie.started_date
+      rescue
+        # args is Time or Date
+        date = to_date(arg)
+      end
+
+      @all_stars.select{|girl| girl.created_date <= date }
     end
 
     # iterate with :unmarked, :max_heart, ...
