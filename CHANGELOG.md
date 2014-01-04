@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.0.3...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.4...master)
+
+## v0.0.4
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.3...v0.0.4)
 
 ### Enhancements
 * Add cure heart engage mode :sparkling_heart:
