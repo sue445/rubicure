@@ -507,13 +507,13 @@ cure_honey: &cure_honey
   transform_message: |-
     TODO
   extra_names:
-cure_fortune: &cure_fortune
-  human_name:   TODO_cure_fortune
-  precure_name: キュアフォーチュン
-  created_date: # TODO episode
-  transform_message: |-
-    TODO
-  extra_names:
+#cure_fortune: &cure_fortune
+#  human_name:   TODO_cure_fortune
+#  precure_name: キュアフォーチュン
+#  created_date: # TODO episode
+#  transform_message: |-
+#    TODO
+#  extra_names:
 
 lovely:
   <<: *cure_lovely
@@ -521,5 +521,5 @@ princess:
   <<: *cure_princess
 honey:
   <<: *cure_honey
-fortune:
-  <<: *cure_fortune
+#fortune:
+#  <<: *cure_fortune

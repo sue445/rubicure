@@ -100,7 +100,7 @@ describe Rubicure do
           [:lovely],
           [:princess],
           [:honey],
-          [:fortune],
+          #[:fortune],
       ]
     end
 
