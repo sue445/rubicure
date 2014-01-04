@@ -2,6 +2,7 @@
 cure_black: &cure_black
   human_name:   美墨なぎさ
   precure_name: キュアブラック
+  created_date: 2004-02-01 # episode 1
   transform_message: |-
     デュアル・オーロラ・ウェイブ！！
     光の使者、キュアブラック！
@@ -12,6 +13,7 @@ cure_black: &cure_black
 cure_white: &cure_white
   human_name:   雪城ほのか
   precure_name: キュアホワイト
+  created_date: 2004-02-01 # episode 1
   transform_message: |-
     デュアル・オーロラ・ウェイブ！！
     光の使者、キュアホワイト！
@@ -28,6 +30,7 @@ white:
 shiny_luminous: &shiny_luminous
   human_name:   九条ひかり
   precure_name: シャイニールミナス
+  created_date: 2005-03-06 # episode 5
   transform_message: |-
     ルミナス・シャイニングストリーム！
     輝く命、シャイニールミナス！
@@ -40,6 +43,7 @@ luminous:
 cure_bloom: &cure_bloom
   human_name:   日向咲
   precure_name: キュアブルーム
+  created_date: 2006-02-05 # episode 1
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     花開け大地に！
@@ -50,6 +54,7 @@ cure_bloom: &cure_bloom
 cure_egret: &cure_egret
   human_name:   美翔舞
   precure_name: キュアイーグレット
+  created_date: 2006-02-05 # episode 1
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     羽ばたけ空に！
@@ -60,6 +65,7 @@ cure_egret: &cure_egret
 cure_bright: &cure_bright
   human_name:   日向咲
   precure_name: キュアブライト
+  created_date: 2006-09-03 # episode 30
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     未来を照らし！
@@ -70,6 +76,7 @@ cure_bright: &cure_bright
 cure_windy: &cure_windy
   human_name:   美翔舞
   precure_name: キュアウィンディ
+  created_date: 2006-09-03 # episode 30
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     勇気を運べ！
@@ -90,6 +97,7 @@ windy:
 cure_dream:  &cure_dream
   human_name:   夢原のぞみ
   precure_name: キュアドリーム
+  created_date: 2007-02-04 # episode 1
   transform_message: |-
     プリキュア！メタモルフォーゼ！
     大いなる希望の力、キュアドリーム！
@@ -100,6 +108,7 @@ cure_dream:  &cure_dream
 cure_rouge:  &cure_rouge
   human_name:   夏木りん
   precure_name: キュアルージュ
+  created_date: 2007-02-11 # episode 2
   transform_message: |-
     プリキュア！メタモルフォーゼ！
     情熱の赤い炎、キュアルージュ！
@@ -110,6 +119,7 @@ cure_rouge:  &cure_rouge
 cure_lemonade:  &cure_lemonade
   human_name:   春日野うらら
   precure_name: キュアレモネード
+  created_date: 2007-02-18 # episode 3
   transform_message: |-
     プリキュア！メタモルフォーゼ！
     はじけるレモンの香り、キュアレモネード！
@@ -120,6 +130,7 @@ cure_lemonade:  &cure_lemonade
 cure_mint:  &cure_mint
   human_name:   秋元こまち
   precure_name: キュアミント
+  created_date: 2007-02-25 # episode 4
   transform_message: |-
     プリキュア！メタモルフォーゼ！
     安らぎの緑の大地、キュアミント！
@@ -130,6 +141,7 @@ cure_mint:  &cure_mint
 cure_aqua:  &cure_aqua
   human_name:   水無月かれん
   precure_name: キュアアクア
+  created_date: 2007-03-11 # episode 6
   transform_message: |-
     プリキュア！メタモルフォーゼ！
     知性の青き泉、キュアアクア！
@@ -152,6 +164,7 @@ aqua:
 milky_rose: &milky_rose
   human_name:   美々野くるみ
   precure_name: ミルキィローズ
+  created_date: 2008-06-06 # episode 10
   transform_message: |-
     スカイローズ・トランスレイト！
     青いバラは秘密のしるし！ ミルキィローズ！
@@ -163,6 +176,7 @@ rose:
 cure_peach: &cure_peach
   human_name:   桃園ラブ
   precure_name: キュアピーチ
+  created_date: 2009-02-01 # episode 1
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
     ピンクのハートは愛あるしるし！
@@ -173,6 +187,7 @@ cure_peach: &cure_peach
 cure_berry: &cure_berry
   human_name:   蒼乃美希
   precure_name: キュアベリー
+  created_date: 2009-02-08 # episode 2
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
     ブルーのハートは希望のしるし！
@@ -183,6 +198,7 @@ cure_berry: &cure_berry
 cure_pine: &cure_pine
   human_name:   山吹祈里
   precure_name: キュアパイン
+  created_date: 2009-02-15 # episode 3
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
     イエローハートは祈りのしるし！
@@ -193,6 +209,7 @@ cure_pine: &cure_pine
 cure_passion: &cure_passion
   human_name:   東せつな
   precure_name: キュアパッション
+  created_date: 2009-07-12 # episode 23
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
     真っ赤なハートは幸せの証！
@@ -213,6 +230,7 @@ passion:
 cure_blossom: &cure_blossom
   human_name:   花咲つぼみ
   precure_name: キュアブロッサム
+  created_date: 2010-02-07 # episode 1
   transform_message: |-
     (プリキュアの種、いくですぅ！)
     プリキュア！オープンマイハート！
@@ -223,6 +241,7 @@ cure_blossom: &cure_blossom
 cure_marine: &cure_marine
   human_name:   来海えりか
   precure_name: キュアマリン
+  created_date: 2010-02-21 # episode 3
   transform_message: |-
     (プリキュアの種、いくですぅ！)
     プリキュア！オープンマイハート！
@@ -233,6 +252,7 @@ cure_marine: &cure_marine
 cure_sunshine: &cure_sunshine
   human_name:   明堂院いつき
   precure_name: キュアサンシャイン
+  created_date: 2010-07-18 # episode 23
   transform_message: |-
     (プリキュアの種、いくですぅ！)
     プリキュア！オープンマイハート！
@@ -243,6 +263,7 @@ cure_sunshine: &cure_sunshine
 cure_moonlight: &cure_moonlight
   human_name:   月影ゆり
   precure_name: キュアムーンライト
+  created_date: 2010-09-26 # episode 33
   transform_message: |-
     (プリキュアの種、いくですぅ！)
     プリキュア！オープンマイハート！
@@ -263,6 +284,7 @@ moonlight:
 cure_melody: &cure_melody
   human_name:   北条響
   precure_name: キュアメロディ
+  created_date: 2011-02-06 # episode 1
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
     爪弾くは荒ぶる調べ！ キュアメロディ！
@@ -272,6 +294,7 @@ cure_melody: &cure_melody
 cure_rhythm: &cure_rhythm
   human_name:   南野奏
   precure_name: キュアリズム
+  created_date: 2011-02-06 # episode 1
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
     爪弾くはたおやかな調べ！ キュアリズム！
@@ -281,6 +304,7 @@ cure_rhythm: &cure_rhythm
 cure_beat: &cure_beat
   human_name:   黒川エレン
   precure_name: キュアビート
+  created_date: 2011-07-10 # episode 21
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
     爪弾くは魂の調べ！ キュアビート！
@@ -290,6 +314,7 @@ cure_beat: &cure_beat
 cure_muse: &cure_muse
   human_name:   調辺アコ
   precure_name: キュアミューズ
+  created_date: 2011-10-16 # episode 35
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
     爪弾くは女神の調べ！ キュアミューズ！
@@ -309,6 +334,7 @@ muse:
 cure_happy: &cure_happy
   human_name:   星空みゆき
   precure_name: キュアハッピー
+  created_date: 2012-02-05 # episode 1
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！
@@ -322,6 +348,7 @@ cure_happy: &cure_happy
 cure_sunny: &cure_sunny
   human_name:   日野あかね
   precure_name: キュアサニー
+  created_date: 2012-02-12 # episode 2
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！
@@ -335,6 +362,7 @@ cure_sunny: &cure_sunny
 cure_peace: &cure_peace
   human_name:   黄瀬やよい
   precure_name: キュアピース
+  created_date: 2012-02-19 # episode 3
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！
@@ -348,6 +376,7 @@ cure_peace: &cure_peace
 cure_march: &cure_march
   human_name:   緑川なお
   precure_name: キュアマーチ
+  created_date: 2012-02-26 # episode 4
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！
@@ -361,6 +390,7 @@ cure_march: &cure_march
 cure_beauty: &cure_beauty
   human_name:   青木れいか
   precure_name: キュアビューティ
+  created_date: 2012-03-14 # episode 5
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！
@@ -386,6 +416,7 @@ beauty:
 cure_heart: &cure_heart
   human_name:   相田マナ
   precure_name: キュアハート
+  created_date: 2013-02-03 # episode 1
   transform_message: |-
     プリキュアラブリンク！
     L! O! V! E!
@@ -398,6 +429,7 @@ cure_heart: &cure_heart
 cure_diamond: &cure_diamond
   human_name:   菱川六花
   precure_name: キュアダイヤモンド
+  created_date: 2013-02-17 # episode 3
   transform_message: |-
     プリキュアラブリンク！
     L! O! V! E!
@@ -409,6 +441,7 @@ cure_diamond: &cure_diamond
 cure_rosetta: &cure_rosetta
   human_name:   四葉ありす
   precure_name: キュアロゼッタ
+  created_date: 2013-02-24 # episode 4
   transform_message: |-
     プリキュアラブリンク！
     L! O! V! E!
@@ -420,6 +453,7 @@ cure_rosetta: &cure_rosetta
 cure_sword: &cure_sword
   human_name:   剣崎真琴
   precure_name: キュアソード
+  created_date: 2013-02-03 # episode 1
   transform_message: |-
     プリキュアラブリンク！
     L! O! V! E!
@@ -431,6 +465,7 @@ cure_sword: &cure_sword
 cure_ace: &cure_ace
   human_name:   円亜久里
   precure_name: キュアエース
+  created_date: 2013-06-30 # episode 22
   transform_message: |-
     プリキュアドレスアップ！
     (キュピラッパー！)
