@@ -1,6 +1,7 @@
 module Rubicure
   class Series < Hash
     include Hashie::Extensions::MethodAccess
+    include Rubicure::Concerns::Util
 
     @@cache = {}
     @@config = nil
@@ -98,21 +99,5 @@ module Rubicure
 
       @@cache[series_name]
     end
-
-    private
-      # @param arg
-      # @return [Date] arg is String or Date
-      # @return [Time] arg is Time
-      # @return [nil] arg is other
-      def to_date(arg)
-        case arg
-          when Date, Time
-            arg
-          when String
-            Date.parse(arg)
-          else
-            nil
-        end
-      end
   end
 end

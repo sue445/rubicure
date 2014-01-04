@@ -1,15 +1,16 @@
 module Rubicure
   class Girl
-    attr_reader :human_name, :precure_name, :transform_message, :extra_names, :current_state, :state_names
+    attr_reader :human_name, :precure_name, :transform_message, :extra_names, :current_state, :state_names, :created_date
 
     @@cache = {}
     @@config = nil
 
-    def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [])
+    def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [], created_date: nil)
       @human_name        = human_name
       @precure_name      = precure_name
       @transform_message = transform_message
       @extra_names       = extra_names || []
+      @created_date      = created_date
       @current_state     = 0
       @state_names = [@human_name, @precure_name]
       @state_names += @extra_names unless @extra_names.empty?

@@ -2,9 +2,11 @@ require "active_support/core_ext"
 require 'yaml'
 require 'hashie'
 require "rubicure/version"
+require "rubicure/concerns/util"
 require "rubicure/series"
 require "rubicure/girl"
 require "rubicure/core"
+require "rubicure/movie"
 
 module Rubicure
   def self.core
