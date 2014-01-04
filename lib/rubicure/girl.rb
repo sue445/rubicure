@@ -1,6 +1,6 @@
 module Rubicure
   class Girl
-    attr_reader :human_name, :precure_name, :transform_message, :extra_names, :current_state, :state_names
+    attr_reader :human_name, :precure_name, :transform_message, :extra_names, :current_state, :state_names, :created_date
 
     @@cache = {}
     @@config = nil

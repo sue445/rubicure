@@ -4,6 +4,7 @@ module Rubicure
   class Core
     include Singleton
     include Enumerable
+    include Rubicure::Concerns::Util
 
     def method_missing(name, *args)
       unmarked_precure = Rubicure::Series::find(:unmarked)
@@ -29,8 +30,9 @@ module Rubicure
 
     alias :current :now
 
+    # @param [Time,Date,String] arg Time, Date or date like String (ex. "2013-12-16")
     # @return [Array<Rubicure::Girl>]
-    def all_stars
+    def all_stars(arg=Time.current)
       unless @all_stars
         @all_stars = []
         Rubicure::Girl.names.each do |girl_name|
@@ -40,7 +42,7 @@ module Rubicure
         @all_stars.uniq!{|girl| girl.human_name }
       end
 
-      @all_stars
+      @all_stars.select{|girl| girl.created_date < to_date(arg) }
     end
 
     # iterate with :unmarked, :max_heart, ...

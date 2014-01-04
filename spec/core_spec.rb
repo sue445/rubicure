@@ -70,5 +70,21 @@ EOS
 
       its(:count){ should == @precure_count }
     end
+
+    context "With arg" do
+      subject{ instance.all_stars(arg) }
+
+      where(:arg, :expected_count) do
+        [
+            ["2009-03-20"            , 14],
+            [Date.parse("2010-03-20"), 17],
+            [Time.parse("2011-03-19"), 21],
+        ]
+      end
+
+      with_them do
+        its(:count){ should == expected_count }
+      end
+    end
   end
 end
