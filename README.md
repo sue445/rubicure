@@ -222,7 +222,23 @@ Precure.all_stars.count
 
 Precure.all_stars.map(&:precure_name)
 #=> ["キュアブラック", "キュアホワイト", "シャイニールミナス", "キュアブルーム", "キュアイーグレット", "キュアドリーム", "キュアルージュ", "キュアレモネード", "キュアミント", "キュアアクア", "ミルキィローズ", "キュアピーチ", "キュアベリー", "キュアパイン", "キュアパッション", "キュアブロッサム", "キュアマリン", "キュアサンシャイン", "キュアムーンライト", "キュアメロディ", "キュアリズム", "キュアビート", "キュアミューズ", "キュアハッピー", "キュアサニー", "キュアピース", "キュアマーチ", "キュアビューティ", "キュアハート", "キュアダイヤモンド", "キュアロゼッタ", "キュアソード", "キュアエース"]
+
+Precure.all_stars("2013-10-26").count
+#=> 33
+Precure.all_stars(:dx).count
+#=> 14
+Precure.all_stars(:dx2).count
+#=> 17
+Precure.all_stars(:dx3).count
+#=> 21
+Precure.all_stars(:new_stage).count
+#=> 28
+Precure.all_stars(:new_stage2).count
+#=> 32
 ```
+
+and [more aliases!](config/movies.yml)
+
 
 ### Equivalence
 ```ruby
