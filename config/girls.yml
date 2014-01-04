@@ -390,7 +390,7 @@ cure_march: &cure_march
 cure_beauty: &cure_beauty
   human_name:   青木れいか
   precure_name: キュアビューティ
-  created_date: 2012-03-14 # episode 5
+  created_date: 2012-03-04 # episode 5
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！
