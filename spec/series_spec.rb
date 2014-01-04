@@ -106,13 +106,13 @@ describe Rubicure::Series do
   end
 
   describe "#find" do
-    subject(:series){ Rubicure::Series.find(series_name) }
+    subject{ Rubicure::Series.find(series_name) }
 
     context "when exists" do
       let(:series_name){ :smile }
 
-      it{ expect(series.title).to eq "スマイルプリキュア！" }
-      it{ expect(series.girls.count).to eq 5 }
+      its(:title){ should == "スマイルプリキュア！" }
+      its(:girls){ should have_exactly(5).girls }
     end
 
     context "when not exists" do
