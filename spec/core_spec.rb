@@ -56,17 +56,19 @@ EOS
   end
 
   describe "#all_stars" do
-    subject{ instance.all_stars }
+    context "Without arg" do
+      subject{ instance.all_stars }
 
-    before do
-      human_names = []
-      config_file = "#{File.dirname(__FILE__)}/../config/girls.yml"
-      Pathname(config_file).each_line do |line|
-        human_names << $1 if line =~ /human_name:\s*(.+)\s*/
+      before do
+        human_names = []
+        config_file = "#{File.dirname(__FILE__)}/../config/girls.yml"
+        Pathname(config_file).each_line do |line|
+          human_names << $1 if line =~ /human_name:\s*(.+)\s*/
+        end
+        @precure_count = human_names.uniq.count
       end
-      @precure_count = human_names.uniq.count
-    end
 
-    its(:count){ should == @precure_count }
+      its(:count){ should == @precure_count }
+    end
   end
 end
