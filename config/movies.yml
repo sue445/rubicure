@@ -1,0 +1,35 @@
+dx1: &dx1
+  title: 映画 プリキュアオールスターズDX みんなともだちっ☆奇跡の全員大集合!
+  started_date: 2009-03-20
+dx:
+  <<: *dx1
+
+dx2: &dx2
+  title: 映画 プリキュアオールスターズDX2 希望の光☆レインボージュエルを守れ!
+  started_date: 2010-03-20
+
+dx3: &dx3
+  title: 映画 プリキュアオールスターズDX3 未来にとどけ! 世界をつなぐ☆虹色の花
+  started_date: 2011-03-29
+
+ns1: &ns1
+  title: 映画 プリキュアオールスターズNewStage みらいのともだち
+  started_date: 2012-03-17
+ns:
+  <<: *ns1
+new_stage:
+  <<: *ns1
+new_stage1:
+  <<: *ns1
+
+ns2: &ns2
+  title: 映画 プリキュアオールスターズNewStage2 こころのともだち
+  started_date: 2013-03-16
+new_stage2:
+  <<: *ns2
+
+ns3: &ns3
+  title: 映画 プリキュアオールスターズ NewStage3 永遠のともだち
+  started_date: 2014-03-15
+new_stage3:
+  <<: *ns3
