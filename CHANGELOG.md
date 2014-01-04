@@ -7,6 +7,8 @@
   * https://github.com/sue445/rubicure/pull/15
 * Impl `Precure#each_with_series` (alias to `Precure#each`)
   * https://github.com/sue445/rubicure/pull/13
+* Add arg to `Precure#all_stars`
+  * https://github.com/sue445/rubicure/pull/16
 
 ## v0.0.3
 [full changelog](http://github.com/sue445/rubicure/compare/v0.0.2...v0.0.3)
