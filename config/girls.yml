@@ -288,7 +288,7 @@ cure_melody: &cure_melody
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
     爪弾くは荒ぶる調べ！ キュアメロディ！
-    響け4人の組曲！スイートプリキュア！
+    届け4人の組曲！スイートプリキュア！
   extra_names:
   - クレッシェンドメロディ
 cure_rhythm: &cure_rhythm
@@ -298,7 +298,7 @@ cure_rhythm: &cure_rhythm
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
     爪弾くはたおやかな調べ！ キュアリズム！
-    響け4人の組曲！スイートプリキュア！
+    届け4人の組曲！スイートプリキュア！
   extra_names:
   - クレッシェンドリズム
 cure_beat: &cure_beat
@@ -308,7 +308,7 @@ cure_beat: &cure_beat
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
     爪弾くは魂の調べ！ キュアビート！
-    響け4人の組曲！スイートプリキュア！
+    届け4人の組曲！スイートプリキュア！
   extra_names:
   - クレッシェンドビート
 cure_muse: &cure_muse
@@ -318,7 +318,7 @@ cure_muse: &cure_muse
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
     爪弾くは女神の調べ！ キュアミューズ！
-    響け4人の組曲！スイートプリキュア！
+    届け4人の組曲！スイートプリキュア！
   extra_names:
   - クレッシェンドミューズ
 melody:
