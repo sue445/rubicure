@@ -63,7 +63,7 @@ EOS
         human_names = []
         config_file = "#{File.dirname(__FILE__)}/../config/girls.yml"
         Pathname(config_file).each_line do |line|
-          human_names << $1 if line =~ /human_name:\s*(.+)\s*/
+          human_names << $1 if line =~ /^\s*human_name:\s*(.+)\s*/
         end
         @precure_count = human_names.uniq.count
       end
