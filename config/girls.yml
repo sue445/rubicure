@@ -497,7 +497,7 @@ cure_lovely: &cure_lovely
     ハピネス注入！幸せチャージ！
   extra_names:
 cure_princess: &cure_princess
-  human_name:   白雪ひめ
+  human_name:   白雪ひめ(ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ)
   precure_name: キュアプリンセス
   created_date: 2014-02-02 # episode 1
   transform_message: |-
