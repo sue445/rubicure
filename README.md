@@ -263,7 +263,7 @@ end
 ```
 
 ## More reference
-http://rubydoc.info/github/sue445/rubicure/
+http://rubydoc.info/gems/rubicure/frames
 
 ## Contributing
 
