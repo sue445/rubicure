@@ -495,6 +495,7 @@ cure_lovely: &cure_lovely
     プリキュアくるりんミラーチェンジ！
     世界に広がるビッグな愛！キュアラブリー！
     ハピネス注入！幸せチャージ！
+    ハピネスチャージプリキュア！
   extra_names:
 cure_princess: &cure_princess
   human_name:   白雪ひめ(ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ)
@@ -505,6 +506,7 @@ cure_princess: &cure_princess
     プリキュアくるりんミラーチェンジ！
     天空に舞う蒼き風！キュアプリンセス！
     ハピネス注入！幸せチャージ！
+    ハピネスチャージプリキュア！
   extra_names:
 cure_honey: &cure_honey
   human_name:   TODO_cure_honey
