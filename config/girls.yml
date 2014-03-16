@@ -511,7 +511,7 @@ cure_princess: &cure_princess
 cure_honey: &cure_honey
   human_name:   TODO_cure_honey
   precure_name: キュアハニー
-  created_date: # TODO episode
+  created_date: 2013-03-17 # NS3
   transform_message: |-
     TODO
   extra_names:
