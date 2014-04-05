@@ -509,11 +509,15 @@ cure_princess: &cure_princess
     ハピネスチャージプリキュア！
   extra_names:
 cure_honey: &cure_honey
-  human_name:   TODO_cure_honey
+  human_name:   大森ゆうこ
   precure_name: キュアハニー
   created_date: 2013-03-17 # NS3
   transform_message: |-
-    TODO
+    かわルンルン！
+    プリキュアくるりんミラーチェンジ！
+    大地に実る命の光！キュアハニー！
+    ハピネス注入！幸せチャージ！
+    ハピネスチャージプリキュア！
   extra_names:
 #cure_fortune: &cure_fortune
 #  human_name:   TODO_cure_fortune
