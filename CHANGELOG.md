@@ -6,6 +6,8 @@
   * https://github.com/sue445/rubicure/pull/18
 
 ### Enhancements
+* Add Happiness Charge Precure !
+  * https://github.com/sue445/rubicure/pull/10
 * Add `ubicure`
   * https://github.com/sue445/rubicure/pull/22 (thx @zonuexe)
 
