@@ -262,8 +262,14 @@ else
 end
 ```
 
+### one-liner
+
+```
+§ ruby -rubicure -e'puts Shiny.luminous.transform_message'
+```
+
 ## More reference
-http://rubydoc.info/github/sue445/rubicure/
+http://rubydoc.info/gems/rubicure/frames
 
 ## Contributing
 
