@@ -68,6 +68,9 @@ Precure.smile.title
 Precure.dokidoki.title
 #=> "ドキドキ！プリキュア"
 
+Precure.happiness_charge.title
+#=> "ハピネスチャージプリキュア！"
+
 Precure.dokidoki
 #=> {:title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :girls=>["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
 ```
@@ -94,10 +97,11 @@ Yes！ プリキュア5 Go Go！
 スイートプリキュア♪
 スマイルプリキュア！
 ドキドキ！プリキュア
-#=> [:unmarked, :max_heart, :splash_star, :yes, :yes_gogo, :fresh, :heart_catch, :suite, :smile, :dokidoki]
+ハピネスチャージプリキュア！
+#=> [:unmarked, :max_heart, :splash_star, :yes, :yes_gogo, :fresh, :heart_catch, :suite, :smile, :dokidoki, :happiness_charge]
 
 Precure.inject([]){|girl_count_of_series, series| girl_count_of_series << series.girls.count; girl_count_of_series  }
-#=> [2, 3, 2, 5, 6, 4, 4, 4, 5, 5]
+#=> [2, 3, 2, 5, 6, 4, 4, 4, 5, 5, 3]
 ```
 
 ### Get current precure series
@@ -163,6 +167,9 @@ Cure.peace
 Cure.rosetta
 #=> #<Rubicure::Girl:0x007fbd60af42c0 @human_name="四葉ありす", @precure_name="キュアロゼッタ", @transform_message="プリキュアラブリンク！\nL! O! V! E!\nひだまりポカポカ キュアロゼッタ！\n響け愛の鼓動！ドキドキプリキュア！\n世界を制するのは愛だけです、\nさぁ、あなたも私と愛を育んでくださいな\n", @extra_names=[], @current_state=0, @state_names=["四葉ありす", "キュアロゼッタ"]>
 
+Cure.honey
+#=> #<Rubicure::Girl:0x007fb041afb768 @human_name="大森ゆうこ", @precure_name="キュアハニー", @transform_message="かわルンルン！\nプリキュアくるりんミラーチェンジ！\n大地に実る命の光！キュアハニー！\nハピネス注入！幸せチャージ！\nハピネスチャージプリキュア！", @extra_names=[], @created_date=Sun, 17 Mar 2013, @current_state=0, @state_names=["大森ゆうこ", "キュアハニー"]>
+
 Shiny.luminous
 #=> #<Rubicure::Girl:0x007fbd60ad7288 @human_name="九条ひかり", @precure_name="シャイニールミナス", @transform_message="ルミナス・シャイニングストリーム！\n輝く命、シャイニールミナス！\n光の心と光の意志、すべてを一つにするために！\n", @extra_names=[], @current_state=0, @state_names=["九条ひかり", "シャイニールミナス"]>
 
@@ -218,10 +225,10 @@ yayoi.name
 ### Precure allstars
 ```ruby
 Precure.all_stars.count
-#=> 33
+#=> 36
 
 Precure.all_stars.map(&:precure_name)
-#=> ["キュアブラック", "キュアホワイト", "シャイニールミナス", "キュアブルーム", "キュアイーグレット", "キュアドリーム", "キュアルージュ", "キュアレモネード", "キュアミント", "キュアアクア", "ミルキィローズ", "キュアピーチ", "キュアベリー", "キュアパイン", "キュアパッション", "キュアブロッサム", "キュアマリン", "キュアサンシャイン", "キュアムーンライト", "キュアメロディ", "キュアリズム", "キュアビート", "キュアミューズ", "キュアハッピー", "キュアサニー", "キュアピース", "キュアマーチ", "キュアビューティ", "キュアハート", "キュアダイヤモンド", "キュアロゼッタ", "キュアソード", "キュアエース"]
+#=> ["キュアブラック", "キュアホワイト", "シャイニールミナス", "キュアブルーム", "キュアイーグレット", "キュアドリーム", "キュアルージュ", "キュアレモネード", "キュアミント", "キュアアクア", "ミルキィローズ", "キュアピーチ", "キュアベリー", "キュアパイン", "キュアパッション", "キュアブロッサム", "キュアマリン", "キュアサンシャイン", "キュアムーンライト", "キュアメロディ", "キュアリズム", "キュアビート", "キュアミューズ", "キュアハッピー", "キュアサニー", "キュアピース", "キュアマーチ", "キュアビューティ", "キュアハート", "キュアダイヤモンド", "キュアロゼッタ", "キュアソード", "キュアエース", "キュアラブリー", "キュアプリンセス", "キュアハニー"]
 
 Precure.all_stars("2013-10-26").count
 #=> 33
@@ -235,6 +242,8 @@ Precure.all_stars(:new_stage).count
 #=> 28
 Precure.all_stars(:new_stage2).count
 #=> 32
+Precure.all_stars(:new_stage3).count
+#=> 36
 ```
 
 and [more aliases!](config/movies.yml)
