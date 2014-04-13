@@ -41,8 +41,8 @@ describe Rubicure do
             [:dokidoki],
             [:dokidoki_precure],
 
-        #[:happiness_charge],
-        #[:happiness_charge_precure],
+            [:happiness_charge],
+            [:happiness_charge_precure],
         ]
       end
 
@@ -96,6 +96,11 @@ describe Rubicure do
           [:rosetta],
           [:sword],
           [:ace],
+
+          [:lovely],
+          [:princess],
+          [:honey],
+          #[:fortune],
       ]
     end
 

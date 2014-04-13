@@ -50,7 +50,7 @@ module Rubicure
         date = to_date(arg)
       end
 
-      @all_stars.select{|girl| girl.created_date <= date }
+      @all_stars.select{|girl| girl.created_date && girl.created_date <= date }
     end
 
     # iterate with :unmarked, :max_heart, ...

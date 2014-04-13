@@ -26,7 +26,7 @@ describe Rubicure::Core do
       puts <<EOS
 ====================
 title:     #{series.title}
-broadcast: #{series.started_date} - #{series.ended_date}
+broadcast: #{series.started_date} - #{series.try(:ended_date)}
 girls:     #{series.girls.count}
 EOS
 

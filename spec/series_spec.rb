@@ -61,7 +61,7 @@ describe Rubicure::Series do
         :suite,
         :smile,
         :dokidoki,
-        #:happiness_charge,
+        :happiness_charge,
     ]
   }
 
