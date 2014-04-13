@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.0.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.5...master)
+
+## v0.0.5
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.4...v0.0.5)
 
 ### Bugfixes
 * Fix the transform message of Cure Windy (thx @kaosf)
