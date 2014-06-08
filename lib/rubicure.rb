@@ -1,4 +1,4 @@
-require "active_support/core_ext"
+require 'active_support/all'
 require 'yaml'
 require 'hashie'
 require "rubicure/version"
