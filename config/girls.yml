@@ -511,7 +511,7 @@ cure_princess: &cure_princess
 cure_honey: &cure_honey
   human_name:   大森ゆうこ
   precure_name: キュアハニー
-  created_date: 2013-03-17 # NS3
+  created_date: 2014-03-17 # NS3
   transform_message: |-
     かわルンルン！
     プリキュアくるりんミラーチェンジ！
