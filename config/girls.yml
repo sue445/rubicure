@@ -519,13 +519,17 @@ cure_honey: &cure_honey
     ハピネス注入！幸せチャージ！
     ハピネスチャージプリキュア！
   extra_names:
-#cure_fortune: &cure_fortune
-#  human_name:   TODO_cure_fortune
-#  precure_name: キュアフォーチュン
-#  created_date: # TODO episode
-#  transform_message: |-
-#    TODO
-#  extra_names:
+cure_fortune: &cure_fortune
+  human_name:   氷川いおな
+  precure_name: キュアフォーチュン
+  created_date: 2014-06-29
+  transform_message: |-
+    かわルンルン！
+    プリキュアきらりんスターシンフォニー！
+    夜空にきらめく希望の星！キュアフォーチュン！
+    ハピネス注入！幸せチャージ！
+    ハピネスチャージプリキュア！
+  extra_names:
 
 lovely:
   <<: *cure_lovely
@@ -533,5 +537,5 @@ princess:
   <<: *cure_princess
 honey:
   <<: *cure_honey
-#fortune:
-#  <<: *cure_fortune
+fortune:
+  <<: *cure_fortune

@@ -130,6 +130,6 @@ happiness_charge: &happiness_charge
   - cure_lovely
   - cure_princess
   - cure_honey
-#  - cure_fortune
+  - cure_fortune
 happiness_charge_precure:
   <<: *happiness_charge
