@@ -1,5 +1,10 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.0.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.6...master)
+
+## v0.0.6
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.5...v0.0.6)
+
+* Support activesupport >= 4.0.0
 
 ## v0.0.5
 [full changelog](http://github.com/sue445/rubicure/compare/v0.0.4...v0.0.5)
