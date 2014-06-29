@@ -1,10 +1,17 @@
-# Rubicure (Ruby + Precure) [![Gem Version](https://badge.fury.io/rb/rubicure.png)](http://badge.fury.io/rb/rubicure) [![Build Status](https://travis-ci.org/sue445/rubicure.png?branch=master)](https://travis-ci.org/sue445/rubicure) [![Code Climate](https://codeclimate.com/github/sue445/rubicure.png)](https://codeclimate.com/github/sue445/rubicure) [![Coverage Status](https://coveralls.io/repos/sue445/rubicure/badge.png)](https://coveralls.io/r/sue445/rubicure) [![Dependency Status](https://gemnasium.com/sue445/rubicure.png)](https://gemnasium.com/sue445/rubicure)
+# Rubicure (Ruby + Precure)
+
+[![Gem Version](https://badge.fury.io/rb/rubicure.png)](http://badge.fury.io/rb/rubicure)
+[![Build Status](https://travis-ci.org/sue445/rubicure.png?branch=master)](https://travis-ci.org/sue445/rubicure)
+[![Code Climate](https://codeclimate.com/github/sue445/rubicure.png)](https://codeclimate.com/github/sue445/rubicure)
+[![Coverage Status](https://coveralls.io/repos/sue445/rubicure/badge.png)](https://coveralls.io/r/sue445/rubicure)
+[![Dependency Status](https://gemnasium.com/sue445/rubicure.png)](https://gemnasium.com/sue445/rubicure)
 
 All about Japanese battle heroine "Pretty Cure (Precure)".
 
 Inspired by [Acme::PrettyCure](http://perl-users.jp/articles/advent-calendar/2010/acme/6) and [pycure](https://github.com/drillbits/pycure).
 
-[![Stories in Ready](https://badge.waffle.io/sue445/rubicure.png?label=ready)](http://waffle.io/sue445/rubicure) [![endorse](https://api.coderwall.com/sue445/endorsecount.png)](https://coderwall.com/sue445)
+[![Stories in Ready](https://badge.waffle.io/sue445/rubicure.png?label=ready)](http://waffle.io/sue445/rubicure)
+[![endorse](https://api.coderwall.com/sue445/endorsecount.png)](https://coderwall.com/sue445)
 
 ## Requirements
 
