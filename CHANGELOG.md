@@ -1,5 +1,10 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.0.6...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.7...master)
+
+## v0.0.7
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.6...v0.0.7)
+
+* Support Cure Fortune
 
 ## v0.0.6
 [full changelog](http://github.com/sue445/rubicure/compare/v0.0.5...v0.0.6)
