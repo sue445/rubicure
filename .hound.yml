@@ -1,0 +1,5 @@
+Style/LineLength:
+  Description: 'Limit lines to 130 characters.'
+  Max: 130
+Style/SpaceInsideParens:
+  Enabled: false
