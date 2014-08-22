@@ -17,7 +17,7 @@ describe Rubicure::Core do
         time_travel_to "2013-02-01"
       end
 
-      it { expect{ subject }.to raise_error }
+      it { expect { subject }.to raise_error }
     end
   end
 
@@ -52,7 +52,7 @@ EOS
       end
     end
 
-    it { expect{|b| instance.each_with_series(&b) }.to yield_successive_args *@expected_series }
+    it { expect { |b| instance.each_with_series(&b) }.to yield_successive_args *@expected_series }
   end
 
   describe "#all_stars" do

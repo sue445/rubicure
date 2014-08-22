@@ -47,8 +47,8 @@ describe Rubicure do
       end
 
       with_them do
-        it { expect{ Precure.send(title) }.not_to raise_error }
-        it { expect{ Precure.send(title).girls }.not_to raise_error }
+        it { expect { Precure.send(title) }.not_to raise_error }
+        it { expect { Precure.send(title).girls }.not_to raise_error }
       end
     end
 

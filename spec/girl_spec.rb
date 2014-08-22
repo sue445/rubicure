@@ -11,13 +11,13 @@ describe Rubicure::Girl do
   let(:human_name)     { "黄瀬やよい" }
   let(:precure_name)   { "キュアピース" }
   let(:extra_names)    { %w(プリンセスピース ウルトラピース) }
-  let(:transform_message) {
+  let(:transform_message) do
     <<EOF
 プリキュアスマイルチャージ！
 GO! GO! Let's GO ピース！
 ピカピカピカリンジャンケンポン！ キュアピース！
 EOF
-  }
+  end
 
   describe "#name" do
     context "when before transform" do

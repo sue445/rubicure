@@ -118,7 +118,7 @@ describe Rubicure::Series do
     context "when not exists" do
       let(:series_name) { :ashita_no_nadja  }
 
-      it { expect{ subject }.to raise_error }
+      it { expect { subject }.to raise_error }
     end
   end
 
