@@ -1,5 +1,5 @@
 describe Rubicure::Core do
-  let(:instance){ Rubicure::Core.instance }
+  let(:instance) { Rubicure::Core.instance }
 
   describe "#now" do
     subject{ instance.now }
@@ -9,7 +9,7 @@ describe Rubicure::Core do
         time_travel_to "2013-01-01"
       end
 
-      its(:title){ should == "スマイルプリキュア！" }
+      its(:title) { should == "スマイルプリキュア！" }
     end
 
     context "when not on air" do
@@ -17,7 +17,7 @@ describe Rubicure::Core do
         time_travel_to "2013-02-01"
       end
 
-      it{ expect{ subject }.to raise_error }
+      it { expect{ subject }.to raise_error }
     end
   end
 
@@ -52,7 +52,7 @@ EOS
       end
     end
 
-    it{ expect{|b| instance.each_with_series(&b) }.to yield_successive_args *@expected_series }
+    it { expect{|b| instance.each_with_series(&b) }.to yield_successive_args *@expected_series }
   end
 
   describe "#all_stars" do
@@ -68,7 +68,7 @@ EOS
         @precure_count = human_names.uniq.count
       end
 
-      its(:count){ should == @precure_count }
+      its(:count) { should == @precure_count }
     end
 
     context "With arg" do
@@ -95,7 +95,7 @@ EOS
       end
 
       with_them do
-        its(:count){ should == expected_count }
+        its(:count) { should == expected_count }
       end
     end
   end

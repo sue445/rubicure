@@ -1,4 +1,7 @@
 module Rubicure
+  # Precure girl (ex. Cure Peace, Cure Rosetta, Cure Honey)
+  #
+  # this is record of "config/girls.yml"
   class Girl
     attr_reader :human_name, :precure_name, :transform_message, :extra_names, :current_state, :state_names, :created_date
 
@@ -16,7 +19,7 @@ module Rubicure
       @state_names += @extra_names unless @extra_names.empty?
     end
 
-    def == (other)
+    def ==(other)
       other.is_a?(self.class) && self.human_name == other.human_name
     end
 
@@ -62,7 +65,7 @@ module Rubicure
     def self.uniq_names
       uniq_names = []
       config.each do |name, series|
-        uniq_names << name unless uniq_names.any?{|uniq_name| config[uniq_name][:precure_name] == series[:precure_name] }
+        uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:precure_name] == series[:precure_name] }
       end
       uniq_names
     end

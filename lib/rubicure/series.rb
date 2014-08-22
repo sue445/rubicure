@@ -1,4 +1,6 @@
 module Rubicure
+  # Precure TV series (ex. Smile Precure, Dokidoki Orecure)
+  # this is record of "config/series.yml"
   class Series < Hash
     include Hashie::Extensions::MethodAccess
     include Rubicure::Concerns::Util
@@ -8,7 +10,7 @@ module Rubicure
 
     # @param [Rubicure::Series,Rubicure::Girl] other
     # @return [Boolean] other is same Rubicure::Series or Rubicure::Series include Rubicure::Girl
-    def === (other)
+    def ===(other)
       case other
       when self.class
         self == other
@@ -58,7 +60,7 @@ module Rubicure
     def self.uniq_names
       uniq_names = []
       config.each do |name, series|
-        uniq_names << name unless uniq_names.any?{|uniq_name| config[uniq_name][:title] == series[:title] }
+        uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:title] == series[:title] }
       end
       uniq_names
     end
