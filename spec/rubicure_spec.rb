@@ -47,16 +47,16 @@ describe Rubicure do
       end
 
       with_them do
-        it{ expect{ Precure.send(title) }.not_to raise_error }
-        it{ expect{ Precure.send(title).girls }.not_to raise_error }
+        it { expect { Precure.send(title) }.not_to raise_error }
+        it { expect { Precure.send(title).girls }.not_to raise_error }
       end
     end
 
     context "When Precure#<unmarked_precure_method>" do
-      let(:futari_wa_pretty_cure){ Rubicure::Series.find(:unmarked) }
+      let(:futari_wa_pretty_cure) { Rubicure::Series.find(:unmarked) }
 
-      it{ expect(Precure.title).to       eq futari_wa_pretty_cure.title }
-      it{ expect(Precure.girls.count).to eq futari_wa_pretty_cure.girls.count }
+      it { expect(Precure.title).to       eq futari_wa_pretty_cure.title }
+      it { expect(Precure.girls.count).to eq futari_wa_pretty_cure.girls.count }
     end
   end
 
@@ -100,18 +100,18 @@ describe Rubicure do
           [:lovely],
           [:princess],
           [:honey],
-          #[:fortune],
+          [:fortune],
       ]
     end
 
     with_them do
-      it{ expect( Cure.send(name) ).to be_an_instance_of Rubicure::Girl }
-      it{ expect( Cure.send(name).precure_name ).to be_start_with "キュア" }
+      it { expect( Cure.send(name) ).to be_an_instance_of Rubicure::Girl }
+      it { expect( Cure.send(name).precure_name ).to be_start_with "キュア" }
     end
 
     context "When precure who not starting 'cure'" do
-      it{ expect( Shiny.luminous.precure_name ).to eq "シャイニールミナス"}
-      it{ expect( Milky.rose.precure_name ).to eq "ミルキィローズ"}
+      it { expect( Shiny.luminous.precure_name ).to eq "シャイニールミナス" }
+      it { expect( Milky.rose.precure_name ).to eq "ミルキィローズ" }
     end
   end
 end

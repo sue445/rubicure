@@ -1,4 +1,7 @@
 module Rubicure
+  # Precure All Stars Movie
+  #
+  # this is record of "config/movies.yml"
   class Movie < Hash
     include Hashie::Extensions::MethodAccess
 
@@ -14,7 +17,7 @@ module Rubicure
     def self.uniq_names
       uniq_names = []
       config.each do |name, series|
-        uniq_names << name unless uniq_names.any?{|uniq_name| config[uniq_name][:title] == series[:title] }
+        uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:title] == series[:title] }
       end
       uniq_names
     end

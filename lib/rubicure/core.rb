@@ -1,6 +1,7 @@
 module Rubicure
   require "singleton"
 
+  # generic methods
   class Core
     include Singleton
     include Enumerable
@@ -32,14 +33,14 @@ module Rubicure
 
     # @param [Time,Date,String,Symbol] arg Time, Date or date like String (ex. "2013-12-16")
     # @return [Array<Rubicure::Girl>]
-    def all_stars(arg=Time.current)
+    def all_stars(arg = Time.current)
       unless @all_stars
         @all_stars = []
         Rubicure::Girl.names.each do |girl_name|
           @all_stars << Rubicure::Girl.find(girl_name)
         end
 
-        @all_stars.uniq!{|girl| girl.human_name }
+        @all_stars.uniq! { |girl| girl.human_name }
       end
 
       begin
@@ -50,7 +51,7 @@ module Rubicure
         date = to_date(arg)
       end
 
-      @all_stars.select{|girl| girl.created_date && girl.created_date <= date }
+      @all_stars.select { |girl| girl.created_date && girl.created_date <= date }
     end
 
     # iterate with :unmarked, :max_heart, ...
