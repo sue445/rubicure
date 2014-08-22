@@ -65,7 +65,7 @@ EOF
   end
 
   describe "#==" do
-    subject{ girl == other_girl }
+    subject { girl == other_girl }
 
     context "same object" do
       let(:other_girl) { girl }
@@ -92,7 +92,7 @@ EOF
   end
 
   describe "#find" do
-    subject{ Rubicure::Girl.find(girl_name) }
+    subject { Rubicure::Girl.find(girl_name) }
 
     let(:girl_name) { :peace }
 
@@ -101,7 +101,7 @@ EOF
   end
 
   describe "#uniq_names" do
-    subject{ Rubicure::Girl.uniq_names }
+    subject { Rubicure::Girl.uniq_names }
 
     let(:containing_name_alias_count) { Rubicure::Girl.names.count }
 

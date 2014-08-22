@@ -1,6 +1,6 @@
 describe Rubicure::Series do
   describe "#on_air?" do
-    subject{ series.on_air?(date) }
+    subject { series.on_air?(date) }
 
     context "when ended title" do
       let(:series) do
@@ -24,11 +24,11 @@ describe Rubicure::Series do
     end
 
     context "when live title" do
-      let(:series) {
+      let(:series) do
         Rubicure::Series[
             started_date: Date.parse("2013-02-03"),
         ]
-      }
+      end
 
       let(:date) { Date.parse("2013-12-01") }
 
@@ -37,7 +37,7 @@ describe Rubicure::Series do
   end
 
   describe "#girls" do
-    subject{ series.girls }
+    subject { series.girls }
 
     let(:series) do
       Rubicure::Series[
@@ -93,20 +93,20 @@ describe Rubicure::Series do
   end
 
   describe "#names" do
-    subject{ Rubicure::Series.names }
+    subject { Rubicure::Series.names }
 
     it { should include *series_names }
   end
 
   describe "#uniq_names" do
-    subject{ Rubicure::Series.uniq_names }
+    subject { Rubicure::Series.uniq_names }
 
     it { should include *series_names }
     its(:count) { should == series_names.count }
   end
 
   describe "#find" do
-    subject{ Rubicure::Series.find(series_name) }
+    subject { Rubicure::Series.find(series_name) }
 
     context "when exists" do
       let(:series_name) { :smile }

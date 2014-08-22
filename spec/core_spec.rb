@@ -2,7 +2,7 @@ describe Rubicure::Core do
   let(:instance) { Rubicure::Core.instance }
 
   describe "#now" do
-    subject{ instance.now }
+    subject { instance.now }
 
     context "when on air" do
       before do
@@ -57,7 +57,7 @@ EOS
 
   describe "#all_stars" do
     context "Without arg" do
-      subject{ instance.all_stars }
+      subject { instance.all_stars }
 
       before do
         human_names = []
@@ -72,7 +72,7 @@ EOS
     end
 
     context "With arg" do
-      subject{ instance.all_stars(arg) }
+      subject { instance.all_stars(arg) }
 
       where(:arg, :expected_count) do
         [
