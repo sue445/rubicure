@@ -3,12 +3,14 @@ module Rubicure
   #
   # this is record of "config/girls.yml"
   class Girl
-    attr_reader :human_name, :precure_name, :transform_message, :extra_names, :current_state, :state_names, :created_date
+    attr_reader :human_name, :precure_name, :transform_message, :extra_names,
+                :current_state, :state_names, :created_date, :attack_messages
 
     @@cache = {}
     @@config = nil
 
-    def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [], created_date: nil)
+    def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [],
+                   created_date: nil, attack_messages: [])
       @human_name        = human_name
       @precure_name      = precure_name
       @transform_message = transform_message
@@ -17,6 +19,7 @@ module Rubicure
       @current_state     = 0
       @state_names = [@human_name, @precure_name]
       @state_names += @extra_names unless @extra_names.empty?
+      @attack_messages   = [""] + attack_messages
     end
 
     def ==(other)
@@ -41,6 +44,14 @@ module Rubicure
 
     def humanize
       @current_state = 0
+    end
+
+    def attack!
+      raise "require transform" if current_attack_message.blank?
+
+      puts current_attack_message
+
+      current_attack_message
     end
 
     # @param girl_name [Symbol]
@@ -89,6 +100,12 @@ module Rubicure
     # @param [Symbol] girl_name
     def self.valid?(girl_name)
       names.include?(girl_name)
+    end
+
+    private
+
+    def current_attack_message
+      attack_messages[current_state]
     end
   end
 end

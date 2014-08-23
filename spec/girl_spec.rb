@@ -4,7 +4,8 @@ describe Rubicure::Girl do
         human_name:        human_name,
         precure_name:      precure_name,
         extra_names:       extra_names,
-        transform_message: transform_message
+        transform_message: transform_message,
+        attack_messages:   attack_messages,
     )
   end
 
@@ -17,6 +18,12 @@ describe Rubicure::Girl do
 GO! GO! Let's GO ピース！
 ピカピカピカリンジャンケンポン！ キュアピース！
 EOF
+  end
+  let(:attack_messages) do
+    [
+      "プリキュアピースサンダー！",
+      "プリキュアピースサンダーハリケーン！",
+    ]
   end
 
   describe "#name" do
@@ -106,5 +113,21 @@ EOF
     let(:containing_name_alias_count) { Rubicure::Girl.names.count }
 
     its(:count) { should < containing_name_alias_count }
+  end
+
+  describe "#attack!" do
+    subject { girl.attack! }
+
+    context "When human" do
+      it { expect { subject }.to raise_error }
+    end
+
+    context "When precure" do
+      before do
+        girl.transform!
+      end
+
+      it { should eq "プリキュアピースサンダー！" }
+    end
   end
 end
