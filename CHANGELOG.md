@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.0.7...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.1.0...master)
+
+## v0.1.0
+[full changelog](http://github.com/sue445/rubicure/compare/v0.0.7...v0.1.0)
 
 * Impl `Girl#attack!`
 * Print transform and attack by line
