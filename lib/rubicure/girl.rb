@@ -126,13 +126,15 @@ module Rubicure
 
     def method_missing(method_name, *args)
       is_bang = %r/[!！]\z/ =~ method_name
-      shorten = method_name.to_s.downcase.sub(%r/\A(?:プリキュア|precure)|(?:プリキュア|precure)\z/i, '').gsub(%r/[-\s　・_!！]/, '')
+      shorten = method_name.to_s.downcase.
+          sub(%r/\A(?:プリキュア|precure)|(?:プリキュア|precure)\z/i, '').
+          gsub(%r/[-\s　・_!！]/, '')
 
       if @transform_calls.include? shorten
-        return self.transform! *args
+        return transform! *args
       end
 
-      error_message = "undefined method `#{method_name}' for #<#{self.class} #{self.human_name}>"
+      error_message = "undefined method `#{method_name}' for #<#{self.class} #{human_name}>"
       raise NoMethodError.new(error_message, method_name, args)
     end
   end
