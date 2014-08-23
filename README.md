@@ -197,6 +197,10 @@ yayoi = Precure.smile.girls[2]
 yayoi.name
 #=> "黄瀬やよい"
 
+yayoi.attack!
+#=> RuntimeError: require transform
+
+
 yayoi.transform!
 
 (レディ？)
@@ -210,15 +214,34 @@ yayoi.transform!
 yayoi.name
 #=> "キュアピース"
 
+yayoi.attack!
+
+プリキュア！ピースサンダー！！
+
 # 2st transform
 yayoi.transform!
 yayoi.name
 #=> "プリンセスピース"
 
+yayoi.attack!
+
+開け、ロイヤルクロック！
+(みんなの力を1つにするクル！)
+届け、希望の光！
+はばたけ！光り輝く未来へ！
+プリキュア！ロイヤルレインボーバースト！
+
 # final transform
 yayoi.transform!
 yayoi.name
 #=> "ウルトラピース"
+
+yayoi.attack!
+
+(みんなの力を1つにするクル！)
+プリキュア！ミラクルレインボーバースト！
+輝けー！！
+スマイルプリキュア！！
 
 # back to human
 yayoi.transform!.transform!
