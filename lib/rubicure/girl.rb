@@ -8,6 +8,7 @@ module Rubicure
 
     @@cache = {}
     @@config = nil
+    @@sleep_sec = 1
 
     def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [],
                    created_date: nil, attack_messages: [])
@@ -37,7 +38,7 @@ module Rubicure
       @current_state += 1
       @current_state = 0 unless @current_state < @state_names.length
 
-      puts @transform_message  if @current_state == 1
+      print_by_line @transform_message  if @current_state == 1
 
       self
     end
@@ -49,7 +50,7 @@ module Rubicure
     def attack!
       raise "require transform" if current_attack_message.blank?
 
-      puts current_attack_message
+      print_by_line current_attack_message
 
       current_attack_message
     end
@@ -102,10 +103,23 @@ module Rubicure
       names.include?(girl_name)
     end
 
+    def self.sleep_sec=(sleep_sec)
+      @@sleep_sec = sleep_sec
+    end
+
     private
 
     def current_attack_message
       attack_messages[current_state]
+    end
+
+    def print_by_line(message)
+      index = 0
+      message.each_line do |line|
+        sleep(@@sleep_sec) if index > 0
+        puts line
+        index += 1
+      end
     end
   end
 end
