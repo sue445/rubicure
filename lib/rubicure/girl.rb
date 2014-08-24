@@ -134,8 +134,7 @@ module Rubicure
         return transform! *args
       end
 
-      error_message = "undefined method `#{method_name}' for #<#{self.class} #{human_name}>"
-      raise NoMethodError.new(error_message, method_name, args)
+      super
     end
   end
 end

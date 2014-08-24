@@ -134,15 +134,13 @@ EOF
   describe "#method_missing" do
     subject { girl.send(transform_call) }
 
+    before do
+      girl.humanize
+    end
+
     context "When Cure Lemonade calls metamorphose" do
       let(:girl) { Cure.lemonade }
       let(:transform_call) { "metamorphose" }
-      it { expect{ subject }.not_to raise_error }
-    end
-
-    context "When Cure Lemonade calls プリキュア・メタモルフォーゼ！" do
-      let(:girl) { Cure.lemonade }
-      let(:transform_call) { "プリキュア・メタモルフォーゼ！" }
       it { expect{ subject }.not_to raise_error }
     end
 
@@ -155,7 +153,7 @@ EOF
     context "When Milky Rose calls metamorphose" do
       let(:girl) { Milky.rose }
       let(:transform_call) { "metamorphose" }
-      let(:error_message) { "undefined method `#{transform_call}' for #<Rubicure::Girl 美々野くるみ>" }
+      let(:error_message) { %r/\Aundefined method `#{transform_call}' for #<Rubicure::Girl / }
       it { expect{ subject }.to raise_error(NoMethodError, error_message) }
     end
   end
