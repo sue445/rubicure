@@ -28,6 +28,18 @@ module Cure
       super
     end
   end
+
+  class << self.peace
+    MESSAGE = <<EOF
+ピカピカピカリン
+ジャンケンポン！
+（%s）
+EOF
+    def pikarin_janken
+      print_by_line MESSAGE % %w(グー チョキ パー).sample
+    end
+    alias janken pikarin_janken
+  end
 end
 
 module Shiny
