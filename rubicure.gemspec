@@ -32,5 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-collection_matchers", "~> 1.0.0"
   spec.add_development_dependency "rspec-its", "~> 1.0.1"
   spec.add_development_dependency "rspec-parameterized", "~> 0.1.1"
+  spec.add_development_dependency "rubocop"
   spec.add_development_dependency "yard"
 end
