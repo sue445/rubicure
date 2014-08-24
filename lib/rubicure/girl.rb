@@ -4,14 +4,15 @@ module Rubicure
   # this is record of "config/girls.yml"
   class Girl
     attr_reader :human_name, :precure_name, :transform_message, :extra_names,
-                :current_state, :state_names, :created_date, :attack_messages
+                :current_state, :state_names, :created_date, :attack_messages,
+                :transform_calls
 
     @@cache = {}
     @@config = nil
     @@sleep_sec = 1
 
     def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [],
-                   created_date: nil, attack_messages: [])
+                   created_date: nil, attack_messages: [], transform_calls: [])
       @human_name        = human_name
       @precure_name      = precure_name
       @transform_message = transform_message
@@ -21,6 +22,7 @@ module Rubicure
       @state_names = [@human_name, @precure_name]
       @state_names += @extra_names unless @extra_names.empty?
       @attack_messages   = [""] + attack_messages
+      @transform_calls   = transform_calls
     end
 
     def ==(other)
@@ -120,6 +122,16 @@ module Rubicure
         puts line
         index += 1
       end
+    end
+
+    def method_missing(method_name, *args)
+      shortened_name = method_name.to_s.
+          sub(%r/\Aprecure_|_precure\z/, "").
+          sub(%r/!\z/, "")
+
+      return transform! *args if @transform_calls.include? shortened_name
+
+      super
     end
   end
 end

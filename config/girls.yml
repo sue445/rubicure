@@ -18,6 +18,8 @@ cure_black: &cure_black
       邪悪な心を打ち砕く！
       プリキュア・マーブル・スクリュー！！
       マックス！！
+  transform_calls:
+    - dual_aurora_wave
 cure_white: &cure_white
   human_name:   雪城ほのか
   precure_name: キュアホワイト
@@ -37,6 +39,8 @@ cure_white: &cure_white
       邪悪な心を打ち砕く！
       プリキュア・マーブル・スクリュー！！
       マックス！！
+  transform_calls:
+    - dual_aurora_wave
 black:
   <<: *cure_black
 white:
@@ -56,6 +60,9 @@ shiny_luminous: &shiny_luminous
     - |-
       光の意志よ！私に勇気を！希望と力を！！
       ルミナス・ハーティエル・アンクション！
+  transform_calls:
+    - luminous_shining_stream
+    - shining_stream
 luminous:
   <<: *shiny_luminous
 
@@ -78,6 +85,8 @@ cure_bloom: &cure_bloom
       今、プリキュアと共に！
       奇跡の力を解き放て！
       プリキュア　ツインストリーム・スプラッシュ！！
+  transform_calls:
+    - dual_spilitual_power
 cure_egret: &cure_egret
   human_name:   美翔舞
   precure_name: キュアイーグレット
@@ -96,6 +105,8 @@ cure_egret: &cure_egret
       今、プリキュアと共に！
       奇跡の力を解き放て！
       プリキュア　ツインストリーム・スプラッシュ！！
+  transform_calls:
+    - dual_spilitual_power
 cure_bright: &cure_bright
   human_name:   日向咲
   precure_name: キュアブライト
@@ -112,6 +123,8 @@ cure_bright: &cure_bright
       精霊の光よ、命の煌きよ！
       希望へ導け、2つの心！
       プリキュア・スパイラルスタースプラッシュ！！
+  transform_calls:
+    - dual_spilitual_power
 cure_windy: &cure_windy
   human_name:   美翔舞
   precure_name: キュアウィンディ
@@ -128,6 +141,8 @@ cure_windy: &cure_windy
       精霊の光よ、命の煌きよ！
       希望へ導け、2つの心！
       プリキュア・スパイラルスタースプラッシュ！！
+  transform_calls:
+    - dual_spilitual_power
 
 bloom:
   <<: *cure_bloom
@@ -153,6 +168,8 @@ cure_dream:  &cure_dream
   attack_messages:
     - |-
       プリキュア！シューティング・スター！
+  transform_calls:
+    - metamorphose
 cure_rouge:  &cure_rouge
   human_name:   夏木りん
   precure_name: キュアルージュ
@@ -181,6 +198,8 @@ cure_lemonade:  &cure_lemonade
   attack_messages:
     - |-
       プリキュア！プリズム・チェーン！
+  transform_calls:
+    - metamorphose
 cure_mint:  &cure_mint
   human_name:   秋元こまち
   precure_name: キュアミント
@@ -195,6 +214,8 @@ cure_mint:  &cure_mint
   attack_messages:
     - |-
       プリキュア！エメラルド・ソーサー！
+  transform_calls:
+    - metamorphose
 cure_aqua:  &cure_aqua
   human_name:   水無月かれん
   precure_name: キュアアクア
@@ -209,6 +230,8 @@ cure_aqua:  &cure_aqua
   attack_messages:
     - |-
       プリキュア！サファイヤ・アロー！
+  transform_calls:
+    - metamorphose
 dream:
   <<: *cure_dream
 rouge:
@@ -234,6 +257,9 @@ milky_rose: &milky_rose
       邪悪な力を包み込む
       バラの吹雪を咲かせましょう！
       ミルキィローズ・ブリザード！
+  transform_calls:
+    - sky_rose_translate
+    - translate
 rose:
   <<: *milky_rose
 
@@ -253,6 +279,10 @@ cure_peach: &cure_peach
     - |-
       悪いの悪いの飛んでいけ！
       プリキュア！ラブサンシャインフレッシュ！
+  transform_calls:
+    - change_precure_beatup
+    - change
+    - beatup
 cure_berry: &cure_berry
   human_name:   蒼乃美希
   precure_name: キュアベリー
@@ -268,6 +298,10 @@ cure_berry: &cure_berry
     - |-
       悪いの悪いの飛んでいけ！
       プリキュア！エスポワールシャワーフレッシュ！
+  transform_calls:
+    - changeprecurebeatup
+    - change
+    - beatup
 cure_pine: &cure_pine
   human_name:   山吹祈里
   precure_name: キュアパイン
@@ -283,6 +317,10 @@ cure_pine: &cure_pine
     - |-
       悪いの悪いの飛んでいけ！
       プリキュア！ヒーリングプレアーフレッシュ！
+  transform_calls:
+    - change_precure_beatup
+    - change
+    - beatup
 
 cure_passion: &cure_passion
   human_name:   東せつな
@@ -299,6 +337,10 @@ cure_passion: &cure_passion
     - |-
       吹き荒れよ幸せの嵐！
       プリキュア！ハピネスハリケーン！
+  transform_calls:
+    - change_precure_beatup
+    - change
+    - beatup
 peach:
   <<: *cure_peach
 berry:
@@ -327,6 +369,8 @@ cure_blossom: &cure_blossom
     - |-
       花よ、咲き誇れ！
       プリキュア・ハートキャッチ・オーケストラ！！
+  transform_calls:
+    - open_my_heart
 cure_marine: &cure_marine
   human_name:   来海えりか
   precure_name: キュアマリン
@@ -345,6 +389,8 @@ cure_marine: &cure_marine
     - |-
       花よ、咲き誇れ！
       プリキュア・ハートキャッチ・オーケストラ！！
+  transform_calls:
+    - open_my_heart
 cure_sunshine: &cure_sunshine
   human_name:   明堂院いつき
   precure_name: キュアサンシャイン
@@ -363,6 +409,8 @@ cure_sunshine: &cure_sunshine
     - |-
       花よ、咲き誇れ！
       プリキュア・ハートキャッチ・オーケストラ！！
+  transform_calls:
+    - open_my_heart
 cure_moonlight: &cure_moonlight
   human_name:   月影ゆり
   precure_name: キュアムーンライト
@@ -381,6 +429,8 @@ cure_moonlight: &cure_moonlight
     - |-
       花よ、咲き誇れ！
       プリキュア・ハートキャッチ・オーケストラ！！
+  transform_calls:
+    - open_my_heart
 
 blossom:
   <<: *cure_blossom
@@ -414,6 +464,10 @@ cure_melody: &cure_melody
       プリキュア！スイートセッションアンサンブル！
       クレッシェンド！！
       フィナーレ！
+  transform_calls:
+    - lets_play_precure_modulation
+    - lets_play
+    - modulation
 cure_rhythm: &cure_rhythm
   human_name:   南野奏
   precure_name: キュアリズム
@@ -436,6 +490,10 @@ cure_rhythm: &cure_rhythm
       プリキュア！スイートセッションアンサンブル！
       クレッシェンド！！
       フィナーレ！
+  transform_calls:
+    - lets_play_precure_modulation
+    - lets_play
+    - modulation
 cure_beat: &cure_beat
   human_name:   黒川エレン
   precure_name: キュアビート
@@ -457,6 +515,10 @@ cure_beat: &cure_beat
       プリキュア！スイートセッションアンサンブル！
       クレッシェンド！！
       フィナーレ！
+  transform_calls:
+    - lets_play_precure_modulation
+    - lets_play
+    - modulation
 cure_muse: &cure_muse
   human_name:   調辺アコ
   precure_name: キュアミューズ
@@ -479,6 +541,10 @@ cure_muse: &cure_muse
       プリキュア！スイートセッションアンサンブル！
       クレッシェンド！！
       フィナーレ！
+  transform_calls:
+    - lets_play_precure_modulation
+    - lets_play
+    - modulation
 
 melody:
   <<: *cure_melody
@@ -518,6 +584,8 @@ cure_happy: &cure_happy
       プリキュア！ミラクルレインボーバースト！
       輝けー！！
       スマイルプリキュア！！
+  transform_calls:
+    - smile_charge
 cure_sunny: &cure_sunny
   human_name:   日野あかね
   precure_name: キュアサニー
@@ -546,6 +614,8 @@ cure_sunny: &cure_sunny
       プリキュア！ミラクルレインボーバースト！
       輝けー！！
       スマイルプリキュア！！
+  transform_calls:
+    - smile_charge
 cure_peace: &cure_peace
   human_name:   黄瀬やよい
   precure_name: キュアピース
@@ -574,6 +644,8 @@ cure_peace: &cure_peace
       プリキュア！ミラクルレインボーバースト！
       輝けー！！
       スマイルプリキュア！！
+  transform_calls:
+    - smile_charge
 cure_march: &cure_march
   human_name:   緑川なお
   precure_name: キュアマーチ
@@ -602,6 +674,8 @@ cure_march: &cure_march
       プリキュア！ミラクルレインボーバースト！
       輝けー！！
       スマイルプリキュア！！
+  transform_calls:
+    - smile_charge
 cure_beauty: &cure_beauty
   human_name:   青木れいか
   precure_name: キュアビューティ
@@ -630,6 +704,8 @@ cure_beauty: &cure_beauty
       プリキュア！ミラクルレインボーバースト！
       輝けー！！
       スマイルプリキュア！！
+  transform_calls:
+    - smile_charge
 happy:
   <<: *cure_happy
 sunny:
@@ -660,6 +736,8 @@ cure_heart: &cure_heart
       あなたに届け！マイスイートハート！
     - |-
       あなたに届け！マイスイートハート！
+  transform_calls:
+    - love_link
 cure_diamond: &cure_diamond
   human_name:   菱川六花
   precure_name: キュアダイヤモンド
@@ -675,6 +753,8 @@ cure_diamond: &cure_diamond
   attack_messages:
     - |-
       きらめきなさい！トゥインクルダイヤモンド！
+  transform_calls:
+    - love_link
 cure_rosetta: &cure_rosetta
   human_name:   四葉ありす
   precure_name: キュアロゼッタ
@@ -690,6 +770,8 @@ cure_rosetta: &cure_rosetta
   attack_messages:
     - |
       カッチカチの！ロゼッタウォール！
+  transform_calls:
+    - love_link
 cure_sword: &cure_sword
   human_name:   剣崎真琴
   precure_name: キュアソード
@@ -705,6 +787,8 @@ cure_sword: &cure_sword
   attack_messages:
     - |
       ひらめけ！ホーリーソード！
+  transform_calls:
+    - love_link
 cure_ace: &cure_ace
   human_name:   円亜久里
   precure_name: キュアエース
@@ -721,6 +805,8 @@ cure_ace: &cure_ace
     - |
       ときめきなさい！エースショット！
       ばきゅ〜ん！！
+  transform_calls:
+    - dressup
 heart:
   <<: *cure_heart
 diamond:
@@ -762,6 +848,8 @@ cure_lovely: &cure_lovely
       (かわルンルン！)
       プリキュアくるりんミラーチェンジ！ロリポップヒップポップ！！！
       プリキュア！ポップンソニックアタック！！
+  transform_calls:
+    - kururin_mirror_change
 cure_princess: &cure_princess
   human_name:   白雪ひめ(ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ)
   precure_name: キュアプリンセス
@@ -790,6 +878,8 @@ cure_princess: &cure_princess
       (かわルンルン！)
       プリキュアくるりんミラーチェンジ！マカダミアフラダンス！！
       プリキュア！ハワイアンアロハロエ！！
+  transform_calls:
+    - kururin_mirror_change
 cure_honey: &cure_honey
   human_name:   大森ゆうこ
   precure_name: キュアハニー
@@ -820,6 +910,8 @@ cure_honey: &cure_honey
       プリキュアくるりんミラーチェンジ！ココナッツサンバ！！
       プリキュア！マラカスリズムスパーク！！
       マンボ！！
+  transform_calls:
+    - kururin_mirror_change
 cure_fortune: &cure_fortune
   human_name:   氷川いおな
   precure_name: キュアフォーチュン
@@ -848,6 +940,8 @@ cure_fortune: &cure_fortune
       (かわルンルン！)
       プリキュアきらりんスターシンフォニー！あんみつこまち！
       プリキュア！桜吹雪の舞！
+  transform_calls:
+    - kirarin_star_symphony
 
 lovely:
   <<: *cure_lovely
