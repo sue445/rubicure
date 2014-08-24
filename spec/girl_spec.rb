@@ -153,8 +153,8 @@ EOF
     context "When Milky Rose calls metamorphose" do
       let(:girl) { Milky.rose }
       let(:transform_call) { "metamorphose" }
-      let(:error_message) { %r/\Aundefined method `#{transform_call}' for #<Rubicure::Girl / }
-      it { expect{ subject }.to raise_error(NoMethodError, error_message) }
+
+      it { expect{ subject }.to raise_error NoMethodError }
     end
   end
 end
