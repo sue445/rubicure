@@ -299,7 +299,7 @@ cure_berry: &cure_berry
       悪いの悪いの飛んでいけ！
       プリキュア！エスポワールシャワーフレッシュ！
   transform_calls:
-    - changeprecurebeatup
+    - change_precure_beatup
     - change
     - beatup
 cure_pine: &cure_pine
