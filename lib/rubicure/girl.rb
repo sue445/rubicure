@@ -125,13 +125,11 @@ module Rubicure
     end
 
     def method_missing(method_name, *args)
-      shorten = method_name.to_s.
+      shortened_name = method_name.to_s.
           sub(%r/\Aprecure_|_precure\z/, "").
           sub(%r/!\z/, "")
 
-      if @transform_calls.include? shorten
-        return transform! *args
-      end
+      return transform! *args if @transform_calls.include? shortened_name
 
       super
     end
