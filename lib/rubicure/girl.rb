@@ -125,10 +125,9 @@ module Rubicure
     end
 
     def method_missing(method_name, *args)
-      is_bang = %r/[!！]\z/ =~ method_name
-      shorten = method_name.to_s.downcase.
-          sub(%r/\A(?:プリキュア|precure)|(?:プリキュア|precure)\z/i, '').
-          gsub(%r/[-\s　・_!！]/, '')
+      shorten = method_name.to_s.
+          sub(%r/\Aprecure_|_precure\z/, "").
+          sub(%r/!\z/, "")
 
       if @transform_calls.include? shorten
         return transform! *args
