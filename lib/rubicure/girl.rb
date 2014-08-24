@@ -10,6 +10,7 @@ module Rubicure
     @@cache = {}
     @@config = nil
     @@sleep_sec = 1
+    @@print_io = nil
 
     def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [],
                    created_date: nil, attack_messages: [], transform_calls: [])
@@ -35,12 +36,13 @@ module Rubicure
     end
 
     # human -> precure ( -> extra forms ) -> human ...
+    # @param [IO] io
     # @return [Rubicure::Girl] self
-    def transform!
+    def transform!(io = nil)
       @current_state += 1
       @current_state = 0 unless @current_state < @state_names.length
 
-      print_by_line @transform_message  if @current_state == 1
+      print_by_line @transform_message, io if @current_state == 1
 
       self
     end
@@ -49,15 +51,16 @@ module Rubicure
       @current_state = 0
     end
 
-    def attack!
+    # @param [IO] io
+    def attack!(io = nil)
       raise "require transform" if current_attack_message.blank?
 
-      print_by_line current_attack_message
+      print_by_line current_attack_message, io
 
       current_attack_message
     end
 
-    # @param girl_name [Symbol]
+    # @param  [Symbol] girl_name
     # @return [Rubicure::Girl]
     def self.find(girl_name)
       raise "unknown girl: #{girl_name}" unless valid?(girl_name)
@@ -109,17 +112,30 @@ module Rubicure
       @@sleep_sec = sleep_sec
     end
 
+    # @param [IO] io
+    def self.print_io=(io)
+      @@print_io = io
+    end
+
+    # @return [IO] io
+    def self.print_io
+      @@print_io
+    end
+
     private
 
     def current_attack_message
       attack_messages[current_state]
     end
 
-    def print_by_line(message)
+    # @param [String] message
+    # @param [IO] io
+    def print_by_line(message, io)
       index = 0
+      io ||= @@print_io || STDOUT
       message.each_line do |line|
         sleep(@@sleep_sec) if index > 0
-        puts line
+        io.puts line
         index += 1
       end
     end

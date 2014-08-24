@@ -26,9 +26,16 @@ EOF
     ]
   end
 
+  let(:string_io) { StringIO.new }
+  before do
+    Rubicure::Girl.sleep_sec = 0
+    Rubicure::Girl.print_io  = string_io
+  end
+
   describe "#name" do
     context "when before transform" do
       it { expect(girl.name).to eq human_name }
+      it { expect(string_io.string).to eq "" }
     end
 
     context "when after 1st transform" do
