@@ -29,21 +29,23 @@ module Cure
     end
   end
 
-  class << self.peace
-    HANDS =
-      (%w(グー)   * 13) +
-      (%w(チョキ) * 14) +
-      (%w(パー)   * 15) +
-      %w(グッチョッパー)
-    MESSAGE = <<EOF
+  [Cure.peace, Cure.cure_peace].each do |peace|
+    class << peace
+      HANDS =
+        (['グー']   * 13) +
+        (['チョキ'] * 14) +
+        (['パー']   * 15) +
+        ['グッチョッパー']
+      MESSAGE = <<EOF
 ピカピカピカリン
 ジャンケンポン！
 （%s）
 EOF
-    def pikarin_janken
-      print_by_line MESSAGE % HANDS.sample
+      def pikarin_janken
+        print_by_line(MESSAGE % HANDS.sample)
+      end
+      alias janken pikarin_janken
     end
-    alias janken pikarin_janken
   end
 end
 
