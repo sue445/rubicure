@@ -30,13 +30,18 @@ module Cure
   end
 
   class << self.peace
+    HANDS =
+      (%w(グー)   * 13) +
+      (%w(チョキ) * 14) +
+      (%w(パー)   * 15) +
+      %w(グッチョッパー)
     MESSAGE = <<EOF
 ピカピカピカリン
 ジャンケンポン！
 （%s）
 EOF
     def pikarin_janken
-      print_by_line MESSAGE % %w(グー チョキ パー).sample
+      print_by_line MESSAGE % HANDS.sample
     end
     alias janken pikarin_janken
   end
