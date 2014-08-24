@@ -9,40 +9,40 @@ describe Rubicure do
     context "When Precure.#<title>" do
       where(:title) do
         [
-            [:unmarked],
-            [:futari_wa_pretty_cure],
+          [:unmarked],
+          [:futari_wa_pretty_cure],
 
-            [:max_heart],
-            [:futari_wa_pretty_cure_max_heart],
+          [:max_heart],
+          [:futari_wa_pretty_cure_max_heart],
 
-            [:splash_star],
-            [:futari_wa_pretty_cure_splash_star],
+          [:splash_star],
+          [:futari_wa_pretty_cure_splash_star],
 
-            [:yes],
-            [:yes_precure_five],
-            [:yes_precure5],
+          [:yes],
+          [:yes_precure_five],
+          [:yes_precure5],
 
-            [:yes_gogo],
-            [:yes_precure_five_gogo],
-            [:yes_precure5_gogo],
+          [:yes_gogo],
+          [:yes_precure_five_gogo],
+          [:yes_precure5_gogo],
 
-            [:fresh],
-            [:fresh_precure],
+          [:fresh],
+          [:fresh_precure],
 
-            [:heart_catch],
-            [:heart_catch_precure],
+          [:heart_catch],
+          [:heart_catch_precure],
 
-            [:suite],
-            [:suite_precure],
+          [:suite],
+          [:suite_precure],
 
-            [:smile],
-            [:smile_precure],
+          [:smile],
+          [:smile_precure],
 
-            [:dokidoki],
-            [:dokidoki_precure],
+          [:dokidoki],
+          [:dokidoki_precure],
 
-            [:happiness_charge],
-            [:happiness_charge_precure],
+          [:happiness_charge],
+          [:happiness_charge_precure],
         ]
       end
 
@@ -63,44 +63,44 @@ describe Rubicure do
   describe "Cure." do
     where(:name) do
       [
-          [:black],
-          [:white],
+        [:black],
+        [:white],
 
-          [:bloom],
-          [:egret],
+        [:bloom],
+        [:egret],
 
-          [:dream],
-          [:rouge],
-          [:lemonade],
-          [:mint],
-          [:aqua],
+        [:dream],
+        [:rouge],
+        [:lemonade],
+        [:mint],
+        [:aqua],
 
-          [:peach],
-          [:berry],
-          [:pine],
-          [:passion],
+        [:peach],
+        [:berry],
+        [:pine],
+        [:passion],
 
-          [:melody],
-          [:rhythm],
-          [:beat],
-          [:muse],
+        [:melody],
+        [:rhythm],
+        [:beat],
+        [:muse],
 
-          [:happy],
-          [:sunny],
-          [:peace],
-          [:march],
-          [:beauty],
+        [:happy],
+        [:sunny],
+        [:peace],
+        [:march],
+        [:beauty],
 
-          [:heart],
-          [:diamond],
-          [:rosetta],
-          [:sword],
-          [:ace],
+        [:heart],
+        [:diamond],
+        [:rosetta],
+        [:sword],
+        [:ace],
 
-          [:lovely],
-          [:princess],
-          [:honey],
-          [:fortune],
+        [:lovely],
+        [:princess],
+        [:honey],
+        [:fortune],
       ]
     end
 

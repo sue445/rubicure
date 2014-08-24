@@ -53,7 +53,7 @@ EOS
       end
     end
 
-    it { expect { |b| instance.each_with_series(&b) }.to yield_successive_args *@expected_series }
+    it { expect { |b| instance.each_with_series(&b) }.to yield_successive_args(*@expected_series) }
   end
 
   describe "#all_stars" do

@@ -8,10 +8,10 @@ module Rubicure
     include Rubicure::Concerns::Util
 
     def method_missing(name, *args)
-      unmarked_precure = Rubicure::Series::find(:unmarked)
+      unmarked_precure = Rubicure::Series.find(:unmarked)
 
-      if Rubicure::Series::valid?(name)
-        Rubicure::Series::find(name)
+      if Rubicure::Series.valid?(name)
+        Rubicure::Series.find(name)
       elsif unmarked_precure.respond_to?(name)
         unmarked_precure.send(name, *args)
       else
@@ -29,7 +29,7 @@ module Rubicure
       raise "Not on air precure!"
     end
 
-    alias :current :now
+    alias_method :current, :now
 
     # @param [Time,Date,String,Symbol] arg Time, Date or date like String (ex. "2013-12-16")
     # @return [Array<Rubicure::Girl>]
@@ -67,6 +67,6 @@ module Rubicure
       end
     end
 
-    alias :each :each_with_series
+    alias_method :each, :each_with_series
   end
 end

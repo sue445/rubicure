@@ -1,25 +1,25 @@
 describe Rubicure::Movie do
   let(:movie_names) do
     [
-        :dx1,
-        :dx2,
-        :dx3,
-        :ns1,
-        :ns2,
-        :ns3,
+      :dx1,
+      :dx2,
+      :dx3,
+      :ns1,
+      :ns2,
+      :ns3,
     ]
   end
 
   describe "#names" do
     subject { Rubicure::Movie.names }
 
-    it { should include *movie_names }
+    it { should include(*movie_names) }
   end
 
   describe "#uniq_names" do
     subject { Rubicure::Movie.uniq_names }
 
-    it { should include *movie_names }
+    it { should include(*movie_names) }
     its(:count) { should == movie_names.count }
   end
 

@@ -129,7 +129,7 @@ module Rubicure
           sub(%r/\Aprecure_|_precure\z/, "").
           sub(%r/!\z/, "")
 
-      return transform! *args if @transform_calls.include? shortened_name
+      return transform!(*args) if @transform_calls.include?(shortened_name)
 
       super
     end

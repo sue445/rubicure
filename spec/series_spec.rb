@@ -51,17 +51,17 @@ describe Rubicure::Series do
 
   let(:series_names) do
     [
-        :unmarked,
-        :max_heart,
-        :splash_star,
-        :yes,
-        :yes_gogo,
-        :fresh,
-        :heart_catch,
-        :suite,
-        :smile,
-        :dokidoki,
-        :happiness_charge,
+      :unmarked,
+      :max_heart,
+      :splash_star,
+      :yes,
+      :yes_gogo,
+      :fresh,
+      :heart_catch,
+      :suite,
+      :smile,
+      :dokidoki,
+      :happiness_charge,
     ]
   end
 
@@ -95,13 +95,13 @@ describe Rubicure::Series do
   describe "#names" do
     subject { Rubicure::Series.names }
 
-    it { should include *series_names }
+    it { should include(*series_names) }
   end
 
   describe "#uniq_names" do
     subject { Rubicure::Series.uniq_names }
 
-    it { should include *series_names }
+    it { should include(*series_names) }
     its(:count) { should == series_names.count }
   end
 

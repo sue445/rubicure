@@ -15,7 +15,7 @@ module Rubicure
       when self.class
         self == other
       when Rubicure::Girl
-        self.girls.include? other
+        girls.include? other
       else
         false
       end
@@ -41,7 +41,7 @@ module Rubicure
     def girls
       unless @girls
         @girls = []
-        if has_key?(:girls)
+        if key?(:girls)
           fetch(:girls).each do |girl_name|
             @girls << Rubicure::Girl.find(girl_name.to_sym)
           end
