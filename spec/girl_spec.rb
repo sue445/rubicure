@@ -44,6 +44,7 @@ EOF
       end
 
       it { expect(girl.name).to eq precure_name }
+      it { expect(string_io.string).to eq transform_message }
     end
 
     context "when after 2nd transform" do
@@ -53,6 +54,7 @@ EOF
       end
 
       it { expect(girl.name).to eq extra_names[0] }
+      it { expect(string_io.string).to eq transform_message }
     end
 
     context "when after 3nd transform" do
@@ -63,6 +65,7 @@ EOF
       end
 
       it { expect(girl.name).to eq extra_names[1] }
+      it { expect(string_io.string).to eq transform_message }
     end
 
     context "when after final transform" do
@@ -75,6 +78,7 @@ EOF
 
       # return to human
       it { expect(girl.name).to eq human_name }
+      it { expect(string_io.string).to eq transform_message }
     end
   end
 
@@ -148,13 +152,30 @@ EOF
     context "When Cure Lemonade calls metamorphose" do
       let(:girl) { Cure.lemonade }
       let(:transform_call) { "metamorphose" }
+      let(:transform_message) do
+        <<EOF
+プリキュア！メタモルフォーゼ！
+はじけるレモンの香り、キュアレモネード！
+希望の力と未来の光！
+華麗に羽ばたく5つの心！
+Yes！プリキュア5！
+EOF
+      end
       it { expect{ subject }.not_to raise_error }
+      it { expect(string_io.string).to eq transform_message }
     end
 
     context "When Milkey Rose calls sky_rose_translate!" do
       let(:girl) { Milky.rose }
       let(:transform_call) { "sky_rose_translate!" }
+      let(:transform_message) do
+        <<EOF
+スカイローズ・トランスレイト！
+青いバラは秘密のしるし！ ミルキィローズ！
+EOF
+      end
       it { expect{ subject }.not_to raise_error }
+      it { expect(string_io.string).to eq transform_message }
     end
 
     context "When Milky Rose calls metamorphose" do
