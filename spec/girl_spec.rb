@@ -159,7 +159,7 @@ EOF
   end
 
   describe "cure_peace#pikarin_janken" do
-    let(:girl){ Cure::peace }
+    let(:girl){ Cure.peace }
 
     it do
       expect(girl.pikarin_janken).
