@@ -1,6 +1,8 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v0.1.0...master)
 
+* specific transform
+  * https://github.com/sue445/rubicure/pull/36
 * Add `Cure.peace.pikarin_janken` (singleton method)
   * https://github.com/sue445/rubicure/pull/39 (thx @zonuexe)
 
