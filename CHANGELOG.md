@@ -1,6 +1,9 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v0.1.0...master)
 
+* Add `Cure.peace.pikarin_janken` (singleton method)
+  * https://github.com/sue445/rubicure/pull/39 (thx @zonuexe)
+
 ## v0.1.0
 [full changelog](http://github.com/sue445/rubicure/compare/v0.0.7...v0.1.0)
 

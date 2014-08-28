@@ -302,6 +302,21 @@ else
 end
 ```
 
+### Pikarin janken
+```ruby
+Cure.peace.pikarin_janken
+ピカピカピカリン
+ジャンケンポン！
+（パー）
+#=> "ピカピカピカリン\nジャンケンポン！\n（パー）\n"
+
+Cure.peace.janken
+ピカピカピカリン
+ジャンケンポン！
+（グー）
+# => "ピカピカピカリン\nジャンケンポン！\n（グー）\n"
+```
+
 ### one-liner
 
 ```
