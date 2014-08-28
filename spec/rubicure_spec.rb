@@ -115,12 +115,21 @@ describe Rubicure do
     end
   end
 
-  describe "cure_peace#pikarin_janken" do
-    let(:girl){ Cure.peace }
+  describe "#pikarin_janken" do
+    subject{ girl.pikarin_janken }
 
-    it do
-      expect(girl.pikarin_janken).
-          to match %r/ピカピカピカリン\nジャンケンポン！\n（.+）/
+    shared_examples :do_janken do
+      it{ should match %r/ピカピカピカリン\nジャンケンポン！\n（.+）/ }
+    end
+
+    context "When peace" do
+      let(:girl){ Cure.peace }
+      it_behaves_like :do_janken
+    end
+
+    context "When cure_peace" do
+      let(:girl){ Cure.cure_peace }
+      it_behaves_like :do_janken
     end
   end
 end
