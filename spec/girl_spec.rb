@@ -157,4 +157,13 @@ EOF
       it { expect{ subject }.to raise_error NoMethodError }
     end
   end
+
+  describe "cure_peace#pikarin_janken" do
+    let(:girl){ Cure.peace }
+
+    it do
+      expect(girl.pikarin_janken).
+        to match %r/ピカピカピカリン\nジャンケンポン！\n（.+）/
+    end
+  end
 end
