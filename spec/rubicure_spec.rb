@@ -114,4 +114,13 @@ describe Rubicure do
       it { expect( Milky.rose.precure_name ).to eq "ミルキィローズ" }
     end
   end
+
+  describe "cure_peace#pikarin_janken" do
+    let(:girl){ Cure.peace }
+
+    it do
+      expect(girl.pikarin_janken).
+          to match %r/ピカピカピカリン\nジャンケンポン！\n（.+）/
+    end
+  end
 end
