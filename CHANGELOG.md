@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.1.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.1.1...master)
+
+## v0.1.1
+[full changelog](http://github.com/sue445/rubicure/compare/v0.1.0...v0.1.1)
 
 * specific transform
   * https://github.com/sue445/rubicure/pull/36
