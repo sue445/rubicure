@@ -167,6 +167,7 @@ cure_dream:  &cure_dream
   extra_names:
   attack_messages:
     - |-
+      夢見る乙女の底力、受けてみなさい！
       プリキュア！シューティング・スター！
   transform_calls:
     - metamorphose
@@ -183,6 +184,7 @@ cure_rouge:  &cure_rouge
   extra_names:
   attack_messages:
     - |-
+      純情乙女の炎の力、受けてみなさい！
       プリキュア！ファイヤー・ストライク！
 cure_lemonade:  &cure_lemonade
   human_name:   春日野うらら
@@ -197,6 +199,7 @@ cure_lemonade:  &cure_lemonade
   extra_names:
   attack_messages:
     - |-
+      輝く乙女のはじける力、受けてみなさい！
       プリキュア！プリズム・チェーン！
   transform_calls:
     - metamorphose
@@ -213,6 +216,7 @@ cure_mint:  &cure_mint
   extra_names:
   attack_messages:
     - |-
+      大地を揺るがす乙女の怒り、受けてみなさい！
       プリキュア！エメラルド・ソーサー！
   transform_calls:
     - metamorphose
@@ -229,6 +233,7 @@ cure_aqua:  &cure_aqua
   extra_names:
   attack_messages:
     - |-
+      岩をも砕く乙女の激流、受けてみなさい！
       プリキュア！サファイヤ・アロー！
   transform_calls:
     - metamorphose
