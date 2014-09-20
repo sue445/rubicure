@@ -17,6 +17,7 @@ Inspired by [Acme::PrettyCure](http://perl-users.jp/articles/advent-calendar/201
 ## Requirements
 
 * ruby >= 2.0.0
+  * more: [.travis.yml](.travis.yml)
 
 ## Installation
 
