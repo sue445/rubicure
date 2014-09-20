@@ -1,7 +1,9 @@
 language: ruby
 rvm:
   - 2.0.0
-  - 2.1.2
+  - 2.1.3
+  - 2.2.0-preview1
+  - ruby-head
 bundler_args: --jobs=2
 script: CODECLIMATE_REPO_TOKEN=8e9db6ee5f3818e87287a6393086c2ccb9b1b83106c5bfb972211abefd2fe162 bundle exec rspec --tag category:verbose && bundle exec rspec
 branches:
@@ -9,3 +11,7 @@ branches:
     - master
 notifications:
   email: false
+matrix:
+  allow_failures:
+    - rvm: 2.2.0-preview1
+    - rvm: ruby-head
