@@ -61,7 +61,6 @@ shiny_luminous: &shiny_luminous
       光の意志よ！私に勇気を！希望と力を！！
       ルミナス・ハーティエル・アンクション！
   transform_calls:
-    -
     - shining_stream
 luminous:
   <<: *shiny_luminous
