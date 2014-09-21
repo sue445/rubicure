@@ -283,9 +283,9 @@ cure_peach: &cure_peach
       悪いの悪いの飛んでいけ！
       プリキュア！ラブサンシャインフレッシュ！
   transform_calls:
-    - change_precure_beatup
+    - change_precure_beat_up
     - change
-    - beatup
+    - beat_up
 cure_berry: &cure_berry
   human_name:   蒼乃美希
   precure_name: キュアベリー
@@ -302,9 +302,9 @@ cure_berry: &cure_berry
       悪いの悪いの飛んでいけ！
       プリキュア！エスポワールシャワーフレッシュ！
   transform_calls:
-    - change_precure_beatup
+    - change_precure_beat_up
     - change
-    - beatup
+    - beat_up
 cure_pine: &cure_pine
   human_name:   山吹祈里
   precure_name: キュアパイン
@@ -321,9 +321,9 @@ cure_pine: &cure_pine
       悪いの悪いの飛んでいけ！
       プリキュア！ヒーリングプレアーフレッシュ！
   transform_calls:
-    - change_precure_beatup
+    - change_precure_beat_up
     - change
-    - beatup
+    - beat_up
 cure_passion: &cure_passion
   human_name:   東せつな
   precure_name: キュアパッション
@@ -340,9 +340,9 @@ cure_passion: &cure_passion
       吹き荒れよ幸せの嵐！
       プリキュア！ハピネスハリケーン！
   transform_calls:
-    - change_precure_beatup
+    - change_precure_beat_up
     - change
-    - beatup
+    - beat_up
 peach:
   <<: *cure_peach
 berry:
