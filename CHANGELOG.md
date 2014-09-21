@@ -2,6 +2,8 @@
 [full changelog](http://github.com/sue445/rubicure/compare/v0.1.1...master)
 
 * Support ruby 2.2.0-preview1
+* Impl Series#each_with_girls
+  * https://github.com/sue445/rubicure/pull/47
 
 ## v0.1.1
 [full changelog](http://github.com/sue445/rubicure/compare/v0.1.0...v0.1.1)
