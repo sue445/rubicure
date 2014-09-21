@@ -61,7 +61,6 @@ shiny_luminous: &shiny_luminous
       光の意志よ！私に勇気を！希望と力を！！
       ルミナス・ハーティエル・アンクション！
   transform_calls:
-    -
     - shining_stream
 luminous:
   <<: *shiny_luminous
@@ -86,7 +85,7 @@ cure_bloom: &cure_bloom
       奇跡の力を解き放て！
       プリキュア　ツインストリーム・スプラッシュ！！
   transform_calls:
-    - dual_spilitual_power
+    - dual_spiritual_power
 cure_egret: &cure_egret
   human_name:   美翔舞
   precure_name: キュアイーグレット
@@ -106,7 +105,7 @@ cure_egret: &cure_egret
       奇跡の力を解き放て！
       プリキュア　ツインストリーム・スプラッシュ！！
   transform_calls:
-    - dual_spilitual_power
+    - dual_spiritual_power
 cure_bright: &cure_bright
   human_name:   日向咲
   precure_name: キュアブライト
@@ -124,7 +123,7 @@ cure_bright: &cure_bright
       希望へ導け、2つの心！
       プリキュア・スパイラルスタースプラッシュ！！
   transform_calls:
-    - dual_spilitual_power
+    - dual_spiritual_power
 cure_windy: &cure_windy
   human_name:   美翔舞
   precure_name: キュアウィンディ
@@ -142,7 +141,7 @@ cure_windy: &cure_windy
       希望へ導け、2つの心！
       プリキュア・スパイラルスタースプラッシュ！！
   transform_calls:
-    - dual_spilitual_power
+    - dual_spiritual_power
 
 bloom:
   <<: *cure_bloom
@@ -285,9 +284,9 @@ cure_peach: &cure_peach
       悪いの悪いの飛んでいけ！
       プリキュア！ラブサンシャインフレッシュ！
   transform_calls:
-    - change_precure_beatup
+    - change_precure_beat_up
     - change
-    - beatup
+    - beat_up
 cure_berry: &cure_berry
   human_name:   蒼乃美希
   precure_name: キュアベリー
@@ -304,9 +303,9 @@ cure_berry: &cure_berry
       悪いの悪いの飛んでいけ！
       プリキュア！エスポワールシャワーフレッシュ！
   transform_calls:
-    - change_precure_beatup
+    - change_precure_beat_up
     - change
-    - beatup
+    - beat_up
 cure_pine: &cure_pine
   human_name:   山吹祈里
   precure_name: キュアパイン
@@ -323,9 +322,9 @@ cure_pine: &cure_pine
       悪いの悪いの飛んでいけ！
       プリキュア！ヒーリングプレアーフレッシュ！
   transform_calls:
-    - change_precure_beatup
+    - change_precure_beat_up
     - change
-    - beatup
+    - beat_up
 
 cure_passion: &cure_passion
   human_name:   東せつな
@@ -343,9 +342,9 @@ cure_passion: &cure_passion
       吹き荒れよ幸せの嵐！
       プリキュア！ハピネスハリケーン！
   transform_calls:
-    - change_precure_beatup
+    - change_precure_beat_up
     - change
-    - beatup
+    - beat_up
 peach:
   <<: *cure_peach
 berry:
@@ -811,7 +810,7 @@ cure_ace: &cure_ace
       ときめきなさい！エースショット！
       ばきゅ〜ん！！
   transform_calls:
-    - dressup
+    - dress_up
 heart:
   <<: *cure_heart
 diamond:
