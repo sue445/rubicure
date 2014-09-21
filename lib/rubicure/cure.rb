@@ -35,11 +35,13 @@ EOF
         humanize
         @another_human_name ||= ANOTHER_HUMAN_NAME
         @state_names[0], @another_human_name = @another_human_name, @state_names[0]
+        self
       end
 
       def rollback
         @state_names[0]     = ORIGINAL_HUMAN_NAME
         @another_human_name = ANOTHER_HUMAN_NAME
+        self
       end
     end
   end
@@ -53,11 +55,13 @@ EOF
         humanize
         @another_human_name ||= ANOTHER_HUMAN_NAME
         @state_names[0], @another_human_name = @another_human_name, @state_names[0]
+        self
       end
 
       def rollback
         @state_names[0]     = ORIGINAL_HUMAN_NAME
         @another_human_name = ANOTHER_HUMAN_NAME
+        self
       end
     end
   end
