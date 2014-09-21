@@ -413,6 +413,12 @@ Cure.peace.janken
 § ruby -rubicure -e'puts Shiny.luminous.transform_message'
 ```
 
+### Enumerable
+```ruby
+Precure.map(&:title)
+=> ["ふたりはプリキュア", "ふたりはプリキュア Max Heart", "ふたりはプリキュア Splash Star", "Yes！ プリキュア5", "Yes！ プリキュア5 Go Go！", "フレッシュプリキュア！", "ハートキャッチプリキュア！", "スイートプリキュア♪", "スマイルプリキュア！", "ドキドキ！プリキュア", "ハピネスチャージプリキュア！"]
+```
+
 ## More reference
 http://rubydoc.info/gems/rubicure/frames
 
