@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.1.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.1.2...master)
+
+## v0.1.2
+[full changelog](http://github.com/sue445/rubicure/compare/v0.1.1...v0.1.2)
 
 * Support ruby 2.2.0-preview1
 * Impl Series#each_with_girls
