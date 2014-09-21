@@ -25,4 +25,40 @@ EOF
       alias janken pikarin_janken
     end
   end
+
+  [Cure.passion, Cure.cure_passion].each do |passion|
+    class << passion
+      ORIGINAL_HUMAN_NAME = "東せつな"
+      ANOTHER_HUMAN_NAME  = "イース"
+
+      def !
+        humanize
+        @another_human_name ||= ANOTHER_HUMAN_NAME
+        @state_names[0], @another_human_name = @another_human_name, @state_names[0]
+      end
+
+      def rollback
+        @state_names[0]     = ORIGINAL_HUMAN_NAME
+        @another_human_name = ANOTHER_HUMAN_NAME
+      end
+    end
+  end
+
+  [Cure.beat, Cure.cure_beat].each do |beat|
+    class << beat
+      ORIGINAL_HUMAN_NAME = "黒川エレン"
+      ANOTHER_HUMAN_NAME  = "セイレーン"
+
+      def !
+        humanize
+        @another_human_name ||= ANOTHER_HUMAN_NAME
+        @state_names[0], @another_human_name = @another_human_name, @state_names[0]
+      end
+
+      def rollback
+        @state_names[0]     = ORIGINAL_HUMAN_NAME
+        @another_human_name = ANOTHER_HUMAN_NAME
+      end
+    end
+  end
 end
