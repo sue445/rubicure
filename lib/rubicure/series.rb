@@ -4,6 +4,7 @@ module Rubicure
   class Series < Hash
     include Hashie::Extensions::MethodAccess
     include Rubicure::Concerns::Util
+    include Enumerable
 
     @@cache = {}
     @@config = nil
@@ -50,6 +51,11 @@ module Rubicure
 
       @girls
     end
+
+    def each_with_girls
+      girls.each { |girl| yield girl }
+    end
+    alias :each :each_with_girls
 
     # @return [Array<Symbol>]
     def self.names
