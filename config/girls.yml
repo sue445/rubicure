@@ -86,7 +86,7 @@ cure_bloom: &cure_bloom
       奇跡の力を解き放て！
       プリキュア　ツインストリーム・スプラッシュ！！
   transform_calls:
-    - dual_spilitual_power
+    - dual_spiritual_power
 cure_egret: &cure_egret
   human_name:   美翔舞
   precure_name: キュアイーグレット
@@ -106,7 +106,7 @@ cure_egret: &cure_egret
       奇跡の力を解き放て！
       プリキュア　ツインストリーム・スプラッシュ！！
   transform_calls:
-    - dual_spilitual_power
+    - dual_spiritual_power
 cure_bright: &cure_bright
   human_name:   日向咲
   precure_name: キュアブライト
@@ -124,7 +124,7 @@ cure_bright: &cure_bright
       希望へ導け、2つの心！
       プリキュア・スパイラルスタースプラッシュ！！
   transform_calls:
-    - dual_spilitual_power
+    - dual_spiritual_power
 cure_windy: &cure_windy
   human_name:   美翔舞
   precure_name: キュアウィンディ
@@ -142,7 +142,7 @@ cure_windy: &cure_windy
       希望へ導け、2つの心！
       プリキュア・スパイラルスタースプラッシュ！！
   transform_calls:
-    - dual_spilitual_power
+    - dual_spiritual_power
 
 bloom:
   <<: *cure_bloom
