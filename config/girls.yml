@@ -142,6 +142,7 @@ cure_windy: &cure_windy
       プリキュア・スパイラルスタースプラッシュ！！
   transform_calls:
     - dual_spiritual_power
+
 bloom:
   <<: *cure_bloom
 egret:
@@ -324,6 +325,7 @@ cure_pine: &cure_pine
     - change_precure_beat_up
     - change
     - beat_up
+
 cure_passion: &cure_passion
   human_name:   東せつな
   precure_name: キュアパッション
@@ -433,6 +435,7 @@ cure_moonlight: &cure_moonlight
       プリキュア・ハートキャッチ・オーケストラ！！
   transform_calls:
     - open_my_heart
+
 blossom:
   <<: *cure_blossom
 marine:
@@ -546,6 +549,7 @@ cure_muse: &cure_muse
     - lets_play_precure_modulation
     - lets_play
     - modulation
+
 melody:
   <<: *cure_melody
 rhythm:
@@ -942,6 +946,7 @@ cure_fortune: &cure_fortune
       プリキュア！桜吹雪の舞！
   transform_calls:
     - kirarin_star_symphony
+
 lovely:
   <<: *cure_lovely
 princess:
