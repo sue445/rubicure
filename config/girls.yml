@@ -811,7 +811,7 @@ cure_ace: &cure_ace
       ときめきなさい！エースショット！
       ばきゅ〜ん！！
   transform_calls:
-    - dressup
+    - dress_up
 heart:
   <<: *cure_heart
 diamond:
