@@ -45,9 +45,12 @@ module Rubicure
       self
     end
 
-    def humanize
+    def humanize!
       @current_state = 0
+      self
     end
+    alias :humanize :humanize!
+    deprecate :humanize, :humanize!
 
     def attack!
       raise "require transform" if current_attack_message.blank?

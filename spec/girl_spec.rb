@@ -157,4 +157,29 @@ EOF
       it { expect{ subject }.to raise_error NoMethodError }
     end
   end
+
+  shared_examples :a_humanize_method do
+    it { should be_an_instance_of Rubicure::Girl }
+    it { expect(girl.current_state).to eq 0 }
+  end
+
+  describe "humanize!" do
+    let(:humanize!){ girl.humanize! }
+
+    context "When not transformed" do
+      subject!{ humanize! }
+
+      it_behaves_like :a_humanize_method
+    end
+
+    context "When after transformed" do
+      before do
+        girl.transform!
+      end
+
+      subject!{ humanize! }
+
+      it_behaves_like :a_humanize_method
+    end
+  end
 end

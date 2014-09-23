@@ -248,7 +248,7 @@ yayoi.transform!.transform!
 yayoi.name
 #=> "プリンセスピース"
 
-yayoi.humanize
+yayoi.humanize!
 #=> 0
 yayoi.name
 #=> "黄瀬やよい"
