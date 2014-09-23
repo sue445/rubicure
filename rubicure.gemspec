@@ -33,6 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-its", "~> 1.0.1"
   spec.add_development_dependency "rspec-parameterized", "~> 0.1.2"
   spec.add_development_dependency "rubocop", "~> 0.26.1"
+  spec.add_development_dependency "rubydoctest"
   spec.add_development_dependency "yard"
 
   # for ruby 2.2.0-preview1
