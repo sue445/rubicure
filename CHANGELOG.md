@@ -3,6 +3,8 @@
 
 * Impl: `!Cure.passion`, `!Cure.beat`
   * https://github.com/sue445/rubicure/pull/48
+* `Girl#humanize` -> `Girl#humanize!` and return self 
+  * `Girl#humanize` is deprecated 
 
 ## v0.1.2
 [full changelog](http://github.com/sue445/rubicure/compare/v0.1.1...v0.1.2)
