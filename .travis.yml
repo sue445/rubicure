@@ -5,7 +5,11 @@ rvm:
   - 2.2
   - ruby-head
 bundler_args: --jobs=2
-script: CODECLIMATE_REPO_TOKEN=8e9db6ee5f3818e87287a6393086c2ccb9b1b83106c5bfb972211abefd2fe162 bundle exec rspec --tag category:verbose && bundle exec rspec
+before_script:
+  - export CODECLIMATE_REPO_TOKEN=8e9db6ee5f3818e87287a6393086c2ccb9b1b83106c5bfb972211abefd2fe162
+script:
+  - bundle exec rspec --tag category:verbose
+  - bundle exec rspec --tag ~category:verbose
 branches:
   only:
     - master
