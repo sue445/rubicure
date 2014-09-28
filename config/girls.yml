@@ -1,3 +1,4 @@
+#######################################################
 # unmarked
 cure_black: &cure_black
   human_name:   美墨なぎさ
@@ -45,7 +46,7 @@ black:
   <<: *cure_black
 white:
   <<: *cure_white
-
+#######################################################
 # max_heart
 shiny_luminous: &shiny_luminous
   human_name:   九条ひかり
@@ -64,7 +65,7 @@ shiny_luminous: &shiny_luminous
     - shining_stream
 luminous:
   <<: *shiny_luminous
-
+#######################################################
 # splash_star
 cure_bloom: &cure_bloom
   human_name:   日向咲
@@ -142,7 +143,6 @@ cure_windy: &cure_windy
       プリキュア・スパイラルスタースプラッシュ！！
   transform_calls:
     - dual_spiritual_power
-
 bloom:
   <<: *cure_bloom
 egret:
@@ -151,7 +151,7 @@ bright:
   <<: *cure_bright
 windy:
   <<: *cure_windy
-
+#######################################################
 # yes
 cure_dream:  &cure_dream
   human_name:   夢原のぞみ
@@ -246,7 +246,7 @@ mint:
   <<: *cure_mint
 aqua:
   <<: *cure_aqua
-
+#######################################################
 # yes_gogo
 milky_rose: &milky_rose
   human_name:   美々野くるみ
@@ -266,7 +266,7 @@ milky_rose: &milky_rose
     - translate
 rose:
   <<: *milky_rose
-
+#######################################################
 # fresh
 cure_peach: &cure_peach
   human_name:   桃園ラブ
@@ -325,7 +325,6 @@ cure_pine: &cure_pine
     - change_precure_beat_up
     - change
     - beat_up
-
 cure_passion: &cure_passion
   human_name:   東せつな
   precure_name: キュアパッション
@@ -353,7 +352,7 @@ pine:
   <<: *cure_pine
 passion:
   <<: *cure_passion
-
+#######################################################
 # heart_catch
 cure_blossom: &cure_blossom
   human_name:   花咲つぼみ
@@ -435,7 +434,6 @@ cure_moonlight: &cure_moonlight
       プリキュア・ハートキャッチ・オーケストラ！！
   transform_calls:
     - open_my_heart
-
 blossom:
   <<: *cure_blossom
 marine:
@@ -444,7 +442,7 @@ sunshine:
   <<: *cure_sunshine
 moonlight:
   <<: *cure_moonlight
-
+#######################################################
 # suite
 cure_melody: &cure_melody
   human_name:   北条響
@@ -549,7 +547,6 @@ cure_muse: &cure_muse
     - lets_play_precure_modulation
     - lets_play
     - modulation
-
 melody:
   <<: *cure_melody
 rhythm:
@@ -558,7 +555,7 @@ beat:
   <<: *cure_beat
 muse:
   <<: *cure_muse
-
+#######################################################
 # smile
 cure_happy: &cure_happy
   human_name:   星空みゆき
@@ -720,7 +717,7 @@ march:
   <<: *cure_march
 beauty:
   <<: *cure_beauty
-
+#######################################################
 # dokidoki
 cure_heart: &cure_heart
   human_name:   相田マナ
@@ -821,7 +818,7 @@ sword:
   <<: *cure_sword
 ace:
   <<: *cure_ace
-
+#######################################################
 # happiness_charge
 cure_lovely: &cure_lovely
   human_name:   愛乃めぐみ
@@ -946,7 +943,7 @@ cure_fortune: &cure_fortune
       プリキュア！桜吹雪の舞！
   transform_calls:
     - kirarin_star_symphony
-
+#######################################################
 lovely:
   <<: *cure_lovely
 princess:
