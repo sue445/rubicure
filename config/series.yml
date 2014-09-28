@@ -1,3 +1,4 @@
+#######################################################
 unmarked: &unmarked
   title: ふたりはプリキュア
   started_date: 2004-02-01
@@ -7,7 +8,7 @@ unmarked: &unmarked
   - cure_white
 futari_wa_pretty_cure:
   <<: *unmarked
-
+#######################################################
 max_heart: &max_heart
   title: ふたりはプリキュア Max Heart
   started_date: 2005-02-06
@@ -18,7 +19,7 @@ max_heart: &max_heart
   - shiny_luminous
 futari_wa_pretty_cure_max_heart:
   <<: *max_heart
-
+#######################################################
 splash_star: &splash_star
   title: ふたりはプリキュア Splash Star
   started_date: 2006-02-05
@@ -28,7 +29,7 @@ splash_star: &splash_star
   - cure_egret
 futari_wa_pretty_cure_splash_star:
   <<: *splash_star
-
+#######################################################
 "yes": &yes
   title: Yes！ プリキュア5
   started_date: 2007-02-04
@@ -43,7 +44,7 @@ yes_precure_five:
   <<: *yes
 yes_precure5:
   <<: *yes
-
+#######################################################
 yes_gogo: &yes_gogo
   title: Yes！ プリキュア5 Go Go！
   started_date: 2008-02-03
@@ -59,7 +60,7 @@ yes_precure_five_gogo:
   <<: *yes_gogo
 yes_precure5_gogo:
   <<: *yes_gogo
-
+#######################################################
 fresh: &fresh
   title: フレッシュプリキュア！
   started_date: 2009-02-01
@@ -71,7 +72,7 @@ fresh: &fresh
   - cure_passion
 fresh_precure:
   <<: *fresh
-
+#######################################################
 heart_catch: &heart_catch
   title: ハートキャッチプリキュア！
   started_date: 2010-02-07
@@ -83,7 +84,7 @@ heart_catch: &heart_catch
   - cure_moonlight
 heart_catch_precure:
   <<: *heart_catch
-
+#######################################################
 suite: &suite
   title: スイートプリキュア♪
   started_date: 2011-02-06
@@ -95,7 +96,7 @@ suite: &suite
   - cure_muse
 suite_precure:
   <<: *suite
-
+#######################################################
 smile: &smile
   title: スマイルプリキュア！
   started_date: 2012-02-05
@@ -108,7 +109,7 @@ smile: &smile
   - cure_beauty
 smile_precure:
   <<: *smile
-
+#######################################################
 dokidoki: &dokidoki
   title: ドキドキ！プリキュア
   started_date: 2013-02-03
@@ -121,7 +122,7 @@ dokidoki: &dokidoki
   - cure_ace
 dokidoki_precure:
   <<: *dokidoki
-
+#######################################################
 happiness_charge: &happiness_charge
   title: ハピネスチャージプリキュア！
   started_date: 2014-02-02
