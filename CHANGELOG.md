@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.1.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.1.3...master)
+
+## v0.1.3
+[full changelog](http://github.com/sue445/rubicure/compare/v0.1.2...v0.1.3)
 
 * Impl: `!Cure.passion`, `!Cure.beat`
   * https://github.com/sue445/rubicure/pull/48
