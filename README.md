@@ -13,6 +13,7 @@ Inspired by [Acme::PrettyCure](http://perl-users.jp/articles/advent-calendar/201
 
 [![Stories in Ready](https://badge.waffle.io/sue445/rubicure.png?label=ready)](http://waffle.io/sue445/rubicure)
 [![endorse](https://api.coderwall.com/sue445/endorsecount.png)](https://coderwall.com/sue445)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sue445/rubicure/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ## Requirements
 
@@ -456,5 +457,4 @@ http://rubydoc.info/gems/rubicure/frames
 5. Create new Pull Request
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sue445/rubicure/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
