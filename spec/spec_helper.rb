@@ -15,11 +15,13 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-require 'codeclimate-test-reporter'
-CodeClimate::TestReporter.start
+if ENV["COVERAGE"]
+  require 'codeclimate-test-reporter'
+  CodeClimate::TestReporter.start
 
-require 'coveralls'
-Coveralls.wear!
+  require 'coveralls'
+  Coveralls.wear!
+end
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'rubicure'
