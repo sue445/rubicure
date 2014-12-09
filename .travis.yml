@@ -1,21 +1,23 @@
 language: ruby
 rvm:
-  - 2.0
-  - 2.1
-  - 2.2
-  - ruby-head
-bundler_args: --jobs=2
+- 2.0
+- 2.1
+- 2.2
+- ruby-head
+bundler_args: "--jobs=2"
 before_script:
-  - export CODECLIMATE_REPO_TOKEN=8e9db6ee5f3818e87287a6393086c2ccb9b1b83106c5bfb972211abefd2fe162
+- export CODECLIMATE_REPO_TOKEN=8e9db6ee5f3818e87287a6393086c2ccb9b1b83106c5bfb972211abefd2fe162
 script:
-  - bundle exec rspec --tag category:verbose
-  - bundle exec rspec --tag ~category:verbose
+- bundle exec rspec --tag category:verbose
+- bundle exec rspec --tag ~category:verbose
 branches:
   only:
-    - master
+  - master
 notifications:
   email: false
+  slack:
+    secure: M8VEihBaynGJdlXu7TvhgqIDfpHvSP5H0RCLsvtaQ5rNoz6yrOTRcLBCWazrJopD1CvKbcFTVVLlS86fxyW9+pYhYc81mXlhtyPLNx7yXQ+Uhfrxp7/e2QLEMZEgbk2Z7XglN4rJ+t4QhWjsPL0ohJk+t1DSdFtEPK3o3RyoRrE=
 matrix:
   allow_failures:
-    - rvm: 2.2
-    - rvm: ruby-head
+  - rvm: 2.2
+  - rvm: ruby-head
