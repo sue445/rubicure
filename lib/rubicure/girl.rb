@@ -33,6 +33,7 @@ module Rubicure
     def name
       @state_names[@current_state]
     end
+    alias to_s name
 
     # human -> precure ( -> extra forms ) -> human ...
     # @return [Rubicure::Girl] self
