@@ -10,7 +10,7 @@ describe Rubicure::Girl do
     girl.io = tempfile
     girl
   end
-  let(:tempfile) {Tempfile.open(described_class.to_s)}
+  let(:tempfile) { Tempfile.open(described_class.to_s) }
 
   let(:human_name)     { "黄瀬やよい" }
   let(:precure_name)   { "キュアピース" }
