@@ -1,13 +1,16 @@
 describe Rubicure::Girl do
   let(:girl) do
-    Rubicure::Girl.new(
+    girl = Rubicure::Girl.new(
         human_name:        human_name,
         precure_name:      precure_name,
         extra_names:       extra_names,
         transform_message: transform_message,
         attack_messages:   attack_messages,
     )
+    girl.io = tempfile
+    girl
   end
+  let(:tempfile) {Tempfile.open(described_class.to_s)}
 
   let(:human_name)     { "黄瀬やよい" }
   let(:precure_name)   { "キュアピース" }
@@ -37,6 +40,7 @@ EOF
       end
 
       it { expect(girl.name).to eq precure_name }
+      it { expect(tempfile.open.read).to eq transform_message }
     end
 
     context "when after 2nd transform" do
