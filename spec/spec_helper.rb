@@ -30,6 +30,7 @@ require 'rspec-parameterized'
 require 'rspec/its'
 require 'rspec/collection_matchers'
 require 'delorean'
+require 'tempfile'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.

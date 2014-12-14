@@ -6,6 +6,7 @@ module Rubicure
     attr_reader :human_name, :precure_name, :transform_message, :extra_names,
                 :current_state, :state_names, :created_date, :attack_messages,
                 :transform_calls
+    attr_writer :io
 
     @@cache = {}
     @@config = nil
@@ -23,6 +24,8 @@ module Rubicure
       @state_names += @extra_names unless @extra_names.empty?
       @attack_messages   = [""] + attack_messages
       @transform_calls   = transform_calls
+
+      @io = $stdout
     end
 
     def ==(other)
@@ -123,7 +126,7 @@ module Rubicure
       index = 0
       message.each_line do |line|
         sleep(@@sleep_sec) if index > 0
-        puts line
+        @io.puts line
         index += 1
       end
     end
