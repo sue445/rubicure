@@ -1,5 +1,13 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.1.3...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.1.4...master)
+
+## v0.1.4
+[full changelog](http://github.com/sue445/rubicure/compare/v0.1.3...v0.1.4)
+
+* Add `Girl#to_s` (alias of `#name`) (thx @zonuexe)
+  * https://github.com/sue445/rubicure/pull/59
+* Support User-defined `IO.put` in `Girl#print_by_line` (thx @bash)
+  * https://github.com/sue445/rubicure/pull/60
 
 ## v0.1.3
 [full changelog](http://github.com/sue445/rubicure/compare/v0.1.2...v0.1.3)
