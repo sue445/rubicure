@@ -1,6 +1,9 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v0.1.4...master)
 
+* bugfix: precure all_stars count when new stage3
+  * https://github.com/sue445/rubicure/pull/61
+
 ## v0.1.4
 [full changelog](http://github.com/sue445/rubicure/compare/v0.1.3...v0.1.4)
 
