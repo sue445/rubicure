@@ -34,3 +34,9 @@ ns3: &ns3
   started_date: 2014-03-15
 new_stage3:
   <<: *ns3
+#######################################################
+sc: &sc
+  title: 映画 プリキュアオールスターズ 春のカーニバル
+  started_date: 2015-03-14
+spring_carnival:
+  <<: *sc

@@ -126,7 +126,7 @@ dokidoki_precure:
 happiness_charge: &happiness_charge
   title: ハピネスチャージプリキュア！
   started_date: 2014-02-02
-#  ended_date:   2015-01-
+  ended_date:   2015-01-25
   girls:
   - cure_lovely
   - cure_princess
@@ -134,3 +134,14 @@ happiness_charge: &happiness_charge
   - cure_fortune
 happiness_charge_precure:
   <<: *happiness_charge
+#######################################################
+go_princess: &go_princess
+  title: Go!プリンセスプリキュア
+  started_date: 2015-02-01
+  # ended_date:   2016-01-
+  girls:
+  - cure_flora
+  - cure_mermaid
+  - cure_twincle
+go_princess_precure:
+  <<: *go_princess

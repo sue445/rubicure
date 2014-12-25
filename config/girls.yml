@@ -943,7 +943,6 @@ cure_fortune: &cure_fortune
       プリキュア！桜吹雪の舞！
   transform_calls:
     - kirarin_star_symphony
-#######################################################
 lovely:
   <<: *cure_lovely
 princess:
@@ -952,3 +951,44 @@ honey:
   <<: *cure_honey
 fortune:
   <<: *cure_fortune
+#######################################################
+# go_princess
+cure_flora: &cure_flora
+  human_name:   春野はるか
+  precure_name: キュアフローラ
+  # created_date: 2015- # episode
+  transform_message: |-
+
+  extra_names:
+  attack_messages:
+    - |
+
+  transform_calls:
+cure_mermaid: &cure_mermaid
+  human_name:   海藤みなみ
+  precure_name: キュアマーメイド
+  # created_date: 2015- # episode
+  transform_message: |-
+
+  extra_names:
+  attack_messages:
+    - |
+
+  transform_calls:
+cure_twincle: &cure_twincle
+  human_name:   天ノ川きらら
+  precure_name: キュアトゥインクル
+  # created_date: 2015- # episode
+  transform_message: |-
+
+  extra_names:
+  attack_messages:
+    - |
+
+  transform_calls:
+flora:
+  <<: *cure_flora
+mermaid:
+  <<: *cure_mermaid
+twincle:
+  <<: *cure_twincle

@@ -94,6 +94,9 @@ EOS
             [:new_stage2, 32],
             [:ns3       , 36],
             [:new_stage3, 36],
+
+            [:sc             , 40],
+            [:spring_carnival, 40],
         ]
       end
 
