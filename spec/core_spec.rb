@@ -92,6 +92,8 @@ EOS
             [:new_stage1, 28],
             [:ns2       , 32],
             [:new_stage2, 32],
+            [:ns3       , 36],
+            [:new_stage3, 36],
         ]
       end
 
