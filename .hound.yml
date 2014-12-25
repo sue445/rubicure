@@ -21,3 +21,5 @@ Style/SignalException:
   Enabled: false
 Style/CaseEquality:
   Enabled: false
+Style/SpaceBeforeComma:
+  Enabled: false
