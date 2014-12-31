@@ -27,7 +27,7 @@ describe "Cure" do
 
       after do
         girl.rollback
-        girl.humanize
+        girl.humanize!
       end
 
       context "called once" do
@@ -60,7 +60,7 @@ describe "Cure" do
 
       after do
         girl.rollback
-        girl.humanize
+        girl.humanize!
       end
 
       context "called once" do
