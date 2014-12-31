@@ -3,6 +3,8 @@
 
 * bugfix: precure all_stars count when new stage3
   * https://github.com/sue445/rubicure/pull/61
+* refactor: divide `config/girls.yml` to `config/girls/*.yml`
+  * https://github.com/sue445/rubicure/pull/64
 
 ## v0.1.4
 [full changelog](http://github.com/sue445/rubicure/compare/v0.1.3...v0.1.4)
