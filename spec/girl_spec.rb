@@ -139,7 +139,7 @@ EOF
     subject { girl.send(transform_call) }
 
     before do
-      girl.humanize
+      girl.humanize!
     end
 
     context "When Cure Lemonade calls metamorphose" do

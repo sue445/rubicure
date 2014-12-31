@@ -56,7 +56,7 @@ module Rubicure
       self
     end
     alias :humanize :humanize!
-    deprecate :humanize, :humanize!
+    deprecate humanize: "Use #humanize! instead of #humanize"
 
     def attack!
       raise "require transform" if current_attack_message.blank?

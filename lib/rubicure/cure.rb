@@ -32,7 +32,7 @@ EOF
       ANOTHER_HUMAN_NAME  = "イース"
 
       def !
-        humanize
+        humanize!
         @another_human_name ||= ANOTHER_HUMAN_NAME
         @state_names[0], @another_human_name = @another_human_name, @state_names[0]
         self
@@ -52,7 +52,7 @@ EOF
       ANOTHER_HUMAN_NAME  = "セイレーン"
 
       def !
-        humanize
+        humanize!
         @another_human_name ||= ANOTHER_HUMAN_NAME
         @state_names[0], @another_human_name = @another_human_name, @state_names[0]
         self
