@@ -72,23 +72,23 @@ EOS
 
       where(:arg, :expected_count) do
         [
-            ["2009-03-20"            , 14],
-            [Date.parse("2010-03-20"), 17],
-            [Time.parse("2011-03-19"), 21],
+          ["2009-03-20"            , 14],
+          [Date.parse("2010-03-20"), 17],
+          [Time.parse("2011-03-19"), 21],
 
-            [:dx        , 14],
-            [:dx1       , 14],
-            [:dx2       , 17],
-            [:dx3       , 21],
+          [:dx        , 14],
+          [:dx1       , 14],
+          [:dx2       , 17],
+          [:dx3       , 21],
 
-            [:ns        , 28],
-            [:ns1       , 28],
-            [:new_stage , 28],
-            [:new_stage1, 28],
-            [:ns2       , 32],
-            [:new_stage2, 32],
-            [:ns3       , 36],
-            [:new_stage3, 36],
+          [:ns        , 28],
+          [:ns1       , 28],
+          [:new_stage , 28],
+          [:new_stage1, 28],
+          [:ns2       , 32],
+          [:new_stage2, 32],
+          [:ns3       , 36],
+          [:new_stage3, 36],
         ]
       end
 
