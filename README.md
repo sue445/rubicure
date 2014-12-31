@@ -474,6 +474,9 @@ Precure.all_stars.select(&:pink?).map(&:precure_name)
 
 Precure.all_stars.select(&:yellow?).map(&:precure_name)
 #=> ["シャイニールミナス", "キュアレモネード", "キュアパイン", "キュアサンシャイン", "キュアミューズ", "キュアピース", "キュアロゼッタ", "キュアハニー"]
+
+Precure.all_stars.group_by{ |girl| girl.color }.map{ |color, girls| [color, girls.count] }.sort_by{ |color, girl_count| girl_count }.reverse
+#=> [["pink", 9], ["yellow", 9], ["blue", 8], ["purple", 4], ["red", 4], ["white", 3], ["green", 2], ["black", 1]]
 ```
 
 ## More reference

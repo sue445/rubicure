@@ -62,6 +62,7 @@ describe Rubicure::Series do
       :smile,
       :dokidoki,
       :happiness_charge,
+      :go_princess,
     ]
   end
 
