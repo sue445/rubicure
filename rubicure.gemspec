@@ -28,6 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "codeclimate-test-reporter"
   spec.add_development_dependency "coveralls"
   spec.add_development_dependency "delorean"
+  spec.add_development_dependency "parser", ">= 2.2.0.1"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec", "~> 3.0.0"
   spec.add_development_dependency "rspec-collection_matchers", "~> 1.0.0"
@@ -35,7 +36,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-parameterized", "~> 0.1.2"
   spec.add_development_dependency "rubocop", "~> 0.26.1"
   spec.add_development_dependency "yard"
-
-  # for ruby 2.2.0-preview1
-  spec.add_development_dependency "parser", "~> 2.2.0.pre4"
 end
