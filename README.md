@@ -167,7 +167,7 @@ Milky.rose
 #=> #<Rubicure::Girl:0x007fbd60aded08 @human_name="美々野くるみ", @precure_name="ミルキィローズ", @transform_message="スカイローズ・トランスレイト！\n青いバラは秘密のしるし！ ミルキィローズ！\n", @extra_names=[], @current_state=0, @state_names=["美々野くるみ", "ミルキィローズ"]>
 ```
 
-and [more aliases!](config/girls.yml)
+and [more aliases!](config/girls/)
 
 ### Rubicure::Girl
 ```ruby

@@ -1,0 +1,17 @@
+shiny_luminous: &shiny_luminous
+  human_name:   九条ひかり
+  precure_name: シャイニールミナス
+  created_date: 2005-03-06 # episode 5
+  transform_message: |-
+    ルミナス・シャイニングストリーム！
+    輝く命、シャイニールミナス！
+    光の心と光の意志、すべてを一つにするために！
+  extra_names:
+  attack_messages:
+    - |-
+      光の意志よ！私に勇気を！希望と力を！！
+      ルミナス・ハーティエル・アンクション！
+  transform_calls:
+    - shining_stream
+luminous:
+  <<: *shiny_luminous

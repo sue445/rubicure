@@ -1,0 +1,18 @@
+milky_rose: &milky_rose
+  human_name:   美々野くるみ
+  precure_name: ミルキィローズ
+  created_date: 2008-04-06 # episode 10
+  transform_message: |-
+    スカイローズ・トランスレイト！
+    青いバラは秘密のしるし！ ミルキィローズ！
+  extra_names:
+  attack_messages:
+    - |-
+      邪悪な力を包み込む
+      バラの吹雪を咲かせましょう！
+      ミルキィローズ・ブリザード！
+  transform_calls:
+    - sky_rose_translate
+    - translate
+rose:
+  <<: *milky_rose

@@ -1,0 +1,88 @@
+cure_blossom: &cure_blossom
+  human_name:   花咲つぼみ
+  precure_name: キュアブロッサム
+  created_date: 2010-02-07 # episode 1
+  transform_message: |-
+    (プリキュアの種、いくですぅ！)
+    プリキュア！オープンマイハート！
+    大地に咲く一輪の花！ キュアブロッサム！
+    ハートキャッチ、プリキュア！
+  extra_names:
+  - スーパーキュアブロッサム
+  attack_messages:
+    - |-
+      花よ輝け！
+      プリキュア！ピンクフォルテウェイブ！！
+    - |-
+      花よ、咲き誇れ！
+      プリキュア・ハートキャッチ・オーケストラ！！
+  transform_calls:
+    - open_my_heart
+cure_marine: &cure_marine
+  human_name:   来海えりか
+  precure_name: キュアマリン
+  created_date: 2010-02-21 # episode 3
+  transform_message: |-
+    (プリキュアの種、いくですぅ！)
+    プリキュア！オープンマイハート！
+    海風に揺れる一輪の花！ キュアマリン！
+    ハートキャッチ、プリキュア！
+  extra_names:
+  - スーパーキュアマリン
+  attack_messages:
+    - |-
+      花よきらめけ！
+      プリキュア！ブルーフォルテウェイブ！！
+    - |-
+      花よ、咲き誇れ！
+      プリキュア・ハートキャッチ・オーケストラ！！
+  transform_calls:
+    - open_my_heart
+cure_sunshine: &cure_sunshine
+  human_name:   明堂院いつき
+  precure_name: キュアサンシャイン
+  created_date: 2010-07-18 # episode 23
+  transform_message: |-
+    (プリキュアの種、いくですぅ！)
+    プリキュア！オープンマイハート！
+    陽の光浴びる一輪の花！ キュアサンシャイン！
+    ハートキャッチ、プリキュア！
+  extra_names:
+  - スーパーキュアサンシャイン
+  attack_messages:
+    - |-
+      花よ、舞い踊れ！
+      プリキュア！ゴールドフォルテバースト！！
+    - |-
+      花よ、咲き誇れ！
+      プリキュア・ハートキャッチ・オーケストラ！！
+  transform_calls:
+    - open_my_heart
+cure_moonlight: &cure_moonlight
+  human_name:   月影ゆり
+  precure_name: キュアムーンライト
+  created_date: 2010-09-26 # episode 33
+  transform_message: |-
+    (プリキュアの種、いくですぅ！)
+    プリキュア！オープンマイハート！
+    月光に冴える一輪の花 キュアムーンライト！
+    ハートキャッチ、プリキュア！
+  extra_names:
+  - スーパーキュアムーンライト
+  attack_messages:
+    - |-
+      花よ輝け！
+      プリキュア！シルバーフォルテウェイブ！！
+    - |-
+      花よ、咲き誇れ！
+      プリキュア・ハートキャッチ・オーケストラ！！
+  transform_calls:
+    - open_my_heart
+blossom:
+  <<: *cure_blossom
+marine:
+  <<: *cure_marine
+sunshine:
+  <<: *cure_sunshine
+moonlight:
+  <<: *cure_moonlight

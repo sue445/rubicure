@@ -60,16 +60,9 @@ EOS
     context "Without arg" do
       subject { instance.all_stars }
 
-      before do
-        human_names = []
-        config_file = "#{File.dirname(__FILE__)}/../config/girls.yml"
-        Pathname(config_file).each_line do |line|
-          human_names << $1 if line =~ /^\s*human_name:\s*(.+)\s*/
-        end
-        @precure_count = human_names.uniq.count
-      end
+      let(:precure_count){ 37 }
 
-      its(:count) { should == @precure_count }
+      its(:count) { should == precure_count }
     end
 
     context "With arg" do

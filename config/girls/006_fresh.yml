@@ -1,0 +1,84 @@
+cure_peach: &cure_peach
+  human_name:   桃園ラブ
+  precure_name: キュアピーチ
+  created_date: 2009-02-01 # episode 1
+  transform_message: |-
+    チェインジ！プリキュア・ビートアップ！
+    ピンクのハートは愛あるしるし！
+    もぎたてフレッシュ、キュアピーチ！
+    レッツプリキュア！
+  extra_names:
+  - キュアエンジェルピーチ
+  attack_messages:
+    - |-
+      悪いの悪いの飛んでいけ！
+      プリキュア！ラブサンシャインフレッシュ！
+  transform_calls:
+    - change_precure_beat_up
+    - change
+    - beat_up
+cure_berry: &cure_berry
+  human_name:   蒼乃美希
+  precure_name: キュアベリー
+  created_date: 2009-02-08 # episode 2
+  transform_message: |-
+    チェインジ！プリキュア・ビートアップ！
+    ブルーのハートは希望のしるし！
+    つみたてフレッシュ、キュアベリー！
+    レッツプリキュア！
+  extra_names:
+  - キュアエンジェルベリー
+  attack_messages:
+    - |-
+      悪いの悪いの飛んでいけ！
+      プリキュア！エスポワールシャワーフレッシュ！
+  transform_calls:
+    - change_precure_beat_up
+    - change
+    - beat_up
+cure_pine: &cure_pine
+  human_name:   山吹祈里
+  precure_name: キュアパイン
+  created_date: 2009-02-15 # episode 3
+  transform_message: |-
+    チェインジ！プリキュア・ビートアップ！
+    イエローハートは祈りのしるし！
+    とれたてフレッシュ、キュアパイン！
+    レッツプリキュア！
+  extra_names:
+  - キュアエンジェルパイン
+  attack_messages:
+    - |-
+      悪いの悪いの飛んでいけ！
+      プリキュア！ヒーリングプレアーフレッシュ！
+  transform_calls:
+    - change_precure_beat_up
+    - change
+    - beat_up
+cure_passion: &cure_passion
+  human_name:   東せつな
+  precure_name: キュアパッション
+  created_date: 2009-07-12 # episode 23
+  transform_message: |-
+    チェインジ！プリキュア・ビートアップ！
+    真っ赤なハートは幸せの証！
+    熟れたてフレッシュ、キュアパッション！
+    レッツプリキュア！
+  extra_names:
+  - キュアエンジェルパッション
+  attack_messages:
+    - |-
+      吹き荒れよ幸せの嵐！
+      プリキュア！ハピネスハリケーン！
+  transform_calls:
+    - change_precure_beat_up
+    - change
+    - beat_up
+peach:
+  <<: *cure_peach
+berry:
+  <<: *cure_berry
+pine:
+  <<: *cure_pine
+passion:
+  <<: *cure_passion

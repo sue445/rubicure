@@ -1,0 +1,46 @@
+cure_black: &cure_black
+  human_name:   美墨なぎさ
+  precure_name: キュアブラック
+  created_date: 2004-02-01 # episode 1
+  transform_message: |-
+    デュアル・オーロラ・ウェイブ！！
+    光の使者、キュアブラック！
+    ふたりはプリキュア！
+    闇の力のしもべ達よ！
+    とっととお家に帰りなさい！
+  extra_names:
+  attack_messages:
+    - |-
+      ブラックサンダー！
+      ホワイトサンダー！
+      プリキュアの美しき魂が！
+      邪悪な心を打ち砕く！
+      プリキュア・マーブル・スクリュー！！
+      マックス！！
+  transform_calls:
+    - dual_aurora_wave
+cure_white: &cure_white
+  human_name:   雪城ほのか
+  precure_name: キュアホワイト
+  created_date: 2004-02-01 # episode 1
+  transform_message: |-
+    デュアル・オーロラ・ウェイブ！！
+    光の使者、キュアホワイト！
+    ふたりはプリキュア！
+    闇の力のしもべ達よ！
+    とっととお家に帰りなさい！
+  extra_names:
+  attack_messages:
+    - |-
+      ブラックサンダー！
+      ホワイトサンダー！
+      プリキュアの美しき魂が！
+      邪悪な心を打ち砕く！
+      プリキュア・マーブル・スクリュー！！
+      マックス！！
+  transform_calls:
+    - dual_aurora_wave
+black:
+  <<: *cure_black
+white:
+  <<: *cure_white
