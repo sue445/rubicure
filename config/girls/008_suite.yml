@@ -1,0 +1,111 @@
+cure_melody: &cure_melody
+  human_name:   北条響
+  precure_name: キュアメロディ
+  created_date: 2011-02-06 # episode 1
+  transform_message: |-
+    レッツプレイ！プリキュアモジュレーション！！
+    爪弾くは荒ぶる調べ！ キュアメロディ！
+    届け4人の組曲！スイートプリキュア！
+  extra_names:
+  - クレッシェンドメロディ
+  attack_messages:
+    - |-
+      おいで、ミリー！
+      翔けめぐれ、トーンのリング！
+      プリキュア！ミュージックロンド！
+      三拍子！１、２、３
+      フィナーレ！
+    - |-
+      届けましょう、希望のシンフォニー！
+      プリキュア！スイートセッションアンサンブル！
+      クレッシェンド！！
+      フィナーレ！
+  transform_calls:
+    - lets_play_precure_modulation
+    - lets_play
+    - modulation
+cure_rhythm: &cure_rhythm
+  human_name:   南野奏
+  precure_name: キュアリズム
+  created_date: 2011-02-06 # episode 1
+  transform_message: |-
+    レッツプレイ！プリキュアモジュレーション！！
+    爪弾くはたおやかな調べ！ キュアリズム！
+    届け4人の組曲！スイートプリキュア！
+  extra_names:
+  - クレッシェンドリズム
+  attack_messages:
+    - |-
+      おいで、ファリー！
+      翔けめぐれ、トーンのリング！
+      プリキュア！ミュージックロンド！
+      三拍子！１、２、３
+      フィナーレ！
+    - |-
+      届けましょう、希望のシンフォニー！
+      プリキュア！スイートセッションアンサンブル！
+      クレッシェンド！！
+      フィナーレ！
+  transform_calls:
+    - lets_play_precure_modulation
+    - lets_play
+    - modulation
+cure_beat: &cure_beat
+  human_name:   黒川エレン
+  precure_name: キュアビート
+  created_date: 2011-07-10 # episode 21
+  transform_message: |-
+    レッツプレイ！プリキュアモジュレーション！！
+    爪弾くは魂の調べ！ キュアビート！
+    届け4人の組曲！スイートプリキュア！
+  extra_names:
+  - クレッシェンドビート
+  attack_messages:
+    - |-
+      翔けめぐれ、トーンのリング！
+      プリキュア！ハートフルビートロック！
+      三拍子！１、２、３
+      フィナーレ！
+    - |-
+      届けましょう、希望のシンフォニー！
+      プリキュア！スイートセッションアンサンブル！
+      クレッシェンド！！
+      フィナーレ！
+  transform_calls:
+    - lets_play_precure_modulation
+    - lets_play
+    - modulation
+cure_muse: &cure_muse
+  human_name:   調辺アコ
+  precure_name: キュアミューズ
+  created_date: 2011-10-16 # episode 35
+  transform_message: |-
+    レッツプレイ！プリキュアモジュレーション！！
+    爪弾くは女神の調べ！ キュアミューズ！
+    届け4人の組曲！スイートプリキュア！
+  extra_names:
+  - クレッシェンドミューズ
+  attack_messages:
+    - |-
+      おいで、シリー！
+      シの音符の、シャイニングメロディ！
+      プリキュア！スパーリングシャワー！！
+      三拍子！１、２、３
+      フィナーレ！
+    - |-
+      届けましょう、希望のシンフォニー！
+      プリキュア！スイートセッションアンサンブル！
+      クレッシェンド！！
+      フィナーレ！
+  transform_calls:
+    - lets_play_precure_modulation
+    - lets_play
+    - modulation
+melody:
+  <<: *cure_melody
+rhythm:
+  <<: *cure_rhythm
+beat:
+  <<: *cure_beat
+muse:
+  <<: *cure_muse

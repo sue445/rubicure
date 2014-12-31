@@ -1,0 +1,84 @@
+cure_bloom: &cure_bloom
+  human_name:   日向咲
+  precure_name: キュアブルーム
+  created_date: 2006-02-05 # episode 1
+  transform_message: |-
+    デュアル・スピリチュアル・パワー！
+    花開け大地に！
+    輝く金の花！ キュアブルーム！
+    ふたりはプリキュア！
+    聖なる泉を汚す者よ！
+    阿漕な真似はお止めなさい！
+  attack_messages:
+    - |-
+      大地の精霊よ
+      大空の精霊よ
+      今、プリキュアと共に！
+      奇跡の力を解き放て！
+      プリキュア　ツインストリーム・スプラッシュ！！
+  transform_calls:
+    - dual_spiritual_power
+cure_egret: &cure_egret
+  human_name:   美翔舞
+  precure_name: キュアイーグレット
+  created_date: 2006-02-05 # episode 1
+  transform_message: |-
+    デュアル・スピリチュアル・パワー！
+    羽ばたけ空に！
+    煌めく銀の翼！ キュアイーグレット！
+    ふたりはプリキュア！
+    聖なる泉を汚す者よ！
+    阿漕な真似はお止めなさい！
+  attack_messages:
+    - |-
+      大地の精霊よ
+      大空の精霊よ
+      今、プリキュアと共に！
+      奇跡の力を解き放て！
+      プリキュア　ツインストリーム・スプラッシュ！！
+  transform_calls:
+    - dual_spiritual_power
+cure_bright: &cure_bright
+  human_name:   日向咲
+  precure_name: キュアブライト
+  created_date: 2006-09-03 # episode 30
+  transform_message: |-
+    デュアル・スピリチュアル・パワー！
+    未来を照らし！
+    天空に満ちる月！ キュアブライト！
+    ふたりはプリキュア！
+    聖なる泉を汚す者よ！
+    阿漕な真似はお止めなさい！
+  attack_messages:
+    - |-
+      精霊の光よ、命の煌きよ！
+      希望へ導け、2つの心！
+      プリキュア・スパイラルスタースプラッシュ！！
+  transform_calls:
+    - dual_spiritual_power
+cure_windy: &cure_windy
+  human_name:   美翔舞
+  precure_name: キュアウィンディ
+  created_date: 2006-09-03 # episode 30
+  transform_message: |-
+    デュアル・スピリチュアル・パワー！
+    勇気を運べ！
+    大地に薫る風！ キュアウィンディ！
+    ふたりはプリキュア！
+    聖なる泉を汚す者よ！
+    阿漕な真似はお止めなさい！
+  attack_messages:
+    - |-
+      精霊の光よ、命の煌きよ！
+      希望へ導け、2つの心！
+      プリキュア・スパイラルスタースプラッシュ！！
+  transform_calls:
+    - dual_spiritual_power
+bloom:
+  <<: *cure_bloom
+egret:
+  <<: *cure_egret
+bright:
+  <<: *cure_bright
+windy:
+  <<: *cure_windy

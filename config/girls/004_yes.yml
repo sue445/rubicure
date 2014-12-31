@@ -1,0 +1,93 @@
+cure_dream:  &cure_dream
+  human_name:   夢原のぞみ
+  precure_name: キュアドリーム
+  created_date: 2007-02-04 # episode 1
+  transform_message: |-
+    プリキュア！メタモルフォーゼ！
+    大いなる希望の力、キュアドリーム！
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
+  extra_names:
+  attack_messages:
+    - |-
+      夢見る乙女の底力、受けてみなさい！
+      プリキュア！シューティング・スター！
+  transform_calls:
+    - metamorphose
+cure_rouge:  &cure_rouge
+  human_name:   夏木りん
+  precure_name: キュアルージュ
+  created_date: 2007-02-11 # episode 2
+  transform_message: |-
+    プリキュア！メタモルフォーゼ！
+    情熱の赤い炎、キュアルージュ！
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
+  extra_names:
+  attack_messages:
+    - |-
+      純情乙女の炎の力、受けてみなさい！
+      プリキュア！ファイヤー・ストライク！
+cure_lemonade:  &cure_lemonade
+  human_name:   春日野うらら
+  precure_name: キュアレモネード
+  created_date: 2007-02-18 # episode 3
+  transform_message: |-
+    プリキュア！メタモルフォーゼ！
+    はじけるレモンの香り、キュアレモネード！
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
+  extra_names:
+  attack_messages:
+    - |-
+      輝く乙女のはじける力、受けてみなさい！
+      プリキュア！プリズム・チェーン！
+  transform_calls:
+    - metamorphose
+cure_mint:  &cure_mint
+  human_name:   秋元こまち
+  precure_name: キュアミント
+  created_date: 2007-02-25 # episode 4
+  transform_message: |-
+    プリキュア！メタモルフォーゼ！
+    安らぎの緑の大地、キュアミント！
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
+  extra_names:
+  attack_messages:
+    - |-
+      大地を揺るがす乙女の怒り、受けてみなさい！
+      プリキュア！エメラルド・ソーサー！
+  transform_calls:
+    - metamorphose
+cure_aqua:  &cure_aqua
+  human_name:   水無月かれん
+  precure_name: キュアアクア
+  created_date: 2007-03-11 # episode 6
+  transform_message: |-
+    プリキュア！メタモルフォーゼ！
+    知性の青き泉、キュアアクア！
+    希望の力と未来の光！
+    華麗に羽ばたく5つの心！
+    Yes！プリキュア5！
+  extra_names:
+  attack_messages:
+    - |-
+      岩をも砕く乙女の激流、受けてみなさい！
+      プリキュア！サファイヤ・アロー！
+  transform_calls:
+    - metamorphose
+dream:
+  <<: *cure_dream
+rouge:
+  <<: *cure_rouge
+lemonade:
+  <<: *cure_lemonade
+mint:
+  <<: *cure_mint
+aqua:
+  <<: *cure_aqua

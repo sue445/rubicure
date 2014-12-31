@@ -1,7 +1,9 @@
 module Rubicure
+  require "sengiri_yaml"
+
   # Precure girl (ex. Cure Peace, Cure Rosetta, Cure Honey)
   #
-  # this is record of "config/girls.yml"
+  # this is record of "config/girls/*.yml"
   class Girl
     attr_reader :human_name, :precure_name, :transform_message, :extra_names,
                 :current_state, :state_names, :created_date, :attack_messages,
@@ -91,11 +93,10 @@ module Rubicure
       uniq_names
     end
 
-    # @return [Hash] content of config/girls.yml
+    # @return [Hash] content of config/girls/*.yml
     def self.config
       unless @@config
-        config_file = "#{File.dirname(__FILE__)}/../../config/girls.yml"
-        @@config = YAML.load_file(config_file).deep_symbolize_keys
+        @@config = SengiriYaml.load_dir("#{File.dirname(__FILE__)}/../../config/girls").deep_symbolize_keys
       end
       @@config
     end
