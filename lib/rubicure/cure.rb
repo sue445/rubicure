@@ -26,14 +26,14 @@ EOF
     end
   end
 
-  [Cure.passion, Cure.cure_passion].each do |passion|
-    class << passion
-      ORIGINAL_HUMAN_NAME = "東せつな"
-      ANOTHER_HUMAN_NAME  = "イース"
+  def self.define_turnover_methods(target, original_human_name, another_human_name)
+    target.instance_variable_set(:@__original_human_name, original_human_name)
+    target.instance_variable_set(:@__another_human_name,  another_human_name)
 
+    class << target
       def !
         humanize!
-        @another_human_name ||= ANOTHER_HUMAN_NAME
+        @another_human_name ||= @__another_human_name
 
         # setup @state_names
         state_names
@@ -43,34 +43,18 @@ EOF
       end
 
       def rollback
-        @state_names[0]     = ORIGINAL_HUMAN_NAME
-        @another_human_name = ANOTHER_HUMAN_NAME
+        @state_names[0]     = @__original_human_name
+        @another_human_name = @__another_human_name
         self
       end
     end
   end
 
+  [Cure.passion, Cure.cure_passion].each do |passion|
+    define_turnover_methods(passion, "東せつな", "イース")
+  end
+
   [Cure.beat, Cure.cure_beat].each do |beat|
-    class << beat
-      ORIGINAL_HUMAN_NAME = "黒川エレン"
-      ANOTHER_HUMAN_NAME  = "セイレーン"
-
-      def !
-        humanize!
-        @another_human_name ||= ANOTHER_HUMAN_NAME
-
-        # setup @state_names
-        state_names
-
-        @state_names[0], @another_human_name = @another_human_name, @state_names[0]
-        self
-      end
-
-      def rollback
-        @state_names[0]     = ORIGINAL_HUMAN_NAME
-        @another_human_name = ANOTHER_HUMAN_NAME
-        self
-      end
-    end
+    define_turnover_methods(beat, "黒川エレン", "セイレーン")
   end
 end
