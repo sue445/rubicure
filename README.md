@@ -125,7 +125,7 @@ Precure.smile.on_air?("2013-12-16")
 ### Rubicure::Series#girls
 ```ruby
 Precure.smile.girls
-#=> [#<Rubicure::Girl:0x007fbd60a5d6e0 @human_name="星空みゆき", @precure_name="キュアハッピー", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ハッピー！！)\nキラキラ輝く未来の光！ キュアハッピー！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスハッピー", "ウルトラハッピー"], @current_state=0, @state_names=["星空みゆき", "キュアハッピー", "プリンセスハッピー", "ウルトラハッピー"]>, #<Rubicure::Girl:0x007fbd60a5d5c8 @human_name="日野あかね", @precure_name="キュアサニー", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！サニー！！)\n太陽サンサン熱血パワー！ キュアサニー！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスサニー", "ウルトラサニー"], @current_state=0, @state_names=["日野あかね", "キュアサニー", "プリンセスサニー", "ウルトラサニー"]>, #<Rubicure::Girl:0x007fbd60a5d500 @human_name="黄瀬やよい", @precure_name="キュアピース", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ピース！！)\nピカピカピカリンジャンケンポン！ キュアピース！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスピース", "ウルトラピース"], @current_state=0, @state_names=["黄瀬やよい", "キュアピース", "プリンセスピース", "ウルトラピース"]>, #<Rubicure::Girl:0x007fbd60a5d410 @human_name="緑川なお", @precure_name="キュアマーチ", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！マーチ！！)\n勇気リンリン直球勝負！ キュアマーチ！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスマーチ", "ウルトラマーチ"], @current_state=0, @state_names=["緑川なお", "キュアマーチ", "プリンセスマーチ", "ウルトラマーチ"]>, #<Rubicure::Girl:0x007fbd60a5d320 @human_name="青木れいか", @precure_name="キュアビューティ", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ビューティ！！)\nしんしんと降り積もる清き心！ キュアビューティ！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスビューティ", "ウルトラビューティ"], @current_state=0, @state_names=["青木れいか", "キュアビューティ", "プリンセスビューティ", "ウルトラビューティ"]>]
+#=> [{:human_name=>"星空みゆき", :precure_name=>"キュアハッピー", :created_date=>Sun, 05 Feb 2012, :transform_message=>"(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ハッピー！！)\nキラキラ輝く未来の光！ キュアハッピー！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", :extra_names=>["プリンセスハッピー", "ウルトラハッピー"], :attack_messages=>["プリキュア！ハッピーシャワー！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], :transform_calls=>["smile_charge"]}, {:human_name=>"日野あかね", :precure_name=>"キュアサニー", :created_date=>Sun, 12 Feb 2012, :transform_message=>"(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！サニー！！)\n太陽サンサン熱血パワー！ キュアサニー！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", :extra_names=>["プリンセスサニー", "ウルトラサニー"], :attack_messages=>["プリキュア！サニーファイヤー！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], :transform_calls=>["smile_charge"]}, {:human_name=>"黄瀬やよい", :precure_name=>"キュアピース", :created_date=>Sun, 19 Feb 2012, :transform_message=>"(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ピース！！)\nピカピカピカリンジャンケンポン！ キュアピース！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", :extra_names=>["プリンセスピース", "ウルトラピース"], :attack_messages=>["プリキュア！ピースサンダー！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], :transform_calls=>["smile_charge"]}, {:human_name=>"緑川なお", :precure_name=>"キュアマーチ", :created_date=>Sun, 26 Feb 2012, :transform_message=>"(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！マーチ！！)\n勇気リンリン直球勝負！ キュアマーチ！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", :extra_names=>["プリンセスマーチ", "ウルトラマーチ"], :attack_messages=>["プリキュア！マーチシュート！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], :transform_calls=>["smile_charge"]}, {:human_name=>"青木れいか", :precure_name=>"キュアビューティ", :created_date=>Sun, 04 Mar 2012, :transform_message=>"(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ビューティ！！)\nしんしんと降り積もる清き心！ キュアビューティ！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", :extra_names=>["プリンセスビューティ", "ウルトラビューティ"], :attack_messages=>["プリキュア！ビューティブリザード！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], :transform_calls=>["smile_charge"]}]
 
 Precure.smile.girls.map(&:human_name)
 #=> ["星空みゆき", "日野あかね", "黄瀬やよい", "緑川なお", "青木れいか"]
@@ -140,31 +140,31 @@ Precure.smile.girls.count
 ### Select own precure girl
 ```ruby
 Cure.lemonade
-#=> #<Rubicure::Girl:0x007fbd60ae72a0 @human_name="春日野うらら", @precure_name="キュアレモネード", @transform_message="プリキュア！メタモルフォーゼ！\nはじけるレモンの香り、キュアレモネード！\n希望の力と未来の光！\n華麗に羽ばたく5つの心！\nYes！プリキュア5！\n", @extra_names=[], @current_state=0, @state_names=["春日野うらら", "キュアレモネード"]>
+#=> {:human_name=>"春日野うらら", :precure_name=>"キュアレモネード", :created_date=>Sun, 18 Feb 2007, :transform_message=>"プリキュア！メタモルフォーゼ！\nはじけるレモンの香り、キュアレモネード！\n希望の力と未来の光！\n華麗に羽ばたく5つの心！\nYes！プリキュア5！", :extra_names=>nil, :attack_messages=>["輝く乙女のはじける力、受けてみなさい！\nプリキュア！プリズム・チェーン！"], :transform_calls=>["metamorphose"]}
 
 Cure.pine
-#=> #<Rubicure::Girl:0x007fbd60aee640 @human_name="山吹祈里", @precure_name="キュアパイン", @transform_message="チェインジ！プリキュア・ビートアップ！\nイエローハートは祈りのしるし！\nとれたてフレッシュ、キュアパイン！\nレッツプリキュア！\n", @extra_names=["キュアエンジェルパイン"], @current_state=0, @state_names=["山吹祈里", "キュアパイン", "キュアエンジェルパイン"]>
+#=> {:human_name=>"山吹祈里", :precure_name=>"キュアパイン", :created_date=>Sun, 15 Feb 2009, :transform_message=>"チェインジ！プリキュア・ビートアップ！\nイエローハートは祈りのしるし！\nとれたてフレッシュ、キュアパイン！\nレッツプリキュア！", :extra_names=>["キュアエンジェルパイン"], :attack_messages=>["悪いの悪いの飛んでいけ！\nプリキュア！ヒーリングプレアーフレッシュ！"], :transform_calls=>["change_precure_beat_up", "change", "beat_up"]}
 
 Cure.sunshine
-#=> #<Rubicure::Girl:0x007f83413a6e18 @human_name="明堂院いつき", @precure_name="キュアサンシャイン", @transform_message="(プリキュアの種、いくですぅ！)\nプリキュア！オープンマイハート！\n陽の光浴びる一輪の花！ キュアサンシャイン！\nハートキャッチ、プリキュア！\n", @extra_names=["スーパーキュアサンシャイン"], @current_state=0, @state_names=["明堂院いつき", "キュアサンシャイン", "スーパーキュアサンシャイン"]>
+#=> {:human_name=>"明堂院いつき", :precure_name=>"キュアサンシャイン", :created_date=>Sun, 18 Jul 2010, :transform_message=>"(プリキュアの種、いくですぅ！)\nプリキュア！オープンマイハート！\n陽の光浴びる一輪の花！ キュアサンシャイン！\nハートキャッチ、プリキュア！", :extra_names=>["スーパーキュアサンシャイン"], :attack_messages=>["花よ、舞い踊れ！\nプリキュア！ゴールドフォルテバースト！！", "花よ、咲き誇れ！\nプリキュア・ハートキャッチ・オーケストラ！！"], :transform_calls=>["open_my_heart"]}
 
 Cure.muse
-#=> #<Rubicure::Girl:0x007fbd60af7510 @human_name="調辺アコ", @precure_name="キュアミューズ", @transform_message="レッツプレイ！プリキュアモジュレーション！！\n爪弾くは女神の調べ！ キュアミューズ！\n響け4人の組曲！スイートプリキュア！\n", @extra_names=["クレッシェンドミューズ"], @current_state=0, @state_names=["調辺アコ", "キュアミューズ", "クレッシェンドミューズ"]>
+#=> {:human_name=>"調辺アコ", :precure_name=>"キュアミューズ", :created_date=>Sun, 16 Oct 2011, :transform_message=>"レッツプレイ！プリキュアモジュレーション！！\n爪弾くは女神の調べ！ キュアミューズ！\n届け4人の組曲！スイートプリキュア！", :extra_names=>["クレッシェンドミューズ"], :attack_messages=>["おいで、シリー！\nシの音符の、シャイニングメロディ！\nプリキュア！スパーリングシャワー！！\n三拍子！１、２、３\nフィナーレ！", "届けましょう、希望のシンフォニー！\nプリキュア！スイートセッションアンサンブル！\nクレッシェンド！！\nフィナーレ！"], :transform_calls=>["lets_play_precure_modulation", "lets_play", "modulation"]}
 
 Cure.peace
-#=> #<Rubicure::Girl:0x007fbd60aceca0 @human_name="黄瀬やよい", @precure_name="キュアピース", @transform_message="(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ピース！！)\nピカピカピカリンジャンケンポン！ キュアピース！\n5つの光が導く未来！\n輝け！スマイルプリキュア！\n", @extra_names=["プリンセスピース", "ウルトラピース"], @current_state=0, @state_names=["黄瀬やよい", "キュアピース", "プリンセスピース", "ウルトラピース"]>
+#=> {:human_name=>"黄瀬やよい", :precure_name=>"キュアピース", :created_date=>Sun, 19 Feb 2012, :transform_message=>"(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ピース！！)\nピカピカピカリンジャンケンポン！ キュアピース！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", :extra_names=>["プリンセスピース", "ウルトラピース"], :attack_messages=>["プリキュア！ピースサンダー！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], :transform_calls=>["smile_charge"]}
 
 Cure.rosetta
-#=> #<Rubicure::Girl:0x007fbd60af42c0 @human_name="四葉ありす", @precure_name="キュアロゼッタ", @transform_message="プリキュアラブリンク！\nL! O! V! E!\nひだまりポカポカ キュアロゼッタ！\n響け愛の鼓動！ドキドキプリキュア！\n世界を制するのは愛だけです、\nさぁ、あなたも私と愛を育んでくださいな\n", @extra_names=[], @current_state=0, @state_names=["四葉ありす", "キュアロゼッタ"]>
+#=> {:human_name=>"四葉ありす", :precure_name=>"キュアロゼッタ", :created_date=>Sun, 24 Feb 2013, :transform_message=>"プリキュアラブリンク！\nL! O! V! E!\nひだまりポカポカ キュアロゼッタ！\n響け愛の鼓動！ドキドキプリキュア！\n世界を制するのは愛だけです、\nさぁ、あなたも私と愛を育んでくださいな", :extra_names=>nil, :attack_messages=>["カッチカチの！ロゼッタウォール！\n"], :transform_calls=>["love_link"]}
 
 Cure.honey
-#=> #<Rubicure::Girl:0x007fb041afb768 @human_name="大森ゆうこ", @precure_name="キュアハニー", @transform_message="かわルンルン！\nプリキュアくるりんミラーチェンジ！\n大地に実る命の光！キュアハニー！\nハピネス注入！幸せチャージ！\nハピネスチャージプリキュア！", @extra_names=[], @created_date=Sun, 17 Mar 2013, @current_state=0, @state_names=["大森ゆうこ", "キュアハニー"]>
+#=> {:human_name=>"大森ゆうこ", :precure_name=>"キュアハニー", :created_date=>Sat, 15 Mar 2014, :transform_message=>"(かわルンルン！)\nプリキュアくるりんミラーチェンジ！\n大地に実る命の光！キュアハニー！\nハピネス注入！幸せチャージ！\nハピネスチャージプリキュア！", :extra_names=>["キュアハニー ポップコーンチア"], :attack_messages=>["命の光を聖なる力へ！\nハニーバトン！\nプリキュア！スパークリングバトンアタック！！\nイエイ！\n命よ、天に帰れ！\n(ゴクラ〜ク…)\n", "(かわルンルン！)\nプリキュアくるりんミラーチェンジ！ポップコーンチア！！\nプリキュア！リボンハートエクスプロージョン！！\nビクトリー！！\n", "(かわルンルン！)\nプリキュアくるりんミラーチェンジ！ココナッツサンバ！！\nプリキュア！マラカスリズムスパーク！！\nマンボ！！\n"], :transform_calls=>["kururin_mirror_change"]}
 
 Shiny.luminous
-#=> #<Rubicure::Girl:0x007fbd60ad7288 @human_name="九条ひかり", @precure_name="シャイニールミナス", @transform_message="ルミナス・シャイニングストリーム！\n輝く命、シャイニールミナス！\n光の心と光の意志、すべてを一つにするために！\n", @extra_names=[], @current_state=0, @state_names=["九条ひかり", "シャイニールミナス"]>
+#=> {:human_name=>"九条ひかり", :precure_name=>"シャイニールミナス", :created_date=>Sun, 06 Mar 2005, :transform_message=>"ルミナス・シャイニングストリーム！\n輝く命、シャイニールミナス！\n光の心と光の意志、すべてを一つにするために！", :extra_names=>nil, :attack_messages=>["光の意志よ！私に勇気を！希望と力を！！\nルミナス・ハーティエル・アンクション！"], :transform_calls=>["shining_stream"]}
 
 Milky.rose
-#=> #<Rubicure::Girl:0x007fbd60aded08 @human_name="美々野くるみ", @precure_name="ミルキィローズ", @transform_message="スカイローズ・トランスレイト！\n青いバラは秘密のしるし！ ミルキィローズ！\n", @extra_names=[], @current_state=0, @state_names=["美々野くるみ", "ミルキィローズ"]>
+#=> {:human_name=>"美々野くるみ", :precure_name=>"ミルキィローズ", :created_date=>Sun, 06 Apr 2008, :transform_message=>"スカイローズ・トランスレイト！\n青いバラは秘密のしるし！ ミルキィローズ！", :extra_names=>nil, :attack_messages=>["邪悪な力を包み込む\nバラの吹雪を咲かせましょう！\nミルキィローズ・ブリザード！"], :transform_calls=>["sky_rose_translate", "translate"]}
 ```
 
 and [more aliases!](config/girls/)
@@ -249,6 +249,7 @@ Cure.luminous.luminous_shining_stream!
 輝く命、シャイニールミナス！
 光の心と光の意志、すべてを一つにするために！
 
+Cure.bloom.dual_spilitual_power!
 Cure.bloom.dual_spilitual_power!
 デュアル・スピリチュアル・パワー！
 花開け大地に！
