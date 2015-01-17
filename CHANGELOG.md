@@ -1,6 +1,8 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.0...master)
 
+* Impl `Girl#cast_name`
+  * https://github.com/sue445/rubicure/pull/71
 * apply Hashie::Extensions::MethodAccess to Girl
   * https://github.com/sue445/rubicure/pull/69
   * **attention** : `Cure.xxxx` return plain `Hash` instance (not. `Rubicure::Giri`)
