@@ -178,6 +178,9 @@ yayoi = Precure.smile.girls[2]
 yayoi.name
 #=> "黄瀬やよい"
 
+yayoi.cast_name
+#=> "金元寿子"
+
 yayoi.attack!
 #=> RuntimeError: require transform
 

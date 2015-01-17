@@ -1,6 +1,7 @@
 cure_dream:  &cure_dream
   human_name:   夢原のぞみ
   precure_name: キュアドリーム
+  cast_name:    三瓶由布子
   created_date: 2007-02-04 # episode 1
   transform_message: |-
     プリキュア！メタモルフォーゼ！
@@ -18,6 +19,7 @@ cure_dream:  &cure_dream
 cure_rouge:  &cure_rouge
   human_name:   夏木りん
   precure_name: キュアルージュ
+  cast_name:    竹内順子
   created_date: 2007-02-11 # episode 2
   transform_message: |-
     プリキュア！メタモルフォーゼ！
@@ -33,6 +35,7 @@ cure_rouge:  &cure_rouge
 cure_lemonade:  &cure_lemonade
   human_name:   春日野うらら
   precure_name: キュアレモネード
+  cast_name:    伊瀬茉莉也
   created_date: 2007-02-18 # episode 3
   transform_message: |-
     プリキュア！メタモルフォーゼ！
@@ -50,6 +53,7 @@ cure_lemonade:  &cure_lemonade
 cure_mint:  &cure_mint
   human_name:   秋元こまち
   precure_name: キュアミント
+  cast_name:    永野愛
   created_date: 2007-02-25 # episode 4
   transform_message: |-
     プリキュア！メタモルフォーゼ！
@@ -67,6 +71,7 @@ cure_mint:  &cure_mint
 cure_aqua:  &cure_aqua
   human_name:   水無月かれん
   precure_name: キュアアクア
+  cast_name:    前田愛
   created_date: 2007-03-11 # episode 6
   transform_message: |-
     プリキュア！メタモルフォーゼ！

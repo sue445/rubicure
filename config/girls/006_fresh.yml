@@ -1,6 +1,7 @@
 cure_peach: &cure_peach
   human_name:   桃園ラブ
   precure_name: キュアピーチ
+  cast_name:    沖佳苗
   created_date: 2009-02-01 # episode 1
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
@@ -20,6 +21,7 @@ cure_peach: &cure_peach
 cure_berry: &cure_berry
   human_name:   蒼乃美希
   precure_name: キュアベリー
+  cast_name:    喜多村英梨
   created_date: 2009-02-08 # episode 2
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
@@ -39,6 +41,7 @@ cure_berry: &cure_berry
 cure_pine: &cure_pine
   human_name:   山吹祈里
   precure_name: キュアパイン
+  cast_name:    中川亜紀子
   created_date: 2009-02-15 # episode 3
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
@@ -58,6 +61,7 @@ cure_pine: &cure_pine
 cure_passion: &cure_passion
   human_name:   東せつな
   precure_name: キュアパッション
+  cast_name:    小松由佳
   created_date: 2009-07-12 # episode 23
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
