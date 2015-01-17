@@ -1,6 +1,7 @@
 cure_melody: &cure_melody
   human_name:   北条響
   precure_name: キュアメロディ
+  cast_name:    小清水亜美
   created_date: 2011-02-06 # episode 1
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
@@ -27,6 +28,7 @@ cure_melody: &cure_melody
 cure_rhythm: &cure_rhythm
   human_name:   南野奏
   precure_name: キュアリズム
+  cast_name:    折笠富美子
   created_date: 2011-02-06 # episode 1
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
@@ -53,6 +55,7 @@ cure_rhythm: &cure_rhythm
 cure_beat: &cure_beat
   human_name:   黒川エレン
   precure_name: キュアビート
+  cast_name:    豊口めぐみ
   created_date: 2011-07-10 # episode 21
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！
@@ -78,6 +81,7 @@ cure_beat: &cure_beat
 cure_muse: &cure_muse
   human_name:   調辺アコ
   precure_name: キュアミューズ
+  cast_name:    大久保瑠美
   created_date: 2011-10-16 # episode 35
   transform_message: |-
     レッツプレイ！プリキュアモジュレーション！！

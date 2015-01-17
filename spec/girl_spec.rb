@@ -3,6 +3,7 @@ describe Rubicure::Girl do
     girl = Rubicure::Girl[
         human_name:        human_name,
         precure_name:      precure_name,
+        cast_name:         cast_name,
         created_date:      created_date,
         extra_names:       extra_names,
         transform_message: transform_message,
@@ -16,6 +17,7 @@ describe Rubicure::Girl do
 
   let(:human_name)     { "黄瀬やよい" }
   let(:precure_name)   { "キュアピース" }
+  let(:cast_name)      { "金元寿子" }
   let(:created_date)   { "2012-02-19" }
   let(:extra_names)    { %w(プリンセスピース ウルトラピース) }
   let(:transform_message) do

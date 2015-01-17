@@ -1,6 +1,7 @@
 shiny_luminous: &shiny_luminous
   human_name:   九条ひかり
   precure_name: シャイニールミナス
+  cast_name:    田中理恵
   created_date: 2005-03-06 # episode 5
   transform_message: |-
     ルミナス・シャイニングストリーム！
