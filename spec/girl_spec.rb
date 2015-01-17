@@ -9,10 +9,10 @@ describe Rubicure::Girl do
         attack_messages:   attack_messages,
         transform_calls:   transform_calls,
     ]
-    girl.io = tempfile
+    girl.io = mock_io
     girl
   end
-  let(:tempfile) { Tempfile.open(described_class.to_s) }
+  let(:mock_io) { StringIO.new }
 
   let(:human_name)     { "黄瀬やよい" }
   let(:precure_name)   { "キュアピース" }
@@ -44,7 +44,7 @@ EOF
       end
 
       it { expect(girl.name).to eq precure_name }
-      it { expect(tempfile.open.read).to eq transform_message }
+      it { expect(mock_io.string).to eq transform_message }
     end
 
     context "when after 2nd transform" do
@@ -143,7 +143,7 @@ EOF
     subject { girl.send(transform_call) }
 
     before do
-      girl.io = tempfile
+      girl.io = mock_io
       girl.humanize!
     end
 
