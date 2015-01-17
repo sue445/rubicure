@@ -1,19 +1,22 @@
 describe Rubicure::Girl do
   let(:girl) do
-    girl = Rubicure::Girl.new(
+    girl = Rubicure::Girl[
         human_name:        human_name,
         precure_name:      precure_name,
+        created_date:      created_date,
         extra_names:       extra_names,
         transform_message: transform_message,
         attack_messages:   attack_messages,
-    )
-    girl.io = tempfile
+        transform_calls:   transform_calls,
+    ]
+    girl.io = mock_io
     girl
   end
-  let(:tempfile) { Tempfile.open(described_class.to_s) }
+  let(:mock_io) { StringIO.new }
 
   let(:human_name)     { "黄瀬やよい" }
   let(:precure_name)   { "キュアピース" }
+  let(:created_date)   { "2012-02-19" }
   let(:extra_names)    { %w(プリンセスピース ウルトラピース) }
   let(:transform_message) do
     <<EOF
@@ -28,6 +31,7 @@ EOF
       "プリキュアピースサンダーハリケーン！",
     ]
   end
+  let(:transform_calls){ %w(smile_charge) }
 
   describe "#name" do
     context "when before transform" do
@@ -40,7 +44,7 @@ EOF
       end
 
       it { expect(girl.name).to eq precure_name }
-      it { expect(tempfile.open.read).to eq transform_message }
+      it { expect(mock_io.string).to eq transform_message }
     end
 
     context "when after 2nd transform" do
@@ -139,6 +143,7 @@ EOF
     subject { girl.send(transform_call) }
 
     before do
+      girl.io = mock_io
       girl.humanize!
     end
 
@@ -158,7 +163,7 @@ EOF
       let(:girl) { Milky.rose }
       let(:transform_call) { "metamorphose" }
 
-      it { expect{ subject }.to raise_error NoMethodError }
+      it { expect{ subject }.to raise_error NameError }
     end
   end
 
