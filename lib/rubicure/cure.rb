@@ -34,6 +34,10 @@ EOF
       def !
         humanize!
         @another_human_name ||= ANOTHER_HUMAN_NAME
+
+        # setup @state_names
+        state_names
+
         @state_names[0], @another_human_name = @another_human_name, @state_names[0]
         self
       end
@@ -54,6 +58,10 @@ EOF
       def !
         humanize!
         @another_human_name ||= ANOTHER_HUMAN_NAME
+
+        # setup @state_names
+        state_names
+
         @state_names[0], @another_human_name = @another_human_name, @state_names[0]
         self
       end

@@ -4,30 +4,26 @@ module Rubicure
   # Precure girl (ex. Cure Peace, Cure Rosetta, Cure Honey)
   #
   # this is record of "config/girls/*.yml"
-  class Girl
-    attr_reader :human_name, :precure_name, :transform_message, :extra_names,
-                :current_state, :state_names, :created_date, :attack_messages,
-                :transform_calls
+  class Girl < Hash
+    include Hashie::Extensions::MethodAccess
+
     attr_writer :io
 
     @@cache = {}
     @@config = nil
     @@sleep_sec = 1
 
-    def initialize(human_name: nil, precure_name: nil, transform_message: nil, extra_names: [],
-                   created_date: nil, attack_messages: [], transform_calls: [])
-      @human_name        = human_name
-      @precure_name      = precure_name
-      @transform_message = transform_message
-      @extra_names       = extra_names || []
-      @created_date      = created_date
-      @current_state     = 0
-      @state_names = [@human_name, @precure_name]
-      @state_names += @extra_names unless @extra_names.empty?
-      @attack_messages   = [""] + attack_messages
-      @transform_calls   = transform_calls
+    def current_state
+      @current_state ||= 0
+      @current_state
+    end
 
-      @io = $stdout
+    def state_names
+      return @state_names if @state_names
+
+      @state_names = [human_name, precure_name]
+      @state_names += Array.wrap(extra_names) if respond_to?(:extra_names)
+      @state_names
     end
 
     def ==(other)
@@ -36,17 +32,15 @@ module Rubicure
 
     # @return [String] name of current form
     def name
-      @state_names[@current_state]
+      state_names[current_state]
     end
     alias to_s name
 
     # human -> precure ( -> extra forms ) -> human ...
     # @return [Rubicure::Girl] self
     def transform!
-      @current_state += 1
-      @current_state = 0 unless @current_state < @state_names.length
-
-      print_by_line @transform_message  if @current_state == 1
+      state = inc_current_state
+      print_by_line transform_message  if state == 1
 
       self
     end
@@ -73,7 +67,7 @@ module Rubicure
 
       unless @@cache[girl_name]
         girl_config = config[girl_name] || {}
-        @@cache[girl_name] = Rubicure::Girl.new(girl_config)
+        @@cache[girl_name] = Rubicure::Girl[girl_config].tap{ |girl| girl.io = $stdout }
       end
 
       @@cache[girl_name]
@@ -119,8 +113,14 @@ module Rubicure
 
     private
 
+    def inc_current_state
+      @current_state = current_state + 1
+      @current_state = 0 unless @current_state < state_names.length
+      @current_state
+    end
+
     def current_attack_message
-      attack_messages[current_state]
+      attack_messages[@current_state - 1]
     end
 
     def print_by_line(message)
@@ -133,11 +133,14 @@ module Rubicure
     end
 
     def method_missing(method_name, *args)
+      # call Hashie::Extensions::MethodAccess#method_missing
+      return super if has_key?(method_name)
+
       shortened_name = method_name.to_s.
           sub(%r/\Aprecure_|_precure\z/, "").
           sub(%r/!\z/, "")
 
-      return transform!(*args) if @transform_calls.include?(shortened_name)
+      return transform!(*args) if transform_calls.include?(shortened_name)
 
       super
     end
