@@ -3,6 +3,7 @@ cure_happy: &cure_happy
   precure_name: キュアハッピー
   cast_name:    福圓美里
   created_date: 2012-02-05 # episode 1
+  color:        pink
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！
@@ -34,6 +35,7 @@ cure_sunny: &cure_sunny
   precure_name: キュアサニー
   cast_name:    田野アサミ
   created_date: 2012-02-12 # episode 2
+  color:        red
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！
@@ -65,6 +67,7 @@ cure_peace: &cure_peace
   precure_name: キュアピース
   cast_name:    金元寿子
   created_date: 2012-02-19 # episode 3
+  color:        yellow
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！
@@ -96,6 +99,7 @@ cure_march: &cure_march
   precure_name: キュアマーチ
   cast_name:    井上麻里奈
   created_date: 2012-02-26 # episode 4
+  color:        green
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！
@@ -127,6 +131,7 @@ cure_beauty: &cure_beauty
   precure_name: キュアビューティ
   cast_name:    西村ちなみ
   created_date: 2012-03-04 # episode 5
+  color:        blue
   transform_message: |-
     (レディ？)
     プリキュア・スマイルチャージ！

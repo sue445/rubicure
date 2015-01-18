@@ -3,6 +3,7 @@ cure_dream:  &cure_dream
   precure_name: キュアドリーム
   cast_name:    三瓶由布子
   created_date: 2007-02-04 # episode 1
+  color:        pink
   transform_message: |-
     プリキュア！メタモルフォーゼ！
     大いなる希望の力、キュアドリーム！
@@ -21,6 +22,7 @@ cure_rouge:  &cure_rouge
   precure_name: キュアルージュ
   cast_name:    竹内順子
   created_date: 2007-02-11 # episode 2
+  color:        red
   transform_message: |-
     プリキュア！メタモルフォーゼ！
     情熱の赤い炎、キュアルージュ！
@@ -37,6 +39,7 @@ cure_lemonade:  &cure_lemonade
   precure_name: キュアレモネード
   cast_name:    伊瀬茉莉也
   created_date: 2007-02-18 # episode 3
+  color:        yellow
   transform_message: |-
     プリキュア！メタモルフォーゼ！
     はじけるレモンの香り、キュアレモネード！
@@ -55,6 +58,7 @@ cure_mint:  &cure_mint
   precure_name: キュアミント
   cast_name:    永野愛
   created_date: 2007-02-25 # episode 4
+  color:        green
   transform_message: |-
     プリキュア！メタモルフォーゼ！
     安らぎの緑の大地、キュアミント！
@@ -73,6 +77,7 @@ cure_aqua:  &cure_aqua
   precure_name: キュアアクア
   cast_name:    前田愛
   created_date: 2007-03-11 # episode 6
+  color:        blue
   transform_message: |-
     プリキュア！メタモルフォーゼ！
     知性の青き泉、キュアアクア！

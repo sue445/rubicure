@@ -3,6 +3,7 @@ cure_peach: &cure_peach
   precure_name: キュアピーチ
   cast_name:    沖佳苗
   created_date: 2009-02-01 # episode 1
+  color:        pink
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
     ピンクのハートは愛あるしるし！
@@ -23,6 +24,7 @@ cure_berry: &cure_berry
   precure_name: キュアベリー
   cast_name:    喜多村英梨
   created_date: 2009-02-08 # episode 2
+  color:        blue
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
     ブルーのハートは希望のしるし！
@@ -43,6 +45,7 @@ cure_pine: &cure_pine
   precure_name: キュアパイン
   cast_name:    中川亜紀子
   created_date: 2009-02-15 # episode 3
+  color:        yellow
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
     イエローハートは祈りのしるし！
@@ -63,6 +66,7 @@ cure_passion: &cure_passion
   precure_name: キュアパッション
   cast_name:    小松由佳
   created_date: 2009-07-12 # episode 23
+  color:        red
   transform_message: |-
     チェインジ！プリキュア・ビートアップ！
     真っ赤なハートは幸せの証！

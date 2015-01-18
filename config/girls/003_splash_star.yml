@@ -3,6 +3,7 @@ cure_bloom: &cure_bloom
   precure_name: キュアブルーム
   cast_name:    樹元オリエ
   created_date: 2006-02-05 # episode 1
+  color:        pink
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     花開け大地に！
@@ -24,6 +25,7 @@ cure_egret: &cure_egret
   precure_name: キュアイーグレット
   cast_name:    榎本温子
   created_date: 2006-02-05 # episode 1
+  color:        white
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     羽ばたけ空に！
@@ -44,6 +46,7 @@ cure_bright: &cure_bright
   human_name:   日向咲
   precure_name: キュアブライト
   cast_name:    樹元オリエ
+  color:        yellow
   created_date: 2006-09-03 # episode 30
   transform_message: |-
     デュアル・スピリチュアル・パワー！
@@ -64,6 +67,7 @@ cure_windy: &cure_windy
   precure_name: キュアウィンディ
   cast_name:    榎本温子
   created_date: 2006-09-03 # episode 30
+  color:        white
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     勇気を運べ！
