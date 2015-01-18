@@ -214,4 +214,10 @@ EOF
 
     it { should contain_exactly(*expected) }
   end
+
+  describe "dynamic color methods" do
+    # NOTE: cure peace is yellow
+    it { expect(girl).to be_yellow }
+    it { expect(girl).not_to be_pink }
+  end
 end
