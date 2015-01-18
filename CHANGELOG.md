@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.2.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.1...master)
+
+## v0.2.1
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.0...v0.2.1)
 
 * Impl `Girl#cast_name`
   * https://github.com/sue445/rubicure/pull/71
