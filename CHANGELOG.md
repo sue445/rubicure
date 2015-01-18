@@ -3,6 +3,8 @@
 
 * Impl `Girl#cast_name`
   * https://github.com/sue445/rubicure/pull/71
+* Impl `Girl#color`
+  * https://github.com/sue445/rubicure/pull/72
 * apply Hashie::Extensions::MethodAccess to Girl
   * https://github.com/sue445/rubicure/pull/69
   * **attention** : `Cure.xxxx` return plain `Hash` instance (not. `Rubicure::Giri`)

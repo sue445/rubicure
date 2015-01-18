@@ -3,6 +3,7 @@ shiny_luminous: &shiny_luminous
   precure_name: シャイニールミナス
   cast_name:    田中理恵
   created_date: 2005-03-06 # episode 5
+  color:        yellow
   transform_message: |-
     ルミナス・シャイニングストリーム！
     輝く命、シャイニールミナス！

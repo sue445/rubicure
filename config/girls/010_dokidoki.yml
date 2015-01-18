@@ -3,6 +3,7 @@ cure_heart: &cure_heart
   precure_name: キュアハート
   cast_name:    生天目仁美
   created_date: 2013-02-03 # episode 1
+  color:        pink
   transform_message: |-
     プリキュアラブリンク！
     L! O! V! E!
@@ -24,6 +25,7 @@ cure_diamond: &cure_diamond
   precure_name: キュアダイヤモンド
   cast_name:    寿美菜子
   created_date: 2013-02-17 # episode 3
+  color:        blue
   transform_message: |-
     プリキュアラブリンク！
     L! O! V! E!
@@ -42,6 +44,7 @@ cure_rosetta: &cure_rosetta
   precure_name: キュアロゼッタ
   cast_name:    渕上舞
   created_date: 2013-02-24 # episode 4
+  color:        yellow
   transform_message: |-
     プリキュアラブリンク！
     L! O! V! E!
@@ -60,6 +63,7 @@ cure_sword: &cure_sword
   precure_name: キュアソード
   cast_name:    宮本佳那子
   created_date: 2013-02-03 # episode 1
+  color:        purple
   transform_message: |-
     プリキュアラブリンク！
     L! O! V! E!
@@ -78,6 +82,7 @@ cure_ace: &cure_ace
   precure_name: キュアエース
   cast_name:    釘宮理恵
   created_date: 2013-06-30 # episode 22
+  color:        red
   transform_message: |-
     プリキュアドレスアップ！
     (キュピラッパー！)

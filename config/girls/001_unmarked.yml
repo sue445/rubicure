@@ -3,6 +3,7 @@ cure_black: &cure_black
   precure_name: キュアブラック
   cast_name:    本名陽子
   created_date: 2004-02-01 # episode 1
+  color:        black
   transform_message: |-
     デュアル・オーロラ・ウェイブ！！
     光の使者、キュアブラック！
@@ -25,6 +26,7 @@ cure_white: &cure_white
   precure_name: キュアホワイト
   cast_name:    ゆかな
   created_date: 2004-02-01 # episode 1
+  color:        white
   transform_message: |-
     デュアル・オーロラ・ウェイブ！！
     光の使者、キュアホワイト！

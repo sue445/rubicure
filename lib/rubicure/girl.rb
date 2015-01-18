@@ -11,6 +11,7 @@ module Rubicure
 
     @@cache = {}
     @@config = nil
+    @@colors = nil
     @@sleep_sec = 1
 
     def current_state
@@ -80,11 +81,9 @@ module Rubicure
 
     # @return [Array<Symbol>]
     def self.uniq_names
-      uniq_names = []
-      config.each do |name, series|
-        uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:precure_name] == series[:precure_name] }
+      config.each_with_object([]) do |(name, girl), uniq_names|
+        uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:precure_name] == girl[:precure_name] }
       end
-      uniq_names
     end
 
     # @return [Hash] content of config/girls/*.yml
@@ -99,6 +98,7 @@ module Rubicure
     def self.reload_config!
       @@cache = {}
       @@config = nil
+      @@colors = nil
       config
     end
 
@@ -109,6 +109,21 @@ module Rubicure
 
     def self.sleep_sec=(sleep_sec)
       @@sleep_sec = sleep_sec
+    end
+
+    # return defined colors
+    # @return [Array<Symbol>]
+    def self.colors
+      unless @@colors
+        @@colors = config.values.each_with_object([]) { |girl, colors| colors << girl[:color].to_sym }.uniq.sort
+      end
+      @@colors
+    end
+
+    colors.each do |color|
+      define_method "#{color}?" do
+        self.color.to_sym == color
+      end
     end
 
     private

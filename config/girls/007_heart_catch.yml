@@ -3,6 +3,7 @@ cure_blossom: &cure_blossom
   precure_name: キュアブロッサム
   cast_name:    水樹奈々
   created_date: 2010-02-07 # episode 1
+  color:        pink
   transform_message: |-
     (プリキュアの種、いくですぅ！)
     プリキュア！オープンマイハート！
@@ -24,6 +25,7 @@ cure_marine: &cure_marine
   precure_name: キュアマリン
   cast_name:    水沢史絵
   created_date: 2010-02-21 # episode 3
+  color:        blue
   transform_message: |-
     (プリキュアの種、いくですぅ！)
     プリキュア！オープンマイハート！
@@ -45,6 +47,7 @@ cure_sunshine: &cure_sunshine
   precure_name: キュアサンシャイン
   cast_name:    桑島法子
   created_date: 2010-07-18 # episode 23
+  color:        yellow
   transform_message: |-
     (プリキュアの種、いくですぅ！)
     プリキュア！オープンマイハート！
@@ -66,6 +69,7 @@ cure_moonlight: &cure_moonlight
   precure_name: キュアムーンライト
   cast_name:    久川綾
   created_date: 2010-09-26 # episode 33
+  color:        purple
   transform_message: |-
     (プリキュアの種、いくですぅ！)
     プリキュア！オープンマイハート！
