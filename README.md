@@ -449,6 +449,33 @@ beat.name
 => "セイレーン"
 ```
 
+## Color methods
+```ruby
+Cure.peace.color
+#=> "yellow"
+
+Cure.happy.color
+#=> "pink"
+
+Cure.peace.yellow?
+#=> true
+
+Cure.peace.pink?
+#=> false
+
+Cure.happy.pink?
+#=> true
+
+Rubicure::Girl.colors
+#=> [:black, :blue, :green, :pink, :purple, :red, :white, :yellow]
+
+Precure.all_stars.select(&:pink?).map(&:precure_name)
+#=> ["キュアブルーム", "キュアドリーム", "キュアピーチ", "キュアブロッサム", "キュアメロディ", "キュアハッピー", "キュアハート", "キュアラブリー"]
+
+Precure.all_stars.select(&:yellow?).map(&:precure_name)
+#=> ["シャイニールミナス", "キュアレモネード", "キュアパイン", "キュアサンシャイン", "キュアミューズ", "キュアピース", "キュアロゼッタ", "キュアハニー"]
+```
+
 ## More reference
 http://rubydoc.info/gems/rubicure/frames
 
