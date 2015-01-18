@@ -111,6 +111,12 @@ module Rubicure
       @@sleep_sec = sleep_sec
     end
 
+    # return defined colors
+    # @return [Array<Symbol>]
+    def self.colors
+      config.values.each_with_object([]) { |girl, colors| colors << girl[:color].to_sym }.uniq.sort
+    end
+
     private
 
     def inc_current_state

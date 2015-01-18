@@ -9,6 +9,7 @@ describe Rubicure::Girl do
         transform_message: transform_message,
         attack_messages:   attack_messages,
         transform_calls:   transform_calls,
+        color:             color,
     ]
     girl.io = mock_io
     girl
@@ -20,6 +21,7 @@ describe Rubicure::Girl do
   let(:cast_name)      { "金元寿子" }
   let(:created_date)   { "2012-02-19" }
   let(:extra_names)    { %w(プリンセスピース ウルトラピース) }
+  let(:color)          { "yellow" }
   let(:transform_message) do
     <<EOF
 プリキュアスマイルチャージ！
@@ -192,5 +194,24 @@ EOF
 
       it_behaves_like :a_humanize_method
     end
+  end
+
+  describe "#colors" do
+    subject{ Rubicure::Girl.colors }
+
+    let(:expected) do
+      %i(
+        black
+        blue
+        green
+        pink
+        purple
+        red
+        white
+        yellow
+      )
+    end
+
+    it { should contain_exactly(*expected) }
   end
 end
