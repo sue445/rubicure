@@ -13,6 +13,7 @@ cure_lovely: &cure_lovely
   extra_names:
   - キュアラブリー チェリーフラメンコ
   - キュアラブリー ロリポップヒップポップ
+  - フォーエバーラブリー
   attack_messages:
     - |
       愛の光を聖なる力に！
