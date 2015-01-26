@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.2.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.2.1...master)
+
+## v0.2.2.1
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.2...v0.2.2.1)
+
+* Tweak gem dependency
+  * https://github.com/sue445/rubicure/pull/75
 
 ## v0.2.2
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.1...v0.2.2)
