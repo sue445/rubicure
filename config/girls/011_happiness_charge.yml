@@ -30,6 +30,8 @@ cure_lovely: &cure_lovely
       (かわルンルン！)
       プリキュアくるりんミラーチェンジ！ロリポップヒップポップ！！！
       プリキュア！ポップンソニックアタック！！
+    - |
+      プリキュア！フォーエバーハピネスシャワー！！
   transform_calls:
     - kururin_mirror_change
 cure_princess: &cure_princess
