@@ -7,6 +7,10 @@ cure_flora: &cure_flora
   transform_message: |-
     プリキュア！プリンセスエンゲージ！
     咲き誇る花のプリンセス！キュアフローラ！
+    強く、やさしく、美しく！
+    Go!プリンセスプリキュア！
+    冷たい檻に閉ざされた夢、返していただきますわ！
+    お覚悟はよろしくて？
   extra_names:
   attack_messages:
     - |
@@ -24,6 +28,10 @@ cure_mermaid: &cure_mermaid
   transform_message: |-
     プリキュア！プリンセスエンゲージ！
     澄み渡る海のプリンセス！キュアマーメイド！
+    強く、やさしく、美しく！
+    Go!プリンセスプリキュア！
+    冷たい檻に閉ざされた夢、返していただきますわ！
+    お覚悟はよろしくて？
   extra_names:
   attack_messages:
     - |
@@ -42,6 +50,10 @@ cure_twinkle: &cure_twinkle
   transform_message: |-
     プリキュア！プリンセスエンゲージ！
     きらめく星のプリンセス！キュアトゥインクル！
+    強く、やさしく、美しく！
+    Go!プリンセスプリキュア！
+    冷たい檻に閉ざされた夢、返していただきますわ！
+    お覚悟はよろしくて？
   extra_names:
   attack_messages:
     - |
