@@ -51,7 +51,7 @@ module Rubicure
 
       unless @@cache[movie_name]
         movie_config = config[movie_name] || {}
-        movie_config.reject! { |k, v| v.nil? }
+        movie_config.reject! { |_k, v| v.nil? }
 
         @@cache[movie_name] = Rubicure::Movie[movie_config]
       end

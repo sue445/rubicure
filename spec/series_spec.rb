@@ -89,7 +89,7 @@ describe Rubicure::Series do
       it { expect(series === Object.new).to be false }
       it { expect(series === :smile).to be false }
       it { expect(series === true).to be false }
-      it { expect(series === nil).to be false }
+      it { expect(series.nil?).to be false }
     end
   end
 
@@ -124,10 +124,10 @@ describe Rubicure::Series do
   end
 
   describe "#each_with_girls" do
-    subject{ series.each_with_girls }
+    subject { series.each_with_girls }
 
     let(:series)     { Rubicure::Series.find(series_name) }
-    let(:series_name){ :splash_star }
+    let(:series_name) { :splash_star }
 
     it { expect { |b| series.each_with_girls(&b) }.to yield_successive_args(Rubicure::Girl, Rubicure::Girl) }
   end

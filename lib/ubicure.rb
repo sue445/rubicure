@@ -1,1 +1,1 @@
-require 'rubicure'
+require "rubicure"

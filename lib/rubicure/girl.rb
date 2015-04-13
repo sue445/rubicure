@@ -35,7 +35,7 @@ module Rubicure
     def name
       state_names[current_state]
     end
-    alias to_s name
+    alias_method :to_s, :name
 
     # human -> precure ( -> extra forms ) -> human ...
     # @return [Rubicure::Girl] self
@@ -50,7 +50,7 @@ module Rubicure
       @current_state = 0
       self
     end
-    alias :humanize :humanize!
+    alias_method :humanize, :humanize!
     deprecate humanize: "Use #humanize! instead of #humanize"
 
     def attack!
@@ -68,7 +68,7 @@ module Rubicure
 
       unless @@cache[girl_name]
         girl_config = config[girl_name] || {}
-        @@cache[girl_name] = Rubicure::Girl[girl_config].tap{ |girl| girl.io = $stdout }
+        @@cache[girl_name] = Rubicure::Girl[girl_config].tap { |girl| girl.io = $stdout }
       end
 
       @@cache[girl_name]
@@ -152,8 +152,8 @@ module Rubicure
       return super if has_key?(method_name)
 
       shortened_name = method_name.to_s.
-          sub(%r/\Aprecure_|_precure\z/, "").
-          sub(%r/!\z/, "")
+                       sub(/\Aprecure_|_precure\z/, "").
+                       sub(/!\z/, "")
 
       return transform!(*args) if transform_calls.include?(shortened_name)
 

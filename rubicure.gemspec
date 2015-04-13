@@ -1,21 +1,21 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rubicure/version'
+require "rubicure/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "rubicure"
   spec.version       = Rubicure::VERSION
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
-  spec.description   = %q{All about Japanese battle heroine "Pretty Cure (Precure)".}
-  spec.summary       = %q{All about Japanese battle heroine "Pretty Cure (Precure)".}
+  spec.description   = 'All about Japanese battle heroine "Pretty Cure (Precure)".'
+  spec.summary       = 'All about Japanese battle heroine "Pretty Cure (Precure)".'
   spec.homepage      = "https://github.com/sue445/rubicure"
   spec.license       = "MIT"
 
-  spec.required_ruby_version = '>= 2.0.0'
+  spec.required_ruby_version = ">= 2.0.0"
 
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]

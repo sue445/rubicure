@@ -28,7 +28,7 @@ module Rubicure
       if respond_to?(:started_date)
         if respond_to?(:ended_date)
           # ended title
-          return (started_date .. ended_date).cover?(date)
+          return (started_date..ended_date).cover?(date)
         else
           # on air title
           return started_date <= date
@@ -55,7 +55,7 @@ module Rubicure
     def each_with_girls
       girls.each { |girl| yield girl }
     end
-    alias :each :each_with_girls
+    alias_method :each, :each_with_girls
 
     # @return [Array<Symbol>]
     def self.names
@@ -100,7 +100,7 @@ module Rubicure
 
       unless @@cache[series_name]
         series_config = config[series_name] || {}
-        series_config.reject! { |k, v| v.nil? }
+        series_config.reject! { |_k, v| v.nil? }
 
         @@cache[series_name] = Rubicure::Series[series_config]
       end
