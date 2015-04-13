@@ -16,7 +16,6 @@ module Rubicure
 
     def current_state
       @current_state ||= 0
-      @current_state
     end
 
     def state_names
