@@ -35,7 +35,7 @@ EOF
       "プリキュアピースサンダーハリケーン！",
     ]
   end
-  let(:transform_calls){ %w(smile_charge) }
+  let(:transform_calls) { %w(smile_charge) }
 
   describe "#name" do
     context "when before transform" do
@@ -154,20 +154,20 @@ EOF
     context "When Cure Lemonade calls metamorphose" do
       let(:girl) { Cure.lemonade }
       let(:transform_call) { "metamorphose" }
-      it { expect{ subject }.not_to raise_error }
+      it { expect { subject }.not_to raise_error }
     end
 
     context "When Milkey Rose calls sky_rose_translate!" do
       let(:girl) { Milky.rose }
       let(:transform_call) { "sky_rose_translate!" }
-      it { expect{ subject }.not_to raise_error }
+      it { expect { subject }.not_to raise_error }
     end
 
     context "When Milky Rose calls metamorphose" do
       let(:girl) { Milky.rose }
       let(:transform_call) { "metamorphose" }
 
-      it { expect{ subject }.to raise_error NameError }
+      it { expect { subject }.to raise_error NameError }
     end
   end
 
@@ -177,10 +177,10 @@ EOF
   end
 
   describe "humanize!" do
-    let(:humanize!){ girl.humanize! }
+    let(:humanize!) { girl.humanize! }
 
     context "When not transformed" do
-      subject!{ humanize! }
+      subject! { humanize! }
 
       it_behaves_like :a_humanize_method
     end
@@ -190,14 +190,14 @@ EOF
         girl.transform!
       end
 
-      subject!{ humanize! }
+      subject! { humanize! }
 
       it_behaves_like :a_humanize_method
     end
   end
 
   describe "#colors" do
-    subject{ Rubicure::Girl.colors }
+    subject { Rubicure::Girl.colors }
 
     let(:expected) do
       %i(

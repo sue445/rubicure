@@ -6,8 +6,8 @@ module Rubicure
     include Rubicure::Concerns::Util
     include Enumerable
 
-    @@cache = {}
-    @@config = nil
+    @cache = {}
+    @config = nil
 
     # @param [Rubicure::Series,Rubicure::Girl] other
     # @return [Boolean] other is same Rubicure::Series or Rubicure::Series include Rubicure::Girl
@@ -28,7 +28,7 @@ module Rubicure
       if respond_to?(:started_date)
         if respond_to?(:ended_date)
           # ended title
-          return (started_date .. ended_date).cover?(date)
+          return (started_date..ended_date).cover?(date)
         else
           # on air title
           return started_date <= date
@@ -55,57 +55,60 @@ module Rubicure
     def each_with_girls
       girls.each { |girl| yield girl }
     end
-    alias :each :each_with_girls
+    alias_method :each, :each_with_girls
 
-    # @return [Array<Symbol>]
-    def self.names
-      config.keys
-    end
-
-    # @return [Array<Symbol>]
-    def self.uniq_names
-      uniq_names = []
-      config.each do |name, series|
-        uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:title] == series[:title] }
-      end
-      uniq_names
-    end
-
-    # @return [Hash] content of config/series.yml
-    def self.config
-      unless @@config
-        config_file = "#{File.dirname(__FILE__)}/../../config/series.yml"
-        @@config = YAML.load_file(config_file).deep_symbolize_keys
-      end
-      @@config
-    end
-
-    # @return [Hash] content of config/precure.yml
-    def self.reload_config!
-      @@cache = {}
-      @@config = nil
-      config
-    end
-
-    # @param [Symbol] series_name
-    def self.valid?(series_name)
-      names.include?(series_name)
-    end
-
-    # @param series_name [Symbol]
-    # @return [Rubicure::Series]
-    # @raise arg is not precure
-    def self.find(series_name)
-      raise "unknown series: #{series_name}" unless valid?(series_name)
-
-      unless @@cache[series_name]
-        series_config = config[series_name] || {}
-        series_config.reject! { |k, v| v.nil? }
-
-        @@cache[series_name] = Rubicure::Series[series_config]
+    class << self
+      # @return [Array<Symbol>]
+      def names
+        config.keys
       end
 
-      @@cache[series_name]
+      # @return [Array<Symbol>]
+      def uniq_names
+        uniq_names = []
+        config.each do |name, series|
+          uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:title] == series[:title] }
+        end
+        uniq_names
+      end
+
+      # @return [Hash] content of config/series.yml
+      def config
+        unless @config
+          config_file = "#{File.dirname(__FILE__)}/../../config/series.yml"
+          @config = YAML.load_file(config_file).deep_symbolize_keys
+        end
+        @config
+      end
+
+      # @return [Hash] content of config/precure.yml
+      def reload_config!
+        @cache = {}
+        @config = nil
+        config
+      end
+
+      # @param [Symbol] series_name
+      def valid?(series_name)
+        names.include?(series_name)
+      end
+
+      # @param series_name [Symbol]
+      # @return [Rubicure::Series]
+      # @raise arg is not precure
+      def find(series_name)
+        raise "unknown series: #{series_name}" unless valid?(series_name)
+
+        @cache ||= {}
+        unless @cache[series_name]
+          series_config = config[series_name] || {}
+          series_config.reject! { |_k, v| v.nil? }
+
+          @cache[series_name] = Rubicure::Series[series_config]
+        end
+
+        @cache[series_name]
+      end
     end
   end
 end

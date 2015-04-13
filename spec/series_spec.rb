@@ -66,6 +66,7 @@ describe Rubicure::Series do
     ]
   end
 
+  # rubocop:disable Style/CaseEquality, Lint/UselessComparison, Style/NilComparison
   describe "#===" do
     let(:series) { Rubicure::Series.find(series_name) }
     let(:series_name) { :smile }
@@ -92,6 +93,7 @@ describe Rubicure::Series do
       it { expect(series === nil).to be false }
     end
   end
+  # rubocop:enable Style/CaseEquality, Lint/UselessComparison, Style/NilComparison
 
   describe "#names" do
     subject { Rubicure::Series.names }
@@ -124,10 +126,10 @@ describe Rubicure::Series do
   end
 
   describe "#each_with_girls" do
-    subject{ series.each_with_girls }
+    subject { series.each_with_girls }
 
     let(:series)     { Rubicure::Series.find(series_name) }
-    let(:series_name){ :splash_star }
+    let(:series_name) { :splash_star }
 
     it { expect { |b| series.each_with_girls(&b) }.to yield_successive_args(Rubicure::Girl, Rubicure::Girl) }
   end

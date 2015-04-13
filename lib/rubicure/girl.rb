@@ -9,14 +9,8 @@ module Rubicure
 
     attr_writer :io
 
-    @@cache = {}
-    @@config = nil
-    @@colors = nil
-    @@sleep_sec = 1
-
     def current_state
       @current_state ||= 0
-      @current_state
     end
 
     def state_names
@@ -35,7 +29,7 @@ module Rubicure
     def name
       state_names[current_state]
     end
-    alias to_s name
+    alias_method :to_s, :name
 
     # human -> precure ( -> extra forms ) -> human ...
     # @return [Rubicure::Girl] self
@@ -50,7 +44,7 @@ module Rubicure
       @current_state = 0
       self
     end
-    alias :humanize :humanize!
+    alias_method :humanize, :humanize!
     deprecate humanize: "Use #humanize! instead of #humanize"
 
     def attack!
@@ -61,63 +55,68 @@ module Rubicure
       current_attack_message
     end
 
-    # @param girl_name [Symbol]
-    # @return [Rubicure::Girl]
-    def self.find(girl_name)
-      raise "unknown girl: #{girl_name}" unless valid?(girl_name)
+    class << self
+      attr_writer :sleep_sec
 
-      unless @@cache[girl_name]
-        girl_config = config[girl_name] || {}
-        @@cache[girl_name] = Rubicure::Girl[girl_config].tap{ |girl| girl.io = $stdout }
+      # @param girl_name [Symbol]
+      # @return [Rubicure::Girl]
+      def find(girl_name)
+        raise "unknown girl: #{girl_name}" unless valid?(girl_name)
+
+        @cache ||= {}
+        unless @cache[girl_name]
+          girl_config = config[girl_name] || {}
+          @cache[girl_name] = Rubicure::Girl[girl_config].tap { |girl| girl.io = $stdout }
+        end
+
+        @cache[girl_name]
       end
 
-      @@cache[girl_name]
-    end
-
-    # @return [Array<Symbol>]
-    def self.names
-      config.keys
-    end
-
-    # @return [Array<Symbol>]
-    def self.uniq_names
-      config.each_with_object([]) do |(name, girl), uniq_names|
-        uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:precure_name] == girl[:precure_name] }
+      # @return [Array<Symbol>]
+      def names
+        config.keys
       end
-    end
 
-    # @return [Hash] content of config/girls/*.yml
-    def self.config
-      unless @@config
-        @@config = SengiriYaml.load_dir("#{File.dirname(__FILE__)}/../../config/girls").deep_symbolize_keys
+      # @return [Array<Symbol>]
+      def uniq_names
+        config.each_with_object([]) do |(name, girl), uniq_names|
+          uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:precure_name] == girl[:precure_name] }
+        end
       end
-      @@config
-    end
 
-    # @return [Hash] content of config/precure.yml
-    def self.reload_config!
-      @@cache = {}
-      @@config = nil
-      @@colors = nil
-      config
-    end
-
-    # @param [Symbol] girl_name
-    def self.valid?(girl_name)
-      names.include?(girl_name)
-    end
-
-    def self.sleep_sec=(sleep_sec)
-      @@sleep_sec = sleep_sec
-    end
-
-    # return defined colors
-    # @return [Array<Symbol>]
-    def self.colors
-      unless @@colors
-        @@colors = config.values.each_with_object([]) { |girl, colors| colors << girl[:color].to_sym }.uniq.sort
+      # @return [Hash] content of config/girls/*.yml
+      def config
+        unless @config
+          @config = SengiriYaml.load_dir("#{File.dirname(__FILE__)}/../../config/girls").deep_symbolize_keys
+        end
+        @config
       end
-      @@colors
+
+      # @return [Hash] content of config/precure.yml
+      def reload_config!
+        @cache = {}
+        @config = nil
+        @colors = nil
+        config
+      end
+
+      # @param [Symbol] girl_name
+      def valid?(girl_name)
+        names.include?(girl_name)
+      end
+
+      def sleep_sec
+        @sleep_sec ||= 1
+      end
+
+      # return defined colors
+      # @return [Array<Symbol>]
+      def colors
+        unless @colors
+          @colors = config.values.each_with_object([]) { |girl, colors| colors << girl[:color].to_sym }.uniq.sort
+        end
+        @colors
+      end
     end
 
     colors.each do |color|
@@ -141,7 +140,7 @@ module Rubicure
     def print_by_line(message)
       index = 0
       message.each_line do |line|
-        sleep(@@sleep_sec) if index > 0
+        sleep(self.class.sleep_sec) if index > 0
         @io.puts line
         index += 1
       end
@@ -152,8 +151,8 @@ module Rubicure
       return super if has_key?(method_name)
 
       shortened_name = method_name.to_s.
-          sub(%r/\Aprecure_|_precure\z/, "").
-          sub(%r/!\z/, "")
+                       sub(/\Aprecure_|_precure\z/, "").
+                       sub(/!\z/, "")
 
       return transform!(*args) if transform_calls.include?(shortened_name)
 
