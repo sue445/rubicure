@@ -122,3 +122,6 @@ Metrics/MethodLength:
 
 Metrics/PerceivedComplexity:
   Max: 8
+
+Metrics/ClassLength:
+  Max: 120

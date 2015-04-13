@@ -66,7 +66,7 @@ describe Rubicure::Series do
     ]
   end
 
-  # rubocop:disable Style/CaseEquality
+  # rubocop:disable Style/CaseEquality, Lint/UselessComparison
   describe "#===" do
     let(:series) { Rubicure::Series.find(series_name) }
     let(:series_name) { :smile }
@@ -93,7 +93,7 @@ describe Rubicure::Series do
       it { expect(series.nil?).to be false }
     end
   end
-  # rubocop:enable Style/CaseEquality
+  # rubocop:enable Style/CaseEquality, Lint/UselessComparison
 
   describe "#names" do
     subject { Rubicure::Series.names }
