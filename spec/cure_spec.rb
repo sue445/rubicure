@@ -4,7 +4,7 @@ describe "Cure" do
       subject { girl.pikarin_janken }
 
       shared_examples :do_janken do
-        it { should match /ピカピカピカリン\nジャンケンポン！\n（.+）/ }
+        it { should match(/ピカピカピカリン\nジャンケンポン！\n（.+）/) }
       end
 
       context "When peace" do
