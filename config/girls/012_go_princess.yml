@@ -36,7 +36,7 @@ cure_mermaid: &cure_mermaid
   attack_messages:
     - |
       エクスチェンジ！モードエレガント！
-      高鳴れ、海よ！プリンセス・マーメイド・リップル！
+      高鳴れ、海よ！プリキュア・マーメイド・リップル！
       (ドリーミング)
       ごきげんよう
   transform_calls:
@@ -58,7 +58,7 @@ cure_twinkle: &cure_twinkle
   attack_messages:
     - |
       エクスチェンジ！モードエレガント！
-      キラキラ、星よ！プリンセス・トゥインクル・ハミング！
+      キラキラ、星よ！プリキュア・トゥインクル・ハミング！
       (ドリーミング)
       ごきげんよう
   transform_calls:
