@@ -1,13 +1,19 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.2.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.5...master)
 
-## v0.2.3
+## v0.2.5
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.4...v0.2.5)
+
+* Fix typo
+  * https://github.com/sue445/rubicure/pull/78
+
+## v0.2.4
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.3...v0.2.4)
 
 * Tweak transform message 
   * https://github.com/sue445/rubicure/pull/76
 
-## v0.2.2
+## v0.2.3
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.2.1...v0.2.3)
 
 * Add Go! Princess Precure
