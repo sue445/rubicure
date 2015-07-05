@@ -63,9 +63,33 @@ cure_twinkle: &cure_twinkle
       ごきげんよう
   transform_calls:
     - princess_engage
+cure_scarlett: &cure_scarlett
+  human_name:   紅城トワ
+  precure_name: キュアスカーレット
+  cast_name:    沢城みゆき
+  color:        red
+  created_date: 2015-07-05 # episode 22
+  transform_message: |-
+    プリキュア！プリンセスエンゲージ！
+    深紅の炎のプリンセス！キュアスカーレット！
+    強く、やさしく、美しく！
+    Go!プリンセスプリキュア！
+    冷たい檻に閉ざされた夢、返していただきますわ！
+    お覚悟決めなさい！
+  extra_names:
+  attack_messages:
+    - |
+      エクスチェンジ！モードエレガント！
+      羽ばたけ炎の翼！プリキュア・フェニックス・ブレイズ！
+      (ドリーミング)
+      ごきげんよう
+  transform_calls:
+    - princess_engage
 flora:
   <<: *cure_flora
 mermaid:
   <<: *cure_mermaid
 twinkle:
   <<: *cure_twinkle
+scarlett:
+  <<: *cure_scarlett
