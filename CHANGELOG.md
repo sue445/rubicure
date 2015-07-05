@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.2.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.6...master)
+
+## v0.2.6
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.5...v0.2.6)
+
+* Add cure scarlett
+  * https://github.com/sue445/rubicure/pull/79
 
 ## v0.2.5
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.4...v0.2.5)
