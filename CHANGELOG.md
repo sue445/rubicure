@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.2.7...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.8...master)
+
+## v0.2.8
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.7...v0.2.8)
+
+* Impl Rubicure::Series#to_json
+  * https://github.com/sue445/rubicure/pull/83
 
 ## v0.2.7
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.6...v0.2.7)
