@@ -1,4 +1,5 @@
 cure_lovely: &cure_lovely
+  girl_name:    cure_lovely
   human_name:   愛乃めぐみ
   precure_name: キュアラブリー
   cast_name:    中島愛
@@ -35,6 +36,7 @@ cure_lovely: &cure_lovely
   transform_calls:
     - kururin_mirror_change
 cure_princess: &cure_princess
+  girl_name:    cure_princess
   human_name:   白雪ひめ(ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ)
   precure_name: キュアプリンセス
   cast_name:    潘めぐみ
@@ -67,6 +69,7 @@ cure_princess: &cure_princess
   transform_calls:
     - kururin_mirror_change
 cure_honey: &cure_honey
+  girl_name:    cure_honey
   human_name:   大森ゆうこ
   precure_name: キュアハニー
   cast_name:    北川里奈
@@ -101,6 +104,7 @@ cure_honey: &cure_honey
   transform_calls:
     - kururin_mirror_change
 cure_fortune: &cure_fortune
+  girl_name:    cure_fortune
   human_name:   氷川いおな
   precure_name: キュアフォーチュン
   cast_name:    戸松遥

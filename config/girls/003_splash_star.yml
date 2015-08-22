@@ -1,4 +1,5 @@
 cure_bloom: &cure_bloom
+  girl_name:    cure_bloom
   human_name:   日向咲
   precure_name: キュアブルーム
   cast_name:    樹元オリエ
@@ -21,6 +22,7 @@ cure_bloom: &cure_bloom
   transform_calls:
     - dual_spiritual_power
 cure_egret: &cure_egret
+  girl_name:    cure_egret
   human_name:   美翔舞
   precure_name: キュアイーグレット
   cast_name:    榎本温子
