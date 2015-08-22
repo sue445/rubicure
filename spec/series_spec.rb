@@ -116,6 +116,7 @@ describe Rubicure::Series do
 
       its(:title) { should == "スマイルプリキュア！" }
       its(:girls) { should have_exactly(5).girls }
+      its(:series_name) { should eq series_name.to_s }
     end
 
     context "when not exists" do
