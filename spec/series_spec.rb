@@ -134,4 +134,19 @@ describe Rubicure::Series do
 
     it { expect { |b| series.each_with_girls(&b) }.to yield_successive_args(Rubicure::Girl, Rubicure::Girl) }
   end
+
+  describe "#to_json" do
+    subject { series.to_json }
+
+    let(:series) { Rubicure::Series.find(series_name) }
+    let(:series_name) { :splash_star }
+
+    let(:json) do
+      <<-JSON
+{\"series_name\":\"splash_star\",\"title\":\"ふたりはプリキュア Splash☆Star\",\"started_date\":\"2006-02-05\",\"ended_date\":\"2007-01-28\",\"girls\":[\"cure_bloom\",\"cure_egret\"]}
+      JSON
+    end
+
+    it { should eq json.squish }
+  end
 end

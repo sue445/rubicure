@@ -55,7 +55,15 @@ module Rubicure
     def each_with_girls
       girls.each { |girl| yield girl }
     end
-    alias_method :each, :each_with_girls
+    alias_method_chain :each, :girls
+
+    def to_json
+      original_hash = {}
+      each_without_girls do |k, v|
+        original_hash[k] = v
+      end
+      original_hash.to_json
+    end
 
     class << self
       # @return [Array<Symbol>]
