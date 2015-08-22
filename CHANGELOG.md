@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.2.8...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.8.1...master)
+
+## v0.2.8.1
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.8...v0.2.8.1)
+
+* Add to_json args
+  * https://github.com/sue445/rubicure/pull/84
 
 ## v0.2.8
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.7...v0.2.8)
