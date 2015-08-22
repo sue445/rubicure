@@ -1,4 +1,5 @@
 cure_happy: &cure_happy
+  girl_name:    cure_happy
   human_name:   星空みゆき
   precure_name: キュアハッピー
   cast_name:    福圓美里
@@ -31,6 +32,7 @@ cure_happy: &cure_happy
   transform_calls:
     - smile_charge
 cure_sunny: &cure_sunny
+  girl_name:    cure_sunny
   human_name:   日野あかね
   precure_name: キュアサニー
   cast_name:    田野アサミ
@@ -63,6 +65,7 @@ cure_sunny: &cure_sunny
   transform_calls:
     - smile_charge
 cure_peace: &cure_peace
+  girl_name:    cure_peace
   human_name:   黄瀬やよい
   precure_name: キュアピース
   cast_name:    金元寿子
@@ -95,6 +98,7 @@ cure_peace: &cure_peace
   transform_calls:
     - smile_charge
 cure_march: &cure_march
+  girl_name:    cure_march
   human_name:   緑川なお
   precure_name: キュアマーチ
   cast_name:    井上麻里奈
@@ -127,6 +131,7 @@ cure_march: &cure_march
   transform_calls:
     - smile_charge
 cure_beauty: &cure_beauty
+  girl_name:    cure_beauty
   human_name:   青木れいか
   precure_name: キュアビューティ
   cast_name:    西村ちなみ

@@ -1,6 +1,7 @@
 describe Rubicure::Girl do
   let(:girl) do
     girl = Rubicure::Girl[
+        girl_name:         girl_name,
         human_name:        human_name,
         precure_name:      precure_name,
         cast_name:         cast_name,
@@ -16,6 +17,7 @@ describe Rubicure::Girl do
   end
   let(:mock_io) { StringIO.new }
 
+  let(:girl_name)      { "cure_peace" }
   let(:human_name)     { "黄瀬やよい" }
   let(:precure_name)   { "キュアピース" }
   let(:cast_name)      { "金元寿子" }
@@ -117,6 +119,7 @@ EOF
 
     it { should be_an_instance_of Rubicure::Girl }
     its(:precure_name) { should == "キュアピース" }
+    its(:girl_name)    { should == "cure_peace" }
   end
 
   describe "#uniq_names" do

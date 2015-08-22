@@ -1,4 +1,5 @@
 cure_peach: &cure_peach
+  girl_name:    cure_peach
   human_name:   桃園ラブ
   precure_name: キュアピーチ
   cast_name:    沖佳苗
@@ -20,6 +21,7 @@ cure_peach: &cure_peach
     - change
     - beat_up
 cure_berry: &cure_berry
+  girl_name:    cure_berry
   human_name:   蒼乃美希
   precure_name: キュアベリー
   cast_name:    喜多村英梨
@@ -41,6 +43,7 @@ cure_berry: &cure_berry
     - change
     - beat_up
 cure_pine: &cure_pine
+  girl_name:    cure_pine
   human_name:   山吹祈里
   precure_name: キュアパイン
   cast_name:    中川亜紀子
@@ -62,6 +65,7 @@ cure_pine: &cure_pine
     - change
     - beat_up
 cure_passion: &cure_passion
+  girl_name:    cure_passion
   human_name:   東せつな
   precure_name: キュアパッション
   cast_name:    小松由佳

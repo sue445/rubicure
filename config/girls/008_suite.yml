@@ -1,4 +1,5 @@
 cure_melody: &cure_melody
+  girl_name:    cure_melody
   human_name:   北条響
   precure_name: キュアメロディ
   cast_name:    小清水亜美
@@ -27,6 +28,7 @@ cure_melody: &cure_melody
     - lets_play
     - modulation
 cure_rhythm: &cure_rhythm
+  girl_name:    cure_rhythm
   human_name:   南野奏
   precure_name: キュアリズム
   cast_name:    折笠富美子
@@ -55,6 +57,7 @@ cure_rhythm: &cure_rhythm
     - lets_play
     - modulation
 cure_beat: &cure_beat
+  girl_name:    cure_beat
   human_name:   黒川エレン
   precure_name: キュアビート
   cast_name:    豊口めぐみ
@@ -82,6 +85,7 @@ cure_beat: &cure_beat
     - lets_play
     - modulation
 cure_muse: &cure_muse
+  girl_name:    cure_muse
   human_name:   調辺アコ
   precure_name: キュアミューズ
   cast_name:    大久保瑠美
