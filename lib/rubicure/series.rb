@@ -57,7 +57,7 @@ module Rubicure
     end
     alias_method_chain :each, :girls
 
-    def to_json
+    def to_json(*_args)
       original_hash = {}
       each_without_girls do |k, v|
         original_hash[k] = v
