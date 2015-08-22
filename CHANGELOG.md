@@ -1,5 +1,13 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.2.6...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.7...master)
+
+## v0.2.7
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.6...v0.2.7)
+
+* Modify from "Splash Star" to "Splash☆Star"
+  * https://github.com/sue445/rubicure/pull/81
+* Add own uniq name
+  * https://github.com/sue445/rubicure/pull/82
 
 ## v0.2.6
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.5...v0.2.6)
