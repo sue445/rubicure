@@ -440,7 +440,9 @@ passion.name
 
 passion.name
 => "イース"
+```
 
+```ruby
 beat = Cure.beat
 
 beat.name
@@ -450,6 +452,17 @@ beat.name
 
 beat.name
 => "セイレーン"
+```
+
+```ruby
+scarlett = Cure.scarlett
+scarlett.name
+=> "紅城トワ"
+
+!scarlett
+
+scarlett.name
+=> "トワイライト"
 ```
 
 ## Color methods
