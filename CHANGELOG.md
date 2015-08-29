@@ -1,7 +1,7 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.9...master)
 
-## 0.2.9
+## v0.2.9
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.8.1...v0.2.9)
 
 * Support turnover to towa-sama
