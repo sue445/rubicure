@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.2.9...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.3.0...master)
+
+## v0.3.0
+[full changelog](http://github.com/sue445/rubicure/compare/v0.2.9...v0.3.0)
+
+* Impl `Girl#birthday?` and `Girl#have_birthday?`
+  * https://github.com/sue445/rubicure/pull/86
 
 ## v0.2.9
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.8.1...v0.2.9)
