@@ -69,6 +69,7 @@ module Rubicure
     def have_birthday?
       respond_to?(:birthday)
     end
+    alias_method :has_birthday?, :have_birthday?
 
     class << self
       attr_writer :sleep_sec
