@@ -104,6 +104,7 @@ RSpec.configure do |config|
   config.order = :random
 
   config.include Delorean
+  config.include TestUtil
 
   config.before(:each) do
     Rubicure::Girl.sleep_sec = 0

@@ -495,6 +495,31 @@ Precure.all_stars.group_by{ |girl| girl.color }.map{ |color, girls| [color, girl
 #=> [["pink", 9], ["yellow", 9], ["blue", 8], ["purple", 4], ["red", 4], ["white", 3], ["green", 2], ["black", 1]]
 ```
 
+### birthday and birthday?
+```ruby
+Cure.peace.respond_to?(:birthday)
+#=> false
+
+Cure.twinkle.respond_to?(:birthday)
+#=> true
+Cure.twinkle.birthday
+#=> "9/12"
+
+Date.today
+#=> Tue, 24 Nov 2015
+irb(main):010:0> Cure.twinkle.birthday?
+#=> false
+
+Cure.twinkle.birthday?(Date.parse("2015-9-12"))
+#=> true
+
+Precure.all_stars.select(&:have_birthday?).map(&:human_name)
+#=> ["美墨なぎさ", "雪城ほのか", "九条ひかり", "日向咲", "美翔舞", "相田マナ", "菱川六花", "四葉ありす", "剣崎真琴", "春野はるか", "海藤みなみ", "天ノ川きらら", "紅城トワ"]
+
+Precure.all_stars.select(&:have_birthday?).map(&:human_name).count
+#=> 13
+```
+
 ## More reference
 http://rubydoc.info/gems/rubicure/frames
 
