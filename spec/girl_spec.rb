@@ -223,4 +223,32 @@ EOF
     it { expect(girl).to be_yellow }
     it { expect(girl).not_to be_pink }
   end
+
+  describe "birthday?" do
+    subject { girl.birthday?(curent_date) }
+
+    let(:curent_date) { Date.today }
+
+    context "has birthday" do
+      let(:girl) { Cure.flora }
+
+      context "curent_time is birthday" do
+        let(:curent_date) { date("2015-04-10") }
+
+        it { should be true }
+      end
+
+      context "curent_time is not birthday" do
+        let(:curent_date) { date("2015-04-11") }
+
+        it { should be false }
+      end
+    end
+
+    context "don't have birthday" do
+      let(:girl) { Cure.peace }
+
+      it { should be false }
+    end
+  end
 end

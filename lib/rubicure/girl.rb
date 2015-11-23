@@ -55,6 +55,21 @@ module Rubicure
       current_attack_message
     end
 
+    def birthday?(date = Date.today)
+      return false unless have_birthday?
+
+      # NOTE: birthday is "mm/dd"
+      month, day = birthday.split("/")
+
+      birthday_date = Date.new(date.year, month.to_i, day.to_i)
+
+      birthday_date == date
+    end
+
+    def have_birthday?
+      respond_to?(:birthday)
+    end
+
     class << self
       attr_writer :sleep_sec
 
