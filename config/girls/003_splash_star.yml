@@ -47,12 +47,10 @@ cure_egret: &cure_egret
   transform_calls:
     - dual_spiritual_power
 cure_bright: &cure_bright
-  human_name:   日向咲
+  <<: *cure_bloom
   precure_name: キュアブライト
-  cast_name:    樹元オリエ
   color:        yellow
   created_date: 2006-09-03 # episode 30
-  birthday:     8/7
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     未来を照らし！
@@ -65,15 +63,11 @@ cure_bright: &cure_bright
       精霊の光よ、命の煌きよ！
       希望へ導け、2つの心！
       プリキュア・スパイラルスタースプラッシュ！！
-  transform_calls:
-    - dual_spiritual_power
 cure_windy: &cure_windy
-  human_name:   美翔舞
+  <<: *cure_egret
   precure_name: キュアウィンディ
-  cast_name:    榎本温子
   created_date: 2006-09-03 # episode 30
   color:        white
-  birthday:     11/20
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     勇気を運べ！
@@ -86,8 +80,6 @@ cure_windy: &cure_windy
       精霊の光よ、命の煌きよ！
       希望へ導け、2つの心！
       プリキュア・スパイラルスタースプラッシュ！！
-  transform_calls:
-    - dual_spiritual_power
 bloom:
   <<: *cure_bloom
 egret:
