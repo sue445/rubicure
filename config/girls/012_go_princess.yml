@@ -5,6 +5,7 @@ cure_flora: &cure_flora
   cast_name:    嶋村侑
   color:        pink
   created_date: 2015-02-01 # episode 1
+  birthday:     4/10
   transform_message: |-
     プリキュア！プリンセスエンゲージ！
     咲き誇る花のプリンセス！キュアフローラ！
@@ -27,6 +28,7 @@ cure_mermaid: &cure_mermaid
   cast_name:    浅野真澄
   color:        blue
   created_date: 2015-02-08 # episode 2
+  birthday:     7/20
   transform_message: |-
     プリキュア！プリンセスエンゲージ！
     澄み渡る海のプリンセス！キュアマーメイド！
@@ -50,6 +52,7 @@ cure_twinkle: &cure_twinkle
   cast_name:    山村響
   color:        yellow
   created_date: 2015-02-22 # episode 4
+  birthday:     9/12
   transform_message: |-
     プリキュア！プリンセスエンゲージ！
     きらめく星のプリンセス！キュアトゥインクル！
@@ -73,6 +76,7 @@ cure_scarlett: &cure_scarlett
   cast_name:    沢城みゆき
   color:        red
   created_date: 2015-07-05 # episode 22
+  birthday:     12/15
   transform_message: |-
     プリキュア！プリンセスエンゲージ！
     深紅の炎のプリンセス！キュアスカーレット！

@@ -5,6 +5,7 @@ cure_bloom: &cure_bloom
   cast_name:    樹元オリエ
   created_date: 2006-02-05 # episode 1
   color:        pink
+  birthday:     8/7
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     花開け大地に！
@@ -28,6 +29,7 @@ cure_egret: &cure_egret
   cast_name:    榎本温子
   created_date: 2006-02-05 # episode 1
   color:        white
+  birthday:     11/20
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     羽ばたけ空に！
@@ -50,6 +52,7 @@ cure_bright: &cure_bright
   cast_name:    樹元オリエ
   color:        yellow
   created_date: 2006-09-03 # episode 30
+  birthday:     8/7
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     未来を照らし！
@@ -70,6 +73,7 @@ cure_windy: &cure_windy
   cast_name:    榎本温子
   created_date: 2006-09-03 # episode 30
   color:        white
+  birthday:     11/20
   transform_message: |-
     デュアル・スピリチュアル・パワー！
     勇気を運べ！
