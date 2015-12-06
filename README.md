@@ -495,19 +495,19 @@ Precure.all_stars.group_by{ |girl| girl.color }.map{ |color, girls| [color, girl
 #=> [["pink", 9], ["yellow", 9], ["blue", 8], ["purple", 4], ["red", 4], ["white", 3], ["green", 2], ["black", 1]]
 ```
 
-### birthday and birthday?
+### birthday methods
 ```ruby
-Cure.peace.respond_to?(:birthday)
+Cure.peace.have_birthday?
 #=> false
 
-Cure.twinkle.respond_to?(:birthday)
+Cure.twinkle.has_birthday?
 #=> true
 Cure.twinkle.birthday
 #=> "9/12"
 
 Date.today
 #=> Tue, 24 Nov 2015
-irb(main):010:0> Cure.twinkle.birthday?
+Cure.twinkle.birthday?
 #=> false
 
 Cure.twinkle.birthday?(Date.parse("2015-9-12"))
@@ -519,6 +519,8 @@ Precure.all_stars.select(&:have_birthday?).map(&:human_name)
 Precure.all_stars.select(&:have_birthday?).map(&:human_name).count
 #=> 13
 ```
+
+* `has_birthday?` is alias to `have_birthday?`
 
 ## More reference
 http://rubydoc.info/gems/rubicure/frames
