@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.3.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.3.1...master)
+
+## v0.3.1
+[full changelog](http://github.com/sue445/rubicure/compare/v0.3.0...v0.3.1)
+
+* Fix typo: scarlett -> scarlet
+  * https://github.com/sue445/rubicure/pull/89
 
 ## v0.3.0
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.9...v0.3.0)
