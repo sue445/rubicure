@@ -58,7 +58,7 @@ EOF
     define_turnover_methods(beat, "黒川エレン", "セイレーン")
   end
 
-  [Cure.scarlett, Cure.cure_scarlett].each do |scarlett|
-    define_turnover_methods(scarlett, "紅城トワ", "トワイライト")
+  [Cure.scarlet, Cure.cure_scarlet].each do |scarlet|
+    define_turnover_methods(scarlet, "紅城トワ", "トワイライト")
   end
 end

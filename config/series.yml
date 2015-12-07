@@ -155,6 +155,6 @@ go_princess: &go_princess
   - cure_flora
   - cure_mermaid
   - cure_twinkle
-  - cure_scarlett
+  - cure_scarlet
 go_princess_precure:
   <<: *go_princess

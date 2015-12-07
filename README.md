@@ -99,10 +99,10 @@ and [more aliases!](config/series.yml)
 
 ```ruby
 Precure.now
-#=> {:series_name=>"go_princess", :title=>"Go!プリンセスプリキュア", :started_date=>Sun, 01 Feb 2015, :girls=>["cure_flora", "cure_mermaid", "cure_twinkle", "cure_scarlett"]}
+#=> {:series_name=>"go_princess", :title=>"Go!プリンセスプリキュア", :started_date=>Sun, 01 Feb 2015, :girls=>["cure_flora", "cure_mermaid", "cure_twinkle", "cure_scarlet"]}
 
 Precure.current
-#=> {:series_name=>"go_princess", :title=>"Go!プリンセスプリキュア", :started_date=>Sun, 01 Feb 2015, :girls=>["cure_flora", "cure_mermaid", "cure_twinkle", "cure_scarlett"]}
+#=> {:series_name=>"go_princess", :title=>"Go!プリンセスプリキュア", :started_date=>Sun, 01 Feb 2015, :girls=>["cure_flora", "cure_mermaid", "cure_twinkle", "cure_scarlet"]}
 
 # -2013/1/27  : smile precure
 #  2013/2/5 - : dokidoki precure
@@ -455,13 +455,13 @@ beat.name
 ```
 
 ```ruby
-scarlett = Cure.scarlett
-scarlett.name
+scarlet = Cure.scarlet
+scarlet.name
 => "紅城トワ"
 
-!scarlett
+!scarlet
 
-scarlett.name
+scarlet.name
 => "トワイライト"
 ```
 
@@ -538,7 +538,7 @@ $ curl -s https://rubicure.herokuapp.com/series/go_princess.json | jq .
     "cure_flora",
     "cure_mermaid",
     "cure_twinkle",
-    "cure_scarlett"
+    "cure_scarlet"
   ]
 }
 
