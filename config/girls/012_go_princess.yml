@@ -69,8 +69,8 @@ cure_twinkle: &cure_twinkle
       ごきげんよう
   transform_calls:
     - princess_engage
-cure_scarlett: &cure_scarlett
-  girl_name:    cure_scarlett
+cure_scarlet: &cure_scarlet
+  girl_name:    cure_scarlet
   human_name:   紅城トワ
   precure_name: キュアスカーレット
   cast_name:    沢城みゆき
@@ -99,5 +99,5 @@ mermaid:
   <<: *cure_mermaid
 twinkle:
   <<: *cure_twinkle
-scarlett:
-  <<: *cure_scarlett
+scarlet:
+  <<: *cure_scarlet
