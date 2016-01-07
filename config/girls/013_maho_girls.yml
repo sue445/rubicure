@@ -1,0 +1,98 @@
+cure_miracle: &cure_miracle
+  girl_name:    cure_miracle
+  human_name:   朝日奈みらい
+  precure_name: キュアミラクル
+  cast_name:    高橋李依
+  color:        pink
+  created_date: 2016-02-07 # episode 1
+  birthday: 6/12
+  transform_message: |-
+    キュアップ・ラパパ！　ダイヤ！
+    ミラクル・マジカル・ジュエリーレ！
+    ふたりの奇跡！キュアミラクル！
+    魔法つかいプリキュア！！
+  extra_names:
+  attack_messages:
+    - |
+      リンクルステッキ！
+      ダイヤ！永遠の輝きを私達の手に！
+      フルフルリンクル！
+      プリキュア！ダイヤモンドエターナル！
+  transform_calls:
+    - cure_up_rapapa_diamond
+cure_miracle_ruby: &cure_miracle_ruby
+  <<: *cure_miracle
+  girl_name:    cure_miracle_ruby
+  precure_name: キュアミラクル（ルビースタイル）
+  color:        red
+  created_date: 2016-02-21 # episode 3
+  transform_message: |-
+    キュアップ・ラパパ！　ルビー！
+    ミラクル・マジカル・ジュエリーレ！
+    ふたりの奇跡！キュアミラクル！
+    魔法つかいプリキュア！！
+  attack_messages:
+    - |
+      リンクルステッキ！
+      ルビー！紅の情熱よ私達の手に！
+      フルフルリンクル！
+      プリキュア！ルビーパッショナーレ！
+  transform_calls:
+    - cure_up_rapapa_ruby
+cure_magical: &cure_magical
+  girl_name:    cure_magical
+  human_name:   リコ
+  precure_name: キュアマジカル
+  cast_name:    堀江由衣
+  color:        blue
+  created_date: 2016-02-07 # episode 1
+  birthday: 11/12
+  transform_message:
+    キュアップ・ラパパ！　ダイヤ！
+    ミラクル・マジカル・ジュエリーレ！
+    ふたりの魔法！キュアマジカル！
+    魔法つかいプリキュア！！
+  extra_names:
+  attack_messages:
+    - |
+      リンクルステッキ！
+      ダイヤ！永遠の輝きを私達の手に！
+      フルフルリンクル！
+      プリキュア！ダイヤモンドエターナル！
+  transform_calls:
+    - cure_up_rapapa_diamond
+cure_magical_ruby: &cure_magical_ruby
+  <<: *cure_magical
+  girl_name:    cure_magical_ruby
+  precure_name: キュアマジカル（ルビースタイル）
+  color:        red
+  created_date: 2016-02-21 # episode 3
+  transform_message:
+    キュアップ・ラパパ！　ルビー！
+    ミラクル・マジカル・ジュエリーレ！
+    ふたりの魔法！キュアマジカル！
+    魔法つかいプリキュア！！
+  attack_messages:
+    - |
+      リンクルステッキ！
+      ルビー！紅の情熱よ私達の手に！
+      フルフルリンクル！
+      プリキュア！ルビーパッショナーレ！
+  transform_calls:
+    - cure_up_rapapa_ruby
+cure_miracle_diamond: &cure_miracle_diamond
+  <<: *cure_miracle
+miracle:
+  <<: *cure_miracle
+miracle_diamond:
+  <<: *cure_miracle_diamond
+miracle_ruby:
+  <<: *cure_miracle_ruby
+cure_magical_diamond: &cure_magical_diamond
+  <<: *cure_magical
+magical:
+  <<: *cure_magical
+magical_diamond:
+  <<: *cure_magical_diamond
+magical_ruby:
+  <<: *cure_magical_ruby
