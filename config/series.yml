@@ -150,7 +150,7 @@ go_princess: &go_princess
   series_name: go_princess
   title: Go!プリンセスプリキュア
   started_date: 2015-02-01
-  # ended_date:   2016-01-
+  ended_date:   2016-01-31
   girls:
   - cure_flora
   - cure_mermaid
