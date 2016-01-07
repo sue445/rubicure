@@ -122,7 +122,7 @@ describe Rubicure::Series do
     context "when not exists" do
       let(:series_name) { :ashita_no_nadja }
 
-      it { expect { subject }.to raise_error Rubicure::UnknownSeriesError  }
+      it { expect { subject }.to raise_error Rubicure::UnknownSeriesError }
     end
   end
 
