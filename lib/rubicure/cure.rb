@@ -38,7 +38,8 @@ EOF
         # setup @state_names
         state_names
 
-        @state_names[0], @another_human_name = @another_human_name, @state_names[0]
+        @state_names[0] = @another_human_name
+        @another_human_name = @state_names[0]
         self
       end
 
