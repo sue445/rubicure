@@ -30,7 +30,7 @@ EOF
     target.instance_variable_set(:@__original_human_name, original_human_name)
     target.instance_variable_set(:@__another_human_name,  another_human_name)
 
-    target.define_singleton_method :! do
+    def target.!
       humanize!
       @another_human_name ||= @__another_human_name
 
@@ -44,7 +44,7 @@ EOF
       self
     end
 
-    target.define_singleton_method :rollback do
+    def target.rollback
       @state_names[0]     = @__original_human_name
       @another_human_name = @__another_human_name
       self
