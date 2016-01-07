@@ -35,7 +35,7 @@ module Rubicure
     # @return [Rubicure::Girl] self
     def transform!
       state = inc_current_state
-      print_by_line transform_message  if state == 1
+      print_by_line transform_message if state == 1
 
       self
     end
@@ -66,7 +66,7 @@ module Rubicure
       birthday_date == date
     end
 
-    def have_birthday?
+    def have_birthday? # rubocop:disable Style/PredicateName
       respond_to?(:birthday)
     end
     alias_method :has_birthday?, :have_birthday?
@@ -143,36 +143,36 @@ module Rubicure
 
     private
 
-    def inc_current_state
-      @current_state = current_state + 1
-      @current_state = 0 unless @current_state < state_names.length
-      @current_state
-    end
-
-    def current_attack_message
-      attack_messages[@current_state - 1]
-    end
-
-    def print_by_line(message)
-      index = 0
-      message.each_line do |line|
-        sleep(self.class.sleep_sec) if index > 0
-        @io.puts line
-        index += 1
+      def inc_current_state
+        @current_state = current_state + 1
+        @current_state = 0 unless @current_state < state_names.length
+        @current_state
       end
-    end
 
-    def method_missing(method_name, *args)
-      # call Hashie::Extensions::MethodAccess#method_missing
-      return super if has_key?(method_name)
+      def current_attack_message
+        attack_messages[@current_state - 1]
+      end
 
-      shortened_name = method_name.to_s.
-                       sub(/\Aprecure_|_precure\z/, "").
-                       sub(/!\z/, "")
+      def print_by_line(message)
+        index = 0
+        message.each_line do |line|
+          sleep(self.class.sleep_sec) if index > 0
+          @io.puts line
+          index += 1
+        end
+      end
 
-      return transform!(*args) if transform_calls.include?(shortened_name)
+      def method_missing(method_name, *args)
+        # call Hashie::Extensions::MethodAccess#method_missing
+        return super if has_key?(method_name)
 
-      super
-    end
+        shortened_name = method_name.to_s.
+                         sub(/\Aprecure_|_precure\z/, "").
+                         sub(/!\z/, "")
+
+        return transform!(*args) if transform_calls.include?(shortened_name)
+
+        super
+      end
   end
 end

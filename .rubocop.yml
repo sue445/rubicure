@@ -1,2 +1,6 @@
-inherit_from:
-  - .hound.yml
+inherit_gem:
+  onkcop: "config/rubocop.yml"
+
+Metrics/ClassLength:
+  Max: 120
+

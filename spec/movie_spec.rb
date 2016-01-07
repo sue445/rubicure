@@ -34,7 +34,7 @@ describe Rubicure::Movie do
     end
 
     context "when not exists" do
-      let(:movie_name) { :ashita_no_nadja  }
+      let(:movie_name) { :ashita_no_nadja }
 
       it { expect { subject }.to raise_error }
     end
