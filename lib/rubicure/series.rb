@@ -105,7 +105,7 @@ module Rubicure
       # @return [Rubicure::Series]
       # @raise arg is not precure
       def find(series_name)
-        raise "unknown series: #{series_name}" unless valid?(series_name)
+        raise UnknownSeriesError, "unknown series: #{series_name}" unless valid?(series_name)
 
         @cache ||= {}
         unless @cache[series_name]

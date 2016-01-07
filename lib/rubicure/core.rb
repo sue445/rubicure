@@ -26,7 +26,7 @@ module Rubicure
       each_with_series do |series|
         return series if series.on_air?(current_time)
       end
-      raise "Not on air precure!"
+      raise NotOnAirError, "Not on air precure!"
     end
 
     alias_method :current, :now

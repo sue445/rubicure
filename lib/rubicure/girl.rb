@@ -48,7 +48,7 @@ module Rubicure
     deprecate humanize: "Use #humanize! instead of #humanize"
 
     def attack!
-      raise "require transform" if current_attack_message.blank?
+      raise RequireTransformError, "require transform" if current_attack_message.blank?
 
       print_by_line current_attack_message
 
@@ -150,7 +150,7 @@ module Rubicure
       end
 
       def current_attack_message
-        attack_messages[@current_state - 1]
+        attack_messages[current_state - 1] if current_state > 0
       end
 
       def print_by_line(message)

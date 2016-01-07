@@ -8,6 +8,7 @@ require "rubicure/girl"
 require "rubicure/core"
 require "rubicure/movie"
 require "rubicure/cure"
+require "rubicure/errors"
 
 module Rubicure
   def self.core

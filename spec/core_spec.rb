@@ -17,7 +17,7 @@ describe Rubicure::Core do
         time_travel_to "2013-02-01"
       end
 
-      it { expect { subject }.to raise_error }
+      it { expect { subject }.to raise_error Rubicure::NotOnAirError }
     end
   end
 
