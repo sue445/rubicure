@@ -66,7 +66,7 @@ module Rubicure
       birthday_date == date
     end
 
-    def have_birthday?
+    def have_birthday? # rubocop:disable Style/PredicateName
       respond_to?(:birthday)
     end
     alias_method :has_birthday?, :have_birthday?
