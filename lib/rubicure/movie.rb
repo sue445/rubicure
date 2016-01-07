@@ -45,7 +45,7 @@ module Rubicure
       # @return [Rubicure::Movie]
       # @raise arg is invalid
       def find(movie_name)
-        raise "unknown movie: #{movie_name}" unless valid?(movie_name)
+        raise UnknownMovieError, "unknown movie: #{movie_name}" unless valid?(movie_name)
 
         @cache ||= {}
         unless @cache[movie_name]

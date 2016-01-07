@@ -134,7 +134,7 @@ EOF
     subject { girl.attack! }
 
     context "When human" do
-      it { expect { subject }.to raise_error }
+      it { expect { subject }.to raise_error Rubicure::RequireTransformError }
     end
 
     context "When precure" do
