@@ -1,1 +1,4 @@
 inherit_from: ".onkcop.yml"
+
+Metrics/ClassLength:
+  Max: 120
