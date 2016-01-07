@@ -120,7 +120,7 @@ describe Rubicure::Series do
     end
 
     context "when not exists" do
-      let(:series_name) { :ashita_no_nadja  }
+      let(:series_name) { :ashita_no_nadja }
 
       it { expect { subject }.to raise_error }
     end
@@ -129,7 +129,7 @@ describe Rubicure::Series do
   describe "#each_with_girls" do
     subject { series.each_with_girls }
 
-    let(:series)     { Rubicure::Series.find(series_name) }
+    let(:series) { Rubicure::Series.find(series_name) }
     let(:series_name) { :splash_star }
 
     it { expect { |b| series.each_with_girls(&b) }.to yield_successive_args(Rubicure::Girl, Rubicure::Girl) }
@@ -141,11 +141,13 @@ describe Rubicure::Series do
     let(:series) { Rubicure::Series.find(series_name) }
     let(:series_name) { :splash_star }
 
+    # rubocop:disable Metrics/LineLength
     let(:json) do
       <<-JSON
 {\"series_name\":\"splash_star\",\"title\":\"ふたりはプリキュア Splash☆Star\",\"started_date\":\"2006-02-05\",\"ended_date\":\"2007-01-28\",\"girls\":[\"cure_bloom\",\"cure_egret\"]}
       JSON
     end
+    # rubocop:enable Metrics/LineLength
 
     it { should eq json.squish }
   end

@@ -1,2 +1,4 @@
-inherit_from:
-  - .hound.yml
+inherit_from: ".onkcop.yml"
+
+Metrics/ClassLength:
+  Max: 120
