@@ -30,24 +30,24 @@ EOF
     target.instance_variable_set(:@__original_human_name, original_human_name)
     target.instance_variable_set(:@__another_human_name,  another_human_name)
 
-    class << target
-      def !
-        humanize!
-        @another_human_name ||= @__another_human_name
+    target.define_singleton_method :! do
+      humanize!
+      @another_human_name ||= @__another_human_name
 
-        # setup @state_names
-        state_names
+      # setup @state_names
+      state_names
 
-        @state_names[0] = @another_human_name
-        @another_human_name = @state_names[0]
-        self
-      end
+      # rubocop:disable Style/ParallelAssignment
+      @state_names[0], @another_human_name = @another_human_name, @state_names[0]
+      # rubocop:enable Style/ParallelAssignment
 
-      def rollback
-        @state_names[0]     = @__original_human_name
-        @another_human_name = @__another_human_name
-        self
-      end
+      self
+    end
+
+    target.define_singleton_method :rollback do
+      @state_names[0]     = @__original_human_name
+      @another_human_name = @__another_human_name
+      self
     end
   end
 
