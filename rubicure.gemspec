@@ -35,4 +35,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-parameterized"
   spec.add_development_dependency "rubocop", "0.35.1"
   spec.add_development_dependency "yard"
+
+  if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.1.0")
+    # NOTE: unparser v0.2.5 drop support ruby < 2.1
+    spec.add_development_dependency "unparser", "< 0.2.5"
+  end
 end
