@@ -1,6 +1,11 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v0.3.1...master)
 
+* Add ended_date of "Go! Princess Precure"
+  * https://github.com/sue445/rubicure/pull/96
+* Use unparser < 0.2.5 when ruby 2.0
+  * https://github.com/sue445/rubicure/pull/97
+
 ## v0.3.1
 [full changelog](http://github.com/sue445/rubicure/compare/v0.3.0...v0.3.1)
 
