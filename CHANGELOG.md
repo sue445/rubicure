@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.3.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.3.2...master)
+
+## v0.3.2
+[full changelog](http://github.com/sue445/rubicure/compare/v0.3.1...v0.3.2)
 
 * Add ended_date of "Go! Princess Precure"
   * https://github.com/sue445/rubicure/pull/96
