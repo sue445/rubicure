@@ -10,6 +10,11 @@ require "rubicure/movie"
 require "rubicure/cure"
 require "rubicure/errors"
 
+begin
+  require "backport_dig"
+rescue LoadError
+end
+
 module Rubicure
   def self.core
     Rubicure::Core.instance

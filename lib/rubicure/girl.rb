@@ -7,6 +7,20 @@ module Rubicure
   class Girl < Hash
     include Hashie::Extensions::MethodAccess
 
+    ATTRIBUTES = [
+      :girl_name,
+      :human_name,
+      :precure_name,
+      :cast_name,
+      :color,
+      :created_date,
+      :birthday,
+      :transform_message,
+      :extra_names,
+      :attack_messages,
+      :transform_calls,
+    ].freeze
+
     attr_writer :io
 
     def current_state
@@ -14,11 +28,9 @@ module Rubicure
     end
 
     def state_names
-      return @state_names if @state_names
-
-      @state_names = [human_name, precure_name]
-      @state_names += Array.wrap(extra_names) if respond_to?(:extra_names)
-      @state_names
+      state_names = [human_name, precure_name]
+      state_names += Array.wrap(extra_names) if respond_to?(:extra_names)
+      state_names
     end
 
     def ==(other)
@@ -33,7 +45,12 @@ module Rubicure
 
     # human -> precure ( -> extra forms ) -> human ...
     # @return [Rubicure::Girl] self
-    def transform!
+    def transform!(style = nil)
+      if style
+        raise "Unknown style: #{style}" unless has_transform_style?(style)
+        @current_transform_style = style
+      end
+
       state = inc_current_state
       print_by_line transform_message if state == 1
 
@@ -42,6 +59,7 @@ module Rubicure
 
     def humanize!
       @current_state = 0
+      @current_transform_style = nil
       self
     end
     alias_method :humanize, :humanize!
@@ -67,9 +85,19 @@ module Rubicure
     end
 
     def have_birthday? # rubocop:disable Style/PredicateName
-      respond_to?(:birthday)
+      has_key?(:birthday)
     end
     alias_method :has_birthday?, :have_birthday?
+
+    ATTRIBUTES.each do |attribute|
+      define_method attribute do
+        if @current_transform_style
+          dig(:transform_styles, @current_transform_style, attribute) || self[attribute]
+        else
+          self[attribute]
+        end
+      end
+    end
 
     class << self
       attr_writer :sleep_sec
@@ -142,6 +170,11 @@ module Rubicure
     end
 
     private
+
+      def has_transform_style?(style)
+        return false unless respond_to?(:transform_styles)
+        transform_styles.keys.map(&:to_sym).include?(style.to_sym)
+      end
 
       def inc_current_state
         @current_state = current_state + 1

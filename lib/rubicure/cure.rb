@@ -34,18 +34,15 @@ EOF
       humanize!
       @another_human_name ||= @__another_human_name
 
-      # setup @state_names
-      state_names
-
       # rubocop:disable Style/ParallelAssignment
-      @state_names[0], @another_human_name = @another_human_name, @state_names[0]
+      self[:human_name], @another_human_name = @another_human_name, self[:human_name]
       # rubocop:enable Style/ParallelAssignment
 
       self
     end
 
     def target.rollback
-      @state_names[0]     = @__original_human_name
+      self[:human_name]   = @__original_human_name
       @another_human_name = @__another_human_name
       self
     end

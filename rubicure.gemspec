@@ -24,6 +24,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency "hashie", ">= 2.0.5"
   spec.add_dependency "sengiri_yaml", ">= 0.0.2"
 
+  if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.3.0")
+    spec.add_dependency "backport_dig"
+  end
+
   spec.add_development_dependency "bundler", ">= 1.3.5"
   spec.add_development_dependency "codeclimate-test-reporter"
   spec.add_development_dependency "coveralls"
