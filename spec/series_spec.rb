@@ -63,6 +63,7 @@ describe Rubicure::Series do
       :dokidoki,
       :happiness_charge,
       :go_princess,
+      :maho_girls,
     ]
   end
 

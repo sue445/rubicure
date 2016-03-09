@@ -331,6 +331,55 @@ Cure.fortune.kirarin_star_symphony!
 ハピネスチャージプリキュア！
 ```
 
+### When [Maho Girls PreCure!](https://en.wikipedia.org/wiki/Maho_Girls_PreCure!)
+```ruby
+mirai = Cure.miracle
+
+mirai.name
+# => "朝日奈みらい"
+
+mirai.cure_up_rapapa! :diamond
+# or
+mirai.transform! :diamond
+
+キュアップ・ラパパ！　ダイヤ！
+ミラクル・マジカル・ジュエリーレ！
+ふたりの奇跡！キュアミラクル！
+魔法つかいプリキュア！！
+
+mirai.name
+# => "キュアミラクル（ダイヤスタイル）"
+
+mirai.attack!
+リンクルステッキ！
+ダイヤ！永遠の輝きを私達の手に！
+フルフルリンクル！
+プリキュア！ダイヤモンドエターナル！
+
+mirai.humanize!
+
+mirai.name
+# => "朝日奈みらい"
+
+mirai.cure_up_rapapa! :ruby
+# or
+mirai.transform! :ruby
+
+キュアップ・ラパパ！　ルビー！
+ミラクル・マジカル・ジュエリーレ！
+ふたりの奇跡！キュアミラクル！
+魔法つかいプリキュア！！
+
+mirai.name
+# => "キュアミラクル（ルビースタイル）"
+
+mirai.attack!
+リンクルステッキ！
+ルビー！紅の情熱よ私達の手に！
+フルフルリンクル！
+プリキュア！ルビーパッショナーレ！
+```
+
 ### Precure allstars
 ```ruby
 Precure.all_stars.count

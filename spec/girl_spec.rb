@@ -85,6 +85,66 @@ EOF
     end
   end
 
+  describe "transform!" do
+    context "when Cure miracle" do
+      let(:girl) do
+        girl = Rubicure::Girl[
+          girl_name:         "cure_miracle",
+          human_name:        "朝日奈みらい",
+          precure_name:      "キュアミラクル",
+          cast_name:         "高橋李依",
+          created_date:      "2016-02-07",
+          extra_names:       nil,
+          transform_message: nil,
+          attack_messages:   nil,
+          transform_calls:   ["cure_up_rapapa"],
+          color:             "pink",
+          birthday:          "6/12",
+          transform_styles: {
+            diamond: {
+              precure_name: "キュアミラクル（ダイヤスタイル）",
+              transform_message: "",
+            },
+            ruby: {
+              precure_name: "キュアミラクル（ルビースタイル）",
+              transform_message: "",
+            },
+          },
+        ]
+
+        girl.io = mock_io
+        girl
+      end
+
+      context "transform! with diamond" do
+        before do
+          girl.transform!(:diamond)
+        end
+
+        it { expect(girl.name).to eq "キュアミラクル（ダイヤスタイル）" }
+        it { expect(girl.state_names).to eq ["朝日奈みらい", "キュアミラクル（ダイヤスタイル）"] }
+      end
+
+      context "transform! with ruby" do
+        before do
+          girl.transform!(:ruby)
+        end
+
+        it { expect(girl.name).to eq "キュアミラクル（ルビースタイル）" }
+        it { expect(girl.state_names).to eq ["朝日奈みらい", "キュアミラクル（ルビースタイル）"] }
+      end
+
+      context "cure_up_rapapa! with diamond" do
+        before do
+          girl.cure_up_rapapa!(:diamond)
+        end
+
+        it { expect(girl.name).to eq "キュアミラクル（ダイヤスタイル）" }
+        it { expect(girl.state_names).to eq ["朝日奈みらい", "キュアミラクル（ダイヤスタイル）"] }
+      end
+    end
+  end
+
   describe "#==" do
     subject { girl == other_girl }
 
