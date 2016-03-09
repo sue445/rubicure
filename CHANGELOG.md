@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.3.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.0...master)
+
+## v0.4.0
+[full changelog](http://github.com/sue445/rubicure/compare/v0.3.2...v0.4.0)
 
 * Add maho girls precure
   * https://github.com/sue445/rubicure/pull/94
