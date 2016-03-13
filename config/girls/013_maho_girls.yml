@@ -25,7 +25,7 @@ cure_miracle: &cure_miracle
           リンクルステッキ！
           ダイヤ！永遠の輝きを私達の手に！
           フルフルリンクル！
-          プリキュア！ダイヤモンドエターナル！
+          プリキュア・ダイヤモンド・エターナル！
 
     ruby:
       girl_name:    cure_miracle_ruby
@@ -42,7 +42,7 @@ cure_miracle: &cure_miracle
           リンクルステッキ！
           ルビー！紅の情熱よ私達の手に！
           フルフルリンクル！
-          プリキュア！ルビーパッショナーレ！
+          プリキュア・ルビー・パッショナーレ！
 
 cure_magical: &cure_magical
   girl_name:    cure_magical
@@ -87,7 +87,7 @@ cure_magical: &cure_magical
           リンクルステッキ！
           ルビー！紅の情熱よ私達の手に！
           フルフルリンクル！
-          プリキュア！ルビーパッショナーレ！
+          プリキュア・ルビー・パッショナーレ！
 
 miracle:
   <<: *cure_miracle
