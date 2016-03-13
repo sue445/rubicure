@@ -25,8 +25,7 @@ cure_miracle: &cure_miracle
           リンクルステッキ！
           ダイヤ！永遠の輝きを私達の手に！
           フルフルリンクル！
-          プリキュア！ダイヤモンドエターナル！
-
+          プリキュア・ダイヤモンド・エターナル！
     ruby:
       girl_name:    cure_miracle_ruby
       precure_name: キュアミラクル（ルビースタイル）
@@ -42,7 +41,7 @@ cure_miracle: &cure_miracle
           リンクルステッキ！
           ルビー！紅の情熱よ私達の手に！
           フルフルリンクル！
-          プリキュア！ルビーパッショナーレ！
+          プリキュア・ルビー・パッショナーレ！
 
 cure_magical: &cure_magical
   girl_name:    cure_magical
@@ -62,16 +61,16 @@ cure_magical: &cure_magical
       color:        red
       created_date: 2016-02-07 # episode 1
       transform_message:
-        キュアップ・ラパパ！　ルビー！
+        キュアップ・ラパパ！　ダイヤ！
         ミラクル・マジカル・ジュエリーレ！
         ふたりの魔法！キュアマジカル！
         魔法つかいプリキュア！！
       attack_messages:
         - |
           リンクルステッキ！
-          ルビー！紅の情熱よ私達の手に！
+          ダイヤ！永遠の輝きを私達の手に！
           フルフルリンクル！
-          プリキュア！ルビーパッショナーレ！
+          プリキュア・ダイヤモンド・エターナル！
     ruby:
       girl_name:    cure_magical_ruby
       precure_name: キュアマジカル（ルビースタイル）
@@ -87,8 +86,7 @@ cure_magical: &cure_magical
           リンクルステッキ！
           ルビー！紅の情熱よ私達の手に！
           フルフルリンクル！
-          プリキュア！ルビーパッショナーレ！
-
+          プリキュア・ルビー・パッショナーレ！
 miracle:
   <<: *cure_miracle
 magical:
