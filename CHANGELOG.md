@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.4.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.1...master)
+
+## v0.4.1
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.0...v0.4.1)
+
+* Fix typo and tweak attack message of maho girls
+  * https://github.com/sue445/rubicure/pull/98
 
 ## v0.4.0
 [full changelog](http://github.com/sue445/rubicure/compare/v0.3.2...v0.4.0)
