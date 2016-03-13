@@ -1,6 +1,9 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.3...master)
 
+* Add topaz style
+  * https://github.com/sue445/rubicure/pull/100
+
 ## v0.4.3
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.2...v0.4.3)
 
@@ -88,7 +91,7 @@
 ## v0.2.4
 [full changelog](http://github.com/sue445/rubicure/compare/v0.2.3...v0.2.4)
 
-* Tweak transform message 
+* Tweak transform message
   * https://github.com/sue445/rubicure/pull/76
 
 ## v0.2.3
