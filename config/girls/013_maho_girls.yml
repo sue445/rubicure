@@ -42,6 +42,22 @@ cure_miracle: &cure_miracle
           ルビー！紅の情熱よ私達の手に！
           フルフルリンクル！
           プリキュア・ルビー・パッショナーレ！
+    sapphire:
+      girl_name:    cure_miracle_sapphire
+      precure_name: キュアミラクル（サファイアスタイル）
+      color:        blue
+      created_date: 2016-03-20 # episode 7
+      transform_message: |-
+        キュアップ・ラパパ！　サファイア！
+        ミラクル・マジカル・ジュエリーレ！
+        ふたりの奇跡！キュアミラクル！
+        魔法つかいプリキュア！！
+      attack_messages:
+        - |
+          リンクルステッキ！
+          サファイア！青き知性よ私達の手に！
+          フルフルリンクル！
+          プリキュア・サファイア・スマーティッシュ！
 
 cure_magical: &cure_magical
   girl_name:    cure_magical
@@ -87,6 +103,22 @@ cure_magical: &cure_magical
           ルビー！紅の情熱よ私達の手に！
           フルフルリンクル！
           プリキュア・ルビー・パッショナーレ！
+    sapphire:
+      girl_name:    cure_magical_sapphire
+      precure_name: キュアマジカル（サファイアスタイル）
+      color:        blue
+      created_date: 2016-03-20 # episode 7
+      transform_message: |-
+        キュアップ・ラパパ！　サファイア！
+        ミラクル・マジカル・ジュエリーレ！
+        ふたりの魔法！キュアマジカル！
+        魔法つかいプリキュア！！
+      attack_messages:
+        - |
+          リンクルステッキ！
+          サファイア！青き知性よ私達の手に！
+          フルフルリンクル！
+          プリキュア・サファイア・スマーティッシュ！
 miracle:
   <<: *cure_miracle
 magical:
