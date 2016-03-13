@@ -26,7 +26,6 @@ cure_miracle: &cure_miracle
           ダイヤ！永遠の輝きを私達の手に！
           フルフルリンクル！
           プリキュア・ダイヤモンド・エターナル！
-
     ruby:
       girl_name:    cure_miracle_ruby
       precure_name: キュアミラクル（ルビースタイル）
@@ -88,7 +87,6 @@ cure_magical: &cure_magical
           ルビー！紅の情熱よ私達の手に！
           フルフルリンクル！
           プリキュア・ルビー・パッショナーレ！
-
 miracle:
   <<: *cure_miracle
 magical:
