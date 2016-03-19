@@ -40,3 +40,9 @@ sc: &sc
   started_date: 2015-03-14
 spring_carnival:
   <<: *sc
+#######################################################
+stmm: &stmm
+  title: 映画 プリキュアオールスターズ みんなで歌う 奇跡の魔法！
+  started_date: 2016-03-19
+sing_together_miracle_magic:
+  <<: *stmm
