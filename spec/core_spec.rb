@@ -92,6 +92,9 @@ EOS
 
           [:sc,              40],
           [:spring_carnival, 40],
+
+          [:stmm,                        43],
+          [:sing_together_miracle_magic, 43],
         ]
       end
 

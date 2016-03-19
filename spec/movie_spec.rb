@@ -8,6 +8,7 @@ describe Rubicure::Movie do
       :ns2,
       :ns3,
       :sc,
+      :stmm,
     ]
   end
 
