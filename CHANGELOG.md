@@ -3,6 +3,8 @@
 
 * Add AllStars STMM
   * https://github.com/sue445/rubicure/pull/101
+* Add sapphire style
+  * https://github.com/sue445/rubicure/pull/99
 
 ## v0.4.1
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.0...v0.4.1)
