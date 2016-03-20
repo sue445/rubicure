@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.4.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.2...master)
+
+## v0.4.2
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.1...v0.4.2)
 
 * Add AllStars STMM
   * https://github.com/sue445/rubicure/pull/101
