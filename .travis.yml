@@ -7,6 +7,7 @@ rvm:
 - ruby-head
 bundler_args: "--jobs=2"
 cache: bundler
+before_install: gem install bundler -v 1.11.2
 before_script:
 - export CODECLIMATE_REPO_TOKEN=8e9db6ee5f3818e87287a6393086c2ccb9b1b83106c5bfb972211abefd2fe162
 - export COVERAGE=true
