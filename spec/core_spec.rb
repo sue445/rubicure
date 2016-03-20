@@ -70,36 +70,37 @@ EOS
     context "With arg" do
       subject { instance.all_stars(arg) }
 
-      where(:arg, :expected_count) do
+      where(:arg, :expected_count, :include_cure_echo) do
         [
-          ["2009-03-20",             14],
-          [Date.parse("2010-03-20"), 17],
-          [Time.parse("2011-03-19"), 21],
+          ["2009-03-20",             14, false],
+          [Date.parse("2010-03-20"), 17, false],
+          [Time.parse("2011-03-19"), 21, false],
 
-          [:dx,         14],
-          [:dx1,        14],
-          [:dx2,        17],
-          [:dx3,        21],
+          [:dx,         14, false],
+          [:dx1,        14, false],
+          [:dx2,        17, false],
+          [:dx3,        21, false],
 
-          [:ns,         28],
-          [:ns1,        28],
-          [:new_stage,  28],
-          [:new_stage1, 28],
-          [:ns2,        32],
-          [:new_stage2, 32],
-          [:ns3,        36],
-          [:new_stage3, 36],
+          [:ns,         29, true],
+          [:ns1,        29, true],
+          [:new_stage,  29, true],
+          [:new_stage1, 29, true],
+          [:ns2,        32, false],
+          [:new_stage2, 32, false],
+          [:ns3,        37, true],
+          [:new_stage3, 37, true],
 
-          [:sc,              40],
-          [:spring_carnival, 40],
+          [:sc,              40, false],
+          [:spring_carnival, 40, false],
 
-          [:stmm,                        43],
-          [:sing_together_miracle_magic, 43],
+          [:stmm,                        44, true],
+          [:sing_together_miracle_magic, 44, true],
         ]
       end
 
       with_them do
         its(:count) { should == expected_count }
+        it { expect(subject.include?(Cure.echo)).to be include_cure_echo }
       end
     end
   end
