@@ -43,15 +43,23 @@ module Rubicure
         @all_stars.uniq!(&:human_name)
       end
 
-      begin
+      extra_girls = []
+
+      # args is Time or Date
+      date = to_date(arg)
+
+      unless date
+        # args is movie name
         movie = Rubicure::Movie.find(arg.to_sym)
         date = movie.started_date
-      rescue
-        # args is Time or Date
-        date = to_date(arg)
+
+        if movie.has_key?(:extra_girls)
+          extra_girls = movie.extra_girls.map { |girl_name| Rubicure::Girl.find(girl_name.to_sym) }
+        end
       end
 
-      @all_stars.select { |girl| girl.created_date && girl.created_date <= date }
+      girls = @all_stars.select { |girl| girl.created_date && girl.created_date <= date }
+      girls + extra_girls
     end
 
     # iterate with :unmarked, :max_heart, ...

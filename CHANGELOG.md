@@ -1,6 +1,9 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.2...master)
 
+* Add cure echo
+  * https://github.com/sue445/rubicure/pull/102
+
 ## v0.4.2
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.1...v0.4.2)
 

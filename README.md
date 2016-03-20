@@ -390,18 +390,36 @@ Precure.all_stars.map(&:precure_name)
 
 Precure.all_stars("2013-10-26").count
 #=> 33
+
 Precure.all_stars(:dx).count
 #=> 14
+
 Precure.all_stars(:dx2).count
 #=> 17
+
 Precure.all_stars(:dx3).count
 #=> 21
+
 Precure.all_stars(:new_stage).count
-#=> 28
+#=> 29
+Precure.all_stars(:new_stage).include?(Cure.echo)
+#=> true
+
 Precure.all_stars(:new_stage2).count
 #=> 32
+
 Precure.all_stars(:new_stage3).count
-#=> 36
+#=> 37
+Precure.all_stars(:new_stage3).include?(Cure.echo)
+#=> true
+
+Precure.all_stars(:spring_carnival).count
+#=> 40
+
+Precure.all_stars(:sing_together_miracle_magic).count
+#=> 44
+Precure.all_stars(:sing_together_miracle_magic).include?(Cure.echo)
+#=> true
 ```
 
 and [more aliases!](config/movies.yml)

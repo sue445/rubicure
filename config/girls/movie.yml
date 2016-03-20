@@ -1,0 +1,18 @@
+cure_echo: &cure_echo
+  girl_name:    cure_echo
+  human_name:   坂上あゆみ
+  precure_name: キュアエコー
+  cast_name:    能登麻美子
+  created_date:
+  color:        white
+  transform_message: |-
+    みんなの思いを守るために
+    心をひとつに！
+    思いよ届け！キュアエコー！
+  extra_names:
+  attack_messages:
+    - |-
+      世界に響け、みんなの思い！
+      プリキュア・ハートフルエコー！
+echo:
+  <<: *cure_echo

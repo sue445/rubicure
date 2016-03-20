@@ -11,7 +11,11 @@ module Rubicure
         when Date, Time
           arg
         when String
-          Date.parse(arg)
+          begin
+            Date.parse(arg)
+          rescue
+            nil
+          end
         else
           nil
         end

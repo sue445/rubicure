@@ -16,6 +16,8 @@ dx3: &dx3
 ns1: &ns1
   title: 映画 プリキュアオールスターズNewStage みらいのともだち
   started_date: 2012-03-17
+  extra_girls:
+    - cure_echo
 ns:
   <<: *ns1
 new_stage:
@@ -32,6 +34,8 @@ new_stage2:
 ns3: &ns3
   title: 映画 プリキュアオールスターズ NewStage3 永遠のともだち
   started_date: 2014-03-15
+  extra_girls:
+  - cure_echo
 new_stage3:
   <<: *ns3
 #######################################################
@@ -44,5 +48,7 @@ spring_carnival:
 stmm: &stmm
   title: 映画 プリキュアオールスターズ みんなで歌う 奇跡の魔法！
   started_date: 2016-03-19
+  extra_girls:
+  - cure_echo
 sing_together_miracle_magic:
   <<: *stmm
