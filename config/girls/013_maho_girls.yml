@@ -77,7 +77,7 @@ cure_miracle: &cure_miracle
 
 cure_magical: &cure_magical
   girl_name:    cure_magical
-  human_name:   リコ
+  human_name:   十六夜リコ
   precure_name: キュアマジカル
   cast_name:    堀江由衣
   color:        blue
