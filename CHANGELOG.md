@@ -3,6 +3,8 @@
 
 * Add topaz style
   * https://github.com/sue445/rubicure/pull/100
+* Add riko last name
+  * https://github.com/sue445/rubicure/pull/103
 
 ## v0.4.3
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.2...v0.4.3)
