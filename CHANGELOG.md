@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.4.3...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.4...master)
+
+## v0.4.4
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.3...v0.4.4)
 
 * Add topaz style
   * https://github.com/sue445/rubicure/pull/100
