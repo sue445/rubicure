@@ -58,6 +58,22 @@ cure_miracle: &cure_miracle
           サファイア！青き知性よ私達の手に！
           フルフルリンクル！
           プリキュア・サファイア・スマーティッシュ！
+    topaz:
+      girl_name:    cure_miracle_topaz
+      precure_name: キュアミラクル（トパーズスタイル）
+      color:        yellow
+      created_date: 2016-04-17 # episode 10
+      transform_message: |-
+        キュアップ・ラパパ！　トパーズ！
+        ミラクル・マジカル・ジュエリーレ！
+        ふたりの奇跡！キュアミラクル！
+        魔法つかいプリキュア！！
+      attack_messages:
+        - |
+          リンクルステッキ！
+          トパーズ！金色の希望よ私達の手に！
+          フルフルリンクル！
+          プリキュア・トパーズ・エスペランサ！
 
 cure_magical: &cure_magical
   girl_name:    cure_magical
@@ -119,6 +135,22 @@ cure_magical: &cure_magical
           サファイア！青き知性よ私達の手に！
           フルフルリンクル！
           プリキュア・サファイア・スマーティッシュ！
+    topaz:
+      girl_name:    cure_magical_topaz
+      precure_name: キュアマジカル（トパーズスタイル）
+      color:        yellow
+      created_date: 2016-04-17 # episode 11
+      transform_message: |-
+        キュアップ・ラパパ！　トパーズ！
+        ミラクル・マジカル・ジュエリーレ！
+        ふたりの魔法！キュアマジカル！
+        魔法つかいプリキュア！！
+      attack_messages:
+        - |
+          リンクルステッキ！
+          トパーズ！金色の希望よ私達の手に！
+          フルフルリンクル！
+          プリキュア・トパーズ・エスペランサ！
 miracle:
   <<: *cure_miracle
 magical:
