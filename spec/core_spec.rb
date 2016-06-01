@@ -62,7 +62,7 @@ EOS
     context "Without arg" do
       subject { instance.all_stars }
 
-      let(:precure_count) { 43 }
+      let(:precure_count) { 44 }
 
       its(:count) { should == precure_count }
     end

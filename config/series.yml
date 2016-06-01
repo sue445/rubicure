@@ -167,5 +167,6 @@ maho_girls: &maho_girls
   girls:
   - cure_miracle
   - cure_magical
+  - cure_felice
 maho_girls_precure:
   <<: *maho_girls
