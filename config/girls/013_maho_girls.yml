@@ -151,7 +151,33 @@ cure_magical: &cure_magical
           トパーズ！金色の希望よ私達の手に！
           フルフルリンクル！
           プリキュア・トパーズ・エスペランサ！
+cure_felice: &cure_felice
+  girl_name:    cure_felice
+  human_name:   花海ことは
+  precure_name: キュアフェリーチェ
+  cast_name:    早見沙織
+  color:        green
+  created_date: 2016-07-03 # episode 22
+  #birthday:     4/10
+  extra_names:
+  transform_calls:
+    - cure_up_rapapa
+  transform_styles:
+    emerald:
+      girl_name:    cure_felice_emerald
+      transform_message: |-
+        キュアップ・ラパパ！エメラルド！
+        フェリーチェ・ファンファン・フラワーレ！
+        あまねく生命に祝福を！キュアフェリーチェ！
+      attack_messages:
+        - |
+          フラワーエコーワンド！
+          エメラルド！
+          キュアー・アップ！
+          プリキュア！エメラルド・リンカネーション！
 miracle:
   <<: *cure_miracle
 magical:
   <<: *cure_magical
+felice:
+  <<: *cure_felice
