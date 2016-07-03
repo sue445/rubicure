@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.4.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.5...master)
+
+## v0.4.5
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.4...v0.4.5)
+
+* Add cure felice
+  * https://github.com/sue445/rubicure/pull/106
 
 ## v0.4.4
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.3...v0.4.4)
