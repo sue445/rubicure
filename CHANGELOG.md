@@ -1,5 +1,12 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.4.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.6...master)
+
+## v0.4.6
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.5...v0.4.6)
+
+* Fix DEPRECATION WARNING with activesupport 5.0+
+  * https://github.com/sue445/rubicure/issues/107
+  * https://github.com/sue445/rubicure/pull/108
 
 ## v0.4.5
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.4...v0.4.5)
