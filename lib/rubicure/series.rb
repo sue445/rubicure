@@ -54,8 +54,8 @@ module Rubicure
 
     alias_method :each_without_girls, :each
 
-    def each
-      girls.each { |girl| yield girl }
+    def each(&block)
+      girls.each(&block)
     end
 
     def to_json(*_args)
