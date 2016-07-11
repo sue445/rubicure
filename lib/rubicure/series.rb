@@ -52,10 +52,11 @@ module Rubicure
       @girls
     end
 
-    def each_with_girls
+    alias_method :each_without_girls, :each
+
+    def each
       girls.each { |girl| yield girl }
     end
-    alias_method_chain :each, :girls
 
     def to_json(*_args)
       original_hash = {}

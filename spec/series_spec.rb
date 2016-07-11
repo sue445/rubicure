@@ -127,13 +127,13 @@ describe Rubicure::Series do
     end
   end
 
-  describe "#each_with_girls" do
-    subject { series.each_with_girls }
+  describe "#each" do
+    subject { series.each }
 
     let(:series) { Rubicure::Series.find(series_name) }
     let(:series_name) { :splash_star }
 
-    it { expect { |b| series.each_with_girls(&b) }.to yield_successive_args(Rubicure::Girl, Rubicure::Girl) }
+    it { expect { |b| series.each(&b) }.to yield_successive_args(Rubicure::Girl, Rubicure::Girl) }
   end
 
   describe "#to_json" do
