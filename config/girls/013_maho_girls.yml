@@ -88,9 +88,9 @@ cure_magical: &cure_magical
     - cure_up_rapapa
   transform_styles:
     diamond:
-      girl_name:    cure_magical_ruby
+      girl_name:    cure_magical_diamond
       precure_name: キュアマジカル（ダイヤスタイル）
-      color:        red
+      color:        blue
       created_date: 2016-02-07 # episode 1
       transform_message:
         キュアップ・ラパパ！　ダイヤ！
