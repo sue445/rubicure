@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.4.6...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.7...master)
+
+## v0.4.7
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.6...v0.4.7)
+
+* Fix cure magical diamond style
+  * https://github.com/sue445/rubicure/pull/109
 
 ## v0.4.6
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.5...v0.4.6)
