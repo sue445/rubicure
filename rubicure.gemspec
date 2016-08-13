@@ -20,19 +20,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  if Gem::Version.create(RUBY_VERSION) >= Gem::Version.create("2.2.2")
-    spec.add_dependency "activesupport", ">= 4.0.0"
-  else
-    # NOTE: activesupport 5.x supports only ruby 2.2.2+
-    spec.add_dependency "activesupport", ">= 4.0.0", "< 5.0.0"
-  end
-
+  spec.add_dependency "activesupport", ">= 4.0.0"
   spec.add_dependency "hashie", ">= 2.0.5"
   spec.add_dependency "sengiri_yaml", ">= 0.0.2"
-
-  if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.3.0")
-    spec.add_dependency "backport_dig"
-  end
 
   spec.add_development_dependency "bundler", ">= 1.3.5"
   spec.add_development_dependency "codeclimate-test-reporter"
@@ -46,9 +36,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-parameterized"
   spec.add_development_dependency "rubocop", "0.35.1"
   spec.add_development_dependency "yard"
-
-  if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.1.0")
-    # NOTE: unparser v0.2.5 drop support ruby < 2.1
-    spec.add_development_dependency "unparser", "< 0.2.5"
-  end
 end
