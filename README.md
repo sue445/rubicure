@@ -24,7 +24,12 @@ Inspired by [Acme::PrettyCure](http://perl-users.jp/articles/advent-calendar/201
 
 Add this line to your application's Gemfile:
 
-    gem 'rubicure'
+```ruby
+gem 'rubicure'
+
+# for ruby 2.0, 2.1, 2.2
+gem 'backport_dig'
+```
 
 And then execute:
 
