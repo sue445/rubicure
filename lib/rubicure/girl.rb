@@ -21,7 +21,7 @@ module Rubicure
       :transform_calls,
     ].freeze
 
-    attr_writer :io
+    attr_accessor :io
 
     def current_state
       @current_state ||= 0
@@ -190,7 +190,7 @@ module Rubicure
         index = 0
         message.each_line do |line|
           sleep(self.class.sleep_sec) if index > 0
-          @io.puts line
+          io.puts line
           index += 1
         end
       end
