@@ -9,12 +9,14 @@ code = <<~RUBY
 
   @mirai.cure_up_rapapa! :diamond
   puts @mirai.name
+  @mirai.attack!
 
   @mirai.humanize!
   puts @mirai.name
 
   @mirai.cure_up_rapapa! :ruby
   puts @mirai.name
+  @mirai.attack!
 RUBY
 
 run code
