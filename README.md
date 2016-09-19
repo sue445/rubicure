@@ -15,6 +15,11 @@ Inspired by [Acme::PrettyCure](http://perl-users.jp/articles/advent-calendar/201
 [![endorse](https://api.coderwall.com/sue445/endorsecount.png)](https://coderwall.com/sue445)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sue445/rubicure/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+## Example
+![maho_girls](examples/maho_girls.gif)
+
+[examples/maho_girls.rb](examples/maho_girls.rb)
+
 ## Requirements
 
 * ruby >= 2.0.0
