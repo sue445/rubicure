@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sengiri_yaml", ">= 0.0.2"
 
   spec.add_development_dependency "bundler", ">= 1.3.5"
-  spec.add_development_dependency "codeclimate-test-reporter"
+  spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0.0"
   spec.add_development_dependency "coveralls"
   spec.add_development_dependency "delorean"
   spec.add_development_dependency "pry-byebug"
@@ -35,5 +35,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "rspec-parameterized"
   spec.add_development_dependency "rubocop", "0.35.1"
+  spec.add_development_dependency "simplecov"
   spec.add_development_dependency "yard"
 end
