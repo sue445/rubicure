@@ -13,6 +13,7 @@ before_script:
 - export CI=true
 script:
 - bundle exec rspec
+- bundle exec codeclimate-test-reporter
 - bundle exec ruby examples/all.rb
 branches:
   only:
