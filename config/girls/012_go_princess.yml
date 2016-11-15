@@ -21,6 +21,7 @@ cure_flora: &cure_flora
       (ドリーミング)
       ごきげんよう
   transform_calls:
+    - princess_engage
 cure_mermaid: &cure_mermaid
   girl_name:    cure_mermaid
   human_name:   海藤みなみ
