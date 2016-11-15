@@ -1,6 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.4.9...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.10...master)
 
+## v0.4.10
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.9...v0.4.10)
 * Bugfix: Cure flora can not transform with `princess_engage!`
   * https://github.com/sue445/rubicure/issues/119
   * https://github.com/sue445/rubicure/pull/120
