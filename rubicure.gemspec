@@ -13,14 +13,14 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/sue445/rubicure"
   spec.license       = "MIT"
 
-  spec.required_ruby_version = ">= 2.0.0"
+  spec.required_ruby_version = ">= 2.2.2"
 
   spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "activesupport", ">= 4.0.0"
+  spec.add_dependency "activesupport", ">= 5.0.0"
   spec.add_dependency "hashie", ">= 2.0.5"
   spec.add_dependency "sengiri_yaml", ">= 0.0.2"
 

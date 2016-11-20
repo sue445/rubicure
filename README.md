@@ -22,7 +22,7 @@ Inspired by [Acme::PrettyCure](http://perl-users.jp/articles/advent-calendar/201
 
 ## Requirements
 
-* ruby >= 2.0.0
+* ruby >= 2.2.2
   * more: [.travis.yml](.travis.yml)
 
 ## Installation
@@ -32,7 +32,7 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'rubicure'
 
-# for ruby 2.0, 2.1, 2.2
+# for ruby 2.2
 gem 'backport_dig'
 ```
 
