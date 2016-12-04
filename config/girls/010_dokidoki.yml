@@ -18,8 +18,6 @@ cure_heart: &cure_heart
   attack_messages:
     - |-
       あなたに届け！マイスイートハート！
-    - |-
-      あなたに届け！マイスイートハート！
   transform_calls:
     - love_link
 cure_diamond: &cure_diamond
