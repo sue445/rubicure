@@ -62,8 +62,6 @@ module Rubicure
       @current_transform_style = nil
       self
     end
-    alias_method :humanize, :humanize!
-    deprecate humanize: "Use #humanize! instead of #humanize"
 
     def attack!
       raise RequireTransformError, "require transform" if current_attack_message.blank?
