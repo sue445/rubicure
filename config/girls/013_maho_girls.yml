@@ -92,7 +92,7 @@ cure_magical: &cure_magical
       precure_name: キュアマジカル（ダイヤスタイル）
       color:        blue
       created_date: 2016-02-07 # episode 1
-      transform_message:
+      transform_message: |-
         キュアップ・ラパパ！　ダイヤ！
         ミラクル・マジカル・ジュエリーレ！
         ふたりの魔法！キュアマジカル！
@@ -108,7 +108,7 @@ cure_magical: &cure_magical
       precure_name: キュアマジカル（ルビースタイル）
       color:        red
       created_date: 2016-02-21 # episode 3
-      transform_message:
+      transform_message: |-
         キュアップ・ラパパ！　ルビー！
         ミラクル・マジカル・ジュエリーレ！
         ふたりの魔法！キュアマジカル！
