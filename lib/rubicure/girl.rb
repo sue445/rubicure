@@ -92,7 +92,7 @@ module Rubicure
     ATTRIBUTES.each do |attribute|
       define_method attribute do
         if @current_transform_style
-          dig(:transform_styles, @current_transform_style, attribute) || self[attribute]
+          fetch(:transform_styles, {}).fetch(@current_transform_style, {})[attribute] || self[attribute]
         else
           self[attribute]
         end
