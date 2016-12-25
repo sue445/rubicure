@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.4.11...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.12...master)
+
+## v0.4.12
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.11...v0.4.12)
+
+* Apply block style of yaml to the transform messages.
+  * https://github.com/sue445/rubicure/pull/126
 
 ## v0.4.11
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.10...v0.4.11)
