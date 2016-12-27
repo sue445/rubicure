@@ -1,6 +1,14 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.12...master)
 
+## v1.0.0.pre1
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.12...v1.0.0.pre1)
+
+* Remove `Girl#humanize`
+  * https://github.com/sue445/rubicure/pull/124
+* Drop support ruby 2.0 and 2.1
+  * https://github.com/sue445/rubicure/pull/122
+
 ## v0.4.12
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.11...v0.4.12)
 
