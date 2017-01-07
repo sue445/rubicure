@@ -1,0 +1,110 @@
+cure_whip: &cure_whip
+  girl_name:    cure_whip
+  human_name:   宇佐美いちか
+  precure_name: キュアホイップ
+  cast_name:    美山加恋
+  color:        pink
+  created_date: 2017-02-05 # episode 1
+  birthday: 1/7
+  transform_message: |-
+    キュアラモード・デコレーション！
+    ショートケーキ！
+    元気と笑顔を！
+    レッツ・ラ・まぜまぜ！
+    キュアホイップ！できあがり！
+  # extra_names:
+  attack_messages:
+    - |
+      キラキラキラル・キラキラル！
+  transform_calls:
+    - cure_la_mode_decoration
+cure_custard: &cure_custard
+  girl_name:    cure_custard
+  human_name:   有栖川ひまり
+  precure_name: キュアカスタード
+  cast_name:    福原遥
+  color:        yellow
+  created_date: 2017-02-12 # episode 2
+  birthday: 4/16
+  transform_message: |-
+    キュアラモード・デコレーション！
+    プリン！
+    知性と勇気を！
+    レッツ・ラ・まぜまぜ！
+    キュアカスタード！できあがり！
+  # extra_names:
+  attack_messages:
+    - |
+      キラキラキラル・キラキラル！
+  transform_calls:
+    - cure_la_mode_decoration
+cure_gelato: &cure_gelato
+  girl_name:    cure_gelato
+  human_name:   立神あおい
+  precure_name: キュアジェラート
+  cast_name:    村中知
+  color:        blue
+  created_date: 2017-02-19 # episode 3
+  birthday: 8/27
+  transform_message: |-
+    キュアラモード・デコレーション！
+    アイス！
+    自由と情熱を！
+    レッツ・ラ・まぜまぜ！
+    キュアジェラート！できあがり！
+  # extra_names:
+  attack_messages:
+    - |
+      キラキラキラル・キラキラル！
+  transform_calls:
+    - cure_la_mode_decoration
+cure_macaroon: &cure_macaroon
+  girl_name:    cure_macaroon
+  human_name:   琴爪ゆかり
+  precure_name: キュアマカロン
+  cast_name:    藤田咲
+  color:        purple
+  created_date: 2017-03-05 # episode 5
+  birthday: 6/11
+  transform_message: |-
+    キュアラモード・デコレーション！
+    マカロン！
+    美しさとときめきを！
+    レッツ・ラ・まぜまぜ！
+    キュアマカロン！できあがり！
+  # extra_names:
+  attack_messages:
+    - |
+      キラキラキラル・キラキラル！
+  transform_calls:
+    - cure_la_mode_decoration
+cure_chocolat: &cure_chocolat
+  girl_name:    cure_chocolat
+  human_name:   剣城あきら
+  precure_name: キュアショコラ
+  cast_name:    森なな子
+  color:        red
+  created_date: 2017-03-12 # episode 6
+  birthday: 9/24
+  transform_message: |-
+    キュアラモード・デコレーション！
+    チョコレート！
+    強さと愛を！
+    レッツ・ラ・まぜまぜ！
+    キュアショコラ！できあがり！
+  # extra_names:
+  attack_messages:
+    - |
+      キラキラキラル・キラキラル！
+  transform_calls:
+    - cure_la_mode_decoration
+whip:
+  <<: *cure_whip
+custard:
+  <<: *cure_custard
+gelato:
+  <<: *cure_gelato
+macaroon:
+  <<: *cure_macaroon
+chocolat:
+  <<: *cure_chocolat

@@ -36,7 +36,7 @@ describe Rubicure::Core do
     context "Without arg" do
       subject { instance.all_stars }
 
-      let(:precure_count) { 44 }
+      let(:precure_count) { 49 }
 
       its(:count) { should == precure_count }
     end
