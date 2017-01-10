@@ -73,7 +73,7 @@ cure_twinkle: &cure_twinkle
 cure_scarlet: &cure_scarlet
   girl_name:    cure_scarlet
   human_name:   紅城トワ
-  full_name:    プリンセス・ホープ・ディライト・トワ
+  human_full_name: プリンセス・ホープ・ディライト・トワ
   precure_name: キュアスカーレット
   cast_name:    沢城みゆき
   color:        red
