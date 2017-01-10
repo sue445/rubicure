@@ -10,6 +10,7 @@ module Rubicure
     ATTRIBUTES = [
       :girl_name,
       :human_name,
+      :human_full_name,
       :precure_name,
       :cast_name,
       :color,
@@ -86,6 +87,10 @@ module Rubicure
       has_key?(:birthday)
     end
     alias_method :has_birthday?, :have_birthday?
+
+    def full_name
+      human_full_name.presence || human_name
+    end
 
     ATTRIBUTES.each do |attribute|
       define_method attribute do

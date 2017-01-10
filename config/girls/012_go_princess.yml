@@ -71,13 +71,14 @@ cure_twinkle: &cure_twinkle
   transform_calls:
     - princess_engage
 cure_scarlet: &cure_scarlet
-  girl_name:    cure_scarlet
-  human_name:   紅城トワ
-  precure_name: キュアスカーレット
-  cast_name:    沢城みゆき
-  color:        red
-  created_date: 2015-07-05 # episode 22
-  birthday:     12/15
+  girl_name:       cure_scarlet
+  human_name:      紅城トワ
+  human_full_name: プリンセス・ホープ・ディライト・トワ
+  precure_name:    キュアスカーレット
+  cast_name:       沢城みゆき
+  color:           red
+  created_date:    2015-07-05 # episode 22
+  birthday:        12/15
   transform_message: |-
     プリキュア！プリンセスエンゲージ！
     深紅の炎のプリンセス！キュアスカーレット！

@@ -311,4 +311,18 @@ EOF
       it { should be false }
     end
   end
+
+  describe "#full_name" do
+    subject { girl.full_name }
+
+    context "has human_full_name" do
+      let(:girl) { Cure.scarlet }
+
+      it { should eq "プリンセス・ホープ・ディライト・トワ" }
+    end
+
+    context "don't have human_full_name" do
+      it { should eq "黄瀬やよい" }
+    end
+  end
 end
