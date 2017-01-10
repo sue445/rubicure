@@ -390,6 +390,30 @@ mirai.attack!
 プリキュア！ルビーパッショナーレ！
 ```
 
+### full_name
+When `Rubicure::Girl` has `human_full_name` (i.e. another `human_name`), she returns as `#full_name`
+
+```ruby
+Cure.princess.human_name
+# => "白雪ひめ"
+Cure.princess.full_name
+# => "ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ"
+
+Cure.scarlet.human_name
+# => "紅城トワ"
+Cure.scarlet.full_name
+# => "プリンセス・ホープ・ディライト・トワ"
+```
+
+`#full_name` returns `#human_name` when she doe's not have `human_full_name`
+
+```ruby
+Cure.miracle.human_name
+# => "朝日奈みらい"
+Cure.miracle.full_name
+# => "朝日奈みらい"
+```
+
 ### Precure allstars
 ```ruby
 Precure.all_stars.count
