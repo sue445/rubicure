@@ -49,7 +49,7 @@ module Rubicure
         end
       end
 
-      all_girls(date) + extra_girls
+      all_girls(date) - [Cure.echo] + extra_girls
     end
 
     # @param [Time,Date] arg Time, Date or date like String (ex. "2013-12-16")

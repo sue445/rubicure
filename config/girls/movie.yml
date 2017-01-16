@@ -3,7 +3,7 @@ cure_echo: &cure_echo
   human_name:   坂上あゆみ
   precure_name: キュアエコー
   cast_name:    能登麻美子
-  created_date:
+  created_date: 2012-03-17
   color:        white
   transform_message: |-
     みんなの思いを守るために
