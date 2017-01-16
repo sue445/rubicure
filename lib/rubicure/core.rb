@@ -57,16 +57,16 @@ module Rubicure
     def all_girls(arg = Time.current)
       date = to_date(arg)
 
-      unless @all_stars
-        @all_stars = []
+      unless @all_girls
+        @all_girls = []
         Rubicure::Girl.names.each do |girl_name|
-          @all_stars << Rubicure::Girl.find(girl_name)
+          @all_girls << Rubicure::Girl.find(girl_name)
         end
 
-        @all_stars.uniq!(&:human_name)
+        @all_girls.uniq!(&:human_name)
       end
 
-      @all_stars.select { |girl| girl.created_date && girl.created_date <= date }
+      @all_girls.select { |girl| girl.created_date && girl.created_date <= date }
     end
 
     alias_method :all, :all_girls
