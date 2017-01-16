@@ -34,15 +34,6 @@ module Rubicure
     # @param [Time,Date,String,Symbol] arg Time, Date or date like String (ex. "2013-12-16")
     # @return [Array<Rubicure::Girl>]
     def all_stars(arg = Time.current)
-      unless @all_stars
-        @all_stars = []
-        Rubicure::Girl.names.each do |girl_name|
-          @all_stars << Rubicure::Girl.find(girl_name)
-        end
-
-        @all_stars.uniq!(&:human_name)
-      end
-
       extra_girls = []
 
       # args is Time or Date
@@ -58,9 +49,27 @@ module Rubicure
         end
       end
 
-      girls = @all_stars.select { |girl| girl.created_date && girl.created_date <= date }
-      girls + extra_girls
+      all_girls(date) + extra_girls
     end
+
+    # @param [Time,Date] arg Time, Date or date like String (ex. "2013-12-16")
+    # @return [Array<Rubicure::Girl>]
+    def all_girls(arg = Time.current)
+      date = to_date(arg)
+
+      unless @all_stars
+        @all_stars = []
+        Rubicure::Girl.names.each do |girl_name|
+          @all_stars << Rubicure::Girl.find(girl_name)
+        end
+
+        @all_stars.uniq!(&:human_name)
+      end
+
+      @all_stars.select { |girl| girl.created_date && girl.created_date <= date }
+    end
+
+    alias_method :all, :all_girls
 
     # iterate with :unmarked, :max_heart, ...
     #

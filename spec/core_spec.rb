@@ -78,4 +78,30 @@ describe Rubicure::Core do
       end
     end
   end
+
+  describe "#all_girls" do
+    context "Without arg" do
+      subject { instance.all_girls }
+
+      let(:precure_count) { 44 }
+
+      its(:count) { should == precure_count }
+    end
+
+    context "With arg" do
+      subject { instance.all_girls(arg) }
+
+      using RSpec::Parameterized::TableSyntax
+
+      where(:arg, :expected_count) do
+        "2009-03-20"             | 14
+        Date.parse("2010-03-20") | 17
+        Time.parse("2011-03-19") | 21
+      end
+
+      with_them do
+        its(:count) { should == expected_count }
+      end
+    end
+  end
 end
