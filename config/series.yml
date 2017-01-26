@@ -163,7 +163,7 @@ maho_girls: &maho_girls
   series_name: maho_girls
   title: 魔法つかいプリキュア！
   started_date: 2016-02-07
-  # ended_date:   2017-01-
+  ended_date:   2017-01-29
   girls:
   - cure_miracle
   - cure_magical
