@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.4.12...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.13...master)
+
+## v0.4.13
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.12...v0.4.13)
+
+* Add ended_date of Mahogirls precure
+  * https://github.com/sue445/rubicure/pull/139
 
 ## v0.4.12
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.11...v0.4.12)
