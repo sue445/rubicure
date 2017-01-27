@@ -24,6 +24,10 @@
   * https://github.com/sue445/rubicure/pull/138
   * https://github.com/sue445/rubicure/issues/136
 
+### Others
+* Exclude examples/ from gem file
+  * https://github.com/sue445/rubicure/pull/140
+
 ## v0.4.13
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.12...v0.4.13)
 
