@@ -22,7 +22,7 @@ Inspired by [Acme::PrettyCure](http://perl-users.jp/articles/advent-calendar/201
 
 ## Requirements
 
-* ruby >= 2.0.0
+* ruby >= 2.2.2
   * more: [.travis.yml](.travis.yml)
 
 ## Installation
@@ -32,7 +32,7 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'rubicure'
 
-# for ruby 2.0, 2.1, 2.2
+# for ruby 2.2
 gem 'backport_dig'
 ```
 
@@ -390,13 +390,38 @@ mirai.attack!
 プリキュア！ルビーパッショナーレ！
 ```
 
+### full_name
+When `Rubicure::Girl` has `human_full_name` (i.e. another `human_name`), she returns as `#full_name`
+
+```ruby
+Cure.princess.human_name
+# => "白雪ひめ"
+Cure.princess.full_name
+# => "ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ"
+
+Cure.scarlet.human_name
+# => "紅城トワ"
+Cure.scarlet.full_name
+# => "プリンセス・ホープ・ディライト・トワ"
+```
+
+`#full_name` returns `#human_name` when she doe's not have `human_full_name`
+
+```ruby
+Cure.miracle.human_name
+# => "朝日奈みらい"
+Cure.miracle.full_name
+# => "朝日奈みらい"
+```
+
 ### Precure allstars
 ```ruby
 Precure.all_stars.count
-#=> 36
-
 Precure.all_stars.map(&:precure_name)
-#=> ["キュアブラック", "キュアホワイト", "シャイニールミナス", "キュアブルーム", "キュアイーグレット", "キュアドリーム", "キュアルージュ", "キュアレモネード", "キュアミント", "キュアアクア", "ミルキィローズ", "キュアピーチ", "キュアベリー", "キュアパイン", "キュアパッション", "キュアブロッサム", "キュアマリン", "キュアサンシャイン", "キュアムーンライト", "キュアメロディ", "キュアリズム", "キュアビート", "キュアミューズ", "キュアハッピー", "キュアサニー", "キュアピース", "キュアマーチ", "キュアビューティ", "キュアハート", "キュアダイヤモンド", "キュアロゼッタ", "キュアソード", "キュアエース", "キュアラブリー", "キュアプリンセス", "キュアハニー"]
+# returns current precure count and names
+
+Precure.all_stars.include?(Cure.echo)
+#=> false
 
 Precure.all_stars("2013-10-26").count
 #=> 33
@@ -434,6 +459,22 @@ Precure.all_stars(:sing_together_miracle_magic).include?(Cure.echo)
 
 and [more aliases!](config/movies.yml)
 
+### `Precure.all_girls` (a.k.a. `Precure.all`)
+```ruby
+Precure.all_girls.count
+Precure.all_girls.map(&:precure_name)
+# returns current precure count and names
+
+Precure.all_girls("2013-10-26").count
+#=> 33
+
+Precure.all_girls.include?(Cure.echo)
+#=> true
+```
+
+#### `Precure.all_girls` vs `Precure.all_stars`
+* `Precure.all_girls` returns all precure. (includes "Kirakira Precure Alamode")
+* `Precure.all_stars` returns only from "Futari wa Pretty Cure" to "Maho Girls PreCure"
 
 ### Equivalence
 ```ruby

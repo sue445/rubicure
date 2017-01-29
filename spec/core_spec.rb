@@ -44,32 +44,62 @@ describe Rubicure::Core do
     context "With arg" do
       subject { instance.all_stars(arg) }
 
+      using RSpec::Parameterized::TableSyntax
+
       where(:arg, :expected_count, :include_cure_echo) do
-        [
-          ["2009-03-20",             14, false],
-          [Date.parse("2010-03-20"), 17, false],
-          [Time.parse("2011-03-19"), 21, false],
+        "2009-03-20"             | 14 | false
+        "2017-01-17"             | 44 | false
+        Date.parse("2010-03-20") | 17 | false
+        Time.parse("2011-03-19") | 21 | false
 
-          [:dx,         14, false],
-          [:dx1,        14, false],
-          [:dx2,        17, false],
-          [:dx3,        21, false],
+        :dx  | 14 | false
+        :dx1 | 14 | false
+        :dx2 | 17 | false
+        :dx3 | 21 | false
 
-          [:ns,         29, true],
-          [:ns1,        29, true],
-          [:new_stage,  29, true],
-          [:new_stage1, 29, true],
-          [:ns2,        32, false],
-          [:new_stage2, 32, false],
-          [:ns3,        37, true],
-          [:new_stage3, 37, true],
+        :ns         | 29 | true
+        :ns1        | 29 | true
+        :new_stage  | 29 | true
+        :new_stage1 | 29 | true
+        :ns2        | 32 | false
+        :new_stage2 | 32 | false
+        :ns3        | 37 | true
+        :new_stage3 | 37 | true
 
-          [:sc,              40, false],
-          [:spring_carnival, 40, false],
+        :sc              | 40 | false
+        :spring_carnival | 40 | false
 
-          [:stmm,                        44, true],
-          [:sing_together_miracle_magic, 44, true],
-        ]
+        :stmm                        | 44 | true
+        :sing_together_miracle_magic | 44 | true
+      end
+
+      with_them do
+        its(:count) { should == expected_count }
+        it { expect(subject.include?(Cure.echo)).to be include_cure_echo }
+      end
+    end
+  end
+
+  describe "#all_girls" do
+    context "Without arg" do
+      subject { instance.all_girls }
+
+      let(:precure_count) { 45 }
+
+      its(:count) { should == precure_count }
+      it { should include Cure.echo }
+    end
+
+    context "With arg" do
+      subject { instance.all_girls(arg) }
+
+      using RSpec::Parameterized::TableSyntax
+
+      where(:arg, :expected_count, :include_cure_echo) do
+        "2009-03-20"             | 14 | false
+        "2017-01-17"             | 45 | true
+        Date.parse("2010-03-20") | 17 | false
+        Time.parse("2011-03-19") | 21 | false
       end
 
       with_them do

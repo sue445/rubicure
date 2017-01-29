@@ -1,6 +1,30 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.13...master)
 
+## v1.0.0
+
+### Breaking changes :bomb:
+* Remove `Girl#humanize`
+    * https://github.com/sue445/rubicure/pull/124
+* Drop support ruby 2.0 and 2.1
+    * https://github.com/sue445/rubicure/pull/122
+* Rename: human name of cure princess
+    * https://github.com/sue445/rubicure/pull/133
+* `Precure.all_stars` returns only from "Futari wa Pretty Cure" to "Maho Girls PreCure"
+    * https://github.com/sue445/rubicure/pull/138
+    * https://github.com/sue445/rubicure/issues/136
+    * i.e. "Kirakira Precure Alamode" is not included
+    * If necessary, please rewrite as follows.
+        * `Precure.all_stars` -> `Precure.all_girls`
+
+### Enhancements
+* Impl `Girl#full_name`
+  * https://github.com/sue445/rubicure/pull/135
+* Impl `Precure.all_girls` (a.k.a. `Precure.all`)
+  * https://github.com/sue445/rubicure/pull/138
+  * https://github.com/sue445/rubicure/issues/136
+
+### Others
 * Exclude examples/ from gem file
   * https://github.com/sue445/rubicure/pull/140
 

@@ -36,12 +36,13 @@ cure_lovely: &cure_lovely
   transform_calls:
     - kururin_mirror_change
 cure_princess: &cure_princess
-  girl_name:    cure_princess
-  human_name:   白雪ひめ(ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ)
-  precure_name: キュアプリンセス
-  cast_name:    潘めぐみ
-  created_date: 2014-02-02 # episode 1
-  color:        blue
+  girl_name:       cure_princess
+  human_name:      白雪ひめ
+  human_full_name: ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ
+  precure_name:    キュアプリンセス
+  cast_name:       潘めぐみ
+  created_date:    2014-02-02 # episode 1
+  color:           blue
   transform_message: |-
     (かわルンルン！)
     プリキュアくるりんミラーチェンジ！
