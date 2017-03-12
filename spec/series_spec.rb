@@ -64,6 +64,7 @@ describe Rubicure::Series do
       :happiness_charge,
       :go_princess,
       :maho_girls,
+      :a_la_mode,
     ]
   end
 

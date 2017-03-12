@@ -7,6 +7,8 @@ module Rubicure
     include Enumerable
     include Rubicure::Concerns::Util
 
+    LAST_ALL_STARS_DATE = Date.parse("2016-03-19")
+
     def method_missing(name, *args)
       unmarked_precure = Rubicure::Series.find(:unmarked)
 
@@ -39,7 +41,11 @@ module Rubicure
       # args is Time or Date
       date = to_date(arg)
 
-      unless date
+      if date
+        if date > LAST_ALL_STARS_DATE
+          date = LAST_ALL_STARS_DATE
+        end
+      else
         # args is movie name
         movie = Rubicure::Movie.find(arg.to_sym)
         date = movie.started_date

@@ -36,7 +36,7 @@ describe Rubicure::Core do
     context "Without arg" do
       subject { instance.all_stars }
 
-      let(:precure_count) { 44 }
+      let(:precure_count) { 43 }
 
       its(:count) { should == precure_count }
     end
@@ -48,7 +48,7 @@ describe Rubicure::Core do
 
       where(:arg, :expected_count, :include_cure_echo) do
         "2009-03-20"             | 14 | false
-        "2017-01-17"             | 44 | false
+        "2017-01-17"             | 43 | false
         Date.parse("2010-03-20") | 17 | false
         Time.parse("2011-03-19") | 21 | false
 
@@ -84,7 +84,7 @@ describe Rubicure::Core do
     context "Without arg" do
       subject { instance.all_girls }
 
-      let(:precure_count) { 45 }
+      let(:precure_count) { 50 }
 
       its(:count) { should == precure_count }
       it { should include Cure.echo }
