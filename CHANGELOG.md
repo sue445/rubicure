@@ -1,7 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v0.4.13...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.0...master)
 
 ## v1.0.0
+[full changelog](http://github.com/sue445/rubicure/compare/v0.4.13...v1.0.0)
 
 ### Breaking changes :bomb:
 * Remove `Girl#humanize`
@@ -23,6 +24,11 @@
 * Impl `Precure.all_girls` (a.k.a. `Precure.all`)
   * https://github.com/sue445/rubicure/pull/138
   * https://github.com/sue445/rubicure/issues/136
+* Add kirakira precure alamode
+  * https://github.com/sue445/rubicure/pull/131
+* Impl `Precure.dream_stars`
+  * https://github.com/sue445/rubicure/pull/141
+  * https://github.com/sue445/rubicure/issues/137
 
 ### Others
 * Exclude examples/ from gem file
