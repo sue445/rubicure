@@ -52,3 +52,9 @@ stmm: &stmm
   - cure_echo
 sing_together_miracle_magic:
   <<: *stmm
+#######################################################
+dream_stars: &dream_stars
+  title: 映画プリキュアドリームスターズ！
+  started_date: 2017-03-18
+dc:
+  <<: *dream_stars

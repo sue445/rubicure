@@ -9,6 +9,7 @@ describe Rubicure::Movie do
       :ns3,
       :sc,
       :stmm,
+      :dream_stars,
     ]
   end
 

@@ -476,6 +476,15 @@ Precure.all_girls.include?(Cure.echo)
 * `Precure.all_girls` returns all precure. (includes "Kirakira Precure Alamode")
 * `Precure.all_stars` returns only from "Futari wa Pretty Cure" to "Maho Girls PreCure"
 
+### `Precure.dream_stars`
+```ruby
+Precure.dream_stars.count
+#=> 12
+
+Precure.dream_stars.map(&:precure_name)
+#=> ["キュアフローラ", "キュアマーメイド", "キュアトゥインクル", "キュアスカーレット", "キュアミラクル", "キュアマジカル", "キュアフェリーチェ", "キュアホイップ", "キュアカスタード", "キュアジェラート", "キュアマカロン", "キュアショコラ"]
+```
+
 ### Equivalence
 ```ruby
 yayoi = Cure.peace.dup
