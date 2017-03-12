@@ -77,6 +77,16 @@ module Rubicure
 
     alias_method :all, :all_girls
 
+    def dream_stars
+      return @dream_stars if @dream_stars
+      girls = Precure.go_princess.girls + Precure.maho_girls.girls + Precure.a_la_mode.girls
+
+      dream_stars_date = Rubicure::Movie.find(:dream_stars).started_date
+      @dream_stars = girls.select { |girl| girl.created_date && girl.created_date <= dream_stars_date }
+
+      @dream_stars
+    end
+
     # iterate with :unmarked, :max_heart, ...
     #
     # @yield series
