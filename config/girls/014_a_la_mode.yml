@@ -12,6 +12,7 @@ cure_whip: &cure_whip
     元気と笑顔を！
     レッツ・ラ・まぜまぜ！
     キュアホイップ！できあがり！
+    キラキラ☆プリキュアアラモード！
   # extra_names:
   attack_messages:
     - |
@@ -32,6 +33,7 @@ cure_custard: &cure_custard
     知性と勇気を！
     レッツ・ラ・まぜまぜ！
     キュアカスタード！できあがり！
+    キラキラ☆プリキュアアラモード！
   # extra_names:
   attack_messages:
     - |
@@ -52,6 +54,7 @@ cure_gelato: &cure_gelato
     自由と情熱を！
     レッツ・ラ・まぜまぜ！
     キュアジェラート！できあがり！
+    キラキラ☆プリキュアアラモード！
   # extra_names:
   attack_messages:
     - |
@@ -72,6 +75,7 @@ cure_macaroon: &cure_macaroon
     美しさとときめきを！
     レッツ・ラ・まぜまぜ！
     キュアマカロン！できあがり！
+    キラキラ☆プリキュアアラモード！
   # extra_names:
   attack_messages:
     - |
@@ -92,6 +96,7 @@ cure_chocolat: &cure_chocolat
     強さと愛を！
     レッツ・ラ・まぜまぜ！
     キュアショコラ！できあがり！
+    キラキラ☆プリキュアアラモード！
   # extra_names:
   attack_messages:
     - |
