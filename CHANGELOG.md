@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.0.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.1...master)
+
+## v1.0.1
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.0...v1.0.1)
+
+* Tweak kirakira precure a la mode `transform_message`
+  * https://github.com/sue445/rubicure/pull/144
 
 ## v1.0.0
 [full changelog](http://github.com/sue445/rubicure/compare/v0.4.13...v1.0.0)
