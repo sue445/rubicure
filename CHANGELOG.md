@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.0.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.2...master)
+
+## v1.0.2
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.2...v1.0.2)
+
+* Remove trailing newline of girls :scissors:
+  * https://github.com/sue445/rubicure/pull/145
 
 ## v1.0.1
 [full changelog](http://github.com/sue445/rubicure/compare/v1.0.0...v1.0.1)
