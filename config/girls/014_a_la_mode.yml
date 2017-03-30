@@ -15,7 +15,7 @@ cure_whip: &cure_whip
     キラキラ☆プリキュアアラモード！
   # extra_names:
   attack_messages:
-    - |
+    - |-
       キラキラキラル・キラキラル！
   transform_calls:
     - cure_la_mode_decoration
@@ -36,7 +36,7 @@ cure_custard: &cure_custard
     キラキラ☆プリキュアアラモード！
   # extra_names:
   attack_messages:
-    - |
+    - |-
       キラキラキラル・キラキラル！
   transform_calls:
     - cure_la_mode_decoration
@@ -57,7 +57,7 @@ cure_gelato: &cure_gelato
     キラキラ☆プリキュアアラモード！
   # extra_names:
   attack_messages:
-    - |
+    - |-
       キラキラキラル・キラキラル！
   transform_calls:
     - cure_la_mode_decoration
@@ -78,7 +78,7 @@ cure_macaroon: &cure_macaroon
     キラキラ☆プリキュアアラモード！
   # extra_names:
   attack_messages:
-    - |
+    - |-
       キラキラキラル・キラキラル！
   transform_calls:
     - cure_la_mode_decoration
@@ -99,7 +99,7 @@ cure_chocolat: &cure_chocolat
     キラキラ☆プリキュアアラモード！
   # extra_names:
   attack_messages:
-    - |
+    - |-
       キラキラキラル・キラキラル！
   transform_calls:
     - cure_la_mode_decoration

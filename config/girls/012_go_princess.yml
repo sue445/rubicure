@@ -15,7 +15,7 @@ cure_flora: &cure_flora
     お覚悟はよろしくて？
   extra_names:
   attack_messages:
-    - |
+    - |-
       エクスチェンジ！モードエレガント！
       舞え、花よ！プリキュア・フローラル・トルビヨン！
       (ドリーミング)
@@ -39,7 +39,7 @@ cure_mermaid: &cure_mermaid
     お覚悟はよろしくて？
   extra_names:
   attack_messages:
-    - |
+    - |-
       エクスチェンジ！モードエレガント！
       高鳴れ、海よ！プリキュア・マーメイド・リップル！
       (ドリーミング)
@@ -63,7 +63,7 @@ cure_twinkle: &cure_twinkle
     お覚悟はよろしくて？
   extra_names:
   attack_messages:
-    - |
+    - |-
       エクスチェンジ！モードエレガント！
       キラキラ、星よ！プリキュア・トゥインクル・ハミング！
       (ドリーミング)
@@ -88,7 +88,7 @@ cure_scarlet: &cure_scarlet
     お覚悟決めなさい！
   extra_names:
   attack_messages:
-    - |
+    - |-
       エクスチェンジ！モードエレガント！
       羽ばたけ炎の翼！プリキュア・フェニックス・ブレイズ！
       (ドリーミング)
