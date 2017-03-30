@@ -119,3 +119,7 @@ RSpec.configure do |config|
     back_to_the_present
   end
 end
+
+def spec_dir
+  Pathname(__dir__)
+end

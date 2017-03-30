@@ -58,7 +58,7 @@ cure_rosetta: &cure_rosetta
     さぁ、あなたも私と愛を育んでくださいな
   extra_names:
   attack_messages:
-    - |
+    - |-
       カッチカチの！ロゼッタウォール！
   transform_calls:
     - love_link
@@ -79,7 +79,7 @@ cure_sword: &cure_sword
     あなたの野望を断ち切ってみせる！
   extra_names:
   attack_messages:
-    - |
+    - |-
       ひらめけ！ホーリーソード！
   transform_calls:
     - love_link
@@ -99,7 +99,7 @@ cure_ace: &cure_ace
     あなたのハートを射抜いて差し上げますわ
   extra_names:
   attack_messages:
-    - |
+    - |-
       ときめきなさい！エースショット！
       ばきゅ〜ん！！
   transform_calls:
