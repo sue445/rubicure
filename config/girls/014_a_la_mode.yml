@@ -16,7 +16,7 @@ cure_whip: &cure_whip
   # extra_names:
   attack_messages:
     - |-
-      キラキラキラル・キラキラル！
+      キラキラキラルン！ホイップ・デコレーション！
   transform_calls:
     - cure_la_mode_decoration
 cure_custard: &cure_custard
@@ -37,7 +37,7 @@ cure_custard: &cure_custard
   # extra_names:
   attack_messages:
     - |-
-      キラキラキラル・キラキラル！
+      キラキラキラルン！カスタード・イリュージョン！
   transform_calls:
     - cure_la_mode_decoration
 cure_gelato: &cure_gelato
@@ -58,7 +58,7 @@ cure_gelato: &cure_gelato
   # extra_names:
   attack_messages:
     - |-
-      キラキラキラル・キラキラル！
+      キラキラキラルン！ジェラート・シェイク！
   transform_calls:
     - cure_la_mode_decoration
 cure_macaroon: &cure_macaroon
@@ -79,7 +79,7 @@ cure_macaroon: &cure_macaroon
   # extra_names:
   attack_messages:
     - |-
-      キラキラキラル・キラキラル！
+      キラキラキラルン！マカロン・ジュリエンヌ！にゃ～お☆
   transform_calls:
     - cure_la_mode_decoration
 cure_chocolat: &cure_chocolat
@@ -100,7 +100,7 @@ cure_chocolat: &cure_chocolat
   # extra_names:
   attack_messages:
     - |-
-      キラキラキラル・キラキラル！
+      キラキラキラルン！ショコラ・アロマーゼ！
   transform_calls:
     - cure_la_mode_decoration
 whip:
