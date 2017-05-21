@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.0.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.3...master)
+
+## v1.0.3
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.2...v1.0.3)
+
+* Tweak attack message of Kirakira Precure A La Mode
+  * https://github.com/sue445/rubicure/pull/146
 
 ## v1.0.2
 [full changelog](http://github.com/sue445/rubicure/compare/v1.0.1...v1.0.2)
