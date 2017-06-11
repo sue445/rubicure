@@ -1,5 +1,12 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.0.3...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.4...master)
+
+## v1.0.4
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.3...v1.0.4)
+
+* Fix typo: macaroon -> macaron
+  * https://github.com/sue445/rubicure/issues/148
+  * https://github.com/sue445/rubicure/pull/149
 
 ## v1.0.3
 [full changelog](http://github.com/sue445/rubicure/compare/v1.0.2...v1.0.3)
