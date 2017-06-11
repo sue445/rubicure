@@ -180,7 +180,7 @@ a_la_mode: &a_la_mode
   - cure_whip
   - cure_custard
   - cure_gelato
-  - cure_macaroon
+  - cure_macaron
   - cure_chocolat
 alamode:
   <<: *a_la_mode

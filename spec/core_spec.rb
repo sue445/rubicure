@@ -124,7 +124,7 @@ describe Rubicure::Core do
         Cure.whip,
         Cure.custard,
         Cure.gelato,
-        Cure.macaroon,
+        Cure.macaron,
         Cure.chocolat,
       ].map(&:girl_name)
     end

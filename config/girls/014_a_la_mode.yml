@@ -61,8 +61,8 @@ cure_gelato: &cure_gelato
       キラキラキラルン！ジェラート・シェイク！
   transform_calls:
     - cure_la_mode_decoration
-cure_macaroon: &cure_macaroon
-  girl_name:    cure_macaroon
+cure_macaron: &cure_macaron
+  girl_name:    cure_macaron
   human_name:   琴爪ゆかり
   precure_name: キュアマカロン
   cast_name:    藤田咲
@@ -109,7 +109,7 @@ custard:
   <<: *cure_custard
 gelato:
   <<: *cure_gelato
-macaroon:
-  <<: *cure_macaroon
+macaron:
+  <<: *cure_macaron
 chocolat:
   <<: *cure_chocolat
