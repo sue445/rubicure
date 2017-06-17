@@ -213,7 +213,7 @@ yayoi.attack!
 
 プリキュア！ピースサンダー！！
 
-# 2st transform
+# 2nd transform
 yayoi.transform!
 yayoi.name
 #=> "プリンセスピース"
@@ -258,12 +258,11 @@ Cure.black.dual_aurora_wave!
 闇の力のしもべ達よ！
 とっととお家に帰りなさい！
 
-Cure.luminous.luminous_shining_stream!
+Cure.luminous.shining_stream!
 ルミナス・シャイニングストリーム！
 輝く命、シャイニールミナス！
 光の心と光の意志、すべてを一つにするために！
 
-Cure.bloom.dual_spilitual_power!
 Cure.bloom.dual_spilitual_power!
 デュアル・スピリチュアル・パワー！
 花開け大地に！
