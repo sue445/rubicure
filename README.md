@@ -263,7 +263,7 @@ Cure.luminous.shining_stream!
 輝く命、シャイニールミナス！
 光の心と光の意志、すべてを一つにするために！
 
-Cure.bloom.dual_spilitual_power!
+Cure.bloom.dual_spiritual_power!
 デュアル・スピリチュアル・パワー！
 花開け大地に！
 輝く金の花！ キュアブルーム！
