@@ -16,7 +16,7 @@ rescue LoadError # rubocop:disable Lint/HandleExceptions
 end
 
 module Precure
-  def self.method_missing(name, *args, &block)
+  def self.method_missing(name, *args, &block) # rubocop:disable Style/MethodMissing
     Rubicure::Core.instance.send(name, *args, &block)
   end
 end
