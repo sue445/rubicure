@@ -15,15 +15,9 @@ begin
 rescue LoadError
 end
 
-module Rubicure
-  def self.core
-    Rubicure::Core.instance
-  end
-end
-
 module Precure
   def self.method_missing(name, *args, &block)
-    Rubicure.core.send(name, *args, &block)
+    Rubicure::Core.instance.send(name, *args, &block)
   end
 end
 
