@@ -203,8 +203,8 @@ module Rubicure
         return super if has_key?(method_name)
 
         shortened_name = method_name.to_s.
-                         sub(/\Aprecure_|_precure\z/, "").
-                         sub(/!\z/, "")
+                           sub(/\Aprecure_|_precure\z/, "").
+                           sub(/!\z/, "")
 
         return transform!(*args) if transform_calls.include?(shortened_name)
 
