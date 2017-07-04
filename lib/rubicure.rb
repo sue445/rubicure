@@ -12,7 +12,7 @@ require "rubicure/errors"
 
 begin
   require "backport_dig"
-rescue LoadError
+rescue LoadError # rubocop:disable Lint/HandleExceptions
 end
 
 module Precure
