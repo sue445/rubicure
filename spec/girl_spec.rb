@@ -150,11 +150,13 @@ EOF
 
     context "same object" do
       let(:other_girl) { girl }
+
       it { should be true }
     end
 
     context "copied object" do
       let(:other_girl) { girl.dup }
+
       it { should be true }
     end
 
@@ -168,6 +170,7 @@ EOF
 
     context "other precure" do
       let(:other_girl) { Rubicure::Girl.find(:passion) }
+
       it { should be false }
     end
   end
@@ -217,12 +220,14 @@ EOF
     context "When Cure Lemonade calls metamorphose" do
       let(:girl) { Cure.lemonade }
       let(:transform_call) { "metamorphose" }
+
       it { expect { subject }.not_to raise_error }
     end
 
     context "When Milkey Rose calls sky_rose_translate!" do
       let(:girl) { Milky.rose }
       let(:transform_call) { "sky_rose_translate!" }
+
       it { expect { subject }.not_to raise_error }
     end
 

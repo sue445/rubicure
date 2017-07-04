@@ -9,11 +9,13 @@ describe "Cure" do
 
       context "When peace" do
         let(:girl) { Cure.peace }
+
         it_behaves_like :do_janken
       end
 
       context "When cure_peace" do
         let(:girl) { Cure.cure_peace }
+
         it_behaves_like :do_janken
       end
     end
