@@ -1,4 +1,4 @@
-describe "Cure" do
+describe "Cure" do # rubocop:disable RSpec/DescribeClass
   describe ".peace" do
     describe "#pikarin_janken" do
       subject { girl.pikarin_janken }
@@ -9,11 +9,13 @@ describe "Cure" do
 
       context "When peace" do
         let(:girl) { Cure.peace }
+
         it_behaves_like :do_janken
       end
 
       context "When cure_peace" do
         let(:girl) { Cure.cure_peace }
+
         it_behaves_like :do_janken
       end
     end

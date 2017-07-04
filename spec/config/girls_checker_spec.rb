@@ -1,4 +1,4 @@
-describe "girls_checker" do
+describe "girls_checker" do # rubocop:disable RSpec/DescribeClass
   config_files = Pathname.glob("#{spec_dir}/../config/girls/*.yml")
 
   config_files.each do |config_file|
@@ -14,7 +14,7 @@ describe "girls_checker" do
           end
 
           describe "#attack_messages" do
-            it "should not all end with(\\n)" do
+            it "does not all end with(\\n)" do
               aggregate_failures do
                 Array(girl["attack_messages"]).each do |attack_message|
                   # NOTE: `expect().not_to all( matcher )` is not supported.

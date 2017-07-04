@@ -23,6 +23,11 @@ module Rubicure
       end
     end
 
+    def respond_to_missing?(name, _include_private)
+      unmarked_precure = Rubicure::Series.find(:unmarked)
+      unmarked_precure.respond_to?(name)
+    end
+
     # @return [Series] current precure
     # @raise not onair!
     def now

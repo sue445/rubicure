@@ -16,6 +16,7 @@ script:
 - bundle exec rspec
 - bundle exec codeclimate-test-reporter
 - bundle exec ruby examples/all.rb
+- bundle exec rubocop
 branches:
   only:
   - master

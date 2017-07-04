@@ -25,24 +25,23 @@ module Rubicure
     # @param [Time,Date,String] arg Time, Date or date like String (ex. "2013-12-16")
     def on_air?(arg)
       date = to_date(arg)
-      if respond_to?(:started_date)
-        if respond_to?(:ended_date)
-          # ended title
-          return (started_date..ended_date).cover?(date)
-        else
-          # on air title
-          return started_date <= date
-        end
-      end
 
-      false
+      return false unless respond_to?(:started_date)
+
+      if respond_to?(:ended_date)
+        # ended title
+        (started_date..ended_date).cover?(date)
+      else
+        # on air title
+        started_date <= date
+      end
     end
 
     # @return [Array<Rubicure::Girl>]
     def girls
       unless @girls
         @girls = []
-        if key?(:girls)
+        if has_key?(:girls)
           fetch(:girls).each do |girl_name|
             @girls << Rubicure::Girl.find(girl_name.to_sym)
           end

@@ -1,7 +1,7 @@
 require "rubicure"
 require_relative "./common"
 
-code = <<~RUBY
+code = <<-RUBY
   puts Precure.maho_girls.title
 
   @mirai = Cure.miracle

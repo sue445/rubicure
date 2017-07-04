@@ -4,7 +4,7 @@ module Rubicure
   # Precure girl (ex. Cure Peace, Cure Rosetta, Cure Honey)
   #
   # this is record of "config/girls/*.yml"
-  class Girl < Hash
+  class Girl < Hash # rubocop:disable Metrics/ClassLength
     include Hashie::Extensions::MethodAccess
 
     ATTRIBUTES = [
@@ -199,16 +199,20 @@ module Rubicure
       end
 
       def method_missing(method_name, *args)
+        return super unless respond_to_missing?(method_name, false)
+
+        transform!(*args)
+      end
+
+      def respond_to_missing?(method_name, _include_private)
         # call Hashie::Extensions::MethodAccess#method_missing
-        return super if has_key?(method_name)
+        return false if has_key?(method_name)
 
         shortened_name = method_name.to_s.
-                         sub(/\Aprecure_|_precure\z/, "").
-                         sub(/!\z/, "")
+                           sub(/\Aprecure_|_precure\z/, "").
+                           sub(/!\z/, "")
 
-        return transform!(*args) if transform_calls.include?(shortened_name)
-
-        super
+        transform_calls.include?(shortened_name)
       end
   end
 end

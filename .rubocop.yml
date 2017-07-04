@@ -1,4 +1,14 @@
-inherit_from: ".onkcop.yml"
+inherit_gem:
+  onkcop:
+    - "config/rubocop.yml"
+    - "config/rspec.yml"
 
-Metrics/ClassLength:
-  Max: 120
+AllCops:
+  TargetRubyVersion: 2.2
+
+RSpec/NestedGroups:
+  Enabled: false
+
+# TODO: Remove when drop support ruby 2.2
+Layout/IndentHeredoc:
+  Enabled: false

@@ -41,7 +41,7 @@ describe Rubicure::Series do
 
     let(:series) do
       Rubicure::Series[
-        girls: %w(cure_happy cure_sunny cure_peace cure_march cure_beauty)
+        girls: %w[cure_happy cure_sunny cure_peace cure_march cure_beauty]
       ]
     end
 
@@ -83,6 +83,7 @@ describe Rubicure::Series do
     context "other series" do
       let(:other_series) { Rubicure::Series.find(:dokidoki) }
       let(:other_girl) { Rubicure::Girl.find(:passion) }
+
       it { expect(series === other_series).to be false }
       it { expect(series === other_girl).to be false }
     end
@@ -143,13 +144,11 @@ describe Rubicure::Series do
     let(:series) { Rubicure::Series.find(series_name) }
     let(:series_name) { :splash_star }
 
-    # rubocop:disable Metrics/LineLength
     let(:json) do
       <<-JSON
 {\"series_name\":\"splash_star\",\"title\":\"ふたりはプリキュア Splash☆Star\",\"started_date\":\"2006-02-05\",\"ended_date\":\"2007-01-28\",\"girls\":[\"cure_bloom\",\"cure_egret\"]}
       JSON
     end
-    # rubocop:enable Metrics/LineLength
 
     it { should eq json.squish }
   end
