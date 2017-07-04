@@ -12,7 +12,7 @@ module Cure
         (["チョキ"] * 14) +
         (["パー"] * 15) +
         ["グッチョッパー"]
-      MESSAGE = <<EOF
+      MESSAGE = <<EOF.freeze
 ピカピカピカリン
 ジャンケンポン！
 （%s）
