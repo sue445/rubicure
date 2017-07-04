@@ -1,4 +1,4 @@
-describe "girls_checker" do
+describe "girls_checker" do # rubocop:disable RSpec/DescribeClass
   config_files = Pathname.glob("#{spec_dir}/../config/girls/*.yml")
 
   config_files.each do |config_file|

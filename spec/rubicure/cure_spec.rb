@@ -1,4 +1,4 @@
-describe "Cure" do
+describe "Cure" do # rubocop:disable RSpec/DescribeClass
   describe ".peace" do
     describe "#pikarin_janken" do
       subject { girl.pikarin_janken }
