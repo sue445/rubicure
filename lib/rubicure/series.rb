@@ -42,7 +42,7 @@ module Rubicure
     def girls
       unless @girls
         @girls = []
-        if key?(:girls)
+        if has_key?(:girls)
           fetch(:girls).each do |girl_name|
             @girls << Rubicure::Girl.find(girl_name.to_sym)
           end
