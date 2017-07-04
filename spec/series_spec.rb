@@ -144,14 +144,11 @@ describe Rubicure::Series do
     let(:series) { Rubicure::Series.find(series_name) }
     let(:series_name) { :splash_star }
 
-    # rubocop:disable Metrics/LineLength
     let(:json) do
       <<-JSON
 {\"series_name\":\"splash_star\",\"title\":\"ふたりはプリキュア Splash☆Star\",\"started_date\":\"2006-02-05\",\"ended_date\":\"2007-01-28\",\"girls\":[\"cure_bloom\",\"cure_egret\"]}
       JSON
     end
-
-    # rubocop:enable Metrics/LineLength
 
     it { should eq json.squish }
   end

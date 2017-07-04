@@ -32,9 +32,7 @@ EOF
       humanize!
       @another_human_name ||= @__another_human_name
 
-      # rubocop:disable Style/ParallelAssignment
       self[:human_name], @another_human_name = @another_human_name, self[:human_name]
-      # rubocop:enable Style/ParallelAssignment
 
       self
     end
