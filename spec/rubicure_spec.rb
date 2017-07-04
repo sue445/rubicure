@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe Rubicure do
-  it "should have a version number" do
+  it "has a version number" do
     expect(Rubicure::VERSION).not_to be_nil
   end
 
