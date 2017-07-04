@@ -4,7 +4,7 @@ module Rubicure
   # Precure girl (ex. Cure Peace, Cure Rosetta, Cure Honey)
   #
   # this is record of "config/girls/*.yml"
-  class Girl < Hash
+  class Girl < Hash # rubocop:disable Metrics/ClassLength
     include Hashie::Extensions::MethodAccess
 
     ATTRIBUTES = [
