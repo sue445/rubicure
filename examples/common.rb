@@ -9,7 +9,7 @@ def run(code)
 
     puts "> #{line}"
     sleep 5
-    eval(line)
+    eval(line) # rubocop:disable Security/Eval
     puts ""
     sleep 5
   end
