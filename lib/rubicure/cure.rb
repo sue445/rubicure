@@ -1,9 +1,7 @@
 module Cure
-  def self.method_missing(name, *args)
-    if Rubicure::Girl.valid?(name)
-      Rubicure::Girl.find(name)
-    else
-      super
+  Rubicure::Girl.names.each do |girl_name|
+    define_singleton_method girl_name do
+      Rubicure::Girl.find(girl_name)
     end
   end
 

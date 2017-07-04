@@ -7,12 +7,16 @@ module Rubicure
     include Enumerable
     include Rubicure::Concerns::Util
 
+    Rubicure::Series.names.each do |series_name|
+      define_method series_name do
+        Rubicure::Series.find(series_name)
+      end
+    end
+
     def method_missing(name, *args)
       unmarked_precure = Rubicure::Series.find(:unmarked)
 
-      if Rubicure::Series.valid?(name)
-        Rubicure::Series.find(name)
-      elsif unmarked_precure.respond_to?(name)
+      if unmarked_precure.respond_to?(name)
         unmarked_precure.send(name, *args)
       else
         super
