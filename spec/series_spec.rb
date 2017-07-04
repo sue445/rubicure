@@ -41,7 +41,7 @@ describe Rubicure::Series do
 
     let(:series) do
       Rubicure::Series[
-        girls: %w(cure_happy cure_sunny cure_peace cure_march cure_beauty)
+        girls: %w[cure_happy cure_sunny cure_peace cure_march cure_beauty]
       ]
     end
 

@@ -22,7 +22,7 @@ describe Rubicure::Girl do
   let(:precure_name)   { "キュアピース" }
   let(:cast_name)      { "金元寿子" }
   let(:created_date)   { "2012-02-19" }
-  let(:extra_names)    { %w(プリンセスピース ウルトラピース) }
+  let(:extra_names)    { %w[プリンセスピース ウルトラピース] }
   let(:color)          { "yellow" }
   let(:transform_message) do
     <<EOF
@@ -37,7 +37,7 @@ EOF
       "プリキュアピースサンダーハリケーン！",
     ]
   end
-  let(:transform_calls) { %w(smile_charge) }
+  let(:transform_calls) { %w[smile_charge] }
 
   describe "#name" do
     context "when before transform" do
@@ -263,7 +263,7 @@ EOF
     subject { Rubicure::Girl.colors }
 
     let(:expected) do
-      %i(
+      %i[
         black
         blue
         green
@@ -272,7 +272,7 @@ EOF
         red
         white
         yellow
-      )
+      ]
     end
 
     it { should contain_exactly(*expected) }

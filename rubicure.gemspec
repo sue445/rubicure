@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
 
   spec.files = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
 
-  %w(examples/).each do |exclude_dir|
+  %w[examples/].each do |exclude_dir|
     spec.files.reject! { |filename| filename.start_with?(exclude_dir) }
   end
 
