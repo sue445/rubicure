@@ -1,5 +1,12 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.0.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.5...master)
+
+## v1.0.5
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.4...v1.0.5)
+
+* Support `did_you_mean`
+  * https://github.com/sue445/rubicure/pull/150
+  * https://github.com/sue445/rubicure/issues/147
 
 ## v1.0.4
 [full changelog](http://github.com/sue445/rubicure/compare/v1.0.3...v1.0.4)
