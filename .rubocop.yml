@@ -8,3 +8,7 @@ AllCops:
 
 RSpec/NestedGroups:
   Enabled: false
+
+# TODO: Remove when drop support ruby 2.2
+Layout/IndentHeredoc:
+  Enabled: false
