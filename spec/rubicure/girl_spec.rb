@@ -274,6 +274,7 @@ EOF
         green
         pink
         purple
+        rainbow
         red
         white
         yellow
