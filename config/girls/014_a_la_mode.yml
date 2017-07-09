@@ -103,6 +103,28 @@ cure_chocolat: &cure_chocolat
       キラキラキラルン！ショコラ・アロマーゼ！
   transform_calls:
     - cure_la_mode_decoration
+cure_parfait: &cure_parfait
+  girl_name:    cure_parfait
+  human_name:   キラ星シエル
+  precure_name: キュアパルフェ
+  cast_name:    水瀬いのり
+  color:        rainbow
+  created_date: 2017-07-16 # episode 23
+  birthday: 7/30
+  transform_message: |-
+    キュアラモード・デコレーション！
+    パフェ！
+    夢と希望を！
+    レッツ・ラ・まぜまぜ！
+    キュアパルフェ！できあがり！
+    キラキラ☆プリキュアアラモード！
+  # extra_names:
+  attack_messages:
+    - |-
+      アン！ドゥ！トレビアン！キラクルレインボー！
+      ボナペティ！
+  transform_calls:
+    - cure_la_mode_decoration
 whip:
   <<: *cure_whip
 custard:
@@ -113,3 +135,5 @@ macaron:
   <<: *cure_macaron
 chocolat:
   <<: *cure_chocolat
+parfait:
+  <<: *cure_parfait
