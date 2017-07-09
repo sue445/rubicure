@@ -20,7 +20,6 @@ script:
 branches:
   only:
   - master
-  - develop-1.0.0
 notifications:
   email: false
   slack:
