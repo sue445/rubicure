@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.0.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.6...master)
+
+## v1.0.6
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.5...v1.0.6)
+
+* Add cure parfait
+  * https://github.com/sue445/rubicure/pull/153
 
 ## v1.0.5
 [full changelog](http://github.com/sue445/rubicure/compare/v1.0.4...v1.0.5)
