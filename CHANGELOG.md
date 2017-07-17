@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.0.6...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.7...master)
+
+## v1.0.7
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.6...v1.0.7)
+
+* Fixed that Cure parfait was not included in `Precure.a_la_mode`
+  * https://github.com/sue445/rubicure/pull/154
 
 ## v1.0.6
 [full changelog](http://github.com/sue445/rubicure/compare/v1.0.5...v1.0.6)
