@@ -4,7 +4,7 @@
 ## v1.0.7
 [full changelog](http://github.com/sue445/rubicure/compare/v1.0.6...v1.0.7)
 
-* Fixed that Cure parfait was not included in `Precure.a_la_mode`
+* Fixed. Cure parfait was not included in `Precure.a_la_mode`
   * https://github.com/sue445/rubicure/pull/154
 
 ## v1.0.6
