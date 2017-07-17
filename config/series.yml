@@ -182,6 +182,7 @@ a_la_mode: &a_la_mode
   - cure_gelato
   - cure_macaron
   - cure_chocolat
+  - cure_parfait
 alamode:
   <<: *a_la_mode
 kirakira_precure_a_la_mode:
