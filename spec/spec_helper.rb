@@ -111,11 +111,11 @@ RSpec.configure do |config|
   config.include Delorean
   config.include TestUtil
 
-  config.before(:each) do
+  config.before do
     Rubicure::Girl.sleep_sec = 0
   end
 
-  config.after(:each) do
+  config.after do
     back_to_the_present
   end
 end
