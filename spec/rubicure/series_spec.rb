@@ -1,4 +1,23 @@
 describe Rubicure::Series do
+  let(:series_names) do
+    [
+      :unmarked,
+      :max_heart,
+      :splash_star,
+      :yes,
+      :yes_gogo,
+      :fresh,
+      :heart_catch,
+      :suite,
+      :smile,
+      :dokidoki,
+      :happiness_charge,
+      :go_princess,
+      :maho_girls,
+      :a_la_mode,
+    ]
+  end
+
   describe "#on_air?" do
     subject { series.on_air?(date) }
 
@@ -47,25 +66,6 @@ describe Rubicure::Series do
 
     it { should have_exactly(5).girls }
     it { should all(be_instance_of Rubicure::Girl) }
-  end
-
-  let(:series_names) do
-    [
-      :unmarked,
-      :max_heart,
-      :splash_star,
-      :yes,
-      :yes_gogo,
-      :fresh,
-      :heart_catch,
-      :suite,
-      :smile,
-      :dokidoki,
-      :happiness_charge,
-      :go_princess,
-      :maho_girls,
-      :a_la_mode,
-    ]
   end
 
   # rubocop:disable Style/CaseEquality, Lint/UselessComparison, Style/NilComparison

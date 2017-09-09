@@ -42,6 +42,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "rspec-parameterized", ">= 0.3.2"
   spec.add_development_dependency "rubocop", "0.49.1"
+  spec.add_development_dependency "rubocop-rspec", "1.16.0"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "yard"
 end
