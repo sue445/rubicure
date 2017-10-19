@@ -12,11 +12,11 @@ module Cure
         (["チョキ"] * 14) +
         (["パー"] * 15) +
         ["グッチョッパー"]
-      MESSAGE = <<EOF.freeze
+      MESSAGE = <<JANKEN.freeze
 ピカピカピカリン
 ジャンケンポン！
 （%s）
-EOF
+JANKEN
       def pikarin_janken
         print_by_line(MESSAGE % HANDS.sample)
       end

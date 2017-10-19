@@ -25,11 +25,11 @@ describe Rubicure::Girl do
   let(:extra_names)    { %w[プリンセスピース ウルトラピース] }
   let(:color)          { "yellow" }
   let(:transform_message) do
-    <<EOF
+    <<JANKEN
 プリキュアスマイルチャージ！
 GO! GO! Let's GO ピース！
 ピカピカピカリンジャンケンポン！ キュアピース！
-EOF
+JANKEN
   end
   let(:attack_messages) do
     [
