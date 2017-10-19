@@ -1,5 +1,3 @@
-# coding: utf-8
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "rubicure/version"
@@ -34,15 +32,15 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0.0"
   spec.add_development_dependency "coveralls"
   spec.add_development_dependency "delorean"
+  spec.add_development_dependency "onkcop", "0.51.0.0"
   spec.add_development_dependency "pry-byebug"
-  spec.add_development_dependency "onkcop", "0.49.1.0"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rspec-collection_matchers"
   spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "rspec-parameterized", ">= 0.3.2"
-  spec.add_development_dependency "rubocop", "0.49.1"
-  spec.add_development_dependency "rubocop-rspec", "1.16.0"
+  spec.add_development_dependency "rubocop", "0.51.0"
+  spec.add_development_dependency "rubocop-rspec", "1.19.0"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "yard"
 end
