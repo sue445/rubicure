@@ -10,6 +10,7 @@ describe Rubicure::Movie do
       :sc,
       :stmm,
       :dream_stars,
+      :super_stars,
     ]
   end
 
