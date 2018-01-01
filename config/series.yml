@@ -189,3 +189,15 @@ kirakira_precure_a_la_mode:
   <<: *a_la_mode
 kirakira_precure_alamode:
   <<: *a_la_mode
+#######################################################
+hugtto: &hugtto
+  series_name: hugtto
+  title: ＨＵＧっと！プリキュア
+  started_date: 2018-02-04
+  # ended_date:   2019-01-
+  girls:
+  - cure_yell
+  - cure_ange
+  - cure_etoile
+hugtto_precure:
+  <<: *hugtto
