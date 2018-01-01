@@ -175,7 +175,7 @@ a_la_mode: &a_la_mode
   series_name: a_la_mode
   title: キラキラ☆プリキュアアラモード
   started_date: 2017-02-05
-  # ended_date:   2018-01-
+  ended_date:   2018-01-28
   girls:
   - cure_whip
   - cure_custard
