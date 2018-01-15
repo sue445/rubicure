@@ -39,7 +39,7 @@ require "pry"
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
-Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
+Dir["#{__dir__}/support/**/*.rb"].each { |f| require f }
 
 RSpec.configure do |config|
   # The settings below are suggested to provide a good initial experience
