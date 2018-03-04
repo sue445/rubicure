@@ -1,5 +1,13 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.0.7...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.0...master)
+
+## v1.1.0
+[full changelog](http://github.com/sue445/rubicure/compare/v1.0.7...v1.1.0)
+
+* Add Hugtto Precure
+  * https://github.com/sue445/rubicure/pull/160
+* Add `Precure.super_stars`
+  * https://github.com/sue445/rubicure/pull/161
 
 ## v1.0.7
 [full changelog](http://github.com/sue445/rubicure/compare/v1.0.6...v1.0.7)
