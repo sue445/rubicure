@@ -1,0 +1,74 @@
+cure_yell: &cure_yell
+  girl_name:    cure_yell
+  human_name:   野乃はな
+  precure_name: キュアエール
+  cast_name:    引坂理絵
+  color:        pink
+  created_date: 2018-02-04 # episode 1
+  birthday:
+  transform_message: |-
+    ミライクリスタル！
+    ハートキラっと！
+    は～ぎゅ～～！
+    ぎゅ～！
+    ぎゅ～～！
+    輝く未来を抱きしめて！
+    みんなを応援！元気のプリキュア！キュアエール！
+  # extra_names:
+  attack_messages:
+    - |-
+      フレフレ！ハート・フォー・ユー！
+  transform_calls:
+    - heart_kiratto
+yell:
+  <<: *cure_yell
+
+cure_ange: &cure_ange
+  girl_name:    cure_ange
+  human_name:   薬師寺さあや
+  precure_name: キュアアンジュ
+  cast_name:    本泉莉奈
+  color:        blue
+  created_date: 2018-02-11 # episode 2
+  birthday:
+  transform_message: |-
+    ミライクリスタル！
+    ハートキラっと！
+    は～ぎゅ～～！
+    ぎゅ～！
+    ぎゅ～～！
+    輝く未来を抱きしめて！
+    みんなを癒す！知恵のプリキュア！キュアアンジュ！
+  # extra_names:
+  attack_messages:
+    - |-
+      フレフレ！ハート・フェーザー！
+  transform_calls:
+    - heart_kiratto
+ange:
+  <<: *cure_ange
+
+cure_etoile: &cure_etoile
+  girl_name:    cure_etoile
+  human_name:   輝木ほまれ
+  precure_name: キュアエトワール
+  cast_name:    小倉唯
+  color:        yellow
+  created_date: 2018-03-04 # episode 5
+  birthday:
+  transform_message: |-
+    ミライクリスタル！
+    ハートキラっと！
+    は～ぎゅ～～！
+    ぎゅ～！
+    ぎゅ～～！
+    輝く未来を抱きしめて！
+    みんな輝け！力のプリキュア！キュアエトワール！
+  # extra_names:
+  attack_messages:
+    - |-
+      フレフレ！ハート・スター！
+  transform_calls:
+    - heart_kiratto
+etoile:
+  <<: *cure_etoile

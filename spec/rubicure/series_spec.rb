@@ -15,6 +15,7 @@ describe Rubicure::Series do
       :go_princess,
       :maho_girls,
       :a_la_mode,
+      :hugtto,
     ]
   end
 
