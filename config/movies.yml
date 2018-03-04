@@ -58,3 +58,9 @@ dream_stars: &dream_stars
   started_date: 2017-03-18
 dc:
   <<: *dream_stars
+#######################################################
+super_stars: &super_stars
+  title: 映画プリキュアスーパースターズ！
+  started_date: 2018-03-17
+ss:
+  <<: *super_stars
