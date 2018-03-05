@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.1...master)
+
+## v1.1.1
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.0...v1.1.1)
+
+* Bugfix: Girls of Hugtto precure returns empty birthday despite `#has_birthday?` returns true
+  * https://github.com/sue445/rubicure/pull/164
 
 ## v1.1.0
 [full changelog](http://github.com/sue445/rubicure/compare/v1.0.7...v1.1.0)
