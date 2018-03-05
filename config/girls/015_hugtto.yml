@@ -5,7 +5,7 @@ cure_yell: &cure_yell
   cast_name:    引坂理絵
   color:        pink
   created_date: 2018-02-04 # episode 1
-  birthday:
+  # birthday:
   transform_message: |-
     ミライクリスタル！
     ハートキラっと！
@@ -30,7 +30,7 @@ cure_ange: &cure_ange
   cast_name:    本泉莉奈
   color:        blue
   created_date: 2018-02-11 # episode 2
-  birthday:
+  # birthday:
   transform_message: |-
     ミライクリスタル！
     ハートキラっと！
@@ -55,7 +55,7 @@ cure_etoile: &cure_etoile
   cast_name:    小倉唯
   color:        yellow
   created_date: 2018-03-04 # episode 5
-  birthday:
+  # birthday:
   transform_message: |-
     ミライクリスタル！
     ハートキラっと！
