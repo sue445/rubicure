@@ -23,6 +23,19 @@ describe "girls_checker" do # rubocop:disable RSpec/DescribeClass
               end
             end
           end
+
+          describe "#birthday" do
+            context "has birthday", if: girl.has_key?("birthday") do
+              birthday = girl["birthday"]
+
+              it { expect(birthday).not_to be_blank }
+
+              it "'#{birthday}' is valid date" do
+                ymd = "#{Date.today.year}/#{birthday}"
+                expect(Date.parse(ymd)).to be_a Date
+              end
+            end
+          end
         end
       end
     end
