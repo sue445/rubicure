@@ -28,8 +28,14 @@ module Rubicure
       unmarked_precure.respond_to?(name)
     end
 
-    # @return [Series] current precure
-    # @raise not onair!
+    # get current precure series
+    # @return [Rubicure::Series] current precure
+    #
+    # @raise [NotOnAirError] not onair!
+    #
+    # @example
+    #   Precure.now
+    #   #=> {:series_name=>"go_princess", :title=>"Go!プリンセスプリキュア", :started_date=>Sun, 01 Feb 2015, :girls=>["cure_flora", "cure_mermaid", "cure_twinkle", "cure_scarlet"]}
     def now
       current_time = Time.now
       each_with_series do |series|
@@ -40,8 +46,52 @@ module Rubicure
 
     alias_method :current, :now
 
+    # Get precure all stars
+    #
     # @param [Time,Date,String,Symbol] arg Time, Date or date like String (ex. "2013-12-16")
+    #
     # @return [Array<Rubicure::Girl>]
+    #
+    # @example precure all stars
+    #   Precure.all_stars.count
+    #   Precure.all_stars.map(&:precure_name)
+    #   # returns current precure count and names
+    #
+    #   Precure.all_stars.include?(Cure.echo)
+    #   #=> false
+    #
+    #   Precure.all_stars("2013-10-26").count
+    #   #=> 33
+    #
+    #   Precure.all_stars(:dx).count
+    #   #=> 14
+    #
+    #   Precure.all_stars(:dx2).count
+    #   #=> 17
+    #
+    #   Precure.all_stars(:dx3).count
+    #   #=> 21
+    #
+    #   Precure.all_stars(:new_stage).count
+    #   #=> 29
+    #   Precure.all_stars(:new_stage).include?(Cure.echo)
+    #   #=> true
+    #
+    #   Precure.all_stars(:new_stage2).count
+    #   #=> 32
+    #
+    #   Precure.all_stars(:new_stage3).count
+    #   #=> 37
+    #   Precure.all_stars(:new_stage3).include?(Cure.echo)
+    #   #=> true
+    #
+    #   Precure.all_stars(:spring_carnival).count
+    #   #=> 40
+    #
+    #   Precure.all_stars(:sing_together_miracle_magic).count
+    #   #=> 44
+    #   Precure.all_stars(:sing_together_miracle_magic).include?(Cure.echo)
+    #   #=> true
     def all_stars(arg = Time.current)
       extra_girls = []
 
@@ -66,8 +116,22 @@ module Rubicure
       all_girls(date) - [Cure.echo] + extra_girls
     end
 
+    # Get all precures
+    #
     # @param [Time,Date] arg Time, Date or date like String (ex. "2013-12-16")
-    # @return [Array<Rubicure::Girl>]
+    #
+    # @return [Array<Rubicure::Girl>] all precures
+    #
+    # @example
+    #   Precure.all_girls.count
+    #   Precure.all_girls.map(&:precure_name)
+    #   # returns current precure count and names
+    #
+    #   Precure.all_girls("2013-10-26").count
+    #   #=> 33
+    #
+    #   Precure.all_girls.include?(Cure.echo)
+    #   #=> true
     def all_girls(arg = Time.current)
       date = to_date(arg)
 
@@ -85,6 +149,16 @@ module Rubicure
 
     alias_method :all, :all_girls
 
+    # Get precure dream stars
+    #
+    # @return [Array<Rubicure::Girl>] precure dream stars
+    #
+    # @example
+    #   Precure.dream_stars.count
+    #   #=> 12
+    #
+    #   Precure.dream_stars.map(&:precure_name)
+    #   #=> ["キュアフローラ", "キュアマーメイド", "キュアトゥインクル", "キュアスカーレット", "キュアミラクル", "キュアマジカル", "キュアフェリーチェ", "キュアホイップ", "キュアカスタード", "キュアジェラート", "キュアマカロン", "キュアショコラ"]
     def dream_stars
       return @dream_stars if @dream_stars
       girls = Precure.go_princess.girls + Precure.maho_girls.girls + Precure.a_la_mode.girls
@@ -95,6 +169,16 @@ module Rubicure
       @dream_stars
     end
 
+    # Get precure super stars
+    #
+    # @return [Array<Rubicure::Girl>] precure super stars
+    #
+    # @example
+    #   Precure.super_stars.count
+    #   #=> 12
+    #
+    #   Precure.super_stars.map(&:precure_name)
+    #   #=> ["キュアミラクル", "キュアマジカル", "キュアフェリーチェ", "キュアホイップ", "キュアカスタード", "キュアジェラート", "キュアマカロン", "キュアショコラ", "キュアパルフェ", "キュアエール", "キュアアンジュ", "キュアエトワール"]
     def super_stars
       return @super_stars if @super_stars
       girls = Precure.maho_girls.girls + Precure.a_la_mode.girls + Precure.hugtto.girls

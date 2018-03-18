@@ -24,16 +24,19 @@ module Rubicure
 
     attr_accessor :io
 
+    # @return [Integer]
     def current_state
       @current_state ||= 0
     end
 
+    # @return [Array<String>]
     def state_names
       state_names = [human_name, precure_name]
       state_names += Array.wrap(extra_names) if respond_to?(:extra_names)
       state_names
     end
 
+    # @return [Boolean]
     def ==(other)
       other.is_a?(self.class) && self.human_name == other.human_name
     end
@@ -45,7 +48,28 @@ module Rubicure
     alias_method :to_s, :name
 
     # human -> precure ( -> extra forms ) -> human ...
+    #
+    # @param style [Symbol]
+    #
     # @return [Rubicure::Girl] self
+    #
+    # @example
+    #   yayoi = Cure.peace
+    #
+    #   yayoi.name
+    #   #=> "黄瀬やよい"
+    #
+    #   yayoi.transform!
+    #
+    #   # (レディ？)
+    #   # プリキュア・スマイルチャージ！
+    #   # (ゴー！ゴー！レッツ・ゴー！ピース！！)
+    #   # ピカピカピカリンジャンケンポン！ キュアピース！
+    #   # 5つの光が導く未来！
+    #   # 輝け！スマイルプリキュア！
+    #
+    #   yayoi.name
+    #   #=> "キュアピース"
     def transform!(style = nil)
       if style
         raise "Unknown style: #{style}" unless has_transform_style?(style)
@@ -58,12 +82,34 @@ module Rubicure
       self
     end
 
+    # Rollback to human
+    #
+    # @example
+    #   yayoi = Cure.peace
+    #   yayoi.transform!
+    #   yayoi.name
+    #   #=> "キュアピース"
+    #
+    #   yayoi.humanize!
+    #   yayoi.name
+    #   #=> "黄瀬やよい"
     def humanize!
       @current_state = 0
       @current_transform_style = nil
       self
     end
 
+    # Attack to enemy
+    #
+    # @raise [RequireTransformError] current form is human
+    #
+    # @example
+    #   yayoi = Cure.peace
+    #   yayoi.transform!
+    #
+    #   yayoi.attack!
+    #
+    #   # プリキュア！ピースサンダー！！
     def attack!
       raise RequireTransformError, "require transform" if current_attack_message.blank?
 
@@ -72,6 +118,15 @@ module Rubicure
       current_attack_message
     end
 
+    # Whether `date` is her birthday
+    #
+    # @param date [Date]
+    #
+    # @return [Boolean]
+    #
+    # @example
+    #   Cure.twinkle.birthday?(Date.parse("2015-9-12"))
+    #   #=> true
     def birthday?(date = Date.today)
       return false unless have_birthday?
 
@@ -83,11 +138,24 @@ module Rubicure
       birthday_date == date
     end
 
+    # Whether she has birthday
+    #
+    # @return [Boolean]
+    #
+    # @example
+    #   Cure.peace.have_birthday?
+    #   #=> false
+    #
+    #   Cure.twinkle.has_birthday?
+    #   #=> true
     def have_birthday? # rubocop:disable Naming/PredicateName
       has_key?(:birthday)
     end
     alias_method :has_birthday?, :have_birthday?
 
+    # returns `human_full_name` or `human_name`
+    #
+    # @return [String]
     def full_name
       human_full_name.presence || human_name
     end

@@ -22,12 +22,14 @@ module Precure
 end
 
 module Shiny
+  # @return [Rubicure::Girl] Shiny luminous
   def self.luminous
     Rubicure::Girl.find(:luminous)
   end
 end
 
 module Milky
+  # @return [Rubicure::Girl] Milky rose
   def self.rose
     Rubicure::Girl.find(:rose)
   end

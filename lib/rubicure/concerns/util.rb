@@ -2,7 +2,8 @@ module Rubicure
   module Concerns
     # utility methods
     module Util
-      # @param arg
+      # @param arg [Date,Time,String]
+      #
       # @return [Date] arg is String or Date
       # @return [Time] arg is Time
       # @return [nil] arg is other
