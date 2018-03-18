@@ -10,6 +10,7 @@ module Rubicure
     @config = nil
 
     # @param [Rubicure::Series,Rubicure::Girl] other
+    #
     # @return [Boolean] other is same Rubicure::Series or Rubicure::Series include Rubicure::Girl
     def ===(other)
       case other
@@ -22,7 +23,11 @@ module Rubicure
       end
     end
 
+    # Whether series is on air
+    #
     # @param [Time,Date,String] arg Time, Date or date like String (ex. "2013-12-16")
+    #
+    # @return [Boolean]
     def on_air?(arg)
       date = to_date(arg)
 
@@ -57,6 +62,7 @@ module Rubicure
       girls.each(&block)
     end
 
+    # @return [String] json string
     def to_json(*_args)
       original_hash = {}
       each_without_girls do |k, v|
