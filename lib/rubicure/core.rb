@@ -28,6 +28,8 @@ module Rubicure
       unmarked_precure.respond_to?(name)
     end
 
+    # rubocop:disable Metrics/LineLength
+
     # get current precure series
     # @return [Rubicure::Series] current precure
     #
@@ -43,6 +45,7 @@ module Rubicure
       end
       raise NotOnAirError, "Not on air precure!"
     end
+    # rubocop:enable Metrics/LineLength
 
     alias_method :current, :now
 
