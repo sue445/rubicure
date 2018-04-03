@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.2...master)
+
+## v1.1.2
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.1...v1.1.2)
+
+* Add Cure Etoile Birthday :birthday:
+  * https://github.com/sue445/rubicure/pull/167
 
 ## v1.1.1
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.0...v1.1.1)
