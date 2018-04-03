@@ -55,7 +55,7 @@ cure_etoile: &cure_etoile
   cast_name:    小倉唯
   color:        yellow
   created_date: 2018-03-04 # episode 5
-  # birthday:
+  birthday: 4/8
   transform_message: |-
     ミライクリスタル！
     ハートキラっと！
