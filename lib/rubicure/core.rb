@@ -164,6 +164,7 @@ module Rubicure
     #   #=> ["キュアフローラ", "キュアマーメイド", "キュアトゥインクル", "キュアスカーレット", "キュアミラクル", "キュアマジカル", "キュアフェリーチェ", "キュアホイップ", "キュアカスタード", "キュアジェラート", "キュアマカロン", "キュアショコラ"]
     def dream_stars
       return @dream_stars if @dream_stars
+
       girls = Precure.go_princess.girls + Precure.maho_girls.girls + Precure.a_la_mode.girls
 
       dream_stars_date = Rubicure::Movie.find(:dream_stars).started_date
@@ -184,6 +185,7 @@ module Rubicure
     #   #=> ["キュアミラクル", "キュアマジカル", "キュアフェリーチェ", "キュアホイップ", "キュアカスタード", "キュアジェラート", "キュアマカロン", "キュアショコラ", "キュアパルフェ", "キュアエール", "キュアアンジュ", "キュアエトワール"]
     def super_stars
       return @super_stars if @super_stars
+
       girls = Precure.maho_girls.girls + Precure.a_la_mode.girls + Precure.hugtto.girls
 
       super_stars_date = Rubicure::Movie.find(:super_stars).started_date

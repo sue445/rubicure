@@ -73,6 +73,7 @@ module Rubicure
     def transform!(style = nil)
       if style
         raise "Unknown style: #{style}" unless has_transform_style?(style)
+
         @current_transform_style = style
       end
 
@@ -244,6 +245,7 @@ module Rubicure
 
       def has_transform_style?(style)
         return false unless respond_to?(:transform_styles)
+
         transform_styles.keys.map(&:to_sym).include?(style.to_sym)
       end
 
