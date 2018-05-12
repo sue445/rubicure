@@ -9,6 +9,9 @@ AllCops:
 RSpec/NestedGroups:
   Enabled: false
 
+RSpec/SharedExamples:
+  Enabled: false
+
 # TODO: Remove when drop support ruby 2.2
 Layout/IndentHeredoc:
   Enabled: false

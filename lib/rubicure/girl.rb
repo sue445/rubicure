@@ -73,6 +73,7 @@ module Rubicure
     def transform!(style = nil)
       if style
         raise "Unknown style: #{style}" unless has_transform_style?(style)
+
         @current_transform_style = style
       end
 
@@ -181,7 +182,7 @@ module Rubicure
         @cache ||= {}
         unless @cache[girl_name]
           girl_config = config[girl_name] || {}
-          @cache[girl_name] = Rubicure::Girl[girl_config].tap { |girl| girl.io = $stdout }
+          @cache[girl_name] = Rubicure::Girl[girl_config].tap {|girl| girl.io = $stdout }
         end
 
         @cache[girl_name]
@@ -195,7 +196,7 @@ module Rubicure
       # @return [Array<Symbol>]
       def uniq_names
         config.each_with_object([]) do |(name, girl), uniq_names|
-          uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:precure_name] == girl[:precure_name] }
+          uniq_names << name unless uniq_names.any? {|uniq_name| config[uniq_name][:precure_name] == girl[:precure_name] }
         end
       end
 
@@ -228,7 +229,7 @@ module Rubicure
       # @return [Array<Symbol>]
       def colors
         unless @colors
-          @colors = config.values.each_with_object([]) { |girl, colors| colors << girl[:color].to_sym }.uniq.sort
+          @colors = config.values.each_with_object([]) {|girl, colors| colors << girl[:color].to_sym }.uniq.sort
         end
         @colors
       end
@@ -244,6 +245,7 @@ module Rubicure
 
       def has_transform_style?(style)
         return false unless respond_to?(:transform_styles)
+
         transform_styles.keys.map(&:to_sym).include?(style.to_sym)
       end
 

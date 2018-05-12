@@ -27,7 +27,7 @@ if ENV["CI"]
   end
 end
 
-$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
+$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
 require "rubicure"
 require "rspec"
 require "rspec-parameterized"
@@ -39,7 +39,7 @@ require "pry"
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
-Dir["#{__dir__}/support/**/*.rb"].each { |f| require f }
+Dir["#{__dir__}/support/**/*.rb"].each {|f| require f }
 
 RSpec.configure do |config|
   # The settings below are suggested to provide a good initial experience

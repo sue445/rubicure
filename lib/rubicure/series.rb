@@ -81,7 +81,7 @@ module Rubicure
       def uniq_names
         uniq_names = []
         config.each do |name, series|
-          uniq_names << name unless uniq_names.any? { |uniq_name| config[uniq_name][:title] == series[:title] }
+          uniq_names << name unless uniq_names.any? {|uniq_name| config[uniq_name][:title] == series[:title] }
         end
         uniq_names
       end
@@ -116,7 +116,7 @@ module Rubicure
         @cache ||= {}
         unless @cache[series_name]
           series_config = config[series_name] || {}
-          series_config.reject! { |_k, v| v.nil? }
+          series_config.reject! {|_k, v| v.nil? }
 
           @cache[series_name] = Rubicure::Series[series_config]
         end

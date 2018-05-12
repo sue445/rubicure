@@ -1,4 +1,4 @@
-lib = File.expand_path("../lib", __FILE__)
+lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "rubicure/version"
 
@@ -17,10 +17,10 @@ Gem::Specification.new do |spec|
   spec.files = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
 
   %w[examples/].each do |exclude_dir|
-    spec.files.reject! { |filename| filename.start_with?(exclude_dir) }
+    spec.files.reject! {|filename| filename.start_with?(exclude_dir) }
   end
 
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.executables   = spec.files.grep(%r{^bin/}) {|f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
@@ -32,15 +32,15 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0.0"
   spec.add_development_dependency "coveralls"
   spec.add_development_dependency "delorean"
-  spec.add_development_dependency "onkcop", "0.52.1.1"
+  spec.add_development_dependency "onkcop", "0.53.0.0"
   spec.add_development_dependency "pry-byebug"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rspec-collection_matchers"
   spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "rspec-parameterized", ">= 0.3.2"
-  spec.add_development_dependency "rubocop", "0.52.1"
-  spec.add_development_dependency "rubocop-rspec", "1.23.0"
+  spec.add_development_dependency "rubocop", "0.53.0"
+  spec.add_development_dependency "rubocop-rspec", "1.25.1"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "yard"
 end
