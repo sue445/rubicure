@@ -112,7 +112,7 @@ module Rubicure
         date = movie.started_date
 
         if movie.has_key?(:extra_girls)
-          extra_girls = movie.extra_girls.map { |girl_name| Rubicure::Girl.find(girl_name.to_sym) }
+          extra_girls = movie.extra_girls.map {|girl_name| Rubicure::Girl.find(girl_name.to_sym) }
         end
       end
 
@@ -147,7 +147,7 @@ module Rubicure
         @all_girls.uniq!(&:human_name)
       end
 
-      @all_girls.select { |girl| girl.created_date && girl.created_date <= date }
+      @all_girls.select {|girl| girl.created_date && girl.created_date <= date }
     end
 
     alias_method :all, :all_girls
@@ -167,7 +167,7 @@ module Rubicure
       girls = Precure.go_princess.girls + Precure.maho_girls.girls + Precure.a_la_mode.girls
 
       dream_stars_date = Rubicure::Movie.find(:dream_stars).started_date
-      @dream_stars = girls.select { |girl| girl.created_date && girl.created_date <= dream_stars_date }
+      @dream_stars = girls.select {|girl| girl.created_date && girl.created_date <= dream_stars_date }
 
       @dream_stars
     end
@@ -187,7 +187,7 @@ module Rubicure
       girls = Precure.maho_girls.girls + Precure.a_la_mode.girls + Precure.hugtto.girls
 
       super_stars_date = Rubicure::Movie.find(:super_stars).started_date
-      @super_stars = girls.select { |girl| girl.created_date && girl.created_date <= super_stars_date }
+      @super_stars = girls.select {|girl| girl.created_date && girl.created_date <= super_stars_date }
 
       @super_stars
     end
