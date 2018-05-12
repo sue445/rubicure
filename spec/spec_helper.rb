@@ -27,7 +27,7 @@ if ENV["CI"]
   end
 end
 
-$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 require "rubicure"
 require "rspec"
 require "rspec-parameterized"
