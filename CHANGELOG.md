@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.3...master)
+
+## v1.1.3
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.2...v1.1.3)
+
+* Add birthdays of Cure Yell(Hana) and Cure Ange(Saaya) :birthday:
+  * https://github.com/sue445/rubicure/pull/169
 
 ## v1.1.2
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.1...v1.1.2)
