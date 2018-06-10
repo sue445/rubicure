@@ -72,3 +72,55 @@ cure_etoile: &cure_etoile
     - heart_kiratto
 etoile:
   <<: *cure_etoile
+
+cure_macherie: &cure_macherie
+  girl_name:    cure_macherie
+  human_name:   愛崎えみる
+  precure_name: キュアマシェリ
+  cast_name:    田村奈央
+  color:        red
+  created_date: 2018-06-17 # episode 20
+  birthday: 7/15
+  transform_message: |-
+    ミライクリスタル！
+    ハートキラっと！
+    は～ぎゅ～～！
+    ぎゅ～！
+    ぎゅ～～！
+    輝く未来を抱きしめて！
+    みんな大好き！愛のプリキュア！キュアマシェリ！
+  # extra_names:
+  attack_messages:
+    - |-
+      Are you ready?
+      フレフレ！ハート・ソング！
+  transform_calls:
+    - heart_kiratto
+macherie:
+  <<: *cure_macherie
+
+cure_amour: &cure_amour
+  girl_name:    cure_amour
+  human_name:   ルールー・アムール
+  precure_name: キュアアムール
+  cast_name:    田村ゆかり
+  color:        red
+  created_date: 2018-06-17 # episode 20
+  birthday: 9/23
+  transform_message: |-
+    ミライクリスタル！
+    ハートキラっと！
+    は～ぎゅ～～！
+    ぎゅ～！
+    ぎゅ～～！
+    輝く未来を抱きしめて！
+    みんな大好き！愛のプリキュア！キュアアムール！
+  # extra_names:
+  attack_messages:
+    - |-
+      Are you ready?
+      フレフレ！ハート・ダンス！
+  transform_calls:
+    - heart_kiratto
+amour:
+  <<: *cure_amour
