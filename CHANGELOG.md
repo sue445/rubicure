@@ -1,5 +1,13 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.5...master)
+
+## v1.1.5
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.4...v1.1.5)
+
+* Fixed. `Precure.hugtto` doesn't contains macherie and amour
+  * https://github.com/sue445/rubicure/pull/171
+* Fixed. cure amour color
+  * https://github.com/sue445/rubicure/pull/172
 
 ## v1.1.4
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.3...v1.1.4)
