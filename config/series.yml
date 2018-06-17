@@ -199,5 +199,7 @@ hugtto: &hugtto
   - cure_yell
   - cure_ange
   - cure_etoile
+  - cure_macherie
+  - cure_amour
 hugtto_precure:
   <<: *hugtto
