@@ -104,7 +104,7 @@ cure_amour: &cure_amour
   human_name:   ルールー・アムール
   precure_name: キュアアムール
   cast_name:    田村ゆかり
-  color:        red
+  color:        purple
   created_date: 2018-06-17 # episode 20
   birthday: 9/23
   transform_message: |-
