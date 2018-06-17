@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.3...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.4...master)
+
+## v1.1.4
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.3...v1.1.4)
+
+* Add cure macherie and cure amour
+  * https://github.com/sue445/rubicure/pull/170
 
 ## v1.1.3
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.2...v1.1.3)
