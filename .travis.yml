@@ -18,6 +18,7 @@ script:
 - bundle exec codeclimate-test-reporter
 - bundle exec ruby examples/all.rb
 - bundle exec rubocop
+- bundle exec rubydoctest README.md
 branches:
   only:
   - master
