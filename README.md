@@ -91,6 +91,18 @@ Or install it yourself as:
 >> Precure.happiness_charge.title
 => "ハピネスチャージプリキュア！"
 
+>> Precure.go_princess.title
+=> "Go!プリンセスプリキュア"
+
+>> Precure.maho_girls.title
+=> "魔法つかいプリキュア！"
+
+>> Precure.a_la_mode.title
+=> "キラキラ☆プリキュアアラモード"
+
+>> Precure.hugtto.title
+=> "ＨＵＧっと！プリキュア"
+
 >> Precure.dokidoki
 => {:series_name=>"dokidoki", :title=>"ドキドキ！プリキュア", :started_date=>Sun, 03 Feb 2013, :ended_date=>Sun, 26 Jan 2014, :girls=>["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
 ```
@@ -336,6 +348,31 @@ L! O! V! E!
 夜空にきらめく希望の星！キュアフォーチュン！
 ハピネス注入！幸せチャージ！
 ハピネスチャージプリキュア！
+
+>> Cure.flora.princess_engage!
+プリキュア！プリンセスエンゲージ！
+咲き誇る花のプリンセス！キュアフローラ！
+強く、やさしく、美しく！
+Go!プリンセスプリキュア！
+冷たい檻に閉ざされた夢、返していただきますわ！
+お覚悟はよろしくて？
+
+>> Cure.whip.cure_la_mode_decoration!
+キュアラモード・デコレーション！
+ショートケーキ！
+元気と笑顔を！
+レッツ・ラ・まぜまぜ！
+キュアホイップ！できあがり！
+キラキラ☆プリキュアアラモード！
+
+>> Cure.yell.heart_kiratto!
+ミライクリスタル！
+ハートキラっと！
+は～ぎゅ～～！
+ぎゅ～！
+ぎゅ～～！
+輝く未来を抱きしめて！
+みんなを応援！元気のプリキュア！キュアエール！
 ```
 
 ### When [Maho Girls PreCure!](https://en.wikipedia.org/wiki/Maho_Girls_PreCure!)
