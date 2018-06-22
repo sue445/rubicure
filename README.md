@@ -17,6 +17,11 @@ Inspired by [Acme::PrettyCure](http://perl-users.jp/articles/advent-calendar/201
 
 [examples/maho_girls.rb](examples/maho_girls.rb)
 
+## Supporting
+see followings
+
+* [config/girls/](config/girls/)
+
 ## Requirements
 
 * ruby >= 2.2.2
