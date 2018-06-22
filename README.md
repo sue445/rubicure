@@ -617,13 +617,13 @@ Cure.happy.pink?
 Rubicure::Girl.colors
 #=> [:black, :blue, :green, :pink, :purple, :red, :white, :yellow]
 
-Precure.all_stars.select(&:pink?).map(&:precure_name)
+Precure.all_girls.select(&:pink?).map(&:precure_name)
 #=> ["キュアブルーム", "キュアドリーム", "キュアピーチ", "キュアブロッサム", "キュアメロディ", "キュアハッピー", "キュアハート", "キュアラブリー"]
 
-Precure.all_stars.select(&:yellow?).map(&:precure_name)
+Precure.all_girls.select(&:yellow?).map(&:precure_name)
 #=> ["シャイニールミナス", "キュアレモネード", "キュアパイン", "キュアサンシャイン", "キュアミューズ", "キュアピース", "キュアロゼッタ", "キュアハニー"]
 
-Precure.all_stars.group_by{ |girl| girl.color }.map{ |color, girls| [color, girls.count] }.sort_by{ |color, girl_count| girl_count }.reverse
+Precure.all_girls.group_by{ |girl| girl.color }.map{ |color, girls| [color, girls.count] }.sort_by{ |color, girl_count| girl_count }.reverse
 #=> [["pink", 9], ["yellow", 9], ["blue", 8], ["purple", 4], ["red", 4], ["white", 3], ["green", 2], ["black", 1]]
 ```
 
@@ -645,10 +645,10 @@ Cure.twinkle.birthday?
 Cure.twinkle.birthday?(Date.parse("2015-9-12"))
 #=> true
 
-Precure.all_stars.select(&:have_birthday?).map(&:human_name)
+Precure.all_girls.select(&:have_birthday?).map(&:human_name)
 #=> ["美墨なぎさ", "雪城ほのか", "九条ひかり", "日向咲", "美翔舞", "相田マナ", "菱川六花", "四葉ありす", "剣崎真琴", "春野はるか", "海藤みなみ", "天ノ川きらら", "紅城トワ"]
 
-Precure.all_stars.select(&:have_birthday?).map(&:human_name).count
+Precure.all_girls.select(&:have_birthday?).map(&:human_name).count
 #=> 13
 ```
 
