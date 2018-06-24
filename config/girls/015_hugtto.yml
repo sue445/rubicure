@@ -118,7 +118,7 @@ cure_amour: &cure_amour
   # extra_names:
   attack_messages:
     - |-
-      Are you ready?
+      いきます！
       フレフレ！ハート・ダンス！
   transform_calls:
     - heart_kiratto
