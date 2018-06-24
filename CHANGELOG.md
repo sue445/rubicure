@@ -1,5 +1,14 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.6...master)
+
+## v1.1.6
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.5...v1.1.6)
+
+* Update example code
+  * https://github.com/sue445/rubicure/pull/173
+  * https://github.com/sue445/rubicure/pull/174
+* Fix typo
+  * https://github.com/sue445/rubicure/pull/175
 
 ## v1.1.5
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.4...v1.1.5)
