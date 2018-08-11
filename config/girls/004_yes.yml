@@ -36,6 +36,8 @@ cure_rouge:  &cure_rouge
     - |-
       純情乙女の炎の力、受けてみなさい！
       プリキュア！ファイヤー・ストライク！
+  transform_calls:
+    - metamorphose
 cure_lemonade:  &cure_lemonade
   girl_name:    cure_lemonade
   human_name:   春日野うらら
