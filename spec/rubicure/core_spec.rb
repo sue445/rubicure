@@ -22,14 +22,14 @@ describe Rubicure::Core do
   end
 
   describe "#each_with_series" do
-    before do
-      @expected_series = []
-      Rubicure::Series.uniq_names.each do |series_name|
-        @expected_series << Rubicure::Series.find(series_name)
+    it "enumerate order by series_name" do
+      actual = []
+      instance.each_with_series do |series|
+        actual << series.series_name
       end
-    end
 
-    it { expect {|b| instance.each_with_series(&b) }.to yield_successive_args(*@expected_series) }
+      expect(actual).to eq Rubicure::Series.uniq_names.map(&:to_s)
+    end
   end
 
   describe "#all_stars" do
