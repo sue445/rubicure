@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "onkcop", "0.53.0.0"
   spec.add_development_dependency "pry-byebug"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rspec", ">= 3.8.0"
   spec.add_development_dependency "rspec-collection_matchers"
   spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "rspec-parameterized", ">= 0.3.2"
