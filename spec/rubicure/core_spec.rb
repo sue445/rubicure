@@ -71,6 +71,8 @@ describe Rubicure::Core do
 
         :stmm                        | 44 | true
         :sing_together_miracle_magic | 44 | true
+
+        :memories | 55 | false
       end
 
       with_them do
