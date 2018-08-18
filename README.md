@@ -489,6 +489,9 @@ When `Rubicure::Girl` has `human_full_name` (i.e. another `human_name`), she ret
 => 44
 >> Precure.all_stars(:sing_together_miracle_magic).include?(Cure.echo)
 => true
+
+>> Precure.all_stars(:memories).count
+=> 55
 ```
 
 and [more aliases!](config/movies.yml)
