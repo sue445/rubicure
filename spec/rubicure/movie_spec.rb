@@ -11,6 +11,7 @@ describe Rubicure::Movie do
       :stmm,
       :dream_stars,
       :super_stars,
+      :memories,
     ]
   end
 

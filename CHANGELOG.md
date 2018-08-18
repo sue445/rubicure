@@ -3,6 +3,8 @@
 
 * Add transform_calls to cure_rouge
   * https://github.com/sue445/rubicure/pull/178
+* Add `Precure.all_stars(:memories)`
+  * https://github.com/sue445/rubicure/pull/181
 
 ## v1.1.6
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.5...v1.1.6)

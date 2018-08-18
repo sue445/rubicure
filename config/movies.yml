@@ -64,3 +64,7 @@ super_stars: &super_stars
   started_date: 2018-03-17
 ss:
   <<: *super_stars
+#######################################################
+memories: &memories
+  title: 映画ＨＵＧっと！プリキュア♡ふたりはプリキュア オールスターズメモリーズ
+  started_date: 2018-10-27
