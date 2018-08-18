@@ -1,5 +1,8 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.6...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.7...master)
+
+## v1.1.7
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.6...v1.1.7)
 
 * Add transform_calls to cure_rouge
   * https://github.com/sue445/rubicure/pull/178
