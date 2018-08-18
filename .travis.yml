@@ -15,7 +15,7 @@ before_script:
 - export CI=true
 script:
 - bundle exec rspec
-- bundle exec codeclimate-test-reporter
+- bundle exec codeclimate-test-reporter || true
 - bundle exec ruby examples/all.rb
 - bundle exec rubocop
 - bundle exec rubydoctest README.md
