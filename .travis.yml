@@ -1,15 +1,15 @@
 language: ruby
 rvm:
   - 2.2.2
-  - 2.3.3
-  - 2.4.1
-  - 2.5.0
+  - 2.3
+  - 2.4
+  - 2.5
   - ruby-head
 bundler_args: "--jobs=2"
 cache: bundler
 before_install:
   - gem update --system --no-document
-  - gem install bundler -v 1.16.1 --no-document
+  - gem install bundler --no-document
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
