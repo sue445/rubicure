@@ -4,7 +4,7 @@ rvm:
   - 2.3
   - 2.4
   - 2.5
-  - 2.6.0
+  - 2.6
   - ruby-head
 bundler_args: "--jobs=2"
 cache: bundler
@@ -31,6 +31,9 @@ notifications:
 matrix:
   allow_failures:
     - rvm: ruby-head
+  include:
+    - rvm: 2.6
+      env: RUBYOPT="--jit"
 sudo: false
 env:
   global:
