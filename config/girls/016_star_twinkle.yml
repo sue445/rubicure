@@ -1,0 +1,123 @@
+cure_star: &cure_star
+  girl_name:    cure_star
+  human_name:   星奈ひかる
+  precure_name: キュアスター
+  cast_name:    成瀬瑛美
+  color:        pink
+  created_date: 2019-02-03 # episode 1
+  birthday:     4/12
+  transform_message: |-
+    スターカラーペンダント！
+    カラーチャージ！
+    煌めくー
+    星の力でー
+    憧れのー
+    私えがくよー
+    トゥインクル！トゥインクル！プリキュア！
+    トゥインクル！トゥインクル！プリキュア！
+    トゥインクル！トゥインクル！プリキュア！
+    スター☆トゥインクル！
+    スター☆トゥインクル！プリキュア！
+    あー！
+    宇宙に輝くキラキラ星！キュアスター！
+  # extra_names:
+  attack_messages:
+    - |-
+      プリキュア！スターパンチ！
+  transform_calls:
+    - color_charge
+star:
+  <<: *cure_star
+
+cure_milky: &cure_milky
+  girl_name:    cure_milky
+  human_name:   羽衣ララ
+  precure_name: キュアミルキー
+  cast_name:    小原好美
+  color:        green
+  created_date: 2019-02-10 # episode 2
+  birthday:     7/7
+  transform_message: |-
+    スターカラーペンダント！
+    カラーチャージ！
+    煌めくー
+    星の力でー
+    憧れのー
+    私えがくよー
+    トゥインクル！トゥインクル！プリキュア！
+    トゥインクル！トゥインクル！プリキュア！
+    トゥインクル！トゥインクル！プリキュア！
+    スター☆トゥインクル！
+    スター☆トゥインクル！プリキュア！
+    あー！
+    天にあまねくミルキーウェイ！キュアミルキー！
+  # extra_names:
+  attack_messages:
+    - |-
+      プリキュア！ミルキーショック！
+  transform_calls:
+    - color_charge
+milky:
+  <<: *cure_milky
+
+cure_soleil: &cure_soleil
+  girl_name:    cure_soleil
+  human_name:   天宮えれな
+  precure_name: キュアソレイユ
+  cast_name:    安野希世乃
+  color:        yellow
+  created_date: 2019-02-24 # episode 4
+  birthday:     9/8
+  transform_message: |-
+    スターカラーペンダント！
+    カラーチャージ！
+    煌めくー
+    星の力でー
+    憧れのー
+    私えがくよー
+    トゥインクル！トゥインクル！プリキュア！
+    トゥインクル！トゥインクル！プリキュア！
+    トゥインクル！トゥインクル！プリキュア！
+    スター☆トゥインクル！
+    スター☆トゥインクル！プリキュア！
+    あー！
+    宇宙を照らす！灼熱のきらめき！キュアソレイユ！
+  # extra_names:
+  attack_messages:
+    - |-
+      プリキュア！ソレイユシュート！
+  transform_calls:
+    - color_charge
+soleil:
+  <<: *cure_soleil
+
+cure_selene: &cure_selene
+  girl_name:    cure_selene
+  human_name:   香久矢まどか
+  precure_name: キュアセレーネ
+  cast_name:    小松未可子
+  color:        purple
+  created_date: 2019-03-03 # episode 5
+  birthday: 11/23
+  transform_message: |-
+    スターカラーペンダント！
+    カラーチャージ！
+    煌めくー
+    星の力でー
+    憧れのー
+    私えがくよー
+    トゥインクル！トゥインクル！プリキュア！
+    トゥインクル！トゥインクル！プリキュア！
+    トゥインクル！トゥインクル！プリキュア！
+    スター☆トゥインクル！
+    スター☆トゥインクル！プリキュア！
+    あー！
+    夜空に輝く！神秘の月あかり！キュアセレーネ！
+  # extra_names:
+  attack_messages:
+    - |-
+      プリキュア！セレーネアロー！
+  transform_calls:
+    - color_charge
+selene:
+  <<: *cure_selene
