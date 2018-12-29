@@ -34,6 +34,8 @@ matrix:
   include:
     - rvm: 2.6
       env: RUBYOPT="--jit"
+    - rvm: ruby-head
+      env: RUBYOPT="--jit"
 sudo: false
 env:
   global:
