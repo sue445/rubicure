@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.7...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.8...master)
+
+## v1.1.8
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.7...v1.1.8)
+
+* Add the endday of Hugtto Precure :cry:
+  * https://github.com/sue445/rubicure/pull/189
 
 ## v1.1.7
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.6...v1.1.7)
