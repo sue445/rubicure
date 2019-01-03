@@ -9,7 +9,8 @@ rvm:
 bundler_args: "--jobs=2"
 cache: bundler
 before_install:
-  - gem install bundler --no-document
+  - travis_retry gem update --system || travis_retry gem update --system 2.7.8
+  - travis_retry gem install bundler --no-document || travis_retry gem install bundler --no-document -v 1.17.3
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
