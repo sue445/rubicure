@@ -1,5 +1,13 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.8...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.9...master)
+
+## v1.1.9
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.8...v1.1.9)
+
+* Changed Hugtto precure EndDate to 2019-01-27
+  * https://github.com/sue445/rubicure/pull/193
+* Changed Cure magical's color to purple
+  * https://github.com/sue445/rubicure/pull/195
 
 ## v1.1.8
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.7...v1.1.8)
