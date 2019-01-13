@@ -80,7 +80,7 @@ cure_magical: &cure_magical
   human_name:   十六夜リコ
   precure_name: キュアマジカル
   cast_name:    堀江由衣
-  color:        blue
+  color:        purple
   created_date: 2016-02-07 # episode 1
   birthday: 11/12
   extra_names:
@@ -90,7 +90,7 @@ cure_magical: &cure_magical
     diamond:
       girl_name:    cure_magical_diamond
       precure_name: キュアマジカル（ダイヤスタイル）
-      color:        blue
+      color:        purple
       created_date: 2016-02-07 # episode 1
       transform_message: |-
         キュアップ・ラパパ！　ダイヤ！
