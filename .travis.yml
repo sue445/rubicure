@@ -18,10 +18,21 @@ before_script:
 script:
   - bundle exec rspec
   - bundle exec ruby examples/all.rb
-  - bundle exec rubocop
-  - bundle exec rubydoctest README.md
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+stages:
+  - test
+  - lint
+jobs:
+  include:
+    - stage: lint
+      rvm: 2.2.2
+      name: rubocop
+      script: bundle exec rubocop
+    - stage: lint
+      rvm: 2.2.2
+      name: rubydoctest
+      script: bundle exec rubydoctest README.md
 branches:
   only:
     - master
@@ -32,6 +43,7 @@ notifications:
 matrix:
   allow_failures:
     - rvm: ruby-head
+    - name: rubydoctest # TODO: Remove this after v1.2.0+
   include:
     - rvm: 2.6
       env: RUBYOPT="--jit"
