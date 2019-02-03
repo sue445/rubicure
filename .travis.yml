@@ -43,7 +43,6 @@ notifications:
 matrix:
   allow_failures:
     - rvm: ruby-head
-    - name: rubydoctest # TODO: Remove this after v1.2.0+
   include:
     - rvm: 2.6
       env: RUBYOPT="--jit"
