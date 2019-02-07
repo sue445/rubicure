@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.9...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.10...master)
+
+## v1.1.10
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.9...v1.1.10)
+
+* Fix typo in cure muse's attack message
+  * https://github.com/sue445/rubicure/pull/199
 
 ## v1.1.9
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.8...v1.1.9)
