@@ -195,6 +195,30 @@ module Rubicure
     end
     alias_method :superstars, :super_stars
 
+    # rubocop:disable Metrics/LineLength
+
+    # Get precure miracle universe
+    #
+    # @return [Array<Rubicure::Girl>] precure miracle universe
+    #
+    # @example
+    #   Precure.miracle_universe.count
+    #   #=> 15
+    #
+    #   Precure.miracle_universe.map(&:precure_name)
+    #   #=> ["キュアホイップ", "キュアカスタード", "キュアジェラート", "キュアマカロン", "キュアショコラ", "キュアパルフェ", "キュアエール", "キュアアンジュ", "キュアエトワール", "キュアマシェリ", "キュアアムール", "キュアスター", "キュアミルキー", "キュアソレイユ", "キュアセレーネ"]
+    def miracle_universe
+      return @miracle_universe if @miracle_universe
+
+      girls = Precure.a_la_mode.girls + Precure.hugtto.girls + Precure.star_twinkle.girls
+
+      miracle_universe_date = Rubicure::Movie.find(:miracle_universe).started_date
+      @miracle_universe = girls.select {|girl| girl.created_date && girl.created_date <= miracle_universe_date }
+
+      @miracle_universe
+    end
+    # rubocop:enable Metrics/LineLength
+
     # iterate with :unmarked, :max_heart, ...
     #
     # @yield series

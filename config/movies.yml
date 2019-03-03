@@ -68,3 +68,7 @@ ss:
 memories: &memories
   title: 映画ＨＵＧっと！プリキュア♡ふたりはプリキュア オールスターズメモリーズ
   started_date: 2018-10-27
+#######################################################
+miracle_universe: &miracle_universe
+  title: 映画プリキュアミラクルユニバース
+  started_date: 2019-03-16
