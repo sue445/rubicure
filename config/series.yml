@@ -203,3 +203,16 @@ hugtto: &hugtto
   - cure_amour
 hugtto_precure:
   <<: *hugtto
+#######################################################
+star_twinkle: &star_twinkle
+  series_name: star_twinkle
+  title: スター☆トゥインクルプリキュア
+  started_date: 2019-02-03
+  # ended_date:   2020-01-
+  girls:
+    - cure_star
+    - cure_milky
+    - cure_soleil
+    - cure_selene
+star_twinkle_precure:
+  <<: *star_twinkle

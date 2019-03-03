@@ -16,6 +16,7 @@ describe Rubicure::Series do
       :maho_girls,
       :a_la_mode,
       :hugtto,
+      :star_twinkle,
     ]
   end
 
