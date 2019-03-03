@@ -12,6 +12,7 @@ describe Rubicure::Movie do
       :dream_stars,
       :super_stars,
       :memories,
+      :miracle_universe,
     ]
   end
 

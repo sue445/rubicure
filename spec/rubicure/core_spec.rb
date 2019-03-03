@@ -156,4 +156,30 @@ describe Rubicure::Core do
 
     it { should contain_exactly(*super_stars_girl_names) }
   end
+
+  describe "#miracle_universe" do
+    subject { Precure.miracle_universe.map(&:girl_name) }
+
+    let(:miracle_universe_girl_names) do
+      [
+        Cure.whip,
+        Cure.custard,
+        Cure.gelato,
+        Cure.macaron,
+        Cure.chocolat,
+        Cure.parfait,
+        Cure.yell,
+        Cure.ange,
+        Cure.etoile,
+        Cure.macherie,
+        Cure.amour,
+        Cure.star,
+        Cure.milky,
+        Cure.soleil,
+        Cure.selene,
+      ].map(&:girl_name)
+    end
+
+    it { should contain_exactly(*miracle_universe_girl_names) }
+  end
 end
