@@ -1,5 +1,13 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.1.10...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.0...master)
+
+## v1.2.0
+[full changelog](http://github.com/sue445/rubicure/compare/v1.1.10...v1.2.0)
+
+* Add Star:star:Twinkle Precure
+  * https://github.com/sue445/rubicure/pull/190
+* Impl `Precure.miracle_universe`
+  * https://github.com/sue445/rubicure/pull/200
 
 ## v1.1.10
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.9...v1.1.10)
