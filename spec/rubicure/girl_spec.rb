@@ -341,6 +341,7 @@ JANKEN
   describe "#reiwa?" do
     subject { girl.reiwa? }
 
+    # TODO: Add reiwa precure test after cure cosmo is added
     it { should eq false }
   end
 end
