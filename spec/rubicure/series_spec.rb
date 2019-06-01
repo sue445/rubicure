@@ -154,4 +154,38 @@ describe Rubicure::Series do
 
     it { should eq json.squish }
   end
+
+  describe "#heisei?" do
+    subject { series.heisei? }
+
+    using RSpec::Parameterized::TableSyntax
+
+    let(:series) { Rubicure::Series.find(series_name) }
+
+    where(:series_name, :expected) do
+      :hugtto       | true
+      :star_twinkle | true
+    end
+
+    with_them do
+      it { should eq expected }
+    end
+  end
+
+  describe "#reiwa?" do
+    subject { series.reiwa? }
+
+    using RSpec::Parameterized::TableSyntax
+
+    let(:series) { Rubicure::Series.find(series_name) }
+
+    where(:series_name, :expected) do
+      :hugtto       | false
+      :star_twinkle | true
+    end
+
+    with_them do
+      it { should eq expected }
+    end
+  end
 end

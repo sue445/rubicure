@@ -6,6 +6,8 @@ module Rubicure
     include Rubicure::Concerns::Util
     include Enumerable
 
+    using Rubicure::Concerns::Gengou
+
     @cache = {}
     @config = nil
 
@@ -69,6 +71,19 @@ module Rubicure
         original_hash[k] = v
       end
       original_hash.to_json
+    end
+
+    # Whether Heisei precure
+    def heisei?
+      started_date.heisei? || ended_date.heisei?
+    end
+
+    # Whether Reiwa precure
+    def reiwa?
+      # TODO: Remove after StarTwinkle Precure is finished
+      return true unless has_key?(:ended_date)
+
+      started_date.reiwa? || ended_date.reiwa?
     end
 
     class << self

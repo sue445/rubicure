@@ -21,7 +21,7 @@ describe Rubicure::Girl do
   let(:human_name)     { "黄瀬やよい" }
   let(:precure_name)   { "キュアピース" }
   let(:cast_name)      { "金元寿子" }
-  let(:created_date)   { "2012-02-19" }
+  let(:created_date)   { date("2012-02-19") }
   let(:extra_names)    { %w[プリンセスピース ウルトラピース] }
   let(:color)          { "yellow" }
   let(:transform_message) do
@@ -330,5 +330,18 @@ JANKEN
     context "don't have human_full_name" do
       it { should eq "黄瀬やよい" }
     end
+  end
+
+  describe "#heisei?" do
+    subject { girl.heisei? }
+
+    it { should eq true }
+  end
+
+  describe "#reiwa?" do
+    subject { girl.reiwa? }
+
+    # TODO: Add reiwa precure test after cure cosmo is added
+    it { should eq false }
   end
 end
