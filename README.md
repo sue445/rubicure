@@ -714,6 +714,27 @@ Go!プリンセスプリキュア
 
 * `has_birthday?` is alias to `have_birthday?`
 
+### `Rubicure::Girl#heisei?` and `Rubicure::Girl#reiwa?`
+```ruby
+>> Cure.star.heisei?
+=> true
+>> Cure.star.reiwa?
+=> false
+```
+
+### `Rubicure::Series#heisei?` and `Rubicure::Series#reiwa?`
+```ruby
+>> Precure.hugtto.heisei?
+=> true
+>> Precure.hugtto.reiwa?
+=> false
+
+>> Precure.star_twinkle.heisei?
+=> true
+>> Precure.star_twinkle.reiwa?
+=> true
+```
+
 ## More reference
 http://rubydoc.info/gems/rubicure/frames
 
