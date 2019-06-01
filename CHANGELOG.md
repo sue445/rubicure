@@ -1,5 +1,13 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.2.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.1...master)
+
+## v1.2.1
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.0...v1.2.1)
+
+* Tweak transform message of Star twinkle precure
+  * https://github.com/sue445/rubicure/pull/203
+* Impl `heisei?` and `reiwa?` methods
+  * https://github.com/sue445/rubicure/pull/204
 
 ## v1.2.0
 [full changelog](http://github.com/sue445/rubicure/compare/v1.1.10...v1.2.0)
