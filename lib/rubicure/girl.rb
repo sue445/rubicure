@@ -7,6 +7,8 @@ module Rubicure
   class Girl < Hash # rubocop:disable Metrics/ClassLength
     include Hashie::Extensions::MethodAccess
 
+    using Rubicure::Concerns::Gengou
+
     ATTRIBUTES = [
       :girl_name,
       :human_name,
@@ -159,6 +161,16 @@ module Rubicure
     # @return [String]
     def full_name
       human_full_name.presence || human_name
+    end
+
+    # Whether Heisei precure
+    def heisei?
+      created_date.heisei?
+    end
+
+    # Whether Reiwa precure
+    def reiwa?
+      created_date.reiwa?
     end
 
     ATTRIBUTES.each do |attribute|
