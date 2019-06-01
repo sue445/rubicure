@@ -20,6 +20,7 @@ cure_star: &cure_star
     スター☆トゥインクル！プリキュア！
     あー！
     宇宙に輝くキラキラ星！キュアスター！
+    スター☆トゥインクル！プリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -51,6 +52,7 @@ cure_milky: &cure_milky
     スター☆トゥインクル！プリキュア！
     あー！
     天にあまねくミルキーウェイ！キュアミルキー！
+    スター☆トゥインクル！プリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -82,6 +84,7 @@ cure_soleil: &cure_soleil
     スター☆トゥインクル！プリキュア！
     あー！
     宇宙を照らす！灼熱のきらめき！キュアソレイユ！
+    スター☆トゥインクル！プリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -113,6 +116,7 @@ cure_selene: &cure_selene
     スター☆トゥインクル！プリキュア！
     あー！
     夜空に輝く！神秘の月あかり！キュアセレーネ！
+    スター☆トゥインクル！プリキュア！
   # extra_names:
   attack_messages:
     - |-
