@@ -152,7 +152,7 @@ cure_cosmo: &cure_cosmo
   # extra_names:
   attack_messages:
     - |-
-      プリキュア！コスモTODO！
+      プリキュア！コスモシャイニング！
   transform_calls:
     - color_charge
 cosmo:
