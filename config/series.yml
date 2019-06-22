@@ -214,5 +214,6 @@ star_twinkle: &star_twinkle
     - cure_milky
     - cure_soleil
     - cure_selene
+    - cure_cosmo
 star_twinkle_precure:
   <<: *star_twinkle
