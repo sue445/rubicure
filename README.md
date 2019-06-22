@@ -678,7 +678,7 @@ Go!プリンセスプリキュア
 => ["シャイニールミナス", "キュアレモネード", "キュアパイン", "キュアサンシャイン", "キュアミューズ", "キュアピース", "キュアロゼッタ", "キュアハニー", "キュアトゥインクル", "キュアカスタード", "キュアエトワール", "キュアソレイユ"]
 
 >> Precure.all_girls.group_by{ |girl| girl.color }.map{ |color, girls| [color, girls.count] }.sort_by{ |color, girl_count| [girl_count, color] }.reverse
-=> [["pink", 13], ["yellow", 12], ["blue", 11], ["purple", 8], ["red", 7], ["white", 4], ["green", 4], ["rainbow", 1], ["black", 1]]
+=> [["pink", 13], ["yellow", 12], ["blue", 10], ["purple", 8], ["red", 7], ["white", 4], ["green", 4], ["rainbow", 2], ["black", 1]]
 ```
 
 ### birthday methods
