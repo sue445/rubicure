@@ -720,6 +720,11 @@ Go!プリンセスプリキュア
 => true
 >> Cure.star.reiwa?
 => false
+
+>> Cure.cosmo.heisei?
+=> false
+>> Cure.cosmo.reiwa?
+=> true
 ```
 
 ### `Rubicure::Series#heisei?` and `Rubicure::Series#reiwa?`
