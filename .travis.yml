@@ -16,7 +16,7 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - bundle exec rspec
+  - RUBYOPT=$RSPEC_RUBYOPT bundle exec rspec
   - bundle exec ruby examples/all.rb
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
@@ -45,9 +45,9 @@ matrix:
     - rvm: ruby-head
   include:
     - rvm: 2.6
-      env: RUBYOPT="--jit"
+      env: RSPEC_RUBYOPT="--jit"
     - rvm: ruby-head
-      env: RUBYOPT="--jit"
+      env: RSPEC_RUBYOPT="--jit"
 sudo: false
 env:
   global:
