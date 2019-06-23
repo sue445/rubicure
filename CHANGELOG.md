@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.2.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.2...master)
+
+## v1.2.2
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.1...v1.2.2)
+
+* Add Cure Cosmo
+  * https://github.com/sue445/rubicure/pull/205
 
 ## v1.2.1
 [full changelog](http://github.com/sue445/rubicure/compare/v1.2.0...v1.2.1)
