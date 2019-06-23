@@ -133,7 +133,7 @@ cure_cosmo: &cure_cosmo
   cast_name:    上坂すみれ
   color:        rainbow
   created_date: 2019-06-23 # episode 20
-  # birthday: XX/XX
+  birthday: 10/11
   transform_message: |-
     スターカラーペンダント！
     カラーチャージ！
