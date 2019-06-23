@@ -10,8 +10,6 @@ All about Japanese battle heroine "Pretty Cure (Precure)".
 
 Inspired by [Acme::PrettyCure](http://perl-users.jp/articles/advent-calendar/2010/acme/6) and [pycure](https://github.com/drillbits/pycure).
 
-[![Stories in Ready](https://badge.waffle.io/sue445/rubicure.png?label=ready)](http://waffle.io/sue445/rubicure)
-
 ## Example
 ![maho_girls](examples/maho_girls.gif)
 
