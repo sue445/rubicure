@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.2.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.3...master)
+
+## v1.2.3
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.2...v1.2.3)
+
+* Add Cure cosmo's birthday
+  * https://github.com/sue445/rubicure/pull/207
 
 ## v1.2.2
 [full changelog](http://github.com/sue445/rubicure/compare/v1.2.1...v1.2.2)
