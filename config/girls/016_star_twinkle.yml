@@ -128,7 +128,7 @@ selene:
 
 cure_cosmo: &cure_cosmo
   girl_name:    cure_cosmo
-  human_name:   マオ
+  human_name:   ユニ
   precure_name: キュアコスモ
   cast_name:    上坂すみれ
   color:        rainbow
