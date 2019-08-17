@@ -10,6 +10,7 @@ require "rubicure/core"
 require "rubicure/movie"
 require "rubicure/cure"
 require "rubicure/errors"
+require "rubicure/cure_cosmo"
 
 begin
   require "backport_dig"
