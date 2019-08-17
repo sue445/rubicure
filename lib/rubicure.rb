@@ -13,6 +13,7 @@ require "rubicure/errors"
 require "rubicure/cure_cosmo"
 require "rubicure/cure_peace"
 require "rubicure/cure_passion"
+require "rubicure/cure_beat"
 
 begin
   require "backport_dig"
