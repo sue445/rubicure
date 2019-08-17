@@ -14,6 +14,7 @@ require "rubicure/cure_cosmo"
 require "rubicure/cure_peace"
 require "rubicure/cure_passion"
 require "rubicure/cure_beat"
+require "rubicure/cure_scarlet"
 
 begin
   require "backport_dig"

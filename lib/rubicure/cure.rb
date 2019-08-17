@@ -24,8 +24,4 @@ module Cure
       self
     end
   end
-
-  [Cure.scarlet, Cure.cure_scarlet].each do |scarlet|
-    define_turnover_methods(scarlet, "紅城トワ", "トワイライト")
-  end
 end
