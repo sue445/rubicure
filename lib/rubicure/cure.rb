@@ -5,25 +5,6 @@ module Cure
     end
   end
 
-  [Cure.peace, Cure.cure_peace].each do |peace|
-    class << peace
-      HANDS =
-        (["グー"] * 13) +
-        (["チョキ"] * 14) +
-        (["パー"] * 15) +
-        ["グッチョッパー"]
-      MESSAGE = <<JANKEN.freeze
-ピカピカピカリン
-ジャンケンポン！
-（%s）
-JANKEN
-      def pikarin_janken
-        print_by_line(MESSAGE % HANDS.sample)
-      end
-      alias_method :janken, :pikarin_janken
-    end
-  end
-
   def self.define_turnover_methods(target, original_human_name, another_human_name)
     target.instance_variable_set(:@__original_human_name, original_human_name)
     target.instance_variable_set(:@__another_human_name,  another_human_name)

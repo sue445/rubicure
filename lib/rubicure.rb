@@ -11,6 +11,7 @@ require "rubicure/movie"
 require "rubicure/cure"
 require "rubicure/errors"
 require "rubicure/cure_cosmo"
+require "rubicure/cure_peace"
 
 begin
   require "backport_dig"
