@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.2.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.5...master)
+
+## v1.2.5
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.4...v1.2.5)
+
+* Impl `Cure.cosmo.transform!(:rainbow_perfume)`
+  * https://github.com/sue445/rubicure/pull/210
 
 ## v1.2.4
 [full changelog](http://github.com/sue445/rubicure/compare/v1.2.3...v1.2.4)
