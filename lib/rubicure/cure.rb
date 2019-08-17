@@ -25,10 +25,6 @@ module Cure
     end
   end
 
-  [Cure.passion, Cure.cure_passion].each do |passion|
-    define_turnover_methods(passion, "東せつな", "イース")
-  end
-
   [Cure.beat, Cure.cure_beat].each do |beat|
     define_turnover_methods(beat, "黒川エレン", "セイレーン")
   end
