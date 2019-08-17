@@ -649,6 +649,15 @@ Go!プリンセスプリキュア
 => "トワイライト"
 ```
 
+### Cure.cosmo.transform!(:rainbow_perfume)
+```ruby
+Cure.cosmo.transform!(:rainbow_perfume)
+レインボーパフュームいくニャン！
+
+Cure.cosmo.name
+#=> one of "マオ", "ブルーキャット" or "バケニャーン"
+```
+
 ## Color methods
 ```ruby
 >> Cure.peace.color
