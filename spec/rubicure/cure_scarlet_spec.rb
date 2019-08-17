@@ -1,34 +1,32 @@
-describe "Cure" do # rubocop:disable RSpec/DescribeClass
-  describe ".scarlet" do
-    describe "!" do
-      subject { !Cure.scarlet }
+describe "Cure.scarlet" do # rubocop:disable RSpec/DescribeClass
+  describe "!" do
+    subject { !Cure.scarlet }
 
-      let(:girl) { Cure.scarlet }
+    let(:girl) { Cure.scarlet }
 
-      after do
-        girl.rollback
-        girl.humanize!
+    after do
+      girl.rollback
+      girl.humanize!
+    end
+
+    context "called once" do
+      it { expect { subject }.to change { girl.name }.from("紅城トワ").to("トワイライト") }
+    end
+
+    context "called twice" do
+      before do
+        !Cure.scarlet
       end
 
-      context "called once" do
-        it { expect { subject }.to change { girl.name }.from("紅城トワ").to("トワイライト") }
+      it { expect { subject }.to change { girl.name }.from("トワイライト").to("紅城トワ") }
+    end
+
+    context "after transform" do
+      before do
+        girl.transform!
       end
 
-      context "called twice" do
-        before do
-          !Cure.scarlet
-        end
-
-        it { expect { subject }.to change { girl.name }.from("トワイライト").to("紅城トワ") }
-      end
-
-      context "after transform" do
-        before do
-          girl.transform!
-        end
-
-        it { expect { subject }.to change { girl.name }.from("キュアスカーレット").to("トワイライト") }
-      end
+      it { expect { subject }.to change { girl.name }.from("キュアスカーレット").to("トワイライト") }
     end
   end
 end
