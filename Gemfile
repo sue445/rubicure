@@ -9,3 +9,8 @@ if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.3.0")
   # i18n v1.5.1+ requires Ruby 2.3.0+
   gem "i18n", "< 1.5.1"
 end
+
+if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.5.0")
+  # activesupport v6.0.0+ requires Ruby 2.5.0+
+  gem "activesupport", "< 6.0.0"
+end
