@@ -45,7 +45,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Set up rbenv
-        uses: masa-iwasaki/setup-rbenv@v1
+        uses: sue445/setup-rbenv@develop
 
       - name: Cache RBENV_ROOT
         uses: actions/cache@v1
@@ -117,7 +117,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Set up rbenv
-        uses: masa-iwasaki/setup-rbenv@v1
+        uses: sue445/setup-rbenv@develop
 
       - name: Cache RBENV_ROOT
         uses: actions/cache@v1
