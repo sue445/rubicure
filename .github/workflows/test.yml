@@ -1,4 +1,4 @@
-name: Build
+name: test
 
 on:
   push:
@@ -165,7 +165,7 @@ jobs:
         uses: homoluctus/slatify@v2.0.0
         if: "! success()"
         with:
-          job_name: '*rubocop*'
+          job_name: '*lint*'
           type: ${{ job.status }}
           icon_emoji: ":octocat:"
           url: ${{ secrets.SLACK_WEBHOOK }}
