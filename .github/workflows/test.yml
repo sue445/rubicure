@@ -55,6 +55,13 @@ jobs:
           key: v1-rbenv-${{ runner.os }}-${{ matrix.ruby }}
         if: "!endsWith(matrix.ruby, '-dev')"
 
+      - name: Reinstall libssl-dev
+        run: |
+          set -xe
+          sudo apt-get remove -y libssl-dev
+          sudo apt-get install -y libssl-dev=1.0.2g-1ubuntu4.15
+        if: matrix.runner == 'ubuntu-16.04'
+
       - name: Install Ruby
         run: |
           set -xe
@@ -120,6 +127,12 @@ jobs:
 
       - name: Set up rbenv
         uses: sue445/setup-rbenv@develop
+
+      - name: Reinstall libssl-dev
+        run: |
+          set -xe
+          sudo apt-get remove -y libssl-dev
+          sudo apt-get install -y libssl-dev=1.0.2g-1ubuntu4.15
 
       - name: Cache RBENV_ROOT
         uses: actions/cache@v1
