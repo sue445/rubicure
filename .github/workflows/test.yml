@@ -60,6 +60,8 @@ jobs:
           set -xe
           eval "$(rbenv init -)"
           rbenv install -s $RBENV_VERSION
+
+          gem install bundler --no-document -v 1.17.3 || true
         env:
           RBENV_VERSION: ${{ matrix.ruby }}
         continue-on-error: ${{ endsWith(matrix.ruby, '-dev') }}
@@ -131,6 +133,7 @@ jobs:
           set -xe
           eval "$(rbenv init -)"
           rbenv install -s $RBENV_VERSION
+          gem install bundler --no-document -v 1.17.3 || true
 
       - name: bundle install
         run: |
