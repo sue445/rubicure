@@ -1,0 +1,119 @@
+name: Build
+
+on:
+  push:
+  schedule:
+    - cron: "0 20 * * 5" # JST 5:00 (Sat)
+
+env:
+  CI: "true"
+  CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+
+      matrix:
+        image:
+          - ruby:2.2.2
+          - ruby:2.3
+          - ruby:2.4
+          - ruby:2.5
+          - ruby:2.6
+          - ruby:2.7
+          - rubylang/ruby:master-nightly-bionic
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up ruby
+        uses: docker://${{ matrix.image }}
+
+      - name: bundle install
+        run: |
+          set -xe
+          bundle install --jobs $(nproc) --path vendor/bundle
+        continue-on-error: ${{ matrix.image == 'rubylang/ruby:master-nightly-bionic' }}
+
+      - name: setup cc-test-reporter
+        run: |
+          set -xe
+          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+          chmod +x ./cc-test-reporter
+          ./cc-test-reporter before-build
+        continue-on-error: ${{ matrix.image == 'rubylang/ruby:master-nightly-bionic' }}
+
+      - name: Run test
+        run: |
+          set -xe
+          eval "$(rbenv init -)"
+          bundle exec rspec
+          bundle exec ruby examples/all.rb
+        continue-on-error: ${{ matrix.image == 'rubylang/ruby:master-nightly-bionic' }}
+
+      - name: teardown cc-test-reporter
+        run: |
+          ./cc-test-reporter after-build --exit-code $?
+        if: always()
+        continue-on-error: ${{ matrix.image == 'rubylang/ruby:master-nightly-bionic' }}
+
+      - name: Slack Notification (not success)
+        uses: homoluctus/slatify@v2.0.0
+        if: "! success()"
+        with:
+          job_name: ${{ format('*build* ({0})', matrix.ruby) }}
+          type: ${{ job.status }}
+          icon_emoji: ":octocat:"
+          url: ${{ secrets.SLACK_WEBHOOK }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: docker://ruby:2.2.2
+
+      - name: bundle install
+        run: |
+          set -xe
+          bundle install --jobs $(nproc) --path vendor/bundle
+
+      - name: Run rubocop
+        run: |
+          set -xe
+          bundle exec rubocop
+          bundle exec rubydoctest README.md
+
+      - name: Slack Notification (not success)
+        uses: homoluctus/slatify@v2.0.0
+        if: "! success()"
+        with:
+          job_name: '*rubocop*'
+          type: ${{ job.status }}
+          icon_emoji: ":octocat:"
+          url: ${{ secrets.SLACK_WEBHOOK }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  notify:
+    needs:
+      - test
+      - lint
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Slack Notification (success)
+        uses: homoluctus/slatify@v2.0.0
+        if: always()
+        with:
+          job_name: '*build*'
+          type: ${{ job.status }}
+          icon_emoji: ":octocat:"
+          url: ${{ secrets.SLACK_WEBHOOK }}
+          token: ${{ secrets.GITHUB_TOKEN }}
