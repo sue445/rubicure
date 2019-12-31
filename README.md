@@ -1,7 +1,7 @@
 # Rubicure (Ruby + Precure)
 
 [![Gem Version](https://badge.fury.io/rb/rubicure.svg)](http://badge.fury.io/rb/rubicure)
-[![Build Status](https://travis-ci.org/sue445/rubicure.png?branch=master)](https://travis-ci.org/sue445/rubicure)
+[![Build Status](https://github.com/sue445/rubicure/workflows/test/badge.svg?branch=master)](https://github.com/sue445/rubicure/actions?query=workflow%3Atest)
 [![Code Climate](https://codeclimate.com/github/sue445/rubicure.png)](https://codeclimate.com/github/sue445/rubicure)
 [![Coverage Status](https://coveralls.io/repos/sue445/rubicure/badge.png)](https://coveralls.io/r/sue445/rubicure)
 [![Inline docs](http://inch-ci.org/github/sue445/rubicure.svg?branch=master)](http://inch-ci.org/github/sue445/rubicure)
