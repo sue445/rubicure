@@ -73,11 +73,25 @@ jobs:
           RBENV_VERSION: ${{ matrix.ruby }}
         continue-on-error: ${{ endsWith(matrix.ruby, '-dev') }}
 
-      - name: bundle install
+      - name: Generate unique cache key
+        run: uuidgen > uuid.txt
+
+      - name: Cache vendor/bundle
+        uses: actions/cache@v1
+        id: cache_gem
+        with:
+          path: vendor/bundle
+          key: v1-gem-${{ runner.os }}-${{ matrix.ruby }}-${{ hashFiles('uuid.txt') }}
+          restore-keys: |
+            v1-gem-${{ runner.os }}-${{ matrix.ruby }}-
+        continue-on-error: ${{ endsWith(matrix.ruby, '-dev') }}
+
+      - name: bundle update
         run: |
           set -xe
           eval "$(rbenv init -)"
-          bundle install --jobs $(nproc) --path vendor/bundle
+          bundle config path vendor/bundle
+          bundle update --jobs $(nproc) --retry 3
         env:
           RBENV_VERSION: ${{ matrix.ruby }}
         continue-on-error: ${{ endsWith(matrix.ruby, '-dev') }}
@@ -148,11 +162,24 @@ jobs:
           rbenv install -s $RBENV_VERSION
           gem install bundler --no-document -v 1.17.3 || true
 
-      - name: bundle install
+      - name: Generate unique cache key
+        run: uuidgen > uuid.txt
+
+      - name: Cache vendor/bundle
+        uses: actions/cache@v1
+        id: cache_gem
+        with:
+          path: vendor/bundle
+          key: v1-gem-${{ runner.os }}-${{ env.RBENV_VERSION }}-${{ hashFiles('uuid.txt') }}
+          restore-keys: |
+            v1-gem-${{ runner.os }}-${{ env.RBENV_VERSION }}-
+
+      - name: bundle update
         run: |
           set -xe
           eval "$(rbenv init -)"
-          bundle install --jobs $(nproc) --path vendor/bundle
+          bundle config path vendor/bundle
+          bundle update --jobs $(nproc) --retry 3
 
       - name: Run rubocop
         run: |
