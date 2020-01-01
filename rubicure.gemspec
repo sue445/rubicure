@@ -51,5 +51,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop-rspec", "1.25.1"
   spec.add_development_dependency "rubydoctest"
   spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "unparser", ">= 0.4.5"
   spec.add_development_dependency "yard"
 end
