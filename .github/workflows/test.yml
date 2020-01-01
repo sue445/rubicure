@@ -45,7 +45,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Set up rbenv
-        uses: sue445/setup-rbenv@develop
+        uses: masa-iwasaki/setup-rbenv@1.1.0
 
       - name: Cache RBENV_ROOT
         uses: actions/cache@v1
@@ -141,7 +141,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Set up rbenv
-        uses: sue445/setup-rbenv@develop
+        uses: masa-iwasaki/setup-rbenv@1.1.0
 
       - name: Reinstall libssl-dev
         run: |
