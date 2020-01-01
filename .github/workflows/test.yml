@@ -7,7 +7,6 @@ on:
 
 env:
   CI: "true"
-  CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
 
 jobs:
   test:
