@@ -3,7 +3,7 @@ name: test
 on:
   push:
   schedule:
-    - cron: "0 10 * * 4" # JST 19:00 (Fri)
+    - cron: "0 10 * * 5" # JST 19:00 (Fri)
 
 env:
   CI: "true"
