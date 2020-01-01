@@ -181,7 +181,7 @@ jobs:
           bundle config path vendor/bundle
           bundle update --jobs $(nproc) --retry 3
 
-      - name: Run rubocop
+      - name: Run lint
         run: |
           set -xe
           eval "$(rbenv init -)"
