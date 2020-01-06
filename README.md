@@ -23,7 +23,7 @@ see followings
 ## Requirements
 
 * ruby >= 2.2.2
-  * more: [.travis.yml](.travis.yml)
+  * more: [.github/workflows/test.yml](.github/workflows/test.yml)
 
 ## Installation
 
