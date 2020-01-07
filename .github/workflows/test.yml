@@ -43,6 +43,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: debug apt repo
+        run: |
+          set -xe
+          ls -l /etc/apt/sources.list
+          ls -l /etc/apt/sources.list.d/
+
       - name: Set up rbenv
         uses: masa-iwasaki/setup-rbenv@1.1.0
 
