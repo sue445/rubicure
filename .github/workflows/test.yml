@@ -48,6 +48,8 @@ jobs:
           set -xe
           ls -l /etc/apt/sources.list
           ls -l /etc/apt/sources.list.d/
+          sudo rm /etc/apt/sources.list.d/azure-cli.list
+          sudo rm /etc/apt/sources.list.d/azure-cli.list.save
 
       - name: Set up rbenv
         uses: masa-iwasaki/setup-rbenv@1.1.0
