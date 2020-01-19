@@ -208,7 +208,7 @@ star_twinkle: &star_twinkle
   series_name: star_twinkle
   title: スター☆トゥインクルプリキュア
   started_date: 2019-02-03
-  # ended_date:   2020-01-
+  ended_date:   2020-01-26
   girls:
     - cure_star
     - cure_milky

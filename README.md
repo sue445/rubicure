@@ -119,10 +119,10 @@ and [more aliases!](config/series.yml)
 
 ```ruby
 >> Precure.now
-=> {:series_name=>"star_twinkle", :title=>"スター☆トゥインクルプリキュア", :started_date=>Sun, 03 Feb 2019, :girls=>["cure_star", "cure_milky", "cure_soleil", "cure_selene", "cure_cosmo"]}
+=> {:series_name=>"star_twinkle", :title=>"スター☆トゥインクルプリキュア", :started_date=>Sun, 03 Feb 2019, :ended_date=>Sun, 26 Jan 2020, :girls=>["cure_star", "cure_milky", "cure_soleil", "cure_selene", "cure_cosmo"]}
 
 >> Precure.current
-=> {:series_name=>"star_twinkle", :title=>"スター☆トゥインクルプリキュア", :started_date=>Sun, 03 Feb 2019, :girls=>["cure_star", "cure_milky", "cure_soleil", "cure_selene", "cure_cosmo"]}
+=> {:series_name=>"star_twinkle", :title=>"スター☆トゥインクルプリキュア", :started_date=>Sun, 03 Feb 2019, :ended_date=>Sun, 26 Jan 2020, :girls=>["cure_star", "cure_milky", "cure_soleil", "cure_selene", "cure_cosmo"]}
 
 # -2013/1/27  : smile precure
 #  2013/2/5 - : dokidoki precure
