@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.2.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.6...master)
+
+## v1.2.6
+[full changelog](http://github.com/sue445/rubicure/compare/v1.2.5...v1.2.6)
+
+* Add ended_date of Star:star:Twinkle Precure
+  * https://github.com/sue445/rubicure/pull/224
 
 ## v1.2.5
 [full changelog](http://github.com/sue445/rubicure/compare/v1.2.4...v1.2.5)
