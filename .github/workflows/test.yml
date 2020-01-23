@@ -57,7 +57,7 @@ jobs:
           codeclimate-test-reporter-id: ${{ secrets.CC_TEST_REPORTER_ID }}
           command: before-build
         if: matrix.ruby >= 'ruby:2.4'
-        continue-on-error: ${{ matrix.allow_failures == 'true' }}
+        continue-on-error: true
 
       - name: Run test
         run: |
@@ -72,7 +72,7 @@ jobs:
           codeclimate-test-reporter-id: ${{ secrets.CC_TEST_REPORTER_ID }}
           command: after-build
         if: matrix.ruby >= 'ruby:2.4' && always()
-        continue-on-error: ${{ matrix.allow_failures == 'true' }}
+        continue-on-error: true
 
       - name: Run lint
         run: |
