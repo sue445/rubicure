@@ -14,3 +14,8 @@ if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.5.0")
   # activesupport v6.0.0+ requires Ruby 2.5.0+
   gem "activesupport", "< 6.0.0"
 end
+
+if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.4.0")
+  # byebug v11.0.0+ requires Ruby 2.3.0+ and byebug v11.1.0+ requires Ruby 2.4.0+
+  gem "byebug", "< 11.0.0"
+end
