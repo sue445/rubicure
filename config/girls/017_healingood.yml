@@ -22,7 +22,6 @@ cure_grace: &cure_grace
       キュア！キュア！キュア！
       ヒーリングゲージ上昇！
       プリキュア！ヒーリングフラワー！
-      ヒーリングッバイ
       お大事に
   transform_calls:
     - precure_operation
