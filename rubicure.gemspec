@@ -38,7 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sengiri_yaml", ">= 0.0.2"
 
   spec.add_development_dependency "bundler", ">= 1.3.5"
-  spec.add_development_dependency "coveralls", ">= 0.8.23"
+  # spec.add_development_dependency "coveralls", ">= 0.8.23"
   spec.add_development_dependency "delorean"
   spec.add_development_dependency "onkcop", "0.53.0.0"
   spec.add_development_dependency "pry-byebug"
