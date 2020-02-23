@@ -17,6 +17,7 @@ describe Rubicure::Series do
       :a_la_mode,
       :hugtto,
       :star_twinkle,
+      :healingood,
     ]
   end
 

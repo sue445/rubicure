@@ -1,0 +1,90 @@
+cure_grace: &cure_grace
+  girl_name:    cure_grace
+  human_name:   花寺のどか
+  precure_name: キュアグレース
+  cast_name:    悠木碧
+  color:        pink
+  created_date: 2020-02-02 # episode 1
+  # birthday:
+  transform_message: |-
+    スタンバイ！
+    プリキュアオペレーション！
+    エレメントレベル上昇ラビ！
+    キュアタッチ！
+    キュア！
+    キュア！
+    重なる二つの花！キュアグレース！
+    ラビ！
+  # extra_names:
+  attack_messages:
+    - |-
+      エレメントチャージ！
+      キュア！キュア！キュア！
+      ヒーリングゲージ上昇！
+      プリキュア！ヒーリングフラワー！
+      ヒーリングッバイ
+      お大事に
+  transform_calls:
+    - precure_operation
+grace:
+  <<: *cure_grace
+
+cure_fontaine: &cure_fontaine
+  girl_name:    cure_fontaine
+  human_name:   沢泉ちゆ
+  precure_name: キュアフォンテーヌ
+  cast_name:    依田菜津
+  color:        blue
+  created_date: 2020-02-16 # episode 3
+  # birthday:
+  transform_message: |-
+    スタート！
+    プリキュアオペレーション！
+    エレメントレベル上昇ペ！
+    キュアタッチ！
+    キュ！
+    キュ！
+    交わる二つの流れ、キュアフォンテーヌ！
+    ぺ！
+  # extra_names:
+  attack_messages:
+    - |-
+      エレメントチャージ！
+      キュ！キュ！キュ！
+      ヒーリングゲージ上昇！
+      プリキュア！ヒーリングストリーム！
+      お大事に
+  transform_calls:
+    - precure_operation
+fontaine:
+  <<: *cure_fontaine
+
+cure_sparkle: &cure_sparkle
+  girl_name:    cure_sparkle
+  human_name:   平光ひなた
+  precure_name: キュアスパークル
+  cast_name:    河野ひより
+  color:        yellow
+  created_date: 2020-02-23 # episode 4
+  # birthday:
+  transform_message: |-
+    スタート！
+    プリキュアオペレーション！
+    エレメントレベル上昇ニャ！
+    キュアタッチ！
+    キュン！
+    キュン！
+    溶け合う二つの光、キュアスパークル！
+    ニャ！
+  # extra_names:
+  attack_messages:
+    - |-
+      エレメントチャージ！
+      キュン！キュン！キュン！
+      ヒーリングゲージ上昇！
+      プリキュア！ヒーリングフラッシュ！
+      お大事に
+  transform_calls:
+    - precure_operation
+sparkle:
+  <<: *cure_sparkle

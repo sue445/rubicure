@@ -217,3 +217,15 @@ star_twinkle: &star_twinkle
     - cure_cosmo
 star_twinkle_precure:
   <<: *star_twinkle
+#######################################################
+healingood: &healingood
+  series_name: healingood
+  title: ヒーリングっど♥プリキュア
+  started_date: 2020-02-02
+  # ended_date:   2021-01-
+  girls:
+    - cure_grace
+    - cure_fontaine
+    - cure_sparkle
+healingood_precure:
+  <<: *healingood

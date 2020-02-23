@@ -59,11 +59,12 @@ jobs:
         if: matrix.ruby >= 'ruby:2.4'
         continue-on-error: true
 
-      - name: Run test
-        run: |
-          set -xe
-          bundle exec rspec
-          bundle exec ruby examples/all.rb
+      - run: bundle exec rspec
+        timeout-minutes: 1
+        continue-on-error: ${{ matrix.allow_failures == 'true' }}
+
+      - run: bundle exec ruby examples/all.rb
+        timeout-minutes: 1
         continue-on-error: ${{ matrix.allow_failures == 'true' }}
 
       - name: Teardown Code Climate Test Reporter
@@ -74,11 +75,12 @@ jobs:
         if: matrix.ruby >= 'ruby:2.4' && always()
         continue-on-error: true
 
-      - name: Run lint
-        run: |
-          set -xe
-          bundle exec rubocop
-          bundle exec rubydoctest README.md
+      - run: bundle exec rubocop
+        timeout-minutes: 1
+        continue-on-error: ${{ matrix.allow_failures == 'true' }}
+
+      - run: bundle exec rubydoctest README.md
+        timeout-minutes: 1
         continue-on-error: ${{ matrix.allow_failures == 'true' }}
 
       - name: Slack Notification (not success)
