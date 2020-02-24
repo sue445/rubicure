@@ -67,11 +67,9 @@ jobs:
         continue-on-error: true
 
       - run: bundle exec rspec
-        timeout-minutes: 1
         continue-on-error: ${{ matrix.allow_failures == 'true' }}
 
       - run: bundle exec ruby examples/all.rb
-        timeout-minutes: 1
         continue-on-error: ${{ matrix.allow_failures == 'true' }}
 
       - name: Teardown Code Climate Test Reporter
@@ -83,11 +81,9 @@ jobs:
         continue-on-error: true
 
       - run: bundle exec rubocop
-        timeout-minutes: 1
         continue-on-error: ${{ matrix.allow_failures == 'true' }}
 
       - run: bundle exec rubydoctest README.md
-        timeout-minutes: 1
         continue-on-error: ${{ matrix.allow_failures == 'true' }}
 
       - name: Slack Notification (not success)
