@@ -15,6 +15,7 @@ cure_grace: &cure_grace
     キュア！
     重なる二つの花！キュアグレース！
     ラビ！
+    地球をお手当！ヒーリングっど♥プリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -45,6 +46,7 @@ cure_fontaine: &cure_fontaine
     キュ！
     交わる二つの流れ、キュアフォンテーヌ！
     ぺ！
+    地球をお手当！ヒーリングっど♥プリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -75,6 +77,7 @@ cure_sparkle: &cure_sparkle
     キュン！
     溶け合う二つの光、キュアスパークル！
     ニャ！
+    地球をお手当！ヒーリングっど♥プリキュア！
   # extra_names:
   attack_messages:
     - |-
