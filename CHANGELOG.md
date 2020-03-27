@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.3.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.3.2...master)
+
+## v1.3.2
+[full changelog](http://github.com/sue445/rubicure/compare/v1.3.1...v1.3.2)
+
+* Append message to healingood precure's transform message
+  * https://github.com/sue445/rubicure/pull/237
 
 ## v1.3.1
 [full changelog](http://github.com/sue445/rubicure/compare/v1.3.0...v1.3.1)
