@@ -90,3 +90,34 @@ cure_sparkle: &cure_sparkle
     - precure_operation
 sparkle:
   <<: *cure_sparkle
+
+cure_earth: &cure_earth
+  girl_name:    cure_earth
+  human_name:   風鈴アスミ
+  precure_name: キュアアース
+  cast_name:    三森すずこ
+  color:        purple
+  created_date: 2020-08-09 # episode 19
+  # birthday:
+  transform_message: |-
+    スタート！
+    プリキュアオペレーション！
+    エレメントレベル上昇ラテ！
+    キュアタッチ！
+    キュン！
+    キュン！
+    時を経てつながる二つの風、キュアアース！
+    ワン！
+    地球をお手当！ヒーリングっど♥プリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      アースウィンディハープ！
+      エレメントチャージ！
+      舞い上がれ、癒やしの風！
+      プリキュア・ヒーリングハリケーン！
+      お大事に
+  transform_calls:
+    - precure_operation
+earth:
+  <<: *cure_earth

@@ -86,7 +86,7 @@ describe Rubicure::Core do
     context "Without arg" do
       subject { instance.all_girls }
 
-      let(:precure_count) { 64 }
+      let(:precure_count) { 65 }
 
       its(:count) { should == precure_count }
       it { should include Cure.echo }
