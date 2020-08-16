@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.3.3...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.3.4...master)
+
+## v1.3.4
+[full changelog](http://github.com/sue445/rubicure/compare/v1.3.3...v1.3.4)
+
+* Add Cure earth's birthday
+  * https://github.com/sue445/rubicure/pull/239
 
 ## v1.3.3
 [full changelog](http://github.com/sue445/rubicure/compare/v1.3.2...v1.3.3)
