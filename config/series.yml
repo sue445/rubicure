@@ -227,5 +227,6 @@ healingood: &healingood
     - cure_grace
     - cure_fontaine
     - cure_sparkle
+    - cure_earth
 healingood_precure:
   <<: *healingood
