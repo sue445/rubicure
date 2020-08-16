@@ -98,7 +98,7 @@ cure_earth: &cure_earth
   cast_name:    三森すずこ
   color:        purple
   created_date: 2020-08-09 # episode 19
-  # birthday:
+  birthday: 8/16
   transform_message: |-
     スタート！
     プリキュアオペレーション！
