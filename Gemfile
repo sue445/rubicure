@@ -8,6 +8,9 @@ if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.3.0")
 
   # i18n v1.5.1+ requires Ruby 2.3.0+
   gem "i18n", "< 1.5.1"
+
+  # N0TE: unparser v0.5.0+ requires ruby 2.3.0+
+  gem "unparser", "< 0.5.0"
 end
 
 if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.5.0")
