@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.3.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v1.3.5...master)
+
+## v1.3.5
+[full changelog](http://github.com/sue445/rubicure/compare/v1.3.4...v1.3.5)
+
+* Impl `Precure.miracle_leap`
+  * https://github.com/sue445/rubicure/pull/243
 
 ## v1.3.4
 [full changelog](http://github.com/sue445/rubicure/compare/v1.3.3...v1.3.4)
