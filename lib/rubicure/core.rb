@@ -217,6 +217,29 @@ module Rubicure
 
       @miracle_universe
     end
+
+    # Get precure miracle leap
+    #
+    # @return [Array<Rubicure::Girl>] precure miracle leap
+    #
+    # @example
+    #   Precure.miracle_leap.count
+    #   #=> 13
+    #
+    #   Precure.miracle_leap.map(&:precure_name)
+    #   #=> ["キュアエール", "キュアアンジュ", "キュアエトワール", "キュアマシェリ", "キュアアムール", "キュアスター", "キュアミルキー", "キュアソレイユ", "キュアセレーネ", "キュアグレース", "キュアフォンテーヌ", "キュアスパークル"]
+    def miracle_leap
+      return @miracle_leap if @miracle_leap
+
+      girls = Precure.hugtto.girls + Precure.star_twinkle.girls + Precure.healingood.girls
+
+      miracle_leap_date = Rubicure::Movie.find(:miracle_leap).started_date
+      @miracle_leap = girls.select {|girl| girl.created_date && girl.created_date <= miracle_leap_date }
+      @miracle_leap.reject! {|girl| girl == Cure.earth }
+
+      @miracle_leap
+    end
+
     # rubocop:enable Metrics/LineLength
 
     # iterate with :unmarked, :max_heart, ...

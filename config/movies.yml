@@ -72,3 +72,7 @@ memories: &memories
 miracle_universe: &miracle_universe
   title: 映画プリキュアミラクルユニバース
   started_date: 2019-03-16
+#######################################################
+miracle_leap: &miracle_leap
+  title: 映画プリキュアミラクルリープ
+  started_date: 2020-10-31
