@@ -792,6 +792,19 @@ $ curl -s https://rubicure.herokuapp.com/girls/cure_twinkle.json | jq .
 }
 ```
 
+## Versioning Policy
+`rubicure` uses **Semantic Cure Versioning** :heart:
+
+* Patch version up
+  * e.g. `1.1.1` -> `1.1.2`
+  * Containing bugfix
+* Minor version up
+  * e.g. `1.1.1` -> `1.2.0`
+  * **Addition of Precure series**
+  * Not containing only addition features :kissing_heart:
+* Major version up
+  * e.g. `1.1.1` -> `2.0.0`
+  * Containing breaking changes
 
 ## Contributing
 
