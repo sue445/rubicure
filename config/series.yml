@@ -230,3 +230,16 @@ healingood: &healingood
     - cure_earth
 healingood_precure:
   <<: *healingood
+#######################################################
+tropical_rouge: &tropical_rouge
+  series_name: tropical_rouge
+  title: トロピカル～ジュ！プリキュア
+  started_date: 2021-02-28
+  # ended_date:   2021-01-
+  girls:
+    - cure_summer
+    - cure_coral
+    - cure_papaya
+    - cure_flamingo
+tropical_rouge_precure:
+  <<: *tropical_rouge
