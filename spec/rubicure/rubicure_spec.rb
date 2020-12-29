@@ -61,52 +61,54 @@ describe Rubicure do
   end
 
   describe "Cure." do
-    where(:name) do
-      [
-        [:black],
-        [:white],
+    context "When precure who starting 'cure'" do
+      where(:name) do
+        [
+          [:black],
+          [:white],
 
-        [:bloom],
-        [:egret],
+          [:bloom],
+          [:egret],
 
-        [:dream],
-        [:rouge],
-        [:lemonade],
-        [:mint],
-        [:aqua],
+          [:dream],
+          [:rouge],
+          [:lemonade],
+          [:mint],
+          [:aqua],
 
-        [:peach],
-        [:berry],
-        [:pine],
-        [:passion],
+          [:peach],
+          [:berry],
+          [:pine],
+          [:passion],
 
-        [:melody],
-        [:rhythm],
-        [:beat],
-        [:muse],
+          [:melody],
+          [:rhythm],
+          [:beat],
+          [:muse],
 
-        [:happy],
-        [:sunny],
-        [:peace],
-        [:march],
-        [:beauty],
+          [:happy],
+          [:sunny],
+          [:peace],
+          [:march],
+          [:beauty],
 
-        [:heart],
-        [:diamond],
-        [:rosetta],
-        [:sword],
-        [:ace],
+          [:heart],
+          [:diamond],
+          [:rosetta],
+          [:sword],
+          [:ace],
 
-        [:lovely],
-        [:princess],
-        [:honey],
-        [:fortune],
-      ]
-    end
+          [:lovely],
+          [:princess],
+          [:honey],
+          [:fortune],
+        ]
+      end
 
-    with_them do
-      it { expect(Cure.send(name)).to be_an_instance_of Rubicure::Girl }
-      it { expect(Cure.send(name).precure_name).to be_start_with "キュア" }
+      with_them do
+        it { expect(Cure.send(name)).to be_an_instance_of Rubicure::Girl }
+        it { expect(Cure.send(name).precure_name).to be_start_with "キュア" }
+      end
     end
 
     context "When precure who not starting 'cure'" do
