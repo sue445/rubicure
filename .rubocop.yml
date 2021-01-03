@@ -4,14 +4,10 @@ inherit_gem:
     - "config/rspec.yml"
 
 AllCops:
-  TargetRubyVersion: 2.2
+  TargetRubyVersion: 2.4
 
 RSpec/NestedGroups:
   Enabled: false
 
 RSpec/SharedExamples:
-  Enabled: false
-
-# TODO: Remove when drop support ruby 2.2
-Layout/IndentHeredoc:
   Enabled: false

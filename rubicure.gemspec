@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/sue445/rubicure"
   spec.license       = "MIT"
 
-  spec.required_ruby_version = ">= 2.2.2"
+  spec.required_ruby_version = ">= 2.4"
 
   if spec.respond_to?(:metadata)
     spec.metadata["homepage_uri"] = spec.homepage
@@ -48,6 +48,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-parameterized", ">= 0.3.2"
   spec.add_development_dependency "rubocop", "0.53.0"
   spec.add_development_dependency "rubocop-rspec", "1.25.1"
+  spec.add_development_dependency "rubocop_auto_corrector"
   spec.add_development_dependency "rubydoctest"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "unparser", ">= 0.4.5"
