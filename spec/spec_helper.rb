@@ -39,7 +39,7 @@ require "active_support/core_ext/time/zones"
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
-Dir["#{__dir__}/support/**/*.rb"].each {|f| require f }
+Dir["#{__dir__}/support/**/*.rb"].sort.each {|f| require f }
 
 Time.zone = "Tokyo"
 
