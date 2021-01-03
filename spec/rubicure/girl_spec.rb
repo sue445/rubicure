@@ -29,7 +29,7 @@ describe Rubicure::Girl do
       プリキュアスマイルチャージ！
       GO! GO! Let's GO ピース！
       ピカピカピカリンジャンケンポン！ キュアピース！
-JANKEN
+  JANKEN
   end
   let(:attack_messages) do
     [

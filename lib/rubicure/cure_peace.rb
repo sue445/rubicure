@@ -9,7 +9,7 @@
       ピカピカピカリン
       ジャンケンポン！
       （%s）
-JANKEN
+    JANKEN
     def pikarin_janken
       print_by_line(MESSAGE % HANDS.sample)
     end
