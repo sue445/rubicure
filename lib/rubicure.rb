@@ -20,11 +20,6 @@ require "rubicure/cure_passion"
 require "rubicure/cure_beat"
 require "rubicure/cure_scarlet"
 
-begin
-  require "backport_dig"
-rescue LoadError # rubocop:disable Lint/SuppressedException
-end
-
 module Precure
   def self.method_missing(name, *args, &block)
     Rubicure::Core.instance.send(name, *args, &block)
