@@ -79,7 +79,9 @@ describe Rubicure::Series do
     let(:girl_name) { :peace }
 
     context "same series" do
-      it { expect(series === series).to be true }
+      let(:same_series) { Rubicure::Series.find(series_name) }
+
+      it { expect(series === same_series).to be true }
       it { expect(series === girl).to be true }
     end
 
