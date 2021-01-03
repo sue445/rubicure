@@ -6,7 +6,7 @@ Precure.each_with_series do |series|
     title:     #{series.title}
     broadcast: #{series.started_date} - #{series.try(:ended_date)}
     girls:     #{series.girls.count}
-MESSAGE
+  MESSAGE
 
   series.girls.each do |girl|
     puts <<~MESSAGE
@@ -21,6 +21,6 @@ MESSAGE
         attack_messages: #{girl.attack_messages}
         transform_message:
       #{girl.transform_message}
-MESSAGE
+    MESSAGE
   end
 end
