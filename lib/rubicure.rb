@@ -29,6 +29,10 @@ module Precure
   def self.method_missing(name, *args, &block) # rubocop:disable Style/MethodMissing
     Rubicure::Core.instance.send(name, *args, &block)
   end
+
+  def self.respond_to_missing?(name, include_private)
+    Rubicure::Core.instance.respond_to_missing?(name, include_private)
+  end
 end
 
 module Shiny
