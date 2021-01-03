@@ -27,8 +27,6 @@ jobs:
 
       matrix:
         ruby:
-          - ruby:2.2
-          - ruby:2.3
           - ruby:2.4
           - ruby:2.5
           - ruby:2.6
@@ -64,7 +62,6 @@ jobs:
         with:
           codeclimate-test-reporter-id: ${{ secrets.CC_TEST_REPORTER_ID }}
           command: before-build
-        if: matrix.ruby >= 'ruby:2.4'
         continue-on-error: true
 
       - run: bundle exec rspec
@@ -80,7 +77,7 @@ jobs:
         with:
           codeclimate-test-reporter-id: ${{ secrets.CC_TEST_REPORTER_ID }}
           command: after-build
-        if: matrix.ruby >= 'ruby:2.4' && always()
+        if: always()
         continue-on-error: true
 
       - run: bundle exec rubocop
