@@ -1,10 +1,13 @@
 [Cure.peace, Cure.cure_peace].each do |peace|
   class << peace
+    # rubocop:disable Performance/CollectionLiteralInLoop
     HANDS =
       (["グー"] * 13) +
       (["チョキ"] * 14) +
       (["パー"] * 15) +
       ["グッチョッパー"]
+    # rubocop:enable Performance/CollectionLiteralInLoop
+
     MESSAGE = <<~JANKEN.freeze
       ピカピカピカリン
       ジャンケンポン！
