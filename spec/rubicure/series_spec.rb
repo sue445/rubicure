@@ -71,7 +71,7 @@ describe Rubicure::Series do
     it { should all(be_instance_of Rubicure::Girl) }
   end
 
-  # rubocop:disable Style/CaseEquality, Lint/UselessComparison, Style/NilComparison
+  # rubocop:disable Style/CaseEquality, Style/NilComparison
   describe "#===" do
     let(:series) { Rubicure::Series.find(series_name) }
     let(:series_name) { :smile }
@@ -79,7 +79,9 @@ describe Rubicure::Series do
     let(:girl_name) { :peace }
 
     context "same series" do
-      it { expect(series === series).to be true }
+      let(:same_series) { Rubicure::Series.find(series_name) }
+
+      it { expect(series === same_series).to be true }
       it { expect(series === girl).to be true }
     end
 
@@ -99,7 +101,7 @@ describe Rubicure::Series do
       it { expect(series === nil).to be false }
     end
   end
-  # rubocop:enable Style/CaseEquality, Lint/UselessComparison, Style/NilComparison
+  # rubocop:enable Style/CaseEquality, Style/NilComparison
 
   describe "#names" do
     subject { Rubicure::Series.names }

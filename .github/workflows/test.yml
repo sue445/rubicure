@@ -83,7 +83,6 @@ jobs:
       - run: bundle exec rubocop
         timeout-minutes: 1
         continue-on-error: ${{ matrix.allow_failures == 'true' }}
-        if: matrix.ruby < 'ruby:3.0' # FIXME: remove this after upgrade rubocop
 
       - run: bundle exec rubydoctest README.md
         timeout-minutes: 1

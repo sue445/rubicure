@@ -28,7 +28,7 @@ module Rubicure
       unmarked_precure.respond_to?(name)
     end
 
-    # rubocop:disable Metrics/LineLength
+    # rubocop:disable Layout/LineLength
 
     # get current precure series
     # @return [Rubicure::Series] current precure
@@ -45,7 +45,7 @@ module Rubicure
       end
       raise NotOnAirError, "Not on air precure!"
     end
-    # rubocop:enable Metrics/LineLength
+    # rubocop:enable Layout/LineLength
 
     alias_method :current, :now
 
@@ -195,7 +195,7 @@ module Rubicure
     end
     alias_method :superstars, :super_stars
 
-    # rubocop:disable Metrics/LineLength
+    # rubocop:disable Layout/LineLength
 
     # Get precure miracle universe
     #
@@ -240,7 +240,7 @@ module Rubicure
       @miracle_leap
     end
 
-    # rubocop:enable Metrics/LineLength
+    # rubocop:enable Layout/LineLength
 
     # iterate with :unmarked, :max_heart, ...
     #

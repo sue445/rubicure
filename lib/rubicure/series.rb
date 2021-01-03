@@ -131,7 +131,7 @@ module Rubicure
         @cache ||= {}
         unless @cache[series_name]
           series_config = config[series_name] || {}
-          series_config.reject! {|_k, v| v.nil? }
+          series_config.compact!
 
           @cache[series_name] = Rubicure::Series[series_config]
         end

@@ -22,12 +22,16 @@ require "rubicure/cure_scarlet"
 
 begin
   require "backport_dig"
-rescue LoadError # rubocop:disable Lint/HandleExceptions
+rescue LoadError # rubocop:disable Lint/SuppressedException
 end
 
 module Precure
-  def self.method_missing(name, *args, &block) # rubocop:disable Style/MethodMissing
+  def self.method_missing(name, *args, &block)
     Rubicure::Core.instance.send(name, *args, &block)
+  end
+
+  def self.respond_to_missing?(name, include_private)
+    Rubicure::Core.instance.respond_to_missing?(name, include_private)
   end
 end
 

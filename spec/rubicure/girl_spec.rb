@@ -29,7 +29,7 @@ describe Rubicure::Girl do
       プリキュアスマイルチャージ！
       GO! GO! Let's GO ピース！
       ピカピカピカリンジャンケンポン！ キュアピース！
-  JANKEN
+    JANKEN
   end
   let(:attack_messages) do
     [
@@ -100,13 +100,13 @@ describe Rubicure::Girl do
           transform_calls:   ["cure_up_rapapa"],
           color:             "pink",
           birthday:          "6/12",
-          transform_styles: {
+          transform_styles:  {
             diamond: {
-              precure_name: "キュアミラクル（ダイヤスタイル）",
+              precure_name:      "キュアミラクル（ダイヤスタイル）",
               transform_message: "",
             },
-            ruby: {
-              precure_name: "キュアミラクル（ルビースタイル）",
+            ruby:    {
+              precure_name:      "キュアミラクル（ルビースタイル）",
               transform_message: "",
             },
           },
@@ -258,7 +258,7 @@ describe Rubicure::Girl do
         girl.transform!
       end
 
-      subject! { humanize! }
+      subject! { humanize! } # rubocop:disable RSpec/LeadingSubject
 
       it_behaves_like :a_humanize_method
     end
