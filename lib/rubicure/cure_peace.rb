@@ -5,10 +5,10 @@
       (["チョキ"] * 14) +
       (["パー"] * 15) +
       ["グッチョッパー"]
-    MESSAGE = <<JANKEN.freeze
-ピカピカピカリン
-ジャンケンポン！
-（%s）
+    MESSAGE = <<~JANKEN.freeze
+      ピカピカピカリン
+      ジャンケンポン！
+      （%s）
 JANKEN
     def pikarin_janken
       print_by_line(MESSAGE % HANDS.sample)
