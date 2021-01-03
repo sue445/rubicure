@@ -11,6 +11,9 @@ AllCops:
   TargetRubyVersion: 2.4
   NewCops: enable
 
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
 RSpec/NestedGroups:
   Enabled: false
 
