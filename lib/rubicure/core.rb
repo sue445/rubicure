@@ -195,7 +195,7 @@ module Rubicure
     end
     alias_method :superstars, :super_stars
 
-    # rubocop:disable Metrics/LineLength
+    # rubocop:disable Layout/LineLength
 
     # Get precure miracle universe
     #
@@ -240,7 +240,7 @@ module Rubicure
       @miracle_leap
     end
 
-    # rubocop:enable Metrics/LineLength
+    # rubocop:enable Layout/LineLength
 
     # iterate with :unmarked, :max_heart, ...
     #
