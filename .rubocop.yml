@@ -11,6 +11,10 @@ AllCops:
   TargetRubyVersion: 2.4
   NewCops: enable
 
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
 
