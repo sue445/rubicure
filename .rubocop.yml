@@ -1,7 +1,11 @@
+require:
+  - rubocop-performance
+
 inherit_gem:
   onkcop:
     - "config/rubocop.yml"
     - "config/rspec.yml"
+    - "config/performance.yml"
 
 AllCops:
   TargetRubyVersion: 2.4
