@@ -22,7 +22,7 @@ require "rubicure/cure_scarlet"
 
 begin
   require "backport_dig"
-rescue LoadError # rubocop:disable Lint/HandleExceptions
+rescue LoadError # rubocop:disable Lint/SuppressedException
 end
 
 module Precure
