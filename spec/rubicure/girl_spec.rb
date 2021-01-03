@@ -258,7 +258,7 @@ describe Rubicure::Girl do
         girl.transform!
       end
 
-      subject! { humanize! }
+      subject! { humanize! } # rubocop:disable RSpec/LeadingSubject
 
       it_behaves_like :a_humanize_method
     end
