@@ -1,5 +1,16 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v1.3.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v2.0.0...master)
+
+## v2.0.0
+[full changelog](http://github.com/sue445/rubicure/compare/v1.3.5...v2.0.0)
+
+### Breaking changes :bomb:
+* Drop support for ruby 2.2 and 2.3
+  * https://github.com/sue445/rubicure/pull/249
+
+### Others
+* update rubocop gems
+  * https://github.com/sue445/rubicure/pull/250
 
 ## v1.3.5
 [full changelog](http://github.com/sue445/rubicure/compare/v1.3.4...v1.3.5)
