@@ -22,7 +22,7 @@ see followings
 
 ## Requirements
 
-* ruby >= 2.2.2
+* ruby >= 2.4
   * more: [.github/workflows/test.yml](.github/workflows/test.yml)
 
 ## Installation
