@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v2.0.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v2.0.1...master)
+
+## v2.0.1
+[full changelog](http://github.com/sue445/rubicure/compare/v2.0.0...v2.0.1)
+
+* Add ended_date of Healingood precure
+  * https://github.com/sue445/rubicure/pull/252
 
 ## v2.0.0
 [full changelog](http://github.com/sue445/rubicure/compare/v1.3.5...v2.0.0)
