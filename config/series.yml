@@ -222,7 +222,7 @@ healingood: &healingood
   series_name: healingood
   title: ヒーリングっど♥プリキュア
   started_date: 2020-02-02
-  # ended_date:   2021-01-
+  ended_date:   2021-02-21
   girls:
     - cure_grace
     - cure_fontaine
