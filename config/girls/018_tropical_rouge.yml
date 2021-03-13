@@ -32,15 +32,15 @@ cure_coral: &cure_coral
   precure_name: キュアコーラル
   cast_name:    花守ゆみり
   color:        purple
-  created_date: 2021-XX-XX # episode XX
+  created_date: 2021-03-14 # episode 3
   birthday:     5/9
   transform_message: |-
     プリキュア！トロピカルチェンジ！
     レッツメイク！キャッチ！
-    チーク！
+    リップ！
     アイズ！
     ヘアー！
-    リップ！
+    チーク！
     ドレス！
     きらめく宝石！キュアコーラル！
   # extra_names:
@@ -60,16 +60,12 @@ cure_papaya: &cure_papaya
   precure_name: キュアパパイア
   cast_name:    石川由依
   color:        yellow
-  created_date: 2021-XX-XX # episode XX
+  created_date: 2021-03-21 # episode 4
   birthday:     11/21
   transform_message: |-
     プリキュア！トロピカルチェンジ！
     レッツメイク！キャッチ！
-    チーク！
-    アイズ！
-    ヘアー！
-    リップ！
-    ドレス！
+    TODO
     ひらめく果実！キュアパパイア！
   # extra_names:
   attack_messages:
@@ -93,11 +89,7 @@ cure_flamingo: &cure_flamingo
   transform_message: |-
     プリキュア！トロピカルチェンジ！
     レッツメイク！キャッチ！
-    チーク！
-    アイズ！
-    ヘアー！
-    リップ！
-    ドレス！
+    TODO
     はためく翼！キュアフラミンゴ！
   # extra_names:
   attack_messages:
