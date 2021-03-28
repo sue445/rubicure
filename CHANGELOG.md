@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v2.0.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v2.1.0...master)
+
+## v2.1.0
+[full changelog](http://github.com/sue445/rubicure/compare/v2.0.1...v2.1.0)
+
+* Add Tropical-Rouge! Precure :ocean:
+  * https://github.com/sue445/rubicure/pull/246
 
 ## v2.0.1
 [full changelog](http://github.com/sue445/rubicure/compare/v2.0.0...v2.0.1)
