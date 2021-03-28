@@ -1,0 +1,111 @@
+cure_summer: &cure_summer
+  girl_name:    cure_summer
+  human_name:   夏海まなつ
+  precure_name: キュアサマー
+  cast_name:    ファイルーズあい
+  color:        white
+  created_date: 2021-02-28 # episode 1
+  birthday:     8/1
+  transform_message: |-
+    プリキュア！トロピカルチェンジ！
+    レッツメイク！キャッチ！
+    チーク！
+    アイズ！
+    ヘアー！
+    リップ！
+    ドレス！
+    ときめく常夏！キュアサマー！
+  # extra_names:
+  attack_messages:
+    - |-
+      ハートルージュロッド！
+      プリキュア！おてんとサマーストライク！
+      ビクトリー！
+  transform_calls:
+    - precure_tropical_change
+summer:
+  <<: *cure_summer
+
+cure_coral: &cure_coral
+  girl_name:    cure_coral
+  human_name:   涼村さんご
+  precure_name: キュアコーラル
+  cast_name:    花守ゆみり
+  color:        purple
+  created_date: 2021-03-14 # episode 3
+  birthday:     5/9
+  transform_message: |-
+    プリキュア！トロピカルチェンジ！
+    レッツメイク！キャッチ！
+    リップ！
+    アイズ！
+    ヘアー！
+    チーク！
+    ドレス！
+    きらめく宝石！キュアコーラル！
+  # extra_names:
+  attack_messages:
+    - |-
+      ハートルージュロッド！
+      プリキュア！もこもこコーラルディフュージョン！
+      ビクトリー！
+  transform_calls:
+    - precure_tropical_change
+coral:
+  <<: *cure_coral
+
+cure_papaya: &cure_papaya
+  girl_name:    cure_papaya
+  human_name:   一ノ瀬みのり
+  precure_name: キュアパパイア
+  cast_name:    石川由依
+  color:        yellow
+  created_date: 2021-03-21 # episode 4
+  birthday:     11/21
+  transform_message: |-
+    プリキュア！トロピカルチェンジ！
+    レッツメイク！キャッチ！
+    チーク！
+    リップ！
+    ヘアー！
+    アイズ！
+    ドレス！
+    ひらめく果実！キュアパパイア！
+  # extra_names:
+  attack_messages:
+    - |-
+      ハートルージュロッド！
+      プリキュア！ぱんぱかパパイアショット！
+      ビクトリー！
+  transform_calls:
+    - precure_tropical_change
+papaya:
+  <<: *cure_papaya
+
+cure_flamingo: &cure_flamingo
+  girl_name:    cure_flamingo
+  human_name:   滝沢あすか
+  precure_name: キュアフラミンゴ
+  cast_name:    瀬戸麻沙美
+  color:        red
+  created_date: 2021-03-28 # episode 5
+  birthday:     10/15
+  transform_message: |-
+    プリキュア！トロピカルチェンジ！
+    レッツメイク！キャッチ！
+    チーク！
+    アイズ！
+    リップ！
+    ヘアー！
+    ドレス！
+    はためく翼！キュアフラミンゴ！
+  # extra_names:
+  attack_messages:
+    - |-
+      ハートルージュロッド！
+      プリキュア！ぶっとびフラミンゴスマッシュ！
+      ビクトリー！
+  transform_calls:
+    - precure_tropical_change
+flamingo:
+  <<: *cure_flamingo

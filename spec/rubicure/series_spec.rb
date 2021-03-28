@@ -18,6 +18,7 @@ describe Rubicure::Series do
       :hugtto,
       :star_twinkle,
       :healingood,
+      :tropical_rouge,
     ]
   end
 
