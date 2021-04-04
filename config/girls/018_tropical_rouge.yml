@@ -15,6 +15,8 @@ cure_summer: &cure_summer
     リップ！
     ドレス！
     ときめく常夏！キュアサマー！
+    はぁー！
+    4人揃って！トロピカル～ジュ！プリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -43,6 +45,8 @@ cure_coral: &cure_coral
     チーク！
     ドレス！
     きらめく宝石！キュアコーラル！
+    はぁー！
+    4人揃って！トロピカル～ジュ！プリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -71,6 +75,8 @@ cure_papaya: &cure_papaya
     アイズ！
     ドレス！
     ひらめく果実！キュアパパイア！
+    はぁー！
+    4人揃って！トロピカル～ジュ！プリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -99,6 +105,8 @@ cure_flamingo: &cure_flamingo
     ヘアー！
     ドレス！
     はためく翼！キュアフラミンゴ！
+    はぁー！
+    4人揃って！トロピカル～ジュ！プリキュア！
   # extra_names:
   attack_messages:
     - |-
