@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v2.1.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v2.1.1...master)
+
+## v2.1.1
+[full changelog](http://github.com/sue445/rubicure/compare/v2.1.0...v2.1.1)
+
+* Tweak transform message of TropicalRoute Precure
+  * https://github.com/sue445/rubicure/pull/253
 
 ## v2.1.0
 [full changelog](http://github.com/sue445/rubicure/compare/v2.0.1...v2.1.0)
