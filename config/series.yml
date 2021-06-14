@@ -241,5 +241,6 @@ tropical_rouge: &tropical_rouge
     - cure_coral
     - cure_papaya
     - cure_flamingo
+    - cure_lamer
 tropical_rouge_precure:
   <<: *tropical_rouge
