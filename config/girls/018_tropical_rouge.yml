@@ -117,3 +117,29 @@ cure_flamingo: &cure_flamingo
     - precure_tropical_change
 flamingo:
   <<: *cure_flamingo
+
+cure_lamer: &cure_lamer
+  girl_name:       cure_lamer
+  human_name:      ローラ
+  human_full_name: ローラ・アポロドーロス・ヒュギーヌス・ラメール
+  precure_name:    キュアラメール
+  cast_name:       日高里菜
+  color:           blue
+  created_date:    2021-06-20 # episode 17
+  birthday:        6/30
+  transform_message: |-
+    プリキュア！トロピカルチェンジ！
+    レッツメイク！キャッチ！
+    フェイス！
+    ネイル！
+    ドレス！
+    ゆらめく大海原！キュアラメール！
+  # extra_names:
+  attack_messages:
+    - |-
+      プリキュア！くるくるラメールストリーム！
+      ビクトリー！
+  transform_calls:
+    - precure_tropical_change
+lamer:
+  <<: *cure_lamer
