@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v2.1.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v2.1.2...master)
+
+## v2.1.2
+[full changelog](http://github.com/sue445/rubicure/compare/v2.1.1...v2.1.2)
+
+* Add CureLamer
+  * https://github.com/sue445/rubicure/pull/254
 
 ## v2.1.1
 [full changelog](http://github.com/sue445/rubicure/compare/v2.1.0...v2.1.1)
