@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v2.1.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v2.1.3...master)
+
+## v2.1.3
+[full changelog](http://github.com/sue445/rubicure/compare/v2.1.2...v2.1.3)
+
+* Tweak Laura's name
+  * https://github.com/sue445/rubicure/pull/255
 
 ## v2.1.2
 [full changelog](http://github.com/sue445/rubicure/compare/v2.1.1...v2.1.2)
