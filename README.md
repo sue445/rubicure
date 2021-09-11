@@ -4,7 +4,6 @@
 [![Build Status](https://github.com/sue445/rubicure/workflows/test/badge.svg?branch=master)](https://github.com/sue445/rubicure/actions?query=workflow%3Atest)
 [![Code Climate](https://codeclimate.com/github/sue445/rubicure.png)](https://codeclimate.com/github/sue445/rubicure)
 [![Coverage Status](https://coveralls.io/repos/sue445/rubicure/badge.png)](https://coveralls.io/r/sue445/rubicure)
-[![Inline docs](http://inch-ci.org/github/sue445/rubicure.svg?branch=master)](http://inch-ci.org/github/sue445/rubicure)
 
 All about Japanese battle heroine "Pretty Cure (Precure)".
 
