@@ -1,6 +1,14 @@
 require "active_support/core_ext/array/wrap"
 require "active_support/core_ext/hash/keys"
+
+begin
+  # workaround for activesupport 7.0.0
+  # c.f. https://github.com/rails/rails/issues/43851
+  require "active_support/isolated_execution_state"
+rescue LoadError # rubocop:disable Lint/SuppressedException
+end
 require "active_support/core_ext/time/calculations"
+
 require "yaml"
 require "hashie"
 require "date"
