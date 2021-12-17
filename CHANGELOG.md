@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v2.1.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v2.1.5...master)
+
+## v2.1.5
+[full changelog](http://github.com/sue445/rubicure/compare/v2.1.4...v2.1.5)
+
+* Fixed. `NameError: uninitialized constant ActiveSupport::XmlMini::IsolatedExecutionState` with activesupport v7.0.0
+  * https://github.com/sue445/rubicure/pull/258
 
 ## v2.1.4
 [full changelog](http://github.com/sue445/rubicure/compare/v2.1.3...v2.1.4)
