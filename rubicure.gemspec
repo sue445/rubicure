@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/sue445/rubicure"
   spec.license       = "MIT"
 
-  spec.required_ruby_version = ">= 2.4"
+  spec.required_ruby_version = ">= 2.6"
 
   if spec.respond_to?(:metadata)
     spec.metadata["homepage_uri"] = spec.homepage
@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
     spec.metadata["rubygems_mfa_required"] = "true"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
+          "public gem pushes."
   end
 
   spec.files = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "activesupport", ">= 5.0.0"
   spec.add_dependency "hashie", ">= 2.0.5"
-  spec.add_dependency "sengiri_yaml", ">= 0.0.2"
+  spec.add_dependency "sengiri_yaml", ">= 1.0.0"
 
   spec.add_development_dependency "bundler", ">= 1.3.5"
   spec.add_development_dependency "coveralls"
@@ -47,7 +47,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-collection_matchers"
   spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "rspec-parameterized", ">= 0.3.2"
-  spec.add_development_dependency "rubocop", "1.7.0"
+  spec.add_development_dependency "rubocop", "1.24.0"
   spec.add_development_dependency "rubocop_auto_corrector"
   spec.add_development_dependency "rubocop-performance", "1.9.2"
   spec.add_development_dependency "rubocop-rake", "0.5.1"

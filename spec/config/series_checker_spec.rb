@@ -1,5 +1,5 @@
 describe "config/series.yml" do # rubocop:disable RSpec/DescribeClass
-  series = YAML.load_file("#{spec_dir}/../config/series.yml")
+  series = Rubicure::Concerns::Util.load_yaml_file("#{spec_dir}/../config/series.yml")
 
   series.values.uniq {|attributes| attributes["series_name"] }.each do |attributes|
     context attributes["title"] do

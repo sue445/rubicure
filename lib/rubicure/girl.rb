@@ -215,7 +215,7 @@ module Rubicure
       # @return [Hash] content of config/girls/*.yml
       def config
         unless @config
-          @config = SengiriYaml.load_dir("#{File.dirname(__FILE__)}/../../config/girls").deep_symbolize_keys
+          @config = SengiriYaml.load_dir("#{File.dirname(__FILE__)}/../../config/girls", permitted_classes: [Date], aliases: true).deep_symbolize_keys
         end
         @config
       end
@@ -293,8 +293,7 @@ module Rubicure
         return false unless has_key?(:transform_calls)
 
         shortened_name = method_name.to_s.
-                           sub(/\Aprecure_|_precure\z/, "").
-                           sub(/!\z/, "")
+                           sub(/\Aprecure_|_precure\z/, "").delete_suffix("!")
 
         transform_calls.include?(shortened_name)
       end

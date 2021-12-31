@@ -3,7 +3,7 @@ describe "girls_checker" do # rubocop:disable RSpec/DescribeClass
 
   config_files.each do |config_file|
     describe "config/girls/#{config_file.basename}" do
-      girls = YAML.load_file(config_file)
+      girls = Rubicure::Concerns::Util.load_yaml_file(config_file)
 
       girls.each do |girl_name, girl|
         describe girl_name do
