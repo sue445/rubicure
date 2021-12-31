@@ -87,6 +87,8 @@ module Rubicure
     end
 
     class << self
+      include Rubicure::Concerns::Util
+
       # @return [Array<Symbol>]
       def names
         config.keys
@@ -105,7 +107,7 @@ module Rubicure
       def config
         unless @config
           config_file = "#{File.dirname(__FILE__)}/../../config/series.yml"
-          @config = YAML.load_file(config_file).deep_symbolize_keys
+          @config = load_yaml_file(config_file).deep_symbolize_keys
         end
         @config
       end
