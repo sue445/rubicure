@@ -293,8 +293,7 @@ module Rubicure
         return false unless has_key?(:transform_calls)
 
         shortened_name = method_name.to_s.
-                           sub(/\Aprecure_|_precure\z/, "").
-                           sub(/!\z/, "")
+                           sub(/\Aprecure_|_precure\z/, "").delete_suffix('!')
 
         transform_calls.include?(shortened_name)
       end
