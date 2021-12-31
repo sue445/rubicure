@@ -1,5 +1,12 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v2.1.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.0.0...master)
+
+## v3.0.0
+[full changelog](http://github.com/sue445/rubicure/compare/v2.1.5...v3.0.0)
+
+### Breaking changes :bomb:
+* Supports ruby 3.1+ and drop ruby < 2.6
+  * https://github.com/sue445/rubicure/pull/259
 
 ## v2.1.5
 [full changelog](http://github.com/sue445/rubicure/compare/v2.1.4...v2.1.5)
