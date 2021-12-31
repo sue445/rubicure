@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
     spec.metadata["rubygems_mfa_required"] = "true"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
+          "public gem pushes."
   end
 
   spec.files = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
