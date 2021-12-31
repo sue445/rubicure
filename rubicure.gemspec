@@ -47,7 +47,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-collection_matchers"
   spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "rspec-parameterized", ">= 0.3.2"
-  spec.add_development_dependency "rubocop", "1.7.0"
+  spec.add_development_dependency "rubocop", "1.24.0"
   spec.add_development_dependency "rubocop_auto_corrector"
   spec.add_development_dependency "rubocop-performance", "1.9.2"
   spec.add_development_dependency "rubocop-rake", "0.5.1"
