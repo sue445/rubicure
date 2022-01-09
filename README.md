@@ -118,7 +118,7 @@ and [more aliases!](config/series.yml)
 
 ```ruby
 >> Precure.now
-=> {:series_name=>"tropical_rouge", :title=>"トロピカル～ジュ！プリキュア", :started_date=>#<Date: 2021-02-28 ((2459274j,0s,0n),+0s,2299161j)>, :girls=>["cure_summer", "cure_coral", "cure_papaya", "cure_flamingo", "cure_lamer"]}
+=> {:series_name=>"tropical_rouge", :title=>"トロピカル～ジュ！プリキュア", :started_date=>#<Date: 2021-02-28 ((2459274j,0s,0n),+0s,2299161j)>, :ended_date=>#<Date: 2022-01-30 ((2459610j,0s,0n),+0s,2299161j)>, :girls=>["cure_summer", "cure_coral", "cure_papaya", "cure_flamingo", "cure_lamer"]}
 
 # -2013/1/27  : smile precure
 #  2013/2/5 - : dokidoki precure
