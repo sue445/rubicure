@@ -19,6 +19,7 @@ describe Rubicure::Series do
       :star_twinkle,
       :healingood,
       :tropical_rouge,
+      :delicious_party,
     ]
   end
 

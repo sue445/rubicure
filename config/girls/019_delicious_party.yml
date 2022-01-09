@@ -1,0 +1,104 @@
+cure_precious: &cure_precious
+  girl_name:    cure_precious
+  human_name:   和実ゆい
+  precure_name: キュアプレシャス
+  cast_name:    菱川花菜
+  color:        pink
+  created_date: 2022-02-06 # episode 1
+  birthday:     8/31
+  transform_message: |-
+    コメー！
+    プリキュア！デリシャスタンバイ！
+    Party Go!
+    ニギニギ！
+    コメコメ！
+    ハートを！
+    コメコメ！
+    シェアリングエナジー！
+    コメー！
+    コメコメ）
+    あつあつごはんで、みなぎるパワー！
+    キュアプレシャス！
+    おいしい笑顔で満たしてあげる！
+  # extra_names:
+  attack_messages:
+    - |-
+      プリキュア！プレシャストライアングル！
+      はー！
+      はー！
+      お腹いっぱい
+      ごちそうさまでした！
+  transform_calls:
+    - delicioustandby
+precious:
+  <<: *cure_precious
+
+cure_spicy: &cure_spicy
+  girl_name:    cure_spicy
+  human_name:   芙羽ここね
+  precure_name: キュアスパイシー
+  cast_name:    清水理沙
+  color:        blue
+  created_date: 2022-02-27 # episode 4
+  birthday:     3/13
+  transform_message: |-
+    パム！
+    プリキュア！デリシャスタンバイ！
+    Party Go!
+    オープン
+    パム！
+    サンド！
+    パムパム！
+    シェアリングエナジー！
+    テイスティー！
+    パムパム！
+    ふわふわサンドde心にスパイス！
+    キュアスパイシー！
+    わけあうおいしさ、焼きつけるわ！
+  # extra_names:
+  attack_messages:
+    - |-
+      プリキュア！スパイシーサークル！
+      はー！
+      はー！
+      お腹いっぱい
+      ごちそうさまでした！
+  transform_calls:
+    - delicioustandby
+spicy:
+  <<: *cure_spicy
+
+cure_yumyum: &cure_yumyum
+  girl_name:    cure_yumyum
+  human_name:   華満らん
+  precure_name: キュアヤムヤム
+  cast_name:    井口裕香
+  color:        yellow
+  created_date: 2022-04-24 # episode 7
+  birthday:     7/11
+  transform_message: |-
+    メン！
+    プリキュア！デリシャスタンバイ！
+    Party Go!
+    クルクル！
+    メンメン！
+    ミラクル！
+    メンメン！
+    シェアリングエナジー！
+    ワンタン！
+    メンメン！
+    きらめくヌードル・エモーション！
+    キュアヤムヤム！
+    おいしいの独り占め、ゆるさないよ！
+  # extra_names:
+  attack_messages:
+    - |-
+      プリキュア！ヤムヤムラインズ！
+      はー！
+      はー！
+      お腹いっぱい
+      ごちそうさまでした！
+  transform_calls:
+    - delicioustandby
+yumyum:
+  <<: *cure_yumyum
