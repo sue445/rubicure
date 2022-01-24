@@ -25,7 +25,7 @@ cure_grace: &cure_grace
       プリキュア！ヒーリングフラワー！
       お大事に
   transform_calls:
-    - precure_operation
+    - operation
 grace:
   <<: *cure_grace
 
@@ -56,7 +56,7 @@ cure_fontaine: &cure_fontaine
       プリキュア！ヒーリングストリーム！
       お大事に
   transform_calls:
-    - precure_operation
+    - operation
 fontaine:
   <<: *cure_fontaine
 
@@ -87,7 +87,7 @@ cure_sparkle: &cure_sparkle
       プリキュア！ヒーリングフラッシュ！
       お大事に
   transform_calls:
-    - precure_operation
+    - operation
 sparkle:
   <<: *cure_sparkle
 
@@ -118,6 +118,6 @@ cure_earth: &cure_earth
       プリキュア・ヒーリングハリケーン！
       お大事に
   transform_calls:
-    - precure_operation
+    - operation
 earth:
   <<: *cure_earth

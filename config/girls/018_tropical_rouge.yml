@@ -24,7 +24,7 @@ cure_summer: &cure_summer
       プリキュア！おてんとサマーストライク！
       ビクトリー！
   transform_calls:
-    - precure_tropical_change
+    - tropical_change
 summer:
   <<: *cure_summer
 
@@ -54,7 +54,7 @@ cure_coral: &cure_coral
       プリキュア！もこもこコーラルディフュージョン！
       ビクトリー！
   transform_calls:
-    - precure_tropical_change
+    - tropical_change
 coral:
   <<: *cure_coral
 
@@ -84,7 +84,7 @@ cure_papaya: &cure_papaya
       プリキュア！ぱんぱかパパイアショット！
       ビクトリー！
   transform_calls:
-    - precure_tropical_change
+    - tropical_change
 papaya:
   <<: *cure_papaya
 
@@ -114,7 +114,7 @@ cure_flamingo: &cure_flamingo
       プリキュア！ぶっとびフラミンゴスマッシュ！
       ビクトリー！
   transform_calls:
-    - precure_tropical_change
+    - tropical_change
 flamingo:
   <<: *cure_flamingo
 
@@ -140,6 +140,6 @@ cure_lamer: &cure_lamer
       プリキュア！くるくるラメールストリーム！
       ビクトリー！
   transform_calls:
-    - precure_tropical_change
+    - tropical_change
 lamer:
   <<: *cure_lamer
