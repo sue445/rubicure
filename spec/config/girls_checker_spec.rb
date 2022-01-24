@@ -36,6 +36,20 @@ describe "girls_checker" do # rubocop:disable RSpec/DescribeClass
               end
             end
           end
+
+          transform_calls = Array(girl["transform_calls"])
+
+          describe "#transform_calls", unless: transform_calls.empty? do
+            subject { transform_calls }
+
+            transform_calls.count.times do |n|
+              # rubocop:disable RSpec/RepeatedDescription `expect().not_to all( matcher )` is not supported.
+              its([n]) { should_not be_start_with "precure_" }
+              its([n]) { should_not be_end_with "_precure" }
+              its([n]) { should_not be_end_with "!" }
+              # rubocop:enable RSpec/RepeatedDescription
+            end
+          end
         end
       end
     end
