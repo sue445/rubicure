@@ -16,7 +16,8 @@ cure_summer: &cure_summer
     ドレス！
     ときめく常夏！キュアサマー！
     はぁー！
-    4人揃って！トロピカル～ジュ！プリキュア！
+    ${random_transform_word}
+    トロピカル～ジュ！プリキュア！
   random_transform_words: &random_transform_words
     - 4人揃って！
     - 今日も元気だ！
@@ -78,7 +79,8 @@ cure_coral: &cure_coral
     ドレス！
     きらめく宝石！キュアコーラル！
     はぁー！
-    4人揃って！トロピカル～ジュ！プリキュア！
+    ${random_transform_word}
+    トロピカル～ジュ！プリキュア！
   random_transform_words: *random_transform_words
   # extra_names:
   attack_messages:
@@ -109,7 +111,8 @@ cure_papaya: &cure_papaya
     ドレス！
     ひらめく果実！キュアパパイア！
     はぁー！
-    4人揃って！トロピカル～ジュ！プリキュア！
+    ${random_transform_word}
+    トロピカル～ジュ！プリキュア！
   random_transform_words: *random_transform_words
   # extra_names:
   attack_messages:
@@ -140,7 +143,8 @@ cure_flamingo: &cure_flamingo
     ドレス！
     はためく翼！キュアフラミンゴ！
     はぁー！
-    4人揃って！トロピカル～ジュ！プリキュア！
+    ${random_transform_word}
+    トロピカル～ジュ！プリキュア！
   random_transform_words: *random_transform_words
   # extra_names:
   attack_messages:
@@ -169,6 +173,9 @@ cure_lamer: &cure_lamer
     ネイル！
     ドレス！
     ゆらめく大海原！キュアラメール！
+    はぁー！
+    ${random_transform_word}
+    トロピカル～ジュ！プリキュア！
   random_transform_words: *random_transform_words
   # extra_names:
   attack_messages:
