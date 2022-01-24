@@ -17,6 +17,38 @@ cure_summer: &cure_summer
     ときめく常夏！キュアサマー！
     はぁー！
     4人揃って！トロピカル～ジュ！プリキュア！
+  random_transform_words: &random_transform_words
+    - 4人揃って！
+    - 今日も元気だ！
+    - よく食べよく寝る！
+    - エキストラだよ！
+    - 笑顔は100点！
+    - 雨にも負けない！
+    - 噂も吹き飛ぶ！
+    - 悩みも吹き飛ぶ！
+    - よいこの友達！
+    - 今日も元気だ！
+    - 5人揃って！
+    - 年中無休だ！
+    - 一人迷子だ！
+    - お祭り大好き！
+    - 転んで泣かない！
+    - いいとこ見せたい！
+    - 光る5つ星！
+    - 今日も元気だ！
+    - メイクは気合だ！
+    - 6人揃って！
+    - 雪の国でも！
+    - 子どももなれるよ！
+    - 今日も元気だ！
+    - 仮装じゃないよ！
+    - 今日も元気だ！
+    - 今日も本気だ！
+    - 燃えるど根性！
+    - 今日も元気だ！
+    - 全速前進！
+    - 絶対負けない！
+    - あっという間に！
   # extra_names:
   attack_messages:
     - |-
@@ -47,6 +79,7 @@ cure_coral: &cure_coral
     きらめく宝石！キュアコーラル！
     はぁー！
     4人揃って！トロピカル～ジュ！プリキュア！
+  random_transform_words: *random_transform_words
   # extra_names:
   attack_messages:
     - |-
@@ -77,6 +110,7 @@ cure_papaya: &cure_papaya
     ひらめく果実！キュアパパイア！
     はぁー！
     4人揃って！トロピカル～ジュ！プリキュア！
+  random_transform_words: *random_transform_words
   # extra_names:
   attack_messages:
     - |-
@@ -107,6 +141,7 @@ cure_flamingo: &cure_flamingo
     はためく翼！キュアフラミンゴ！
     はぁー！
     4人揃って！トロピカル～ジュ！プリキュア！
+  random_transform_words: *random_transform_words
   # extra_names:
   attack_messages:
     - |-
@@ -134,6 +169,7 @@ cure_lamer: &cure_lamer
     ネイル！
     ドレス！
     ゆらめく大海原！キュアラメール！
+  random_transform_words: *random_transform_words
   # extra_names:
   attack_messages:
     - |-
