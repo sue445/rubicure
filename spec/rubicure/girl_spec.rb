@@ -1,16 +1,17 @@
 describe Rubicure::Girl do
   let(:girl) do
     girl = Rubicure::Girl[
-        girl_name:         girl_name,
-        human_name:        human_name,
-        precure_name:      precure_name,
-        cast_name:         cast_name,
-        created_date:      created_date,
-        extra_names:       extra_names,
-        transform_message: transform_message,
-        attack_messages:   attack_messages,
-        transform_calls:   transform_calls,
-        color:             color,
+        girl_name:              girl_name,
+        human_name:             human_name,
+        precure_name:           precure_name,
+        cast_name:              cast_name,
+        created_date:           created_date,
+        extra_names:            extra_names,
+        transform_message:      transform_message,
+        attack_messages:        attack_messages,
+        transform_calls:        transform_calls,
+        color:                  color,
+        random_transform_words: random_transform_words,
     ]
     girl.io = mock_io
     girl
@@ -38,6 +39,7 @@ describe Rubicure::Girl do
     ]
   end
   let(:transform_calls) { %w[smile_charge] }
+  let(:random_transform_words) { nil }
 
   describe "#name" do
     context "when before transform" do
@@ -141,6 +143,45 @@ describe Rubicure::Girl do
 
         it { expect(girl.name).to eq "キュアミラクル（ダイヤスタイル）" }
         it { expect(girl.state_names).to eq ["朝日奈みらい", "キュアミラクル（ダイヤスタイル）"] }
+      end
+    end
+
+    context "when Cure summer" do
+      let(:girl_name)       { "cure_summer" }
+      let(:human_name)      { "夏海まなつ" }
+      let(:precure_name)    { "キュアサマー" }
+      let(:cast_name)       { "ファイルーズあい" }
+      let(:created_date)    { date("2021-02-28") }
+      let(:transform_calls) { %w[precure_tropical_change] }
+      let(:color)           { "white" }
+
+      let(:transform_message) do
+        <<~MSG
+          プリキュア！トロピカルチェンジ！
+          レッツメイク！キャッチ！
+          チーク！
+          アイズ！
+          ヘアー！
+          リップ！
+          ドレス！
+          ときめく常夏！キュアサマー！
+          はぁー！
+          ${random_transform_word}
+          トロピカル～ジュ！プリキュア！
+        MSG
+      end
+
+      let(:random_transform_words) do
+        %w[
+          4人揃って！
+          今日も元気だ！
+        ]
+      end
+
+      it "stdout includes one of random_transform_words" do
+        girl.transform!
+
+        expect(mock_io.string).to include("4人揃って！").or include("今日も元気だ！")
       end
     end
   end

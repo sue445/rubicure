@@ -22,6 +22,7 @@ module Rubicure
       :extra_names,
       :attack_messages,
       :transform_calls,
+      :random_transform_words,
     ].freeze
 
     attr_accessor :io
@@ -80,7 +81,15 @@ module Rubicure
       end
 
       state = inc_current_state
-      print_by_line transform_message if state == 1
+
+      message =
+        if random_transform_words && !random_transform_words.empty?
+          random_transform_word = random_transform_words.sample
+          transform_message.gsub("${random_transform_word}", random_transform_word)
+        else
+          transform_message
+        end
+      print_by_line message if state == 1
 
       self
     end
