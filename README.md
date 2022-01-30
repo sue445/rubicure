@@ -418,6 +418,15 @@ Go!プリンセスプリキュア！
 プリキュア！ルビーパッショナーレ！
 ```
 
+### When [Tropical-Rouge! Precure](https://en.wikipedia.org/wiki/Tropical-Rouge!_Pretty_Cure)
+In Tropical Rouge Precure's `#transform!` (a.k.a. `#precure_tropical_change!`), the transformation message will be randomized as in the original work.
+
+Example
+
+![tropical_rouge](examples/tropical_rouge.gif)
+
+[examples/tropical_rouge.rb](examples/tropical_rouge.rb)
+
 ### full_name
 When `Rubicure::Girl` has `human_full_name` (i.e. another `human_name`), she returns as `#full_name`
 
