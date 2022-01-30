@@ -1,5 +1,15 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.0.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.0.1...master)
+
+## v3.0.1
+[full changelog](http://github.com/sue445/rubicure/compare/v3.0.0...v3.0.1)
+
+* Add `ended_date` of Tropical-Rouge! Precure
+  * https://github.com/sue445/rubicure/pull/260
+* Fixed. Couldn't call `#precure_operation!` and `#precure_tropical_change!`
+  * https://github.com/sue445/rubicure/pull/264
+* Randomized Tropical-Rouge! Precure's `#transform!` (a.k.a. `#precure_tropical_change!`) transformation message
+  * https://github.com/sue445/rubicure/pull/263
 
 ## v3.0.0
 [full changelog](http://github.com/sue445/rubicure/compare/v2.1.5...v3.0.0)
