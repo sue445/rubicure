@@ -244,3 +244,15 @@ tropical_rouge: &tropical_rouge
     - cure_lamer
 tropical_rouge_precure:
   <<: *tropical_rouge
+#######################################################
+delicious_party: &delicious_party
+  series_name: delicious_party
+  title: デリシャスパーティ♡プリキュア
+  started_date: 2022-02-06
+  # ended_date:   2023-01-
+  girls:
+    - cure_precious
+    - cure_spicy
+    - cure_yumyum
+delicious_party_precure:
+  <<: *delicious_party
