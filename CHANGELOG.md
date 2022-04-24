@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.0.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.1.0...master)
+
+## v3.1.0
+[full changelog](http://github.com/sue445/rubicure/compare/v3.0.1...v3.1.0)
+
+* Add DeliciousParty:heart:Precure
+  * https://github.com/sue445/rubicure/pull/261
 
 ## v3.0.1
 [full changelog](http://github.com/sue445/rubicure/compare/v3.0.0...v3.0.1)
