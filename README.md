@@ -21,8 +21,8 @@ see followings
 
 ## Requirements
 
-* ruby >= 2.4
-  * more: [.github/workflows/test.yml](.github/workflows/test.yml)
+* Ruby
+  * see `spec.required_ruby_version` in [rubicure.gemspec](rubicure.gemspec)
 
 ## Installation
 
