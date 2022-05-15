@@ -20,6 +20,7 @@ cure_precious: &cure_precious
     あつあつごはんで、みなぎるパワー！
     キュアプレシャス！
     おいしい笑顔で満たしてあげる！
+    デリシャスパーティ♡プリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -55,6 +56,7 @@ cure_spicy: &cure_spicy
     ふわふわサンドde心にスパイス！
     キュアスパイシー！
     わけあうおいしさ、焼きつけるわ！
+    デリシャスパーティ♡プリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -90,6 +92,7 @@ cure_yumyum: &cure_yumyum
     きらめくヌードル・エモーション！
     キュアヤムヤム！
     おいしいの独り占め、ゆるさないよ！
+    デリシャスパーティ♡プリキュア！
   # extra_names:
   attack_messages:
     - |-
