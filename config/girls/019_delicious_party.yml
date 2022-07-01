@@ -105,3 +105,38 @@ cure_yumyum: &cure_yumyum
     - delicioustandby
 yumyum:
   <<: *cure_yumyum
+
+cure_finale: &cure_finale
+  girl_name:    cure_finale
+  human_name:   菓彩あまね
+  precure_name: キュアフィナーレ
+  cast_name:    茅野愛衣
+  color:        purple
+  created_date: 2022-07-10 # episode 18
+  birthday:     11/24
+  transform_message: |-
+    プリキュア！デリシャスタンバイ！
+    Party Go!
+    フルーツ！
+    バニラソーダ！
+    シェアリングエナジー！
+    トッピング！
+    ブリリアント！
+    シャインオン！
+    ジェントルにゴージャスに
+    咲き誇るスウィートネス！
+    キュアフィナーレ！
+    食卓の最後を、このわたしが飾ろう
+    デリシャスパーティ♡プリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      クリーミーフルーレ！
+      ブルーミン・ダンシングフルーツ！
+      プリキュア！デリシャスフィナーレ・ファンファーレ！
+      お腹いっぱい
+      ごちそうさまでした！
+  transform_calls:
+    - delicioustandby
+finale:
+  <<: *cure_finale
