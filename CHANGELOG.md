@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.1.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.1.3...master)
+
+## v3.1.3
+[full changelog](http://github.com/sue445/rubicure/compare/v3.1.2...v3.1.3)
+
+* Fix Cure Finale color
+  * https://github.com/sue445/rubicure/pull/267
 
 ## v3.1.2
 [full changelog](http://github.com/sue445/rubicure/compare/v3.1.1...v3.1.2)
