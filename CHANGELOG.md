@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.1.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.1.2...master)
+
+## v3.1.2
+[full changelog](http://github.com/sue445/rubicure/compare/v3.1.1...v3.1.2)
+
+* Add Cure Finale :ice_cream:
+  * https://github.com/sue445/rubicure/pull/266
 
 ## v3.1.1
 [full changelog](http://github.com/sue445/rubicure/compare/v3.1.0...v3.1.1)
