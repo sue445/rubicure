@@ -254,5 +254,6 @@ delicious_party: &delicious_party
     - cure_precious
     - cure_spicy
     - cure_yumyum
+    - cure_finale
 delicious_party_precure:
   <<: *delicious_party
