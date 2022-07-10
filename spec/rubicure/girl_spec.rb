@@ -312,6 +312,7 @@ describe Rubicure::Girl do
       %i[
         black
         blue
+        gold
         green
         pink
         purple
