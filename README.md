@@ -633,6 +633,7 @@ Go!プリンセスプリキュア
 ```
 
 ### Not operator
+#### !Cure.passion
 ```ruby
 >> passion = Cure.passion
 >> passion.name
@@ -644,6 +645,7 @@ Go!プリンセスプリキュア
 => "イース"
 ```
 
+#### !Cure.beat
 ```ruby
 >> beat = Cure.beat
 
@@ -656,6 +658,7 @@ Go!プリンセスプリキュア
 => "セイレーン"
 ```
 
+#### !Cure.scarlet
 ```ruby
 >> scarlet = Cure.scarlet
 >> scarlet.name
@@ -665,6 +668,18 @@ Go!プリンセスプリキュア
 
 >> scarlet.name
 => "トワイライト"
+```
+
+#### !Cure.finale
+```ruby
+>> finale = Cure.finale
+>> finale.name
+=> "菓彩あまね"
+
+>> !finale
+
+>> finale.name
+=> "ジェントルー"
 ```
 
 ### Cure.cosmo.transform!(:rainbow_perfume)

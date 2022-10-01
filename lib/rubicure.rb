@@ -27,6 +27,7 @@ require "rubicure/cure_peace"
 require "rubicure/cure_passion"
 require "rubicure/cure_beat"
 require "rubicure/cure_scarlet"
+require "rubicure/cure_finale"
 
 module Precure
   def self.method_missing(name, *args, &block)
