@@ -13,7 +13,6 @@ on:
     - cron: "0 10 * * 5" # JST 19:00 (Fri)
 
 env:
-  CI: "true"
   RUBYOPT: -EUTF-8
 
 jobs:
@@ -37,7 +36,7 @@ jobs:
             allow_failures: "true"
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Cache vendor/bundle
         uses: actions/cache@v1
