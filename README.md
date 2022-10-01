@@ -766,43 +766,7 @@ Cure.cosmo.name
 ```
 
 ## More reference
-http://rubydoc.info/gems/rubicure/frames
-
-## API Server is available!
-https://rubicure.herokuapp.com/
-
-```sh
-$ curl -s https://rubicure.herokuapp.com/series/go_princess.json | jq .
-{
-  "series_name": "go_princess",
-  "title": "Go!プリンセスプリキュア",
-  "started_date": "2015-02-01",
-  "girls": [
-    "cure_flora",
-    "cure_mermaid",
-    "cure_twinkle",
-    "cure_scarlet"
-  ]
-}
-
-$ curl -s https://rubicure.herokuapp.com/girls/cure_twinkle.json | jq .
-{
-  "girl_name": "cure_twinkle",
-  "human_name": "天ノ川きらら",
-  "precure_name": "キュアトゥインクル",
-  "cast_name": "山村響",
-  "color": "yellow",
-  "created_date": "2015-02-22",
-  "transform_message": "プリキュア！プリンセスエンゲージ！\nきらめく星のプリンセス！キュアトゥインクル！\n強く、やさしく、美しく！\nGo!プリンセスプリキュア！\n冷たい檻に閉ざされた夢、返していただきますわ！\nお覚悟はよろしくて？",
-  "extra_names": null,
-  "attack_messages": [
-    "エクスチェンジ！モードエレガント！\nキラキラ、星よ！プリキュア・トゥインクル・ハミング！\n(ドリーミング)\nごきげんよう\n"
-  ],
-  "transform_calls": [
-    "princess_engage"
-  ]
-}
-```
+http://sue445.github.io/rubicure/
 
 ## Versioning Policy
 `rubicure` uses **Semantic Cure Versioning** :heart:

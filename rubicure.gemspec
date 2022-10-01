@@ -14,15 +14,11 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.6"
 
-  if spec.respond_to?(:metadata)
-    spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = spec.homepage
-    spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/master/CHANGELOG.md"
-    spec.metadata["rubygems_mfa_required"] = "true"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-          "public gem pushes."
-  end
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/master/CHANGELOG.md"
+  spec.metadata["rubygems_mfa_required"] = "true"
+  spec.metadata["documentation_uri"] = "https://sue445.github.io/rubicure/"
 
   spec.files = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
 
