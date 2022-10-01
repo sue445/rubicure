@@ -17,8 +17,8 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/master/CHANGELOG.md"
-  spec.metadata["rubygems_mfa_required"] = "true"
   spec.metadata["documentation_uri"] = "https://sue445.github.io/rubicure/"
+  spec.metadata["rubygems_mfa_required"] = "true"
 
   spec.files = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
 
