@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.1.3...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.1.4...master)
+
+## v3.1.4
+[full changelog](http://github.com/sue445/rubicure/compare/v3.1.3...v3.1.4)
+
+* Add turnover to Cure Finale (Amane <=> Gentle)
+  * https://github.com/sue445/rubicure/pull/271
 
 ## v3.1.3
 [full changelog](http://github.com/sue445/rubicure/compare/v3.1.2...v3.1.3)
