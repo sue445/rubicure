@@ -82,7 +82,7 @@ jobs:
         timeout-minutes: 1
         continue-on-error: ${{ matrix.allow_failures == 'true' }}
 
-      - run: bundle exec rubydoctest README.md
+      - run: bundle exec rake rubydoctest
         timeout-minutes: 1
         continue-on-error: ${{ matrix.allow_failures == 'true' }}
 
