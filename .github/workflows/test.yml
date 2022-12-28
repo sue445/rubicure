@@ -72,6 +72,7 @@ jobs:
 
       - run: bundle exec rake rubydoctest
         timeout-minutes: 1
+        if: matrix.ruby >= '3.2'
 
       - name: Slack Notification (not success)
         uses: lazy-actions/slatify@master
