@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.1.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.1.5...master)
+
+## v3.1.5
+[full changelog](http://github.com/sue445/rubicure/compare/v3.1.4...v3.1.5)
+
+* Add `ended_date` of Delicious Party :heart: Precure
+  * https://github.com/sue445/rubicure/pull/278
 
 ## v3.1.4
 [full changelog](http://github.com/sue445/rubicure/compare/v3.1.3...v3.1.4)
