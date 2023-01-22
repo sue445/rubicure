@@ -20,6 +20,7 @@ describe Rubicure::Series do
       :healingood,
       :tropical_rouge,
       :delicious_party,
+      :hirogaru_sky,
     ]
   end
 

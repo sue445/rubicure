@@ -314,6 +314,7 @@ describe Rubicure::Girl do
         blue
         gold
         green
+        orange
         pink
         purple
         rainbow
