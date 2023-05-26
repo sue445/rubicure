@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.1.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.0.rc1...master)
+
+## v3.2.0.rc1
+[full changelog](http://github.com/sue445/rubicure/compare/v3.1.5...v3.2.0.rc1)
+
+* Add Hirogaru Sky Precure (exclude Cure Butterfly)
+  * https://github.com/sue445/rubicure/pull/279
 
 ## v3.1.5
 [full changelog](http://github.com/sue445/rubicure/compare/v3.1.4...v3.1.5)
