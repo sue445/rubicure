@@ -84,3 +84,31 @@ cure_wing: &cure_wing
     - sky_mirage_tone_connect
 wing:
   <<: *cure_wing
+
+cure_butterfly: &cure_butterfly
+  girl_name:    cure_butterfly
+  human_name:   聖あげは
+  precure_name: キュアバタフライ
+  cast_name:    七瀬彩夏
+  color:        pink
+  created_date: 2023-06-04 # episode 18
+  birthday:     8/8
+  transform_message: |-
+    スカイミラージュ！
+    トーンコネクト！
+    ひろがるチェンジ！
+    バタフライ！
+    きらめきHOP
+    さわやかSTEP
+    はればれJUMP
+    アゲてひろがるワンダホー！キュアバタフライ！
+    Ready…Go!
+    ひろがるスカイ！プリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      ひろがる！バタフライプレス！
+  transform_calls:
+    - sky_mirage_tone_connect
+butterfly:
+  <<: *cure_butterfly
