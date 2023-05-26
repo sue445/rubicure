@@ -1,0 +1,86 @@
+cure_sky: &cure_sky
+  girl_name:    cure_sky
+  human_name:   ソラ・ハレワタール
+  precure_name: キュアスカイ
+  cast_name:    関根明良
+  color:        blue
+  created_date: 2023-02-05 # episode 1
+  birthday:     9/20
+  transform_message: |-
+    ヒーローの出番です！
+    スカイミラージュ！
+    トーンコネクト！
+    ひろがるチェンジ！
+    スカイ！
+    きらめきHOP
+    さわやかSTEP
+    はればれJUMP
+    無限にひろがる青い空！キュアスカイ！
+    Ready…Go!
+    ひろがるスカイ！プリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      ヒーローガールスカイパンチ！
+  transform_calls:
+    - sky_mirage_tone_connect
+sky:
+  <<: *cure_sky
+
+cure_prism: &cure_prism
+  girl_name:    cure_prism
+  human_name:   虹ヶ丘ましろ
+  precure_name: キュアプリズム
+  cast_name:    加隈亜衣
+  color:        white
+  created_date: 2023-02-26 # episode 4
+  birthday:     7/16
+  transform_message: |-
+    ヒーローの出番だよ！
+    スカイミラージュ！
+    トーンコネクト！
+    ひろがるチェンジ！
+    プリズム！
+    きらめきHOP
+    さわやかSTEP
+    はればれJUMP
+    ふわりひろがる優しい光！キュアプリズム！
+    Ready…Go!
+    レディ・ゴー！
+    ひろがるスカイ！プリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      ヒーローガールプリズムショット！
+  transform_calls:
+    - sky_mirage_tone_connect
+prism:
+  <<: *cure_prism
+
+cure_wing: &cure_wing
+  girl_name:    cure_wing
+  human_name:   夕凪ツバサ
+  precure_name: キュアウィング
+  cast_name:    村瀬歩
+  color:        orange
+  created_date: 2023-04-02 # episode 9
+  birthday:     5/21
+  transform_message: |-
+    スカイミラージュ！
+    トーンコネクト！
+    ひろがるチェンジ！
+    ウィング！
+    きらめきHOP
+    さわやかSTEP
+    はればれJUMP
+    天高くひろがる勇気！キュアウィング！
+    Ready…Go!
+    ひろがるスカイ！プリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      ひろがる！ウィングアタック！
+  transform_calls:
+    - sky_mirage_tone_connect
+wing:
+  <<: *cure_wing
