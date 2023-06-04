@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.2.0.rc1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.0...master)
+
+## v3.2.0
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.0.rc1...v3.2.0)
+
+* Add Cure Butterfly :butterfly:
+  * https://github.com/sue445/rubicure/pull/281
 
 ## v3.2.0.rc1
 [full changelog](http://github.com/sue445/rubicure/compare/v3.1.5...v3.2.0.rc1)
