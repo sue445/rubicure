@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.2.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.1...master)
+
+## v3.2.1
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.0...v3.2.1)
+
+* Remove hacks for testing
+  * https://github.com/sue445/rubicure/pull/282
 
 ## v3.2.0
 [full changelog](http://github.com/sue445/rubicure/compare/v3.2.0.rc1...v3.2.0)
