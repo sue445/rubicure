@@ -171,7 +171,7 @@ describe Rubicure::Girl do
       end
 
       it "stdout includes one of random_transform_words" do
-        expect { girl.transform! }.to output(/4人揃って！/).to_stdout.or output(/今日も元気だ！/).to_stdout
+        expect { girl.transform! }.to output(/4人揃って！|今日も元気だ！/).to_stdout
       end
     end
   end
