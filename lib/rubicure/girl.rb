@@ -25,8 +25,6 @@ module Rubicure
       :random_transform_words,
     ].freeze
 
-    attr_accessor :io
-
     # @return [Integer]
     def current_state
       @current_state ||= 0
@@ -203,7 +201,7 @@ module Rubicure
         @cache ||= {}
         unless @cache[girl_name]
           girl_config = config[girl_name] || {}
-          @cache[girl_name] = Rubicure::Girl[girl_config].tap {|girl| girl.io = $stdout }
+          @cache[girl_name] = Rubicure::Girl[girl_config]
         end
 
         @cache[girl_name]
@@ -284,7 +282,7 @@ module Rubicure
         index = 0
         message.each_line do |line|
           sleep(self.class.sleep_sec) if index > 0
-          io.puts line
+          puts line
           index += 1
         end
       end

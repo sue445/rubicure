@@ -1,22 +1,19 @@
 describe Rubicure::Girl do
   let(:girl) do
-    girl = Rubicure::Girl[
-        girl_name:              girl_name,
-        human_name:             human_name,
-        precure_name:           precure_name,
-        cast_name:              cast_name,
-        created_date:           created_date,
-        extra_names:            extra_names,
-        transform_message:      transform_message,
-        attack_messages:        attack_messages,
-        transform_calls:        transform_calls,
-        color:                  color,
-        random_transform_words: random_transform_words,
+    Rubicure::Girl[
+      girl_name:              girl_name,
+      human_name:             human_name,
+      precure_name:           precure_name,
+      cast_name:              cast_name,
+      created_date:           created_date,
+      extra_names:            extra_names,
+      transform_message:      transform_message,
+      attack_messages:        attack_messages,
+      transform_calls:        transform_calls,
+      color:                  color,
+      random_transform_words: random_transform_words,
     ]
-    girl.io = mock_io
-    girl
   end
-  let(:mock_io) { StringIO.new }
 
   let(:girl_name)      { "cure_peace" }
   let(:human_name)     { "黄瀬やよい" }
@@ -47,12 +44,10 @@ describe Rubicure::Girl do
     end
 
     context "when after 1st transform" do
-      before do
-        girl.transform!
+      it "transform to Precure" do
+        expect { girl.transform! }.to output(transform_message).to_stdout
+        expect(girl.name).to eq precure_name
       end
-
-      it { expect(girl.name).to eq precure_name }
-      it { expect(mock_io.string).to eq transform_message }
     end
 
     context "when after 2nd transform" do
@@ -90,7 +85,7 @@ describe Rubicure::Girl do
   describe "transform!" do
     context "when Cure miracle" do
       let(:girl) do
-        girl = Rubicure::Girl[
+        Rubicure::Girl[
           girl_name:         "cure_miracle",
           human_name:        "朝日奈みらい",
           precure_name:      "キュアミラクル",
@@ -113,9 +108,6 @@ describe Rubicure::Girl do
             },
           },
         ]
-
-        girl.io = mock_io
-        girl
       end
 
       context "transform! with diamond" do
@@ -179,9 +171,7 @@ describe Rubicure::Girl do
       end
 
       it "stdout includes one of random_transform_words" do
-        girl.transform!
-
-        expect(mock_io.string).to include("4人揃って！").or include("今日も元気だ！")
+        expect { girl.transform! }.to output(/4人揃って！/).to_stdout.or output(/今日も元気だ！/).to_stdout
       end
     end
   end
@@ -254,7 +244,6 @@ describe Rubicure::Girl do
     subject { girl.send(transform_call) }
 
     before do
-      girl.io = mock_io
       girl.humanize!
     end
 
