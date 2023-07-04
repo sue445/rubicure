@@ -156,7 +156,7 @@ Precure.now
 => 5
 ```
 
-* Now, `girls?` is alias to `members?`. But I'm going to change this behavior in the next major version (v4)
+* Now, `members?` is alias to `girls?`. But I'm going to change this behavior in the next major version (v4)
   * ref. https://github.com/sue445/rubicure/issues/284
 
 ### Select own precure girl
