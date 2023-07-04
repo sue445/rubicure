@@ -502,22 +502,25 @@ When `Rubicure::Girl` has `human_full_name` (i.e. another `human_name`), she ret
 
 and [more aliases!](config/movies.yml)
 
-### `Precure.all_girls` (a.k.a. `Precure.all`)
+### `Precure.all_members` (a.k.a. `Precure.all`)
 ```ruby
->> Precure.all_girls.count
->> Precure.all_girls.map(&:precure_name)
+>> Precure.all_members.count
+>> Precure.all_members.map(&:precure_name)
 # returns current precure count and names
 
->> Precure.all_girls("2013-10-26").count
+>> Precure.all_members("2013-10-26").count
 => 34
 
->> Precure.all_girls.include?(Cure.echo)
+>> Precure.all_members.include?(Cure.echo)
 => true
 ```
 
-#### `Precure.all_girls` vs `Precure.all_stars`
-* `Precure.all_girls` returns all precure. (includes "Kirakira Precure Alamode")
-* `Precure.all_stars` returns only from "Futari wa Pretty Cure" to "Maho Girls PreCure"
+* Now, `Precure.all_members?` is alias to `Precure.all_girls?`. But I'm going to change this behavior in the next major version (v4)
+  * ref. https://github.com/sue445/rubicure/issues/284
+
+#### `Precure.all_members` vs `Precure.all_stars`
+* `Precure.all_members` returns all precure. (includes "Kirakira Precure Alamode")
+* `Precure.all_members` returns only from "Futari wa Pretty Cure" to "Maho Girls PreCure"
 
 ### `Precure.dream_stars`
 ```ruby

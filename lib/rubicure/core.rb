@@ -151,6 +151,7 @@ module Rubicure
     end
 
     alias_method :all, :all_girls
+    alias_method :all_members, :all_girls
 
     # Get precure dream stars
     #
