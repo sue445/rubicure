@@ -138,23 +138,26 @@ Precure.now
 => false
 ```
 
-### Rubicure::Series#girls
+### Rubicure::Series#members
 ```ruby
->> Precure.smile.girls.count
+>> Precure.smile.members.count
 => 5
 
->> Precure.smile.girls.first
+>> Precure.smile.members.first
 => {:girl_name=>"cure_happy", :human_name=>"星空みゆき", :precure_name=>"キュアハッピー", :cast_name=>"福圓美里", :created_date=>#<Date: 2012-02-05 ((2455963j,0s,0n),+0s,-Infj)>, :color=>"pink", :transform_message=>"(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ハッピー！！)\nキラキラ輝く未来の光！ キュアハッピー！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", :extra_names=>["プリンセスハッピー", "ウルトラハッピー"], :attack_messages=>["プリキュア！ハッピーシャワー！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], :transform_calls=>["smile_charge"]}
 
->> Precure.smile.girls.map(&:human_name)
+>> Precure.smile.members.map(&:human_name)
 => ["星空みゆき", "日野あかね", "黄瀬やよい", "緑川なお", "青木れいか"]
 
->> Precure.smile.girls.map(&:precure_name)
+>> Precure.smile.members.map(&:precure_name)
 => ["キュアハッピー", "キュアサニー", "キュアピース", "キュアマーチ", "キュアビューティ"]
 
->> Precure.smile.girls.count
+>> Precure.smile.members.count
 => 5
 ```
+
+* Now, `girls?` is alias to `members?`, I'm going to change this behavior in the next major version (v4)
+ref. https://github.com/sue445/rubicure/issues/284
 
 ### Select own precure girl
 ```ruby
