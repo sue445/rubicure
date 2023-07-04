@@ -58,6 +58,8 @@ module Rubicure
       @girls
     end
 
+    alias_method :members, :girls
+
     alias_method :each_without_girls, :each
 
     def each(&block)
