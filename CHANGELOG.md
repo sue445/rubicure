@@ -1,5 +1,13 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.2.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.2...master)
+
+## v3.2.2
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.1...v3.2.2)
+
+* Add `#members` as alias for `#girls`
+  * https://github.com/sue445/rubicure/pull/285
+* Add `#all_members` as alias for `#all_girls`
+  * https://github.com/sue445/rubicure/pull/286
 
 ## v3.2.1
 [full changelog](http://github.com/sue445/rubicure/compare/v3.2.0...v3.2.1)
