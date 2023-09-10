@@ -268,5 +268,6 @@ hirogaru_sky: &hirogaru_sky
     - cure_prism
     - cure_wing
     - cure_butterfly
+    - cure_majesty
 hirogaru_sky_precure:
   <<: *hirogaru_sky

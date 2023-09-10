@@ -112,3 +112,33 @@ cure_butterfly: &cure_butterfly
     - sky_mirage_tone_connect
 butterfly:
   <<: *cure_butterfly
+
+cure_majesty: &cure_majesty
+  girl_name: cure_majesty
+  human_name: プリンセス・エル
+  precure_name: キュアマジェスティ
+  cast_name: 古賀葵
+  color: purple
+  created_date: 2023-09-03 # episode 31
+  birthday: 3/12
+  transform_message: |-
+    スカイミラージュ！
+    トーンコネクト！
+    ひろがるチェンジ！
+    マジェスティ！
+    きらめきHOP
+    さわやかSTEP
+    はればれJUMP
+    降り立つ気高き神秘！キュアマジェスティ！
+    Ready…Go!
+    ひろがるスカイ！プリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      マジェスティクルニクルン！
+      ひろがる世界にテイクオフ！
+      プリキュア！マジェスティックハレーション！
+  transform_calls:
+    - sky_mirage_tone_connect
+majesty:
+  <<: *cure_majesty
