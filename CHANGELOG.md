@@ -1,6 +1,12 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v3.2.2...master)
 
+## v3.2.3
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.2...v3.2.3)
+
+* Add CureMajesty
+  * https://github.com/sue445/rubicure/pull/289
+
 ## v3.2.2
 [full changelog](http://github.com/sue445/rubicure/compare/v3.2.1...v3.2.2)
 
