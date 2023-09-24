@@ -76,3 +76,7 @@ miracle_universe: &miracle_universe
 miracle_leap: &miracle_leap
   title: 映画プリキュアミラクルリープ
   started_date: 2020-10-31
+#######################################################
+f: &f
+  title: 映画プリキュアオールスターズF
+  started_date: 2023-09-15

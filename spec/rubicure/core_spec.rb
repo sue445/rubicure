@@ -73,6 +73,10 @@ describe Rubicure::Core do
         :sing_together_miracle_magic | 44 | true
 
         :memories | 55 | false
+
+        # NOTE: キュアエコーを含めると79人なのだが、公式や各種メディアが78人と言っているのでキュアエコーは含めていない
+        # c.f. https://twitter.com/precure_movie/status/1704691931094384957
+        :f | 78 | false
       end
 
       with_them do
