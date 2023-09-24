@@ -14,6 +14,7 @@ describe Rubicure::Movie do
       :memories,
       :miracle_universe,
       :miracle_leap,
+      :f,
     ]
   end
 

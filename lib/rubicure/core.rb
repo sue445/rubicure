@@ -95,6 +95,11 @@ module Rubicure
     #   #=> 44
     #   Precure.all_stars(:sing_together_miracle_magic).include?(Cure.echo)
     #   #=> true
+    #
+    #   Precure.all_stars(:f).count
+    #   #=> 78
+    #   Precure.all_stars(:f).include?(Cure.echo)
+    #   #=> false
     def all_stars(arg = Time.current)
       extra_girls = []
 
