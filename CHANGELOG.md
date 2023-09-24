@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.2.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.4...master)
+
+## v3.2.4
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.3...v3.2.4)
+
+* Add `Precure.all_stars(:f)`
+  * https://github.com/sue445/rubicure/pull/291
 
 ## v3.2.3
 [full changelog](http://github.com/sue445/rubicure/compare/v3.2.2...v3.2.3)
