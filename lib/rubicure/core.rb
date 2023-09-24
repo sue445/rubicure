@@ -96,6 +96,9 @@ module Rubicure
     #   Precure.all_stars(:sing_together_miracle_magic).include?(Cure.echo)
     #   #=> true
     #
+    #   Precure.all_stars(:memories).count
+    #   #=> 55
+    #
     #   Precure.all_stars(:f).count
     #   #=> 78
     #   Precure.all_stars(:f).include?(Cure.echo)

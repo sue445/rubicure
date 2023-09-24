@@ -498,6 +498,11 @@ When `Rubicure::Girl` has `human_full_name` (i.e. another `human_name`), she ret
 
 >> Precure.all_stars(:memories).count
 => 55
+
+>> Precure.all_stars(:f).count
+=> 78
+>> Precure.all_stars(:f).include?(Cure.echo)
+=> false
 ```
 
 and [more aliases!](config/movies.yml)
