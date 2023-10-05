@@ -1,3 +1,5 @@
+require "active_support"
+
 require "active_support/core_ext/array/wrap"
 require "active_support/core_ext/hash/keys"
 
