@@ -1,5 +1,8 @@
+require "active_support"
+
 require "active_support/core_ext/array/wrap"
 require "active_support/core_ext/hash/keys"
+require "active_support/core_ext/object/blank"
 
 begin
   # workaround for activesupport 7.0.0
