@@ -37,7 +37,6 @@ require "delorean"
 require "tempfile"
 
 # NOTE: requires minimum dependencies
-require "active_support/core_ext/object/blank"
 require "active_support/core_ext/string/filters"
 require "active_support/core_ext/time/zones"
 
