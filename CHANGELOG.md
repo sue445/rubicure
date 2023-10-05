@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.2.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.5...master)
+
+## v3.2.5
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.4...v3.2.5)
+
+* Support activesupport 7.1
+  * https://github.com/sue445/rubicure/pull/295
 
 ## v3.2.4
 [full changelog](http://github.com/sue445/rubicure/compare/v3.2.3...v3.2.4)
