@@ -36,6 +36,10 @@ jobs:
           - activesupport_6_0
           - activesupport_6_1
           - activesupport_7_0
+        exclude:
+          # activesupport 7.0+ requires Ruby 2.7+
+          - ruby:    "2.6"
+            gemfile: activesupport_7_0
 
     env:
       BUNDLE_GEMFILE: gemfiles/${{ matrix.gemfile }}.gemfile
