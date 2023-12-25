@@ -54,7 +54,6 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
-          rubygems: latest
           cache-version: 1
 
       - name: bundle update
