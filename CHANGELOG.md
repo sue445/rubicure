@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.2.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.6...master)
+
+## v3.2.6
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.5...v3.2.6)
+
+* Add `ended_date` of Hirogaru Sky Precure
+  * https://github.com/sue445/rubicure/pull/301
 
 ## v3.2.5
 [full changelog](http://github.com/sue445/rubicure/compare/v3.2.4...v3.2.5)
