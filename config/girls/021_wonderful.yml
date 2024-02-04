@@ -28,7 +28,7 @@ cure_friendy: &cure_friendy
   precure_name: キュアフレンディ
   cast_name:    種崎敦美
   color:        purple
-  # created_date: 2024-02-xx # episode xx
+  created_date: 2024-02-11 # episode 2
   # birthday:     xx/xx
   transform_message: |-
     プリキュア！マイエボリューション！
