@@ -7,6 +7,7 @@ cure_wonderful: &cure_wonderful
   created_date: 2024-02-04 # episode 1
   # birthday:     xx/xx
   transform_message: |-
+    ワンダフルパクト！
     プリキュア！マイエボリューション！
     スリー！
     ツー！
@@ -31,6 +32,7 @@ cure_friendy: &cure_friendy
   created_date: 2024-02-11 # episode 2
   # birthday:     xx/xx
   transform_message: |-
+    ワンダフルパクト！
     プリキュア！マイエボリューション！
     スリー！
     ツー！
@@ -55,6 +57,7 @@ cure_nyammy: &cure_nyammy
   # created_date: 2024-xx-xx # episode xx
   # birthday:     xx/xx
   transform_message: |-
+    ワンダフルパクト！
     プリキュア！マイエボリューション！
     スリー！
     ツー！
@@ -79,6 +82,7 @@ cure_lillian: &cure_lillian
   # created_date: 2024-xx-xx # episode xx
   # birthday:     xx/xx
   transform_message: |-
+    ワンダフルパクト！
     プリキュア！マイエボリューション！
     スリー！
     ツー！
