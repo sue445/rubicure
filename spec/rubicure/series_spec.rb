@@ -21,6 +21,7 @@ describe Rubicure::Series do
       :tropical_rouge,
       :delicious_party,
       :hirogaru_sky,
+      :wonderful,
     ]
   end
 
