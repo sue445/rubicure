@@ -271,3 +271,16 @@ hirogaru_sky: &hirogaru_sky
     - cure_majesty
 hirogaru_sky_precure:
   <<: *hirogaru_sky
+#######################################################
+wonderful: &wonderful
+  series_name: wonderful
+  title: わんだふるぷりきゅあ！
+  started_date: 2024-02-04
+  # ended_date:   2025-01-
+  girls:
+    - cure_wonderful
+    - cure_friendy
+    # - cure_nyammy
+    # - cure_lillian
+wonderful_precure:
+  <<: *wonderful
