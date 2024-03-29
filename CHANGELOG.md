@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.2.6...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.3.0.rc1...master)
+
+## v3.3.0.rc1
+[full changelog](http://github.com/sue445/rubicure/compare/v3.2.6...v3.3.0.rc1)
+
+* Add Wonderful Precure (only Cure Wonderful and Cure Friendy)
+  * https://github.com/sue445/rubicure/pull/302
 
 ## v3.2.6
 [full changelog](http://github.com/sue445/rubicure/compare/v3.2.5...v3.2.6)
