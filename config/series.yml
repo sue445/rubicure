@@ -280,7 +280,7 @@ wonderful: &wonderful
   girls:
     - cure_wonderful
     - cure_friendy
-    - cure_nyammy
-    - cure_lillian
+    # - cure_nyammy
+    # - cure_lillian
 wonderful_precure:
   <<: *wonderful
