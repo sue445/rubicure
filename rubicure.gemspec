@@ -48,7 +48,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop-performance", "1.9.2"
   spec.add_development_dependency "rubocop-rake", "0.5.1"
   spec.add_development_dependency "rubocop-rspec", "2.1.0"
-  spec.add_development_dependency "rubydoctest"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "unparser", ">= 0.4.5"
   spec.add_development_dependency "yard"

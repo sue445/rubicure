@@ -1,0 +1,2 @@
+# FIXME: rubydoctest doesn't work on ruby 3.2+
+gem "rubydoctest", github: "sue445/rubydoctest", ref: "ruby3.2"
