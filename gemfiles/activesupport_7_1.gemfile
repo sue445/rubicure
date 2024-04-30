@@ -2,4 +2,6 @@ source "https://rubygems.org"
 
 gem "activesupport", "~> 7.1.0"
 
+eval_gemfile "#{__dir__}/common.gemfile"
+
 gemspec path: "../"
