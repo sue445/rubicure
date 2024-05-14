@@ -37,7 +37,7 @@ cure_friendy: &cure_friendy
   cast_name:    種崎敦美
   color:        purple
   created_date: 2024-02-11 # episode 2
-  # birthday:     xx/xx
+  birthday:     8/7
   transform_message: |-
     ワンダフルパクト！
     プリキュア！マイエボリューション！
