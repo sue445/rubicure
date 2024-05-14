@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.3.0.rc2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.3.0.rc3...master)
+
+## v3.3.0.rc3
+[full changelog](http://github.com/sue445/rubicure/compare/v3.3.0.rc2...v3.3.0.rc3)
+
+* Add Cure Friendy's birthday :birthday:
+  * https://github.com/sue445/rubicure/pull/307
 
 ## v3.3.0.rc2
 [full changelog](http://github.com/sue445/rubicure/compare/v3.3.0.rc1...v3.3.0.rc2)
