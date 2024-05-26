@@ -68,14 +68,13 @@ cure_nyammy: &cure_nyammy
   precure_name: キュアニャミー
   cast_name:    松田颯水
   color:        blue
-  # created_date: 2024-xx-xx # episode xx
-  # birthday:     xx/xx
+  created_date: 2024-05-26 # episode 17
+  birthday:     12/21
   transform_message: |-
-    ワンダフルパクト！
+    シャイニーキャッツパクト！
     プリキュア！マイエボリューション！
-    スリー！
-    ツー！
-    ワン！
+    ほっぺにきらめき！
+    リップはキュートに！
     気高くかわいくきらめく世界！
     キュアニャミー！
     仕方ない、構ってあげる
@@ -84,6 +83,9 @@ cure_nyammy: &cure_nyammy
   # extra_names:
   attack_messages:
     - |-
+      アミティーリボンタンバリン！
+      ニャンダフルをあなたに！
+      プリキュア！アミティールミエール！
   transform_calls:
     - my_evolution
 nyammy:
@@ -95,14 +97,13 @@ cure_lillian: &cure_lillian
   precure_name: キュアリリアン
   cast_name:    上田麗奈
   color:        green
-  # created_date: 2024-xx-xx # episode xx
+  created_date: 2024-06-09 # episode 19
   # birthday:     xx/xx
   transform_message: |-
-    ワンダフルパクト！
+    シャイニーキャッツパクト！
     プリキュア！マイエボリューション！
-    スリー！
-    ツー！
-    ワン！
+    目元にきらめき！
+    リップはキュートに！
     結んで紡いでつながる世界！
     キュアリリアン！
     こわくない、こわくない
@@ -111,6 +112,9 @@ cure_lillian: &cure_lillian
   # extra_names:
   attack_messages:
     - |-
+      アミティーリボンタンバリン！
+      ニャンダフルをあなたに！
+      プリキュア！アミティールミエール！
   transform_calls:
     - my_evolution
 lillian:
