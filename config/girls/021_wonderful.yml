@@ -62,56 +62,60 @@ cure_friendy: &cure_friendy
 friendy:
   <<: *cure_friendy
 
-# cure_nyammy: &cure_nyammy
-#   girl_name:    cure_nyammy
-#   human_name:   猫屋敷ユキ
-#   precure_name: キュアニャミー
-#   cast_name:    松田颯水
-#   color:        blue
-#   # created_date: 2024-xx-xx # episode xx
-#   # birthday:     xx/xx
-#   transform_message: |-
-#     ワンダフルパクト！
-#     プリキュア！マイエボリューション！
-#     スリー！
-#     ツー！
-#     ワン！
-#     気高くかわいくきらめく世界！
-#     キュアニャミー！
-#     仕方ない、構ってあげる
-#     せーの！
-#     わんだふるぷりきゅあ！
-#   # extra_names:
-#   attack_messages:
-#     - |-
-#   transform_calls:
-#     - my_evolution
-# nyammy:
-#   <<: *cure_nyammy
-#
-# cure_lillian: &cure_lillian
-#   girl_name:    cure_lillian
-#   human_name:   猫屋敷まゆ
-#   precure_name: キュアリリアン
-#   cast_name:    上田麗奈
-#   color:        green
-#   # created_date: 2024-xx-xx # episode xx
-#   # birthday:     xx/xx
-#   transform_message: |-
-#     ワンダフルパクト！
-#     プリキュア！マイエボリューション！
-#     スリー！
-#     ツー！
-#     ワン！
-#     結んで紡いでつながる世界！
-#     キュアリリアン！
-#     こわくない、こわくない
-#     せーの！
-#     わんだふるぷりきゅあ！
-#   # extra_names:
-#   attack_messages:
-#     - |-
-#   transform_calls:
-#     - my_evolution
-# lillian:
-#   <<: *cure_lillian
+cure_nyammy: &cure_nyammy
+  girl_name:    cure_nyammy
+  human_name:   猫屋敷ユキ
+  precure_name: キュアニャミー
+  cast_name:    松田颯水
+  color:        blue
+  created_date: 2024-05-26 # episode 17
+  birthday:     12/21
+  transform_message: |-
+    シャイニーキャッツパクト！
+    プリキュア！マイエボリューション！
+    ほっぺにきらめき！
+    リップはキュートに！
+    気高くかわいくきらめく世界！
+    キュアニャミー！
+    仕方ない、構ってあげる
+    せーの！
+    わんだふるぷりきゅあ！
+  # extra_names:
+  attack_messages:
+    - |-
+      アミティーリボンタンバリン！
+      ニャンダフルをあなたに！
+      プリキュア！アミティールミエール！
+  transform_calls:
+    - my_evolution
+nyammy:
+  <<: *cure_nyammy
+
+cure_lillian: &cure_lillian
+  girl_name:    cure_lillian
+  human_name:   猫屋敷まゆ
+  precure_name: キュアリリアン
+  cast_name:    上田麗奈
+  color:        green
+  created_date: 2024-06-09 # episode 19
+  # birthday:     xx/xx
+  transform_message: |-
+    シャイニーキャッツパクト！
+    プリキュア！マイエボリューション！
+    目元にきらめき！
+    リップはキュートに！
+    結んで紡いでつながる世界！
+    キュアリリアン！
+    こわくない、こわくない
+    せーの！
+    わんだふるぷりきゅあ！
+  # extra_names:
+  attack_messages:
+    - |-
+      アミティーリボンタンバリン！
+      ニャンダフルをあなたに！
+      プリキュア！アミティールミエール！
+  transform_calls:
+    - my_evolution
+lillian:
+  <<: *cure_lillian
