@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.3.0.rc3...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.3.0...master)
+
+## v3.3.0
+[full changelog](http://github.com/sue445/rubicure/compare/v3.3.0.rc3...v3.3.0)
+
+* Add Cure Nyammy and Cure Lillian :cat2:
+  * https://github.com/sue445/rubicure/pull/303
 
 ## v3.3.0.rc3
 [full changelog](http://github.com/sue445/rubicure/compare/v3.3.0.rc2...v3.3.0.rc3)
