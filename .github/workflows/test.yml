@@ -98,7 +98,6 @@ jobs:
 
       - run: bundle exec rake rubydoctest
         timeout-minutes: 1
-        if: matrix.ruby >= '3.2'
 
       - name: Slack Notification (not success)
         uses: act10ns/slack@v2
