@@ -1,6 +1,12 @@
 ## master
 [full changelog](http://github.com/sue445/rubicure/compare/v3.3.0...master)
 
+## v3.3.1
+[full changelog](http://github.com/sue445/rubicure/compare/v3.3.0...v3.3.1)
+
+* Add CureLilian's birthday :birthday:
+  * https://github.com/sue445/rubicure/pull/310
+
 ## v3.3.0
 [full changelog](http://github.com/sue445/rubicure/compare/v3.3.0.rc3...v3.3.0)
 
