@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.3.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v3.3.2...master)
+
+## v3.3.2
+[full changelog](http://github.com/sue445/rubicure/compare/v3.3.1...v3.3.2)
+
+* Tweak CureNyammy and CureLillian's attack messages :cat:
+  * https://github.com/sue445/rubicure/pull/311
 
 ## v3.3.1
 [full changelog](http://github.com/sue445/rubicure/compare/v3.3.0...v3.3.1)
