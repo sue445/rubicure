@@ -85,6 +85,8 @@ cure_nyammy: &cure_nyammy
     - |-
       アミティーリボンタンバリン！
       ニャンダフルをあなたに！
+      ニャン！ドゥ！トロワ！
+      ガルガルの心さようなら！
       プリキュア！アミティールミエール！
   transform_calls:
     - my_evolution
@@ -114,6 +116,8 @@ cure_lillian: &cure_lillian
     - |-
       アミティーリボンタンバリン！
       ニャンダフルをあなたに！
+      ニャン！ドゥ！トロワ！
+      ガルガルの心さようなら！
       プリキュア！アミティールミエール！
   transform_calls:
     - my_evolution
