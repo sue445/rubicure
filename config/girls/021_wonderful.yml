@@ -78,8 +78,7 @@ cure_nyammy: &cure_nyammy
     気高くかわいくきらめく世界！
     キュアニャミー！
     仕方ない、構ってあげる
-    せーの！
-    わんだふるぷりきゅあ！
+    ニャンダフルプリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -109,8 +108,7 @@ cure_lillian: &cure_lillian
     結んで紡いでつながる世界！
     キュアリリアン！
     こわくない、こわくない
-    せーの！
-    わんだふるぷりきゅあ！
+    ニャンダフルプリキュア！
   # extra_names:
   attack_messages:
     - |-
