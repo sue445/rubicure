@@ -49,6 +49,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop-rake", "0.5.1"
   spec.add_development_dependency "rubocop-rspec", "2.1.0"
   spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "term-ansicolor", "!= 1.11.1" # ref. https://github.com/flori/term-ansicolor/issues/41
   spec.add_development_dependency "unparser", ">= 0.4.5"
   spec.add_development_dependency "yard"
 end
