@@ -367,13 +367,13 @@ describe Rubicure::Girl do
   describe "#heisei?" do
     subject { girl.heisei? }
 
-    it { should eq true }
+    it { should be true }
   end
 
   describe "#reiwa?" do
     subject { girl.reiwa? }
 
     # TODO: Add reiwa precure test after cure cosmo is added
-    it { should eq false }
+    it { should be false }
   end
 end
