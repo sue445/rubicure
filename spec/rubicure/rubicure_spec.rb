@@ -107,7 +107,7 @@ describe Rubicure do
 
       with_them do
         it { expect(Cure.send(name)).to be_an_instance_of Rubicure::Girl }
-        it { expect(Cure.send(name).precure_name).to be_start_with "キュア" }
+        it { expect(Cure.send(name).precure_name).to start_with "キュア" }
       end
     end
 
