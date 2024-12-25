@@ -1,5 +1,18 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v3.3.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.0.0...master)
+
+## v4.0.0
+[full changelog](http://github.com/sue445/rubicure/compare/v3.3.4...v4.0.0)
+
+### Breaking changes :bomb:
+* Requires Ruby 2.7+
+  * https://github.com/sue445/rubicure/pull/322
+
+### Other changes
+* Upgrade to latest rubocop gems
+  * https://github.com/sue445/rubicure/pull/321
+* CI against for Ruby 3.4
+  * https://github.com/sue445/rubicure/pull/320
 
 ## v3.3.4
 [full changelog](http://github.com/sue445/rubicure/compare/v3.3.3...v3.3.4)
