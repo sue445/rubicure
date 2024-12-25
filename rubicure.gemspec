@@ -51,4 +51,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "term-ansicolor", "!= 1.11.1" # ref. https://github.com/flori/term-ansicolor/issues/41
   spec.add_development_dependency "unparser", ">= 0.4.5"
   spec.add_development_dependency "yard"
+
+  # TODO: Remove followings after making activesupport v7.0+ required
+  spec.add_development_dependency "base64"
+  spec.add_development_dependency "mutex_m"
 end

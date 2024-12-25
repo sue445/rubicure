@@ -29,6 +29,7 @@ jobs:
           - "3.1"
           - "3.2"
           - "3.3"
+          - "3.4"
         gemfile:
           - activesupport_5_0
           - activesupport_5_1
@@ -98,7 +99,7 @@ jobs:
 
       - run: bundle exec rake rubydoctest
         timeout-minutes: 1
-        if: matrix.ruby >= '3.2'
+        if: matrix.ruby >= '3.4'
 
       - name: Slack Notification (not success)
         uses: act10ns/slack@v2
