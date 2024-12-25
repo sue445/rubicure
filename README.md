@@ -101,7 +101,7 @@ Or install it yourself as:
 => "ＨＵＧっと！プリキュア"
 
 >> Precure.dokidoki
-=> {:series_name=>"dokidoki", :title=>"ドキドキ！プリキュア", :started_date=>#<Date: 2013-02-03 ((2456327j,0s,0n),+0s,-Infj)>, :ended_date=>#<Date: 2014-01-26 ((2456684j,0s,0n),+0s,-Infj)>, :girls=>["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
+=> {series_name: "dokidoki", title: "ドキドキ！プリキュア", started_date: #<Date: 2013-02-03 ((2456327j,0s,0n),+0s,-Infj)>, ended_date: #<Date: 2014-01-26 ((2456684j,0s,0n),+0s,-Infj)>, girls: ["cure_heart", "cure_diamond", "cure_rosetta", "cure_sword", "cure_ace"]}
 ```
 
 other pattern
@@ -118,8 +118,8 @@ and [more aliases!](config/series.yml)
 
 ```ruby
 >> Precure.now
-=> {:series_name=>"wonderful", :title=>"わんだふるぷりきゅあ！", :started_date=>#<Date: 2024-02-04 ((2460345j,0s,0n),+0s,-Infj)>, :girls=>["cure_wonderful", "cure_friendy", "cure_nyammy", "cure_lillian"]}
-
+=> {series_name: "wonderful", title: "わんだふるぷりきゅあ！", started_date: #<Date: 2024-02-04 ((2460345j,0s,0n),+0s,-Infj)>, girls: ["cure_wonderful", "cure_friendy", "cure_nyammy", "cure_lillian"]}
+                
 # -2013/1/27  : smile precure
 #  2013/2/5 - : dokidoki precure
 require "delorean"
@@ -144,7 +144,7 @@ Precure.now
 => 5
 
 >> Precure.smile.members.first
-=> {:girl_name=>"cure_happy", :human_name=>"星空みゆき", :precure_name=>"キュアハッピー", :cast_name=>"福圓美里", :created_date=>#<Date: 2012-02-05 ((2455963j,0s,0n),+0s,-Infj)>, :color=>"pink", :transform_message=>"(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ハッピー！！)\nキラキラ輝く未来の光！ キュアハッピー！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", :extra_names=>["プリンセスハッピー", "ウルトラハッピー"], :attack_messages=>["プリキュア！ハッピーシャワー！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], :transform_calls=>["smile_charge"]}
+=> {girl_name: "cure_happy", human_name: "星空みゆき", precure_name: "キュアハッピー", cast_name: "福圓美里", created_date: #<Date: 2012-02-05 ((2455963j,0s,0n),+0s,-Infj)>, color: "pink", transform_message: "(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ハッピー！！)\nキラキラ輝く未来の光！ キュアハッピー！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", extra_names: ["プリンセスハッピー", "ウルトラハッピー"], attack_messages: ["プリキュア！ハッピーシャワー！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], transform_calls: ["smile_charge"]}
 
 >> Precure.smile.members.map(&:human_name)
 => ["星空みゆき", "日野あかね", "黄瀬やよい", "緑川なお", "青木れいか"]
@@ -162,31 +162,31 @@ Precure.now
 ### Select own precure girl
 ```ruby
 >> Cure.lemonade
-=> {:girl_name=>"cure_lemonade", :human_name=>"春日野うらら", :precure_name=>"キュアレモネード", :cast_name=>"伊瀬茉莉也", :created_date=>#<Date: 2007-02-18 ((2454150j,0s,0n),+0s,-Infj)>, :color=>"yellow", :transform_message=>"プリキュア！メタモルフォーゼ！\nはじけるレモンの香り、キュアレモネード！\n希望の力と未来の光！\n華麗に羽ばたく5つの心！\nYes！プリキュア5！", :extra_names=>nil, :attack_messages=>["輝く乙女のはじける力、受けてみなさい！\nプリキュア！プリズム・チェーン！"], :transform_calls=>["metamorphose"]}
+=> {girl_name: "cure_lemonade", human_name: "春日野うらら", precure_name: "キュアレモネード", cast_name: "伊瀬茉莉也", created_date: #<Date: 2007-02-18 ((2454150j,0s,0n),+0s,-Infj)>, color: "yellow", transform_message: "プリキュア！メタモルフォーゼ！\nはじけるレモンの香り、キュアレモネード！\n希望の力と未来の光！\n華麗に羽ばたく5つの心！\nYes！プリキュア5！", extra_names: nil, attack_messages: ["輝く乙女のはじける力、受けてみなさい！\nプリキュア！プリズム・チェーン！"], transform_calls: ["metamorphose"]}
 
 >> Cure.pine
-=> {:girl_name=>"cure_pine", :human_name=>"山吹祈里", :precure_name=>"キュアパイン", :cast_name=>"中川亜紀子", :created_date=>#<Date: 2009-02-15 ((2454878j,0s,0n),+0s,-Infj)>, :color=>"yellow", :transform_message=>"チェインジ！プリキュア・ビートアップ！\nイエローハートは祈りのしるし！\nとれたてフレッシュ、キュアパイン！\nレッツプリキュア！", :extra_names=>["キュアエンジェルパイン"], :attack_messages=>["悪いの悪いの飛んでいけ！\nプリキュア！ヒーリングプレアーフレッシュ！"], :transform_calls=>["change_precure_beat_up", "change", "beat_up"]}
+=> {girl_name: "cure_pine", human_name: "山吹祈里", precure_name: "キュアパイン", cast_name: "中川亜紀子", created_date: #<Date: 2009-02-15 ((2454878j,0s,0n),+0s,-Infj)>, color: "yellow", transform_message: "チェインジ！プリキュア・ビートアップ！\nイエローハートは祈りのしるし！\nとれたてフレッシュ、キュアパイン！\nレッツプリキュア！", extra_names: ["キュアエンジェルパイン"], attack_messages: ["悪いの悪いの飛んでいけ！\nプリキュア！ヒーリングプレアーフレッシュ！"], transform_calls: ["change_precure_beat_up", "change", "beat_up"]}
 
 >> Cure.sunshine
-=> {:girl_name=>"cure_sunshine", :human_name=>"明堂院いつき", :precure_name=>"キュアサンシャイン", :cast_name=>"桑島法子", :created_date=>#<Date: 2010-07-18 ((2455396j,0s,0n),+0s,-Infj)>, :color=>"yellow", :transform_message=>"(プリキュアの種、いくですぅ！)\nプリキュア！オープンマイハート！\n陽の光浴びる一輪の花！ キュアサンシャイン！\nハートキャッチ、プリキュア！", :extra_names=>["スーパーキュアサンシャイン"], :attack_messages=>["花よ、舞い踊れ！\nプリキュア！ゴールドフォルテバースト！！", "花よ、咲き誇れ！\nプリキュア・ハートキャッチ・オーケストラ！！"], :transform_calls=>["open_my_heart"]}
+=> {girl_name: "cure_sunshine", human_name: "明堂院いつき", precure_name: "キュアサンシャイン", cast_name: "桑島法子", created_date: #<Date: 2010-07-18 ((2455396j,0s,0n),+0s,-Infj)>, color: "yellow", transform_message: "(プリキュアの種、いくですぅ！)\nプリキュア！オープンマイハート！\n陽の光浴びる一輪の花！ キュアサンシャイン！\nハートキャッチ、プリキュア！", extra_names: ["スーパーキュアサンシャイン"], attack_messages: ["花よ、舞い踊れ！\nプリキュア！ゴールドフォルテバースト！！", "花よ、咲き誇れ！\nプリキュア・ハートキャッチ・オーケストラ！！"], transform_calls: ["open_my_heart"]}
 
 >> Cure.muse
-=> {:girl_name=>"cure_muse", :human_name=>"調辺アコ", :precure_name=>"キュアミューズ", :cast_name=>"大久保瑠美", :created_date=>#<Date: 2011-10-16 ((2455851j,0s,0n),+0s,-Infj)>, :color=>"yellow", :transform_message=>"レッツプレイ！プリキュアモジュレーション！！\n爪弾くは女神の調べ！ キュアミューズ！\n届け4人の組曲！スイートプリキュア！", :extra_names=>["クレッシェンドミューズ"], :attack_messages=>["おいで、シリー！\nシの音符の、シャイニングメロディ！\nプリキュア！スパークリングシャワー！！\n三拍子！１、２、３\nフィナーレ！", "届けましょう、希望のシンフォニー！\nプリキュア！スイートセッションアンサンブル！\nクレッシェンド！！\nフィナーレ！"], :transform_calls=>["lets_play_precure_modulation", "lets_play", "modulation"]}
-
+=> {girl_name: "cure_muse", human_name: "調辺アコ", precure_name: "キュアミューズ", cast_name: "大久保瑠美", created_date: #<Date: 2011-10-16 ((2455851j,0s,0n),+0s,-Infj)>, color: "yellow", transform_message: "レッツプレイ！プリキュアモジュレーション！！\n爪弾くは女神の調べ！ キュアミューズ！\n届け4人の組曲！スイートプリキュア！", extra_names: ["クレッシェンドミューズ"], attack_messages: ["おいで、シリー！\nシの音符の、シャイニングメロディ！\nプリキュア！スパークリングシャワー！！\n三拍子！１、２、３\nフィナーレ！", "届けましょう、希望のシンフォニー！\nプリキュア！スイートセッションアンサンブル！\nクレッシェンド！！\nフィナーレ！"], transform_calls: ["lets_play_precure_modulation", "lets_play", "modulation"]}
+        
 >> Cure.peace
-=> {:girl_name=>"cure_peace", :human_name=>"黄瀬やよい", :precure_name=>"キュアピース", :cast_name=>"金元寿子", :created_date=>#<Date: 2012-02-19 ((2455977j,0s,0n),+0s,-Infj)>, :color=>"yellow", :transform_message=>"(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ピース！！)\nピカピカピカリンジャンケンポン！ キュアピース！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", :extra_names=>["プリンセスピース", "ウルトラピース"], :attack_messages=>["プリキュア！ピースサンダー！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], :transform_calls=>["smile_charge"]}
-
+=> {girl_name: "cure_peace", human_name: "黄瀬やよい", precure_name: "キュアピース", cast_name: "金元寿子", created_date: #<Date: 2012-02-19 ((2455977j,0s,0n),+0s,-Infj)>, color: "yellow", transform_message: "(レディ？)\nプリキュア・スマイルチャージ！\n(ゴー！ゴー！レッツ・ゴー！ピース！！)\nピカピカピカリンジャンケンポン！ キュアピース！\n5つの光が導く未来！\n輝け！スマイルプリキュア！", extra_names: ["プリンセスピース", "ウルトラピース"], attack_messages: ["プリキュア！ピースサンダー！！", "開け、ロイヤルクロック！\n(みんなの力を1つにするクル！)\n届け、希望の光！\nはばたけ！光り輝く未来へ！\nプリキュア！ロイヤルレインボーバースト！", "(みんなの力を1つにするクル！)\nプリキュア！ミラクルレインボーバースト！\n輝けー！！\nスマイルプリキュア！！"], transform_calls: ["smile_charge"]}
+        
 >> Cure.rosetta
-=>  {:girl_name=>"cure_rosetta", :human_name=>"四葉ありす", :precure_name=>"キュアロゼッタ", :cast_name=>"渕上舞", :created_date=>#<Date: 2013-02-24 ((2456348j,0s,0n),+0s,-Infj)>, :color=>"yellow", :birthday=>"5/28", :transform_message=>"プリキュアラブリンク！\nL! O! V! E!\nひだまりポカポカ キュアロゼッタ！\n響け愛の鼓動！ドキドキプリキュア！\n世界を制するのは愛だけです、\nさぁ、あなたも私と愛を育んでくださいな", :extra_names=>nil, :attack_messages=>["カッチカチの！ロゼッタウォール！"], :transform_calls=>["love_link"]}
+=> {girl_name: "cure_rosetta", human_name: "四葉ありす", precure_name: "キュアロゼッタ", cast_name: "渕上舞", created_date: #<Date: 2013-02-24 ((2456348j,0s,0n),+0s,-Infj)>, color: "yellow", birthday: "5/28", transform_message: "プリキュアラブリンク！\nL! O! V! E!\nひだまりポカポカ キュアロゼッタ！\n響け愛の鼓動！ドキドキプリキュア！\n世界を制するのは愛だけです、\nさぁ、あなたも私と愛を育んでくださいな", extra_names: nil, attack_messages: ["カッチカチの！ロゼッタウォール！"], transform_calls: ["love_link"]}
 
 >> Cure.honey
-=> {:girl_name=>"cure_honey", :human_name=>"大森ゆうこ", :precure_name=>"キュアハニー", :cast_name=>"北川里奈", :created_date=>#<Date: 2014-03-15 ((2456732j,0s,0n),+0s,-Infj)>, :birthday=>"8/2", :color=>"yellow", :transform_message=>"(かわルンルン！)\nプリキュアくるりんミラーチェンジ！\n大地に実る命の光！キュアハニー！\nハピネス注入！幸せチャージ！\nハピネスチャージプリキュア！", :extra_names=>["キュアハニー ポップコーンチア"], :attack_messages=>["命の光を聖なる力へ！\nハニーバトン！\nプリキュア！スパークリングバトンアタック！！\nイエイ！\n命よ、天に帰れ！\n(ゴクラ〜ク…)", "(かわルンルン！)\nプリキュアくるりんミラーチェンジ！ポップコーンチア！！\nプリキュア！リボンハートエクスプロージョン！！\nビクトリー！！", "(かわルンルン！)\nプリキュアくるりんミラーチェンジ！ココナッツサンバ！！\nプリキュア！マラカスリズムスパーク！！\nマンボ！！"], :transform_calls=>["kururin_mirror_change"]}
+=> {girl_name: "cure_honey", human_name: "大森ゆうこ", precure_name: "キュアハニー", cast_name: "北川里奈", created_date: #<Date: 2014-03-15 ((2456732j,0s,0n),+0s,-Infj)>, birthday: "8/2", color: "yellow", transform_message: "(かわルンルン！)\nプリキュアくるりんミラーチェンジ！\n大地に実る命の光！キュアハニー！\nハピネス注入！幸せチャージ！\nハピネスチャージプリキュア！", extra_names: ["キュアハニー ポップコーンチア"], attack_messages: ["命の光を聖なる力へ！\nハニーバトン！\nプリキュア！スパークリングバトンアタック！！\nイエイ！\n命よ、天に帰れ！\n(ゴクラ〜ク…)", "(かわルンルン！)\nプリキュアくるりんミラーチェンジ！ポップコーンチア！！\nプリキュア！リボンハートエクスプロージョン！！\nビクトリー！！", "(かわルンルン！)\nプリキュアくるりんミラーチェンジ！ココナッツサンバ！！\nプリキュア！マラカスリズムスパーク！！\nマンボ！！"], transform_calls: ["kururin_mirror_change"]}
 
 >> Shiny.luminous
-=> {:girl_name=>"shiny_luminous", :human_name=>"九条ひかり", :precure_name=>"シャイニールミナス", :cast_name=>"田中理恵", :created_date=>#<Date: 2005-03-06 ((2453436j,0s,0n),+0s,-Infj)>, :color=>"yellow", :birthday=>"9/9", :transform_message=>"ルミナス・シャイニングストリーム！\n輝く命、シャイニールミナス！\n光の心と光の意志、すべてを一つにするために！", :extra_names=>nil, :attack_messages=>["光の意志よ！私に勇気を！希望と力を！！\nルミナス・ハーティエル・アンクション！"], :transform_calls=>["shining_stream"]}
-
+=> {girl_name: "shiny_luminous", human_name: "九条ひかり", precure_name: "シャイニールミナス", cast_name: "田中理恵", created_date: #<Date: 2005-03-06 ((2453436j,0s,0n),+0s,-Infj)>, color: "yellow", birthday: "9/9", transform_message: "ルミナス・シャイニングストリーム！\n輝く命、シャイニールミナス！\n光の心と光の意志、すべてを一つにするために！", extra_names: nil, attack_messages: ["光の意志よ！私に勇気を！希望と力を！！\nルミナス・ハーティエル・アンクション！"], transform_calls: ["shining_stream"]}
+        
 >> Milky.rose
-=> {:girl_name=>"milky_rose", :human_name=>"美々野くるみ", :precure_name=>"ミルキィローズ", :cast_name=>"仙台エリ", :created_date=>#<Date: 2008-04-06 ((2454563j,0s,0n),+0s,-Infj)>, :color=>"purple", :transform_message=>"スカイローズ・トランスレイト！\n青いバラは秘密のしるし！ ミルキィローズ！", :extra_names=>nil, :attack_messages=>["邪悪な力を包み込む\nバラの吹雪を咲かせましょう！\nミルキィローズ・ブリザード！"], :transform_calls=>["sky_rose_translate", "translate"]}
+=> {girl_name: "milky_rose", human_name: "美々野くるみ", precure_name: "ミルキィローズ", cast_name: "仙台エリ", created_date: #<Date: 2008-04-06 ((2454563j,0s,0n),+0s,-Infj)>, color: "purple", transform_message: "スカイローズ・トランスレイト！\n青いバラは秘密のしるし！ ミルキィローズ！", extra_names: nil, attack_messages: ["邪悪な力を包み込む\nバラの吹雪を咲かせましょう！\nミルキィローズ・ブリザード！"], transform_calls: ["sky_rose_translate", "translate"]}
 ```
 
 and [more aliases!](config/girls/)
