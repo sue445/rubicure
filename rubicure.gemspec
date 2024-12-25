@@ -27,7 +27,6 @@ Gem::Specification.new do |spec|
   end
 
   spec.executables   = spec.files.grep(%r{^bin/}) {|f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
   spec.add_dependency "activesupport", ">= 5.0.0"
@@ -43,11 +42,11 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-collection_matchers"
   spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "rspec-parameterized", ">= 0.3.2"
-  spec.add_development_dependency "rubocop", "1.24.0"
+  spec.add_development_dependency "rubocop", "1.69.2"
   spec.add_development_dependency "rubocop_auto_corrector"
-  spec.add_development_dependency "rubocop-performance", "1.9.2"
-  spec.add_development_dependency "rubocop-rake", "0.5.1"
-  spec.add_development_dependency "rubocop-rspec", "2.1.0"
+  spec.add_development_dependency "rubocop-performance", "1.23.0"
+  spec.add_development_dependency "rubocop-rake", "0.6.0"
+  spec.add_development_dependency "rubocop-rspec", "3.3.0"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "term-ansicolor", "!= 1.11.1" # ref. https://github.com/flori/term-ansicolor/issues/41
   spec.add_development_dependency "unparser", ">= 0.4.5"

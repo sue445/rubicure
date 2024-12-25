@@ -1,5 +1,5 @@
 require "rubicure"
-require_relative "./common"
+require_relative "common"
 
 code = <<~RUBY
   @manatsu = Cure.summer

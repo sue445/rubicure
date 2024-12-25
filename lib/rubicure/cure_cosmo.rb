@@ -1,7 +1,7 @@
 module Cure
   module CosmoExt
     def transform!(style = nil)
-      return super(style) unless style == :rainbow_perfume
+      return super unless style == :rainbow_perfume
 
       humanize!
 
