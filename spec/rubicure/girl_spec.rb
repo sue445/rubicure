@@ -313,7 +313,7 @@ describe Rubicure::Girl do
       ]
     end
 
-    it { should contain_exactly(*expected) }
+    it { should match_array(expected) }
   end
 
   describe "dynamic color methods" do

@@ -135,7 +135,7 @@ describe Rubicure::Core do
       ].map(&:girl_name)
     end
 
-    it { should contain_exactly(*dream_stars_girl_names) }
+    it { should match_array(dream_stars_girl_names) }
   end
 
   describe "#super_stars" do
@@ -158,7 +158,7 @@ describe Rubicure::Core do
       ].map(&:girl_name)
     end
 
-    it { should contain_exactly(*super_stars_girl_names) }
+    it { should match_array(super_stars_girl_names) }
   end
 
   describe "#miracle_universe" do
@@ -184,7 +184,7 @@ describe Rubicure::Core do
       ].map(&:girl_name)
     end
 
-    it { should contain_exactly(*miracle_universe_girl_names) }
+    it { should match_array(miracle_universe_girl_names) }
   end
 
   describe "#miracle_leap" do
@@ -208,6 +208,6 @@ describe Rubicure::Core do
       ].map(&:girl_name)
     end
 
-    it { should contain_exactly(*miracle_leap_girl_names) }
+    it { should match_array(miracle_leap_girl_names) }
   end
 end
