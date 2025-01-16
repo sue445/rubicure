@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.0.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.0.1...master)
+
+## v4.0.1
+[full changelog](http://github.com/sue445/rubicure/compare/v4.0.0...v4.0.1)
+
+* Add CureMiracle and CureMagical's Pink Diamond Style :diamonds:
+  * https://github.com/sue445/rubicure/pull/326
 
 ## v4.0.0
 [full changelog](http://github.com/sue445/rubicure/compare/v3.3.4...v4.0.0)
