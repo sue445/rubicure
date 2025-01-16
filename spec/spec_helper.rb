@@ -28,6 +28,10 @@ if ENV["CI"]
 end
 
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
+
+# FIXME: NameError: uninitialized constant ActiveSupport::LoggerThreadSafeLevel::Logger when activesupport < 7.1
+require "logger"
+
 require "rubicure"
 require "rspec"
 require "rspec-parameterized"

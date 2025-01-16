@@ -99,7 +99,7 @@ jobs:
 
       - run: bundle exec rake rubydoctest
         timeout-minutes: 1
-        if: matrix.ruby >= '3.4'
+        if: matrix.ruby >= '3.4' && matrix.gemfile >= 'activesupport_7_1'
 
       - name: Slack Notification (not success)
         uses: act10ns/slack@v2
