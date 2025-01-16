@@ -1,3 +1,6 @@
+# FIXME: NameError: uninitialized constant ActiveSupport::LoggerThreadSafeLevel::Logger when activesupport < 7.1
+require "logger"
+
 require "rubicure"
 
 Precure.each_with_series do |series|
