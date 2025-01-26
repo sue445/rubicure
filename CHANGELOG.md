@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.0.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.0.2...master)
+
+## v4.0.2
+[full changelog](http://github.com/sue445/rubicure/compare/v4.0.1...v4.0.2)
+
+* Add Wonderful Precure's ended_date
+  * https://github.com/sue445/rubicure/pull/327
 
 ## v4.0.1
 [full changelog](http://github.com/sue445/rubicure/compare/v4.0.0...v4.0.1)
