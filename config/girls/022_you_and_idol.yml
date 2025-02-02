@@ -1,0 +1,116 @@
+cure_idol: &cure_idol
+  girl_name:    cure_idol
+  human_name:   咲良うた
+  precure_name: キュアアイドル
+  cast_name:    松岡美里
+  color:        pink
+  created_date: 2025-02-02 # episode 1
+  birthday: 3/27
+  transform_message: |-
+    プリキュア！ライトアップ！
+    キラキラドレスチェンジ！YEAH!
+    きみと～！ YEAH！
+    一緒にYEAH!
+    キミと歌う、ハートのキラキラ！
+    笑顔ニッコリ、キュアアイドル！
+  # extra_names:
+  attack_messages:
+    - |-
+      クライマックスは私！
+      盛り上がっていくよ！
+      キミのハートに
+      とびきり元気をあげるね
+      ゼッタイ！（ゼッタイ！）アイドル！（アイドル！）
+      ドキドキが止まらない！
+      急接近
+      笑顔のユニゾン
+      応えてほしいなっ
+      サンキュー
+      最高のステージで
+      キミと歌を
+      咲かそう
+      プリキュアアイドルスマイリング！
+  transform_calls:
+    - light_up
+idol:
+  <<: *cure_idol
+
+cure_wink: &cure_wink
+  girl_name:    cure_wink
+  human_name:   蒼風なな
+  precure_name: キュアウインク
+  cast_name:    髙橋ミナミ
+  color:        blue
+  created_date: 2025-02-16 # episode 3
+  birthday: 7/6
+  transform_message: |-
+    プリキュア！ライトアップ！
+    キラキラドレスチェンジ！YEAH!
+    きみと～！ YEAH！
+    一緒にYEAH!
+    キミと瞬く、ハートの勇気！
+    お目目パッチン、キュアウインク！
+  # extra_names:
+  attack_messages:
+    - |-
+      クライマックスは私！
+      聞いて下さい
+      きらめきへ
+      踏み出そう
+      受け取った勇気つないで
+      まばたきの数だけ
+      五線譜に焼きつけていく
+      今日の優しい音
+      ずっと忘れないよ
+      出会えたキミへと
+      奏でたいいつまでも
+      鳴り止まないメロディー
+      プリキュアウインククレッシェンド！
+  transform_calls:
+    - light_up
+wink:
+  <<: *cure_wink
+
+cure_kyunkyun: &cure_kyunkyun
+  girl_name:    cure_kyunkyun
+  human_name:   紫雨こころ
+  precure_name: キュアキュンキュン
+  cast_name:    高森奈津美
+  color:        purple
+  created_date: 2025-03-23 # episode 7
+  birthday: 5/11
+  transform_message: |-
+    プリキュア！ライトアップ！
+    キラキラドレスチェンジ！YEAH!
+    きみと～！ YEAH！
+    一緒にYEAH!
+    キミと踊る、ハートのリズム！
+    心キュンキュン、キュアキュンキュン！
+  # extra_names:
+  attack_messages:
+    - |-
+      クライマックスは私！
+      準備はOK?
+      ねえキミも！
+      かわいーな（キュンキュン！）
+      かっこいーな（キュンキュン！）
+      完全同意に
+      アガる
+      テンション
+      コーレスプリーズ（イェイ☆）
+      とびきりキュンキュン響かせて
+      踊ろう
+      Let's dance!!
+      もう1回（キュンキュン！）
+      アンコール（キュンキュン！）
+      完全ダイスキ
+      ハイなステップが
+      ナンバーワン
+      もっと夢中になれるね
+      こころビート
+      YES!キュンキュン♪
+      プリキュアキュンキュンビート！
+  transform_calls:
+    - light_up
+kyunkyun:
+  <<: *cure_kyunkyun

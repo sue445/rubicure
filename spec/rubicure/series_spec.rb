@@ -22,6 +22,7 @@ describe Rubicure::Series do
       :delicious_party,
       :hirogaru_sky,
       :wonderful,
+      :you_and_idol,
     ]
   end
 
