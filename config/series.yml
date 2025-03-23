@@ -284,3 +284,19 @@ wonderful: &wonderful
     - cure_lillian
 wonderful_precure:
   <<: *wonderful
+#######################################################
+you_and_idol: &you_and_idol
+  series_name: you_and_idol
+  title: キミとアイドルプリキュア♪
+  started_date: 2025-02-02
+  # ended_date:   2026-01-xx
+  girls:
+    - cure_idol
+    - cure_wink
+    - cure_kyunkyun
+you_and_idol_precure:
+  <<: *you_and_idol
+kimi_to_idol:
+  <<: *you_and_idol
+kimi_to_idol_precure:
+  <<: *you_and_idol
