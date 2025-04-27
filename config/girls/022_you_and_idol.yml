@@ -13,6 +13,7 @@ cure_idol: &cure_idol
     一緒にYEAH!
     キミと歌う、ハートのキラキラ！
     笑顔ニッコリ、キュアアイドル！
+    ウィーアー！キミとアイドルプリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -50,6 +51,7 @@ cure_wink: &cure_wink
     一緒にYEAH!
     キミと瞬く、ハートの勇気！
     お目目パッチン、キュアウインク！
+    ウィーアー！キミとアイドルプリキュア！
   # extra_names:
   attack_messages:
     - |-
@@ -86,6 +88,7 @@ cure_kyunkyun: &cure_kyunkyun
     一緒にYEAH!
     キミと踊る、ハートのリズム！
     心キュンキュン、キュアキュンキュン！
+    ウィーアー！キミとアイドルプリキュア！
   # extra_names:
   attack_messages:
     - |-
