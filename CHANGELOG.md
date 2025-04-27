@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.1.0...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.1...master)
+
+## [v4.1.1](https://github.com/sue445/rubicure/releases/tag/v4.1.1)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.0...v4.1.1)
+
+* Tweak transform_message of You and Idol Precure
+  * https://github.com/sue445/rubicure/pull/329
 
 ## [v4.1.0](https://github.com/sue445/rubicure/releases/tag/v4.1.0)
 [full changelog](http://github.com/sue445/rubicure/compare/v4.0.2...v4.1.0)
