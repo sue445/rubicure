@@ -5,7 +5,7 @@ cure_idol: &cure_idol
   cast_name:    松岡美里
   color:        pink
   created_date: 2025-02-02 # episode 1
-  birthday: 3/27
+  birthday:     3/27
   transform_message: |-
     プリキュア！ライトアップ！
     キラキラドレスチェンジ！YEAH!
@@ -43,7 +43,7 @@ cure_wink: &cure_wink
   cast_name:    髙橋ミナミ
   color:        blue
   created_date: 2025-02-16 # episode 3
-  birthday: 7/6
+  birthday:     7/6
   transform_message: |-
     プリキュア！ライトアップ！
     キラキラドレスチェンジ！YEAH!
@@ -80,7 +80,7 @@ cure_kyunkyun: &cure_kyunkyun
   cast_name:    高森奈津美
   color:        purple
   created_date: 2025-03-23 # episode 7
-  birthday: 5/11
+  birthday:     5/11
   transform_message: |-
     プリキュア！ライトアップ！
     キラキラドレスチェンジ！YEAH!
@@ -117,3 +117,79 @@ cure_kyunkyun: &cure_kyunkyun
     - light_up
 kyunkyun:
   <<: *cure_kyunkyun
+
+cure_zukyoon: &cure_zukyoon
+  girl_name:    cure_zukyoon
+  human_name:   プリルン
+  precure_name: キュアズキューン
+  cast_name:    南條愛乃
+  color:        white
+  created_date: 2025-06-15 # episode 19
+  birthday:     10/19
+  transform_message: |-
+    プリキュア！ライトアップ！
+    キラキラショータイム！YEAH!
+    きみと～！ YEAH！
+    一緒にYEAH!
+    ハートをプリっとロックオン！
+    キミとズッキュン、キュアズキューン！
+    ウィーアー！キミとアイドルプリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      ふたりの誓い、いま輝け！
+      取り戻したい
+      光の世界
+      その笑顔
+      勇気
+      涙
+      夢
+      希望の兆し
+      キミと明日を
+      願うチカラで
+      うまれる
+      わたし達のハーモニー
+      響け
+      プリキュア！ズキューンキッスディスティニー！
+  transform_calls:
+    - light_up
+zukyoon:
+  <<: *cure_zukyoon
+
+cure_kiss: &cure_kiss
+  girl_name:    cure_kiss
+  human_name:   メロロン
+  precure_name: キュアキッス
+  cast_name:    南條愛乃
+  color:        purple
+  created_date: 2025-06-15 # episode 19
+  birthday:     12/07
+  transform_message: |-
+    プリキュア！ライトアップ！
+    キラキラショータイム！YEAH!
+    きみと～！ YEAH！
+    一緒にYEAH!
+    ハートをメロっとひとりじめ！
+    キミと口づけ、キュアキッス！
+    ウィーアー！キミとアイドルプリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      ふたりの誓い、いま輝け！
+      取り戻したい
+      光の世界
+      その笑顔
+      勇気
+      涙
+      夢
+      希望の兆し
+      キミと明日を
+      願うチカラで
+      うまれる
+      わたし達のハーモニー
+      響け
+      プリキュア！ズキューンキッスディスティニー！
+  transform_calls:
+    - light_up
+kiss:
+  <<: *cure_kiss
