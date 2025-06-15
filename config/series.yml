@@ -294,6 +294,8 @@ you_and_idol: &you_and_idol
     - cure_idol
     - cure_wink
     - cure_kyunkyun
+    - cure_zukyoon
+    - cure_kiss
 you_and_idol_precure:
   <<: *you_and_idol
 kimi_to_idol:
