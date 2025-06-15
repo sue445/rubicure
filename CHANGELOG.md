@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.1.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.2...master)
+
+## [v4.1.2](https://github.com/sue445/rubicure/releases/tag/v4.1.2)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.1...v4.1.2)
+
+* Add CureZukyoon :bow_and_arrow: and CureKiss :kiss:
+  * https://github.com/sue445/rubicure/pull/330
 
 ## [v4.1.1](https://github.com/sue445/rubicure/releases/tag/v4.1.1)
 [full changelog](http://github.com/sue445/rubicure/compare/v4.1.0...v4.1.1)
