@@ -1,3 +1,3 @@
 module Rubicure
-  VERSION = "4.1.1".freeze
+  VERSION = "4.1.2".freeze
 end
