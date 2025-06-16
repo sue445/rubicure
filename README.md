@@ -730,7 +730,7 @@ Cure.cosmo.name
 => ["シャイニールミナス", "キュアレモネード", "キュアパイン", "キュアサンシャイン", "キュアミューズ", "キュアピース", "キュアロゼッタ", "キュアハニー", "キュアトゥインクル", "キュアカスタード", "キュアエトワール", "キュアソレイユ", "キュアスパークル", "キュアパパイア", "キュアヤムヤム"]
 
 >> Precure.all_girls.group_by{ |girl| girl.color }.map{ |color, girls| [color, girls.count] }.sort_by{ |color, girl_count| [girl_count, color] }.reverse
-=> [["pink", 18], ["blue", 16], ["yellow", 15], ["purple", 14], ["red", 8], ["white", 7], ["green", 5], ["rainbow", 2], ["orange", 1], ["gold", 1], ["black", 1]]
+=> [["pink", 18], ["blue", 16], ["yellow", 15], ["purple", 13], ["red", 8], ["white", 7], ["green", 5], ["rainbow", 2], ["black", 2], ["orange", 1], ["gold", 1]]
 ```
 
 ### birthday methods

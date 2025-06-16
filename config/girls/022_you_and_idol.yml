@@ -161,7 +161,7 @@ cure_kiss: &cure_kiss
   human_name:   メロロン
   precure_name: キュアキッス
   cast_name:    南條愛乃
-  color:        purple
+  color:        black
   created_date: 2025-06-15 # episode 19
   birthday:     12/07
   transform_message: |-
