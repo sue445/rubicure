@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.1.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.3...master)
+
+## [v4.1.3](https://github.com/sue445/rubicure/releases/tag/v4.1.3)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.2...v4.1.3)
+
+* Fix CureKiss color
+  * https://github.com/sue445/rubicure/pull/331
 
 ## [v4.1.2](https://github.com/sue445/rubicure/releases/tag/v4.1.2)
 [full changelog](http://github.com/sue445/rubicure/compare/v4.1.1...v4.1.2)
