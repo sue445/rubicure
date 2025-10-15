@@ -40,6 +40,7 @@ jobs:
           - activesupport_7_1
           - activesupport_7_2
           - activesupport_8_0
+          - activesupport_8_1
         exclude:
           # activesupport 7.2+ requires Ruby 3.1+
           - ruby:    "2.7"
@@ -54,6 +55,12 @@ jobs:
             gemfile: activesupport_8_0
           - ruby:    "3.1"
             gemfile: activesupport_8_0
+          - ruby:    "2.7"
+            gemfile: activesupport_8_1
+          - ruby:    "3.0"
+            gemfile: activesupport_8_1
+          - ruby:    "3.1"
+            gemfile: activesupport_8_1
 
     env:
       BUNDLE_GEMFILE: gemfiles/${{ matrix.gemfile }}.gemfile
