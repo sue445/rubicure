@@ -66,9 +66,9 @@ jobs:
       BUNDLE_GEMFILE: gemfiles/${{ matrix.gemfile }}.gemfile
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
 
-      - uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@8aeb6ff8030dd539317f8e1769a044873b56ea71 # v1.268.0
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
@@ -81,7 +81,7 @@ jobs:
           bundle update --jobs $(nproc) --retry 3
 
       - name: Setup Code Climate Test Reporter
-        uses: aktions/codeclimate-test-reporter@v1
+        uses: aktions/codeclimate-test-reporter@7634aa9ac7883182f583f15ff7b6ff519939dd0a # v1.2.0
         with:
           codeclimate-test-reporter-id: ${{ secrets.CC_TEST_REPORTER_ID }}
           command: before-build
@@ -94,7 +94,7 @@ jobs:
         timeout-minutes: 1
 
       - name: Teardown Code Climate Test Reporter
-        uses: aktions/codeclimate-test-reporter@v1
+        uses: aktions/codeclimate-test-reporter@7634aa9ac7883182f583f15ff7b6ff519939dd0a # v1.2.0
         with:
           codeclimate-test-reporter-id: ${{ secrets.CC_TEST_REPORTER_ID }}
           command: after-build
@@ -109,7 +109,7 @@ jobs:
         if: matrix.ruby >= '3.4' && matrix.gemfile >= 'activesupport_7_1'
 
       - name: Slack Notification (not success)
-        uses: act10ns/slack@v2
+        uses: act10ns/slack@cfcc30955fe9377f4f55e1079e5419ee1014269f # v2
         if: "! success()"
         continue-on-error: true
         with:
@@ -125,7 +125,7 @@ jobs:
 
     steps:
       - name: Slack Notification (success)
-        uses: act10ns/slack@v2
+        uses: act10ns/slack@cfcc30955fe9377f4f55e1079e5419ee1014269f # v2
         if: always()
         continue-on-error: true
         with:
