@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.1.4...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.5...master)
+
+## [v4.1.5](https://github.com/sue445/rubicure/releases/tag/v4.1.5)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.4...v4.1.5)
+
+* Release gem from GitHub Actions
+  * https://github.com/sue445/rubicure/pull/337
 
 ## [v4.1.4](https://github.com/sue445/rubicure/releases/tag/v4.1.4)
 [full changelog](http://github.com/sue445/rubicure/compare/v4.1.3...v4.1.4)
