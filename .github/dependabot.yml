@@ -15,5 +15,7 @@ updates:
       - sue445
     cooldown:
       default-days: 7
+      exclude:
+        - ruby/setup-ruby
   ###########################################################
 
