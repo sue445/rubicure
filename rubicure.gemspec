@@ -38,6 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "delorean"
   spec.add_development_dependency "onkcop", "1.0.0.0"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rdoc"
   spec.add_development_dependency "rspec", ">= 3.8.0"
   spec.add_development_dependency "rspec-collection_matchers"
   spec.add_development_dependency "rspec-its"
