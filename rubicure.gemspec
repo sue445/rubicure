@@ -36,6 +36,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", ">= 1.3.5"
   spec.add_development_dependency "coveralls_reborn"
   spec.add_development_dependency "delorean"
+  spec.add_development_dependency "irb"
   spec.add_development_dependency "onkcop", "1.0.0.0"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rdoc"
