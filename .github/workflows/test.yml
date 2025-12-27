@@ -79,7 +79,7 @@ jobs:
         run: |
           set -xe
           bundle config path vendor/bundle
-          bundle update --jobs $(nproc) --retry 3
+          bundle update --all --jobs $(nproc) --retry 3
 
       - run: bundle exec rspec
         timeout-minutes: 1
