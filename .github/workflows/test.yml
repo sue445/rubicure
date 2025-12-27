@@ -87,9 +87,6 @@ jobs:
       - run: bundle exec ruby examples/all.rb
         timeout-minutes: 1
 
-      - run: bundle exec rubocop
-        timeout-minutes: 1
-
       - run: bundle exec rake rubydoctest
         timeout-minutes: 1
         if: matrix.ruby >= '3.4' && matrix.gemfile >= 'activesupport_7_1'
@@ -102,6 +99,34 @@ jobs:
           status: ${{ job.status }}
           webhook-url: ${{ secrets.SLACK_WEBHOOK }}
           matrix: ${{ toJson(matrix) }}
+
+  rubocop:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+
+      - uses: ruby/setup-ruby@ae195bbe749a7cef685ac729197124a48305c1cb # v1.276.0
+        with:
+          ruby-version: ruby
+          bundler-cache: true
+
+      - name: bundle update
+        run: |
+          set -xe
+          bundle config path vendor/bundle
+          bundle update --all --jobs $(nproc) --retry 3
+
+      - run: bundle exec rubocop
+        timeout-minutes: 1
+
+      - name: Slack Notification (not success)
+        uses: act10ns/slack@cfcc30955fe9377f4f55e1079e5419ee1014269f # v2
+        if: "! success()"
+        continue-on-error: true
+        with:
+          status: ${{ job.status }}
+          webhook-url: ${{ secrets.SLACK_WEBHOOK }}
 
   yard:
     runs-on: ubuntu-latest
@@ -139,6 +164,7 @@ jobs:
 
     needs:
       - test
+      - rubocop
       - yard
 
     runs-on: ubuntu-slim
