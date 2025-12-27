@@ -81,26 +81,11 @@ jobs:
           bundle config path vendor/bundle
           bundle update --jobs $(nproc) --retry 3
 
-      - name: Setup Code Climate Test Reporter
-        uses: aktions/codeclimate-test-reporter@7634aa9ac7883182f583f15ff7b6ff519939dd0a # v1.2.0
-        with:
-          codeclimate-test-reporter-id: ${{ secrets.CC_TEST_REPORTER_ID }}
-          command: before-build
-        continue-on-error: true
-
       - run: bundle exec rspec
         timeout-minutes: 1
 
       - run: bundle exec ruby examples/all.rb
         timeout-minutes: 1
-
-      - name: Teardown Code Climate Test Reporter
-        uses: aktions/codeclimate-test-reporter@7634aa9ac7883182f583f15ff7b6ff519939dd0a # v1.2.0
-        with:
-          codeclimate-test-reporter-id: ${{ secrets.CC_TEST_REPORTER_ID }}
-          command: after-build
-        if: always()
-        continue-on-error: true
 
       - run: bundle exec rubocop
         timeout-minutes: 1
