@@ -2,7 +2,3 @@
 # * https://github.com/tslocke/rubydoctest/pull/17 : Workaround for ruby 3.2
 # * https://github.com/tslocke/rubydoctest/pull/18 : Workaround for bundler 4.0.0
 gem "rubydoctest", github: "sue445/rubydoctest", ref: "develop"
-
-# FIXME: Workaround for Ruby 4.0+
-# ref. https://github.com/banister/binding_of_caller/pull/90
-gem "binding_of_caller", github: "kivikakk/binding_of_caller", branch: "push-yrnnzolypxun"
