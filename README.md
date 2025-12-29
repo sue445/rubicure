@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/rubicure.svg)](http://badge.fury.io/rb/rubicure)
 [![test](https://github.com/sue445/rubicure/actions/workflows/test.yml/badge.svg)](https://github.com/sue445/rubicure/actions/workflows/test.yml)
-[![Code Climate](https://codeclimate.com/github/sue445/rubicure.png)](https://codeclimate.com/github/sue445/rubicure)
+[![Maintainability](https://qlty.sh/gh/sue445/projects/rubicure/maintainability.svg)](https://qlty.sh/gh/sue445/projects/rubicure)
 [![Coverage Status](https://coveralls.io/repos/sue445/rubicure/badge.png)](https://coveralls.io/r/sue445/rubicure)
 
 All about Japanese battle heroine "Pretty Cure (Precure)".
