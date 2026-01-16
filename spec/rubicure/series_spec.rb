@@ -23,6 +23,7 @@ describe Rubicure::Series do
       :hirogaru_sky,
       :wonderful,
       :you_and_idol,
+      :star_detective,
     ]
   end
 
