@@ -1,0 +1,111 @@
+cure_answer: &cure_answer
+  girl_name:    cure_answer
+  human_name:   明智あんな
+  precure_name: キュアアンサー
+  cast_name:    千賀光莉
+  color:        purple
+  created_date: 2026-02-01 # episode 1
+  birthday:     1/24
+  transform_message: |-
+    オープン！ジュエルキュアウォッチ！
+    プリキュア！ウェイクアップタイム！
+    サン！見つける！
+    ロク！向き合う！
+    キュー！奇跡のふたり！
+    くるっと回して！キュートに決めるよ！
+    どんな謎でもはなまる解決！
+    名探偵キュアアンサー！
+    名探偵プリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      オープン！プリキットミラールーペ！
+      ポチタン！
+      マコトジュエル！
+      見て　感じて　謎を解く！
+      これが私たちのアンサーだ！
+      プリキュア！フライング・スペクトル！
+      キュアっと解決！キュアっと解決！
+  transform_calls:
+    - wake_up_time
+answer:
+  <<: *cure_answer
+
+cure_mystique: &cure_mystique
+  girl_name:    cure_mystique
+  human_name:   小林みくる
+  precure_name: キュアミスティック
+  cast_name:    本渡楓
+  color:        pink
+  created_date: 2026-02-01 # episode 1
+  birthday:     4/22
+  transform_message: |-
+    オープン！ジュエルキュアウォッチ！
+    プリキュア！ウェイクアップタイム！
+    サン！見つける！
+    ロク！向き合う！
+    キュー！奇跡のふたり！
+    くるっと回して！キュートに決めるよ！
+    重ねた推理で笑顔にジャンプ！
+    名探偵キュアミスティック！
+    名探偵プリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+      オープン！プリキットミラールーペ！
+      ポチタン！
+      マコトジュエル！
+      見て　感じて　謎を解く！
+      これが私たちのアンサーだ！
+      プリキュア！フライング・スペクトル！
+      キュアっと解決！キュアっと解決！
+      オープン！プリキットミラールーペ！
+      ポチタン！
+      マコトジュエル！
+      見て　感じて　謎を解く！
+      これが私たちのアンサーだ！
+      プリキュア！フライング・スペクトル！
+      キュアっと解決！キュアっと解決！
+  transform_calls:
+    - wake_up_time
+mystique:
+  <<: *cure_mystique
+
+cure_eclair: &cure_eclair
+  girl_name:    cure_eclair
+  # human_name:
+  # precure_name: キュアエクレール
+  cast_name:
+  color:        green
+  # created_date: 2026-xx-xx # episode x
+  # birthday:     xx/xx
+  transform_message: |-
+    解き放て！内なる真実の香り
+    名探偵キュアエクレール！
+    名探偵プリキュア！
+  # extra_names:
+  attack_messages:
+    - |-
+  transform_calls:
+    # -
+eclair:
+  <<: *cure_eclair
+
+cure_arcana_shadow: &cure_arcana_shadow
+  girl_name:    cure_arcana_shadow
+  human_name:   森亜るるか
+  precure_name: キュアアルカナ・シャドウ
+  cast_name:    東山奈央
+  color:        black
+  # created_date: 2026-xx-xx # episode x
+  birthday:     11/1
+  transform_message: |-
+    神秘と秘密で包み込む
+    キュアアルカナ・シャドウ！
+  # extra_names:
+  attack_messages:
+    - |-
+  transform_calls:
+    # -
+arcana_shadow:
+  <<: *cure_arcana_shadow

@@ -302,3 +302,20 @@ kimi_to_idol:
   <<: *you_and_idol
 kimi_to_idol_precure:
   <<: *you_and_idol
+#######################################################
+star_detective: &star_detective
+  series_name: star_detective
+  title: 名探偵プリキュア！
+  started_date: 2026-02-01
+  # ended_date:   2027-01-xx
+  girls:
+    - cure_answer
+    - cure_mystique
+    - cure_eclair
+    - cure_arcana_shadow
+star_detective_precure:
+  <<: *star_detective
+meitantei:
+  <<: *star_detective
+meitantei_precure:
+  <<: *star_detective
