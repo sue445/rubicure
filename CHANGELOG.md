@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.1.5...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.6...master)
+
+## [v4.1.6](https://github.com/sue445/rubicure/releases/tag/v4.1.6)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.5...v4.1.6)
+
+* Add You and Idol Precure's ended_date
+  * https://github.com/sue445/rubicure/pull/355
 
 ## [v4.1.5](https://github.com/sue445/rubicure/releases/tag/v4.1.5)
 [full changelog](http://github.com/sue445/rubicure/compare/v4.1.4...v4.1.5)
