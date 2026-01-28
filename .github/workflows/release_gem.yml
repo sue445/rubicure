@@ -5,37 +5,9 @@ on:
 
 jobs:
   release:
-    if: github.repository == 'sue445/rubicure'
-    runs-on: ubuntu-latest
-
-    environment:
-      name: rubygems.org
-      url: https://rubygems.org/gems/rubicure
-
-    permissions:
-      contents: write
-      id-token: write
-
-    steps:
-      - name: Harden Runner
-        uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
-        with:
-          egress-policy: audit
-
-      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@8a836efbcebe5de0fe86b48a775b7a31b5c70c93 # v1.277.0
-        with:
-          bundler-cache: true
-          ruby-version: ruby
-
-      - name: Publish to RubyGems
-        uses: rubygems/release-gem@1c162a739e8b4cb21a676e97b087e8268d8fc40b # v1.1.2
-
-      - name: Create GitHub release
-        run: |
-          tag_name="$(git describe --tags --abbrev=0)"
-          gh release create "${tag_name}" --verify-tag --generate-notes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: sue445/workflows/.github/workflows/release_gem.yml@main
+    with:
+      repo_name: sue445/rubicure
+      gem_name:  rubicure
+    secrets:
+      gh_token: ${{ secrets.GITHUB_TOKEN }}
