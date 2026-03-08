@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.1.6...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.2.0.rc1...master)
+
+## [v4.2.0.rc1](https://github.com/sue445/rubicure/releases/tag/v4.2.0.rc1)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.1.6...v4.2.0.rc1)
+
+* Add Star Detective Precure! (only Cure Answer and Cure Mystique)
+  * https://github.com/sue445/rubicure/pull/356
 
 ## [v4.1.6](https://github.com/sue445/rubicure/releases/tag/v4.1.6)
 [full changelog](http://github.com/sue445/rubicure/compare/v4.1.5...v4.1.6)
