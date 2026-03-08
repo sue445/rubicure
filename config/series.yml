@@ -311,7 +311,7 @@ star_detective: &star_detective
   girls:
     - cure_answer
     - cure_mystique
-    - cure_eclair
+    # - cure_eclair
     # - cure_arcana_shadow
 star_detective_precure:
   <<: *star_detective

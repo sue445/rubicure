@@ -71,25 +71,25 @@ cure_mystique: &cure_mystique
 mystique:
   <<: *cure_mystique
 
-cure_eclair: &cure_eclair
-  girl_name:    cure_eclair
-  # human_name:
-  # precure_name: キュアエクレール
-  cast_name:
-  color:        green
-  # created_date: 2026-xx-xx # episode x
-  # birthday:     xx/xx
-  transform_message: |-
-    解き放て！内なる真実の香り
-    名探偵キュアエクレール！
-    名探偵プリキュア！
-  # extra_names:
-  attack_messages:
-    - |-
-  transform_calls:
-    # -
-eclair:
-  <<: *cure_eclair
+# cure_eclair: &cure_eclair
+#   girl_name:    cure_eclair
+#   # human_name:
+#   # precure_name: キュアエクレール
+#   cast_name:
+#   color:        green
+#   # created_date: 2026-xx-xx # episode x
+#   # birthday:     xx/xx
+#   transform_message: |-
+#     解き放て！内なる真実の香り
+#     名探偵キュアエクレール！
+#     名探偵プリキュア！
+#   # extra_names:
+#   attack_messages:
+#     - |-
+#   transform_calls:
+#     # -
+# eclair:
+#   <<: *cure_eclair
 
 # cure_arcana_shadow: &cure_arcana_shadow
 #   girl_name:    cure_arcana_shadow
