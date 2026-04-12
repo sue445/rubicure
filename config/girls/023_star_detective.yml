@@ -91,21 +91,25 @@ mystique:
 # eclair:
 #   <<: *cure_eclair
 
-# cure_arcana_shadow: &cure_arcana_shadow
-#   girl_name:    cure_arcana_shadow
-#   human_name:   森亜るるか
-#   precure_name: キュアアルカナ・シャドウ
-#   cast_name:    東山奈央
-#   color:        black
-#   # created_date: 2026-xx-xx # episode x
-#   birthday:     11/1
-#   transform_message: |-
-#     神秘と秘密で包み込む
-#     キュアアルカナ・シャドウ！
-#   # extra_names:
-#   attack_messages:
-#     - |-
-#   transform_calls:
-#     # -
-# arcana_shadow:
-#   <<: *cure_arcana_shadow
+cure_arcana_shadow: &cure_arcana_shadow
+  girl_name:    cure_arcana_shadow
+  human_name:   森亜るるか
+  precure_name: キュアアルカナ・シャドウ
+  cast_name:    東山奈央
+  color:        black
+  created_date: 2026-04-12 # episode 11
+  birthday:     11/1
+  transform_message: |-
+    オープン！ティアアルカナロッド！
+    シャッフル！
+    リバース！
+    神秘と秘密で包み込む
+    キュアアルカナ・シャドウ！
+    さあ、迷宮へ誘いましょう
+  # extra_names:
+  attack_messages:
+    - |-
+  transform_calls:
+    # -
+arcana_shadow:
+  <<: *cure_arcana_shadow
