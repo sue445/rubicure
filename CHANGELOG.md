@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.2.0.rc1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.2.0.rc2...master)
+
+## [v4.2.0.rc2](https://github.com/sue445/rubicure/releases/tag/v4.2.0.rc2)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.2.0.rc1...v4.2.0.rc2)
+
+* Add CureArcanaShadow :ice_cream:
+  * https://github.com/sue445/rubicure/pull/368
 
 ## [v4.2.0.rc1](https://github.com/sue445/rubicure/releases/tag/v4.2.0.rc1)
 [full changelog](http://github.com/sue445/rubicure/compare/v4.1.6...v4.2.0.rc1)
