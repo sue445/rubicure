@@ -2,3 +2,8 @@
 # * https://github.com/tslocke/rubydoctest/pull/17 : Workaround for ruby 3.2
 # * https://github.com/tslocke/rubydoctest/pull/18 : Workaround for bundler 4.0.0
 gem "rubydoctest", github: "sue445/rubydoctest", ref: "develop"
+
+if Gem::Version.new(RUBY_VERSION) < Gem::Version.new("3.2.0")
+  # NOTE: i18n 1.15.0+ requires Ruby 3.2+
+  gem "i18n", "< 1.15.0"
+end
