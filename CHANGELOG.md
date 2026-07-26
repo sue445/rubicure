@@ -1,5 +1,13 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.2.0.rc2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.2.0...master)
+
+## [v4.2.0](https://github.com/sue445/rubicure/releases/tag/v4.2.0)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.2.0.rc2...v4.2.0)
+
+* Add Cure Eclair :butterfly:
+  * https://github.com/sue445/rubicure/pull/379
+* Fix duplicated attack_messages in Cure Answer and Cure Mystique
+  * https://github.com/sue445/rubicure/pull/380
 
 ## [v4.2.0.rc2](https://github.com/sue445/rubicure/releases/tag/v4.2.0.rc2)
 [full changelog](http://github.com/sue445/rubicure/compare/v4.2.0.rc1...v4.2.0.rc2)
