@@ -64,25 +64,36 @@ cure_mystique: &cure_mystique
 mystique:
   <<: *cure_mystique
 
-# cure_eclair: &cure_eclair
-#   girl_name:    cure_eclair
-#   # human_name:
-#   # precure_name: キュアエクレール
-#   cast_name:
-#   color:        green
-#   # created_date: 2026-xx-xx # episode x
-#   # birthday:     xx/xx
-#   transform_message: |-
-#     解き放て！内なる真実の香り
-#     名探偵キュアエクレール！
-#     名探偵プリキュア！
-#   # extra_names:
-#   attack_messages:
-#     - |-
-#   transform_calls:
-#     # -
-# eclair:
-#   <<: *cure_eclair
+cure_eclair: &cure_eclair
+  girl_name:    cure_eclair
+  human_name:   帆羽くれあ
+  precure_name: キュアエクレール
+  cast_name:    長谷川育美
+  color:        green
+  created_date: 2026-07-26 # episode 26
+  birthday:     8/10
+  transform_message: |-
+    オープン！トップオブリリーフレグランス！
+    プリキュア！ウェイクアップタイム！
+    フローラルスピン！
+    ブルーム！
+    解き放て！内なる真実の香り
+    名探偵キュアエクレール！
+  # extra_names:
+  attack_messages:
+    - |-
+      オープン！プリキットミラールーペ！
+      シュシュタン！
+      マコトジュエル！
+      キュアエクレールが解決！
+      優雅に　はばたき　謎を解く！
+      これが私のアンサーよ！
+      プリキュア！フライング・インフィニティ！
+      キュアット解決！
+  transform_calls:
+    - wake_up_time
+eclair:
+  <<: *cure_eclair
 
 cure_arcana_shadow: &cure_arcana_shadow
   girl_name:    cure_arcana_shadow
