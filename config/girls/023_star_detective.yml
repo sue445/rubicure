@@ -95,14 +95,40 @@ cure_eclair: &cure_eclair
 eclair:
   <<: *cure_eclair
 
-cure_arcana_shadow: &cure_arcana_shadow
-  girl_name:    cure_arcana_shadow
+
+cure_arcana: &cure_arcana
   human_name:   森亜るるか
-  precure_name: キュアアルカナ・シャドウ
+  precure_name: キュアアルカナ
   cast_name:    東山奈央
+  color:        white
+  created_date: 2026-08-30 # episode 31
+  birthday:     11/1
+  transform_message: |-
+    オープン！シャインアルカナロッド！
+    プリキュア！ウェイクアップタイム！
+    輝きなさい純白に！
+    フラワータップ！
+    真実を照らす白き光
+    名探偵キュアアルカナ！
+    私の答え示します
+  attack_messages:
+    - |-
+      マシュタン！
+      マコトジュエル！
+      アルカナスターレイン！
+      キュアアルカナが解決！
+      これが私のアンサー！
+      プリキュア！アルカナホワイトリリー！
+  transform_calls:
+    - wake_up_time
+arcana:
+  <<: *cure_arcana
+
+cure_arcana_shadow: &cure_arcana_shadow
+  <<: *cure_arcana
+  precure_name: キュアアルカナ・シャドウ
   color:        black
   created_date: 2026-04-12 # episode 11
-  birthday:     11/1
   transform_message: |-
     オープン！ティアアルカナロッド！
     シャッフル！
