@@ -5,43 +5,10 @@ on:
 
 jobs:
   release:
-    if: github.repository == 'sue445/rubicure'
-    runs-on: ubuntu-latest
-
-    environment:
-      name: rubygems.org
-      url: https://rubygems.org/gems/rubicure
-
+    uses: sue445/workflows/.github/workflows/release_gem.yml@main
+    with:
+      repo-name: sue445/rubicure
+      gem-name:  rubicure
     permissions:
       contents: write
       id-token: write
-
-    steps:
-      - name: Harden Runner
-        uses: step-security/harden-runner@bf7454d06d71f1098171f2acdf0cd4708d7b5920 # v2.20.0
-        with:
-          egress-policy: audit
-
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
-        with:
-          bundler-cache: true
-          ruby-version: ruby
-
-      - name: Publish to RubyGems
-        uses: rubygems/release-gem@052cc82692552de3ef2b81fd670e41d13cba8092 # v1.4.0
-
-      - name: Create GitHub release
-        run: |
-          tag_name="$(git describe --tags --abbrev=0)"
-
-          options=()
-          if ! [[ "${tag_name}" =~ ^v[0-9.]+$ ]]; then
-            options+=("--prerelease")
-          fi
-
-          gh release create "${tag_name}" --verify-tag --generate-notes "${options[@]}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
