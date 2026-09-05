@@ -97,6 +97,7 @@ eclair:
 
 
 cure_arcana: &cure_arcana
+  girl_name:    cure_arcana
   human_name:   森亜るるか
   precure_name: キュアアルカナ
   cast_name:    東山奈央
