@@ -7,6 +7,36 @@ describe "girls_checker" do # rubocop:disable RSpec/DescribeClass
 
       girls.each do |girl_name, girl|
         describe girl_name do
+          describe "#girl_name" do
+            subject { girl["girl_name"] }
+
+            it { should_not be_blank }
+          end
+
+          describe "#human_name" do
+            subject { girl["human_name"] }
+
+            it { should_not be_blank }
+          end
+
+          describe "#precure_name" do
+            subject { girl["precure_name"] }
+
+            it { should_not be_blank }
+          end
+
+          describe "#cast_name" do
+            subject { girl["cast_name"] }
+
+            it { should_not be_blank }
+          end
+
+          describe "#color" do
+            subject { girl["color"] }
+
+            it { should_not be_blank }
+          end
+
           describe "#transform_message" do
             subject { girl["transform_message"] }
 
