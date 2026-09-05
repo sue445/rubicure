@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.2.1...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.2.2...master)
+
+## [v4.2.2](https://github.com/sue445/rubicure/releases/tag/v4.2.2)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.2.1...v4.2.2)
+
+* キュアアルカナに girl_name がなかったのを修正
+  * https://github.com/sue445/rubicure/pull/387
 
 ## [v4.2.1](https://github.com/sue445/rubicure/releases/tag/v4.2.1)
 [full changelog](http://github.com/sue445/rubicure/compare/v4.2.0...v4.2.1)
