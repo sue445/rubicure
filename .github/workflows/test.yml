@@ -67,9 +67,9 @@ jobs:
       BUNDLE_GEMFILE: gemfiles/${{ matrix.gemfile }}.gemfile
 
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@v7.0.1
 
-      - uses: ruby/setup-ruby@de492cf36cbab201753d720ce4f4e336cd688c94 # v1.336.0
+      - uses: ruby/setup-ruby@v1.336.0
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
@@ -92,7 +92,7 @@ jobs:
         if: matrix.ruby >= '3.4' && matrix.gemfile >= 'activesupport_7_1'
 
       - name: Slack Notification (not success)
-        uses: act10ns/slack@d96404edccc6d6467fc7f8134a420c851b1e9054 # v2.2.0
+        uses: act10ns/slack@v2.2.0
         if: "! success()"
         continue-on-error: true
         with:
@@ -104,9 +104,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@v7.0.1
 
-      - uses: ruby/setup-ruby@de492cf36cbab201753d720ce4f4e336cd688c94 # v1.336.0
+      - uses: ruby/setup-ruby@v1.336.0
         with:
           ruby-version: ruby
           bundler-cache: true
@@ -121,7 +121,7 @@ jobs:
         timeout-minutes: 1
 
       - name: Slack Notification (not success)
-        uses: act10ns/slack@d96404edccc6d6467fc7f8134a420c851b1e9054 # v2.2.0
+        uses: act10ns/slack@v2.2.0
         if: "! success()"
         continue-on-error: true
         with:
@@ -132,9 +132,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@v7.0.1
 
-      - uses: ruby/setup-ruby@de492cf36cbab201753d720ce4f4e336cd688c94 # v1.336.0
+      - uses: ruby/setup-ruby@v1.336.0
         with:
           ruby-version: ruby
           bundler-cache: true
@@ -152,7 +152,7 @@ jobs:
           ls -ld doc/
 
       - name: Slack Notification (not success)
-        uses: act10ns/slack@d96404edccc6d6467fc7f8134a420c851b1e9054 # v2.2.0
+        uses: act10ns/slack@v2.2.0
         if: "! success()"
         continue-on-error: true
         with:
@@ -171,6 +171,6 @@ jobs:
 
     steps:
       - name: check dependent jobs
-        uses: re-actors/alls-green@b5b5b37504aa4183270bd3d855c52a67f212be35 # v1.3.0
+        uses: re-actors/alls-green@v1.3.0
         with:
           jobs: ${{ toJSON(needs) }}
