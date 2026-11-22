@@ -463,7 +463,7 @@ When `Rubicure::Girl` has `human_real_name` (i.e. another `human_name`), she ret
 => "花崎来未"
 ```
 
-`#real_name` returns `#human_name` when she doe's not have `human_real_name`
+`#real_name` returns `#human_name` when she does not have `human_real_name`
 
 ```ruby
 >> Cure.answer.human_name
