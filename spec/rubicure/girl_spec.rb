@@ -364,6 +364,20 @@ describe Rubicure::Girl do
     end
   end
 
+  describe "#real_name" do
+    subject { girl.real_name }
+
+    context "has human_real_name" do
+      let(:girl) { Cure.mystique }
+
+      it { should eq "花崎来未" }
+    end
+
+    context "don't have human_real_name" do
+      it { should eq "黄瀬やよい" }
+    end
+  end
+
   describe "#heisei?" do
     subject { girl.heisei? }
 

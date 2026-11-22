@@ -13,6 +13,7 @@ module Rubicure
       :girl_name,
       :human_name,
       :human_full_name,
+      :human_real_name,
       :precure_name,
       :cast_name,
       :color,
@@ -168,6 +169,13 @@ module Rubicure
     # @return [String]
     def full_name
       human_full_name.presence || human_name
+    end
+
+    # returns `human_real_name` or `human_name`
+    #
+    # @return [String]
+    def real_name
+      human_real_name.presence || human_name
     end
 
     # Whether Heisei precure
