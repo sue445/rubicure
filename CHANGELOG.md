@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/rubicure/compare/v4.2.2...master)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.2.3...master)
+
+## [v4.2.3](https://github.com/sue445/rubicure/releases/tag/v4.2.3)
+[full changelog](http://github.com/sue445/rubicure/compare/v4.2.2...v4.2.3)
+
+* Impl `real_name` and add `human_real_name` to `Cure.mystique`
+  * https://github.com/sue445/rubicure/pull/394
 
 ## [v4.2.2](https://github.com/sue445/rubicure/releases/tag/v4.2.2)
 [full changelog](http://github.com/sue445/rubicure/compare/v4.2.1...v4.2.2)
