@@ -453,6 +453,25 @@ When `Rubicure::Girl` has `human_full_name` (i.e. another `human_name`), she ret
 => "朝日奈みらい"
 ```
 
+### real_name
+When `Rubicure::Girl` has `human_real_name` (i.e. another `human_name`), she returns as `#real_name`
+
+```ruby
+>> Cure.mystique.human_name
+=> "小林みくる"
+>> Cure.mystique.real_name
+=> "花崎来未"
+```
+
+`#real_name` returns `#human_name` when she doe's not have `human_real_name`
+
+```ruby
+>> Cure.answer.human_name
+=> "明智あんな"
+>> Cure.answer.real_name
+=> "明智あんな"
+```
+
 ### Precure allstars
 ```ruby
 >> Precure.all_stars.count
