@@ -32,14 +32,14 @@ answer:
   <<: *cure_answer
 
 cure_mystique: &cure_mystique
-  girl_name:    cure_mystique
-  human_name:   小林みくる
+  girl_name:       cure_mystique
+  human_name:      小林みくる
   human_real_name: 花崎来未
-  precure_name: キュアミスティック
-  cast_name:    本渡楓
-  color:        pink
-  created_date: 2026-02-01 # episode 1
-  birthday:     4/22
+  precure_name:    キュアミスティック
+  cast_name:       本渡楓
+  color:           pink
+  created_date:    2026-02-01 # episode 1
+  birthday:        4/22
   transform_message: |-
     オープン！ジュエルキュアウォッチ！
     プリキュア！ウェイクアップタイム！
